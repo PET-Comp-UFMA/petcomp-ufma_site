@@ -177,6 +177,7 @@ footer .container {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  margin: 100px 0;
 }
 
 footer .sobre {
@@ -207,7 +208,7 @@ footer .infos li {
   display: flex;
   margin: 14px 0;
   padding: 12px;
-  width: 200px;
+  width: 300px;
 }
 
 footer .infos li p {

@@ -7,11 +7,21 @@ main .container {
     margin-left: auto;
 }
 
+main .container p {
+  padding: 40px;
+  padding-top: 0;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
     grid-gap: 2.5rem; 
+    padding: 40px;
+}
+
+.gallery figure:hover {
+  transform: scale(1.02);
 }
 
 .gallery__img {
