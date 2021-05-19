@@ -209,7 +209,7 @@ footer .infos li {
   display: flex;
   margin: 14px 0;
   padding: 12px;
-  width: 300px;
+  width: 370px;
 }
 
 footer .infos li p {
@@ -244,7 +244,7 @@ footer .sociais li {
   align-items: center;
   display: flex;
   padding: 12px;
-  width: 300px;
+  width: 370px;
 }
 
 footer .sociais li a {
@@ -283,7 +283,7 @@ footer .contato {
   display: flex;
   justify-content: space-between;
   padding: 12px;
-  width: 150px;
+  width: 170px;
 }
 
 footer .contato img {
@@ -419,6 +419,10 @@ footer .contato a {
     align-items: center;
     display: flex;
     padding: 0;
+    width: 300px;
+  }
+
+  footer .sociais ul li {
     width: 300px;
   }
 

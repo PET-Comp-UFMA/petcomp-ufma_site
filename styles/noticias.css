@@ -40,12 +40,15 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 35px;
-    color: #FFF;
-    /* text-shadow: 0px 3.66355px 3.66355px rgba(0, 0, 0, 0.25); */
     border: none;
     border-radius: 2px;
     cursor: pointer;
-    text-decoration:none;
+}
+
+.botao a {
+  color: #fff;
+  
+  text-decoration: none;
 }
 .botao a:visited {
     color: white;
