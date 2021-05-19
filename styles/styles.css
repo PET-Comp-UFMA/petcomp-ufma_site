@@ -25,6 +25,7 @@ header {
 }
 
 header .logos {
+  align-items: center;
   display: flex;
   justify-content: space-around;
   margin-left: 30px;
