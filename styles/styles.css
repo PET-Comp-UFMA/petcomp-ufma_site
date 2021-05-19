@@ -221,6 +221,7 @@ footer .infos img {
 
 footer .infos a, footer .infos p {
   color: #fff;
+  margin: 0;
   margin-left: 20px;
 }
 
@@ -314,7 +315,7 @@ footer .contato a {
     display: none;
   }
 
-  header .logos .pet-logo {
+  header .logos img, header .logos a .pet-logo {
     height: 50px;
     width: 50px;
   }
@@ -403,6 +404,10 @@ footer .contato a {
     height: 100%;
     padding: 20px;
     width: 100%;
+  }
+
+  footer .container {
+    margin: 10px 0;
   }
 
   footer .container .logos {
