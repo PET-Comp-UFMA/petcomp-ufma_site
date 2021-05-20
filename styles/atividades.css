@@ -18,6 +18,10 @@ main img {
   width: 90%;
 }
 
+main .images .images-desenvolvimento {
+  width: 40%;
+}
+
 main img:hover {
   transform: scale(1.01);
 }
