@@ -1,0 +1,23 @@
+main p {
+  color: #888990;
+  font-size: 18px;
+  padding: 0 40px;
+}
+
+main .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+main img {
+  border: 10px solid #eee;
+  margin: 20px auto;
+  transition: .2s;
+  width: 90%;
+}
+
+main img:hover {
+  transform: scale(1.01);
+}
