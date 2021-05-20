@@ -215,11 +215,13 @@
   align-items: flex-end;
   background: linear-gradient(45deg,#343564, #0076CD, #01A8FF, #33C3FF);
   border-radius: 4px;
+  color: #ffff;
   cursor: pointer;
   display: flex;
   height: 250px;
   margin: 12px 20px;
   padding: 50px 20px;
+  text-decoration: none;
   transition: ease .5s;
   width: 250px;
 }
@@ -233,10 +235,13 @@
 .atividades .images-atividades .card-atividade a {
   color: #fff;
   font-size: 20px;
-  text-decoration: none;
   width: 200px;
 }
-
+.atividades .images-atividades .card-atividade h3 {
+  color: #ffff;
+  font-size: 20px;
+  width: 200px;
+}
 #parceiros {
   background: #EEEEEE;
   height: 400px;
