@@ -321,6 +321,10 @@
     width: 100%;
   }
 
+  .resumo-petcomp .images figure:hover {
+    transform: scale(1.5);
+  }
+
   .resumo-petcomp .text-petcomp h1 {
     color: #545457;
     font-size: 48px;

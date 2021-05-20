@@ -15,6 +15,23 @@ function DropdownSobre() {
   }
 }
 
+function DropdownProjetos() {
+  document.getElementById("dropdown-projetos").classList.toggle("show-dropdown-projetos");
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content-projetos");
+      var i;
+      for (i=0; i<dropdowns.length; i++) {
+        var openDropdowns = dropdowns[i];
+        if (openDropdowns.classList.contains('show-dropdown-projetos')) {
+          openDropdowns.classList.remove('show-dropdown-projetos');
+        }
+      }
+    }
+  }
+}
+
 function DropdownProdutos() {
   document.getElementById("dropdown-produtos").classList.toggle("show-dropdown-produto");
 

@@ -95,5 +95,10 @@ main .container p {
 
   .gallery {
     padding: 0px;
+    grid-gap: 4px;
+  }
+
+  .gallery figure:hover {
+    transform: scale(1.5);
   }
 }

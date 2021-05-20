@@ -32,3 +32,28 @@ main .images-fab-software .images-desenvolvimento {
 main img:hover {
   transform: scale(1.01);
 }
+
+@media (max-width: 800px) {
+  main .images {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  main .images-fab-software {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  main img {
+    border: 2px solid #eee;
+    margin: 20px auto;
+    transition: .2s;
+    width: 90%;
+  }
+
+  main img:hover {
+    transform: scale(1.1);
+  }
+}
