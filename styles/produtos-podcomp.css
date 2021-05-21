@@ -1,5 +1,10 @@
 
-
+.text{
+  text-align: justify;
+  margin-left:10%;
+  margin-right: 10%;
+  color: #888888;
+}
 .episodio .texto {
   display: flex;
   flex-direction: column;
