@@ -34,6 +34,11 @@ main img:hover {
 }
 
 @media (max-width: 800px) {
+  main p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
   main .images {
     display: flex;
     flex-direction: column;
