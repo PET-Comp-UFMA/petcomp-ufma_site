@@ -82,3 +82,26 @@ function showSlides(n) {
   time = setTimeout(showSlides, 4000);
 }
 
+function activeButton() {
+  var buttonPython = document.getElementById("python");
+  var buttonCalc = document.getElementById("calc-1");
+  var buttonC = document.getElementById("c-lang");
+
+  buttonPython.addEventListener('click', function(){
+    this.classList.add('active');
+    buttonCalc.classList.remove('active');
+    buttonC.classList.remove('active');
+  })
+
+  buttonCalc.addEventListener('click', function(){
+    this.classList.add('active');
+    buttonPython.classList.remove('active');
+    buttonC.classList.remove('active');
+  })
+
+  buttonC.addEventListener('click', function(){
+    this.classList.add('active');
+    buttonPython.classList.remove('active');
+    buttonCalc.classList.remove('active');
+  })
+}

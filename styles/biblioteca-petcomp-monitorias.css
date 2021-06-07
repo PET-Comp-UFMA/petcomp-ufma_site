@@ -1,0 +1,88 @@
+.monitorias {
+  background: #DDE3E6;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.monitorias button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 50px;
+  opacity: .4;
+  padding: 25px;
+  transition: .2s;
+}
+
+.monitorias button:hover {
+  transform: scale(1.01);
+  opacity: .6;
+}
+
+.monitorias .active {
+  opacity: 1;
+}
+
+.monitorias button img {
+  width: 60px;
+}
+
+.monitorias .title {
+  background: #fff;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.monitorias .title h1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 2px;
+  text-align: center;
+}
+
+.conteudos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px;
+}
+
+.conteudos .aula {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  transition: .4s;
+}
+
+.conteudos .aula:hover {
+  transform: scale(1.01);
+}
+
+.conteudos .card {
+  background: #050C38;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 140px;
+}
+
+.conteudos .card img {
+  width: 100px;
+}
+
+.conteudos .details {
+  top: 35px;
+  position: relative;
+  padding: 8px;
+}
+
+.conteudos .details p {
+  color: #868686;
+  font-weight: 300;
+}
