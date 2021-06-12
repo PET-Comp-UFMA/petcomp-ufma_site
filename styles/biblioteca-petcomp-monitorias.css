@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-.container {
+section.container {
   margin: auto;
   position: relative;
   width: 100%;
@@ -141,14 +141,14 @@
     width: auto;
   }
 
-  .container {
+  /* .container {
     padding: 6px;
   }
 
   .container .conteudos {
     grid-gap: 4px;
     padding: 10px 0;
-  } 
+  }  */
 
   .aula .card {
     height: 50px;
