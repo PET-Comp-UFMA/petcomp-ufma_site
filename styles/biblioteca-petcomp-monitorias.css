@@ -46,6 +46,7 @@
 }
 
 section.container {
+  background: #fafafa;
   margin: auto;
   position: relative;
   width: 100%;
@@ -70,7 +71,6 @@ section.container {
 }
 
 .conteudos .card {
-  background: #ffaa00a2;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -91,6 +91,18 @@ section.container {
 .conteudos .details p {
   color: #868686;
   font-weight: 300;
+}
+
+.python {
+  background: #8AEABE;
+}
+
+.calc {
+  background: #FFA800;
+}
+
+.lp1 {
+  background: #ebeaea9a
 }
 
 .fade {
