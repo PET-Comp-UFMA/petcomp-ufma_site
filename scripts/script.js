@@ -82,26 +82,34 @@ function showSlides(n) {
   time = setTimeout(showSlides, 4000);
 }
 
-function activeButton() {
-  var buttonPython = document.getElementById("python");
-  var buttonCalc = document.getElementById("calc-1");
-  var buttonC = document.getElementById("c-lang");
+var conteudoIndex = 2;
+showConteudos(conteudoIndex);
 
-  buttonPython.addEventListener('click', function(){
-    this.classList.add('active');
-    buttonCalc.classList.remove('active');
-    buttonC.classList.remove('active');
-  })
+function currentConteudo(n) {
+  showConteudos(conteudoIndex = n);
+}
 
-  buttonCalc.addEventListener('click', function(){
-    this.classList.add('active');
-    buttonPython.classList.remove('active');
-    buttonC.classList.remove('active');
-  })
+function showConteudos(n) {
+  var i;
+  var conteudos = document.getElementsByClassName("conteudos");
+  var buttons = document.getElementsByClassName("btn-monitoria");
 
-  buttonC.addEventListener('click', function(){
-    this.classList.add('active');
-    buttonPython.classList.remove('active');
-    buttonCalc.classList.remove('active');
-  })
+  if (n > conteudos.lenght) {
+    conteudoIndex = 1;
+  }
+
+  if (n < 1) {
+    conteudoIndex = conteudos.length;
+  }
+
+  for (i = 0; i < conteudos.length; i++) {
+    conteudos[i].style.display = "none";
+  }
+
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].className = buttons[i].className.replace(" active", "");
+  }
+
+  conteudos[conteudoIndex-1].style.display = "grid";
+  buttons[conteudoIndex-1].className += " active";
 }

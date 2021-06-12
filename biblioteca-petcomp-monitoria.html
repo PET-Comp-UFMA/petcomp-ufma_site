@@ -89,7 +89,7 @@
 
     <div class="monitorias">
       <div>
-        <button id="python" style="background: #8AEABE" onclick="activeButton()">
+        <button id="python" class="btn-monitoria" style="background: #8AEABE" onclick="currentConteudo(1)">
           <img src="./assets/svg/python.svg" alt="Monitoria Algoritmos I">
         </button>
         <div class="title">
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div>
-        <button id="calc-1" style="background: #FFA800" onclick="activeButton()">
+        <button id="calc-1" class="btn-monitoria active" style="background: #FFA800" onclick="currentConteudo(2)">
           <img src="./assets/svg/pi-mathematical.svg" alt="Monitoria Cálculo I">
         </button>
         <div class="title">
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div>
-        <button id="c-lang" style="background: #FFF" onclick="activeButton()">
+        <button id="c-lang" class="btn-monitoria" style="background: #FFF" onclick="currentConteudo(3)">
           <img src="./assets/svg/c.svg" alt="Monitoria Linguagem de Programação I">
         </button>
         <div class="title">
@@ -114,90 +114,260 @@
       </div>
     </div>
 
-    <div class="conteudos">
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/axis.svg" alt="">
+    <section class="container">
+      <div class="conteudos fade">
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/function.svg" alt="">
+  
+      <div class="conteudos fade" style="display: grid;">
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/integral.svg" alt="">
+  
+      <div class="conteudos fade">
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/function.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/axis.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/function.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/integral.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/function.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="aula">
-        <div class="card">
-          <img src="./assets/svg/axis.svg" alt="">
-        </div>
-        <div class="details">
-          <h1>Lorem</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    </div>
-  </body>
+    </section>
+
 
   <footer>
     <div class="container">
@@ -223,5 +393,8 @@
       <img src="./assets/svg/comment icon.svg" alt=""><a href="./contato.html">Fale Conosco</a>
     </div>
   </footer>
-  <script src="./scripts/script.js"></script>
+  
+</body>
+
+<script src="./scripts/script.js"></script>
 </html>
