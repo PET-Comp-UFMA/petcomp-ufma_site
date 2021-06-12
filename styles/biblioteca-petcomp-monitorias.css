@@ -48,6 +48,7 @@
 .container {
   margin: auto;
   position: relative;
+  width: 100%;
 }
 
 .conteudos {
@@ -107,4 +108,64 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media (max-width: 800px){
+  .monitorias {
+    padding: 10px 0;
+  }
+
+  .monitorias div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  .monitorias button {
+    align-items: center;
+    display: flex;
+    height: 62.5px;
+    justify-content: center;
+    margin: 10px;
+    width: 50%;
+  }
+
+  .monitorias button img {
+    width: 30px;
+  }
+
+  .monitorias .title h1 {
+    font-size: 10px;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .container {
+    padding: 6px;
+  }
+
+  .container .conteudos {
+    grid-gap: 4px;
+    padding: 10px 0;
+  } 
+
+  .aula .card {
+    height: 50px;
+    width: 50px;
+  }
+
+  .aula .card img {
+    width: 30px;
+  }
+
+  .aula .details {
+    font-size: 10px;
+    padding: 0 4px;
+    top: 0;
+  }
+
+  .aula .details p {
+    font-size: 8px;
+  }
 }
