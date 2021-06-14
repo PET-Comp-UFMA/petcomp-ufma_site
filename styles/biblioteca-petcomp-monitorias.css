@@ -158,26 +158,27 @@ section.container {
   }
 
   .container .conteudos {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 4px;
     padding: 10px 0;
   } 
 
   .aula .card {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
   }
 
   .aula .card img {
-    width: 30px;
+    width: 50px;
   }
 
   .aula .details {
-    font-size: 10px;
-    padding: 0 4px;
+    font-size: 14px;
+    padding: 0 6px;
     top: 0;
   }
 
   .aula .details p {
-    font-size: 8px;
+    font-size: 10px;
   }
 }

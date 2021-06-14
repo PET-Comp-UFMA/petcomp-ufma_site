@@ -34,7 +34,7 @@
             <div class="dropdown">
               <button onclick="DropdownSobre()" class="dropbtn">
                 Conheça o PETComp
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
@@ -48,7 +48,7 @@
             <div class="dropdown">
               <button onclick="DropdownProjetos()" class="dropbtn">
                 Projetos
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
@@ -67,15 +67,19 @@
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="DropdownProdutos()" class="dropbtn">
+              <div class="text-button">
+                <button onclick="DropdownProdutos()" class="dropbtn">
                 Produtos
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
+              </div>
+              
               <div id="dropdown-produtos" class="dropdown-content-produtos">
                 <a href="./eventos.html">Eventos</a>
                 <a href="./produtos-podcomp.html">PodCast</a>
+                <!-- <a href="./biblioteca-petcomp-monitoria.html">Biblioteca PETComp</a> -->
               </div>
             </div>
           </li>
@@ -85,69 +89,45 @@
     <img src="./assets/svg/menu_black_24dp.svg" alt="" class="open-btn" onclick="openMenu()">
   </header>
 
-  
   <div class="section-header">
     <h2>Eventos</h2>
   </div>
 
+  <div class="noticias">  
+    <p>Eventos serão promovidos e organizados pelo grupo. Entre as possíveis opções de eventos estão o EACOMP(Encontro Acadêmico de Computação), PET Game Jam, JIM.
+    Os eventos serão planejados através de reuniões entre o grupo. Na primeira reunião, um petiano é eleito líder do monitoramento das atividades a serem realizadas para que ocorra o evento. Este líder, em conjunto com o tutor, indica membros para auxiliá-lo diretamente, podendo inclusive, ser todos os membros do PET. O tutor atua como facilitador entre as várias entidades e atores da universidade. O grupo então define a programação baseada em minicursos, tutorias, palestras, competições, apresentação, rodas de discussão e laboratórios e define também comissões para cuidar de grandes tarefas do evento. A programação é baseada na tendência atual da área e tende a atender os anseios do público diretamente envolvido do curso de Ciência da Computação. Os eventos são então divulgados através de redes sociais em todos os cursos da área do Maranhão, em instituições públicas e particulares, assim como em instituições que possuem cursos técnicos na área. Durante os eventos, as comissões formadas atuam para garantir que a realização do evento ocorra de forma completamente ordenada.</p>
+      <div class="materia">
+        <img src="./assets/images/eacomp.png">
+          <div class="textoMateria">
+            <h3>EAComp</h3>
+            <p>
+                O Encontro Acadêmico de Computação (EAComp) da UFMA é uma forma de receber novos alunos e familiarizá-los com o curso de Graduação de Ciência da Computação da UFMA apresentando as oportunidades dentro da graduação. O EAComp é organizado pelo Programa de Educação Tutorial do curso de Ciência da Computação (PETComp).
+            </p>
+            <button class="botao"><a href="https://pet-comp-ufma.github.io/EAComp_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+          </div>
+      </div>
 
-
-
-<div class="noticias">  
-  <p>Eventos serão promovidos e organizados pelo grupo. Entre as possíveis opções de eventos estão o EACOMP(Encontro Acadêmico de Computação), PET Game Jam, JIM.
-
-  Os eventos serão planejados através de reuniões entre o grupo. Na primeira reunião, um petiano é eleito líder do monitoramento das atividades a serem realizadas para que ocorra o evento. Este líder, em conjunto com o tutor, indica membros para auxiliá-lo diretamente, podendo inclusive, ser todos os membros do PET. O tutor atua como facilitador entre as várias entidades e atores da universidade. O grupo então define a programação baseada em minicursos, tutorias, palestras, competições, apresentação, rodas de discussão e laboratórios e define também comissões para cuidar de grandes tarefas do evento. A programação é baseada na tendência atual da área e tende a atender os anseios do público diretamente envolvido do curso de Ciência da Computação. Os eventos são então divulgados através de redes sociais em todos os cursos da área do Maranhão, em instituições públicas e particulares, assim como em instituições que possuem cursos técnicos na área. Durante os eventos, as comissões formadas atuam para garantir que a realização do evento ocorra de forma completamente ordenada.</p>
-  <div class="materia">
-    <img src="./assets/images/eacomp.png">
-      <div class="textoMateria">
-        <h3>EAComp</h3>
-        <br>
-        <p>
-            O Encontro Acadêmico de Computação (EAComp) da UFMA é uma forma de receber novos alunos e familiarizá-los com o curso de Graduação de Ciência da Computação da UFMA apresentando as oportunidades dentro da graduação. O EAComp é organizado pelo Programa de Educação Tutorial do curso de Ciência da Computação (PETComp).
-        </p>
-        <br>
-        <button class="botao"><a href="https://pet-comp-ufma.github.io/EAComp_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+      <div class="materia">
+        <img src="./assets/images/ercemapi.png">
+          <div class="textoMateria">
+            <h3>ERCEMAPI</h3>
+              <p>
+              A primeira edição da Escola Regional de Computação dos Estados do Ceará, Maranhão e Piauí (ERCEMAPI) ocorreu em 2007 e foi sediada em Fortaleza, CE. O evento busca promover a integração entre os três estados e tem como objetivo disseminar o conhecimento técnico e científico sobre temas e assuntos de vanguarda na área de Computação. As Escolas Regionais são eventos promovidos pela Sociedade Brasileira de Computação (SBC). A ERCEMAPI visa se consolidar como um evento de referência nos Estados do Maranhão, Ceará e Piauí e região. Além disso, o evento colabora e contribui com a consolidação dos Programas de Pós-Graduação da região.
+              </p>
+            <button class="botao"><a href="https://pet-comp-ufma.github.io/ERCEMAPI_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+          </div>
+      </div>
+      <div class="materia">
+        <img src="./assets/images/eJim.png">
+          <div class="textoMateria">
+            <h3>JIM</h3>
+            <p>
+              A Jornada Informática do Maranhão (JIM) é um evento de caráter acadêmico e técnico-científico com o objetivo de propiciar um espaço de intercâmbio entre os diversos atores dos setores de Informática da região, apresentando e discutindo temas que abordam a aplicação da Computação para a solução de problemas do Estado do Maranhão, bem como as pesquisas em Informática realizadas nas instituições do estado, disponibilizando aos participantes a possibilidade de acesso a temas e discussões recentes na área, através de diversas atividades, como palestras, minicursos, painéis de discussão e apresentação de trabalhos científicos.</p>
+            <button class="botao"><a href="https://pet-comp-ufma.github.io/jim_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+          </div>
+          </div>
       </div>
   </div>
-
-
-    <br>
-
-    <div class="materia">
-      <img src="./assets/images/ercemapi.png">
-        <div class="textoMateria">
-          <h3>ERCEMAPI</h3>
-          <br>
-            <p>
-            A primeira edição da Escola Regional de Computação dos Estados do Ceará, Maranhão e Piauí (ERCEMAPI) ocorreu em 2007 e foi sediada em Fortaleza, CE. O evento busca promover a integração entre os três estados e tem como objetivo disseminar o conhecimento técnico e científico sobre temas e assuntos de vanguarda na área de Computação. As Escolas Regionais são eventos promovidos pela Sociedade Brasileira de Computação (SBC). A ERCEMAPI visa se consolidar como um evento de referência nos Estados do Maranhão, Ceará e Piauí e região. Além disso, o evento colabora e contribui com a consolidação dos Programas de Pós-Graduação da região.
-            </p>
-          <br>  
-          <button class="botao"><a href="https://pet-comp-ufma.github.io/ERCEMAPI_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
-          
-        </div>
-    </div>
-      <br>
-    <div class="materia">
-      <img src="./assets/images/eJim.png">
-        <div class="textoMateria">
-          <h3>JIM</h3>
-          <br>
-          <p>
-            A Jornada Informática do Maranhão (JIM) é um evento de caráter acadêmico e técnico-científico com o objetivo de propiciar um espaço de intercâmbio entre os diversos atores dos setores de Informática da região, apresentando e discutindo temas que abordam a aplicação da Computação para a solução de problemas do Estado do Maranhão, bem como as pesquisas em Informática realizadas nas instituições do estado, disponibilizando aos participantes a possibilidade de acesso a temas e discussões recentes na área, através de diversas atividades, como palestras, minicursos, painéis de discussão e apresentação de trabalhos científicos.</p>
-          <br>  
-          <button class="botao"><a href="https://pet-comp-ufma.github.io/jim_site/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
-        </div>
-        </div>
-    </div>
-
-
-    <br>
-
-    
-</div>
-
-
-
 
 <footer>
   <div class="container">

@@ -38,7 +38,7 @@
             <div class="dropdown">
               <button onclick="DropdownSobre()" class="dropbtn">
                 Conheça o PETComp
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
@@ -52,7 +52,7 @@
             <div class="dropdown">
               <button onclick="DropdownProjetos()" class="dropbtn">
                 Projetos
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
@@ -71,15 +71,19 @@
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="DropdownProdutos()" class="dropbtn">
+              <div class="text-button">
+                <button onclick="DropdownProdutos()" class="dropbtn">
                 Produtos
-                <span class="material-icons">
+                <span class="material-icons dropbtn">
                   arrow_drop_down
                 </span>
               </button>
+              </div>
+              
               <div id="dropdown-produtos" class="dropdown-content-produtos">
                 <a href="./eventos.html">Eventos</a>
                 <a href="./produtos-podcomp.html">PodCast</a>
+                <!-- <a href="./biblioteca-petcomp-monitoria.html">Biblioteca PETComp</a> -->
               </div>
             </div>
           </li>
@@ -532,7 +536,6 @@
     <h2>Ex-Integrantes</h2>
   </div>
 
-
   <div class="integrantes ex">
     <div class="tutores">
       <!-- Card -->
@@ -554,7 +557,6 @@
             </div>
           <a href="#fechar" title="fechar" class="fechar"><button>Fechar</button></a>
           </div>
-          
         </div>
 
         <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
