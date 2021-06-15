@@ -55,18 +55,36 @@ section.container {
 .conteudos {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 80px;
   padding: 40px;
 }
 
-.conteudos .aula {
-  cursor: pointer;
+.conteudos a {
   display: flex;
-  flex-direction: row;
+  color: #000;
   transition: .4s;
 }
 
-.conteudos .aula:hover {
+.conteudos .aula {
+  display: flex;
+  flex-direction: row;
+}
+
+.conteudos .aula div {
+  position: relative;
+}
+
+.conteudos .aula .links {
+  font-size: 14px;
+}
+
+.conteudos .aula .links a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.conteudos a:hover {
   transform: scale(1.01);
 }
 
@@ -74,23 +92,31 @@ section.container {
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  height: 140px;
   padding: 10px;
   width: 140px;
 }
 
 .conteudos .card img {
-  width: 100px;
+  width: 120px;
 }
 
-.conteudos .details {
-  top: 35px;
+.conteudos .aula .details {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  padding: 8px;
+  padding: 0px 8px 8px 8px;
+}
+
+.conteudos .details h1 {
+  font-size: 24px;
 }
 
 .conteudos .details p {
   color: #868686;
+  margin: 0;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .python {
