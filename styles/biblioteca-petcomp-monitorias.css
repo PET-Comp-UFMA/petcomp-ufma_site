@@ -4,7 +4,16 @@
   justify-content: center;
   padding: 20px;
 }
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer.fixar-rodape{
+  background: #343564;
+  width: 100%;
+  margin-top: auto;
+}
 .monitorias button {
   background: none;
   border: none;
@@ -137,6 +146,8 @@ section.container {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+
 
 @-webkit-keyframes fade {
   from {opacity: .4}
