@@ -356,10 +356,6 @@ footer .contato a {
     flex-direction: column;
     justify-content: center;
   }
-
-  ul li {
-    padding: 10px;
-  }
   
   .overlay {
     background-color: #343564;
@@ -384,7 +380,7 @@ footer .contato a {
     display: flex;
 
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
 
     transition: .2s;

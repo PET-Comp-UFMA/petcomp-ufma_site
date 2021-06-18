@@ -91,6 +91,7 @@ section.container {
   align-items: center;
   display: flex;
   text-decoration: none;
+  width: 150px;
 }
 
 .conteudos a:hover {
