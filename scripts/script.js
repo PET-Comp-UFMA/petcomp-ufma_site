@@ -70,7 +70,7 @@ function plusSlides() {
   clearTime();
 }
 
-function showSlides(n) {
+function showSlides() {
   var i;
   var slides = document.getElementsByClassName("slider-item");
   for (i = 0; i < slides.length; i++) {
