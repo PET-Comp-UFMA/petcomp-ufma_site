@@ -1,0 +1,527 @@
+<div class="aula">
+          <div class="card python">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Condicionais</h1>
+              <p>Aula sobre comandos condicionais.</p>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/188w35I5enli5cWEjdRCjRB-hHmwkS775/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/1RkVmpyGfBpnmeQkzeFBD35tqx8W26Yw8?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="https://drive.google.com/file/d/18dBZoGKuX-bHuVeoafT2vZqBDXEH3PCu/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card python">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Laços de Repetição</h1>
+              <p>Aula sobre laços de repetição.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1YkO0J8o6YvBUt4XxvO5c0AmaT_vEtyhR/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/1-ETHkCRVtupDHUpksOfcIBEjJfkPw3YM?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="https://drive.google.com/file/d/16H_z-8dXmwnAfXjX0CL7UHnP8Fw8elvc/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card python">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Listas</h1>
+              <p>Aula sobre listas.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1XEv5NRV2ki-xYV4p9srsYYGOz8dyj0mc/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!--<a href="" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>-->
+                <a href="https://drive.google.com/file/d/1lrzkxWzgy5Yh8M6bq7qqAp41s-C69LqD/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card python">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Matrizes</h1>
+              <p>Aula sobre matrizes.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1AyVLJcCvjkjyryR89aDZTSO06Il4wQV5/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/1RXrAIkV8TQ3XmcIXYUMVDvYsUc_jfZbu?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <!-- <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card python">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Funções</h1>
+              <p>Aula sobre funções.</p><br>
+              <div class="links">
+                <!--<a href="https://drive.google.com/drive/folders/1fqC3i9UUY4kKwVvxyyi7zvnnDuKmeJP1?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>-->
+                <a href="https://drive.google.com/drive/folders/1fqC3i9UUY4kKwVvxyyi7zvnnDuKmeJP1?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="https://drive.google.com/file/d/1xleppTD4YCMvsJe0D7DzzOFRCk3hLqe1/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card python">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Revisão Geral</h1>
+              <p>Aula de revisão geral.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1fc9YbD9Ah0tkQDeyF_3kYHX08FAu9mNF/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!-- <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="conteudos fade" style="display: grid;">
+        <div class="aula">
+            <div class="card calc">
+              <img src="./assets/images/function.png" alt="">
+            </div>
+            <div>
+              <div class="details">
+                <h1>Limites Definição</h1>
+                <p>Aula sobre a definição de limites.</p><br>
+                <div class="links">
+                  <a href="https://drive.google.com/file/d/1ap92Q_uH6mTN4Hg-QEfhJjdpd74lR0OB/view?usp=sharing" target="_blank"> 
+                    <img src="./assets/svg/play_circle.svg" alt="">
+                    Vídeo Aula
+                  </a>
+                  <a href=https://drive.google.com/drive/folders/1QiXjFEqNhJ1iI34_O1ywSZwHrjxrCzea?usp=sharing" target="_blank"> 
+                    <img src="./assets/svg/description.svg" alt="">
+                    Banco de Questões
+                  </a>
+                  <!--<a href="#" target="_blank"> 
+                    <img src="./assets/svg/question_answer.svg" alt="">
+                    Resumos
+                  </a>-->
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="aula">
+          <div class="card calc">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Resolução de Prova</h1>
+              <p>Resolução de prova uma antiga de LPI.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1_ul4KNBxHz0pSt26COtNT_pVi2TrqmIh/view?usp=sharing " target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!-- <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a> -->
+                <!-- <a href="https://drive.google.com/drive/u/1/folders/1biJ2q6jxpxN2XMsHuHmcgSILPluhhIJt" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card calc">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Correção de Prova</h1>
+              <p>Correção da prova de Cálculo de 2020.2.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1K_C7UTsrc5u-EPDukpLdJPydynY8SWXT/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!-- <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a> -->
+                <!-- <a href="https://drive.google.com/drive/u/1/folders/1biJ2q6jxpxN2XMsHuHmcgSILPluhhIJt" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card calc">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Máximos e Mínimos</h1>
+            <p>Aula sobre máximos e mínimos.</p>
+            <div class="links">
+              <a href="https://drive.google.com/file/d/1gCs3E4Lfa3Ofm9ShFf1bLRvSiuwqx132/view?usp=sharing" target="_blank"> 
+                <img src="./assets/svg/play_circle.svg" alt="">
+                Vídeo Aula
+              </a>
+              <a href="https://drive.google.com/drive/folders/1TaGrlNFPL7LMZrHlxZtnmLnrpVI8kRCC?usp=sharing" target="_blank"> 
+                <img src="./assets/svg/description.svg" alt="">
+                Banco de Questões
+              </a>
+              <!--<a href="https://drive.google.com/drive/u/1/folders/1biJ2q6jxpxN2XMsHuHmcgSILPluhhIJt" target="_blank"> 
+                <img src="./assets/svg/question_answer.svg" alt="">
+                Resumos
+              </a>-->
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card calc">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Integral</h1>
+            <p>Aula sobre integral.</p><br>
+            <div class="links">
+              <a href="https://drive.google.com/file/d/1J4gN48cEsRmSngfjwRazGUA36curI0HX/view?usp=sharing" target="_blank"> 
+                <img src="./assets/svg/play_circle.svg" alt="">
+                Vídeo Aula
+              </a>
+              <a href="https://drive.google.com/drive/folders/1TaGrlNFPL7LMZrHlxZtnmLnrpVI8kRCC?usp=sharing" target="_blank"> 
+                <img src="./assets/svg/description.svg" alt="">
+                Banco de Questões
+              </a>
+              <!--<a href="https://drive.google.com/drive/u/1/folders/1biJ2q6jxpxN2XMsHuHmcgSILPluhhIJt" target="_blank"> 
+                <img src="./assets/svg/question_answer.svg" alt="">
+                Resumos
+              </a>-->
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card calc">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div class="details">
+            <h1>Resolução de Prova</h1>
+            <p>Resolução de prova uma antiga de LPI.</p><br>
+            <div class="links">
+              <a href="https://drive.google.com/file/d/1pfCy0x3zt0zwpvL8RKbxrlygNAbOLc9C/view?usp=sharing" target="_blank"> 
+                <img src="./assets/svg/play_circle.svg" alt="">
+                Vídeo Aula
+              </a>
+              <!-- <a href="/" target="_blank"> 
+                <img src="./assets/svg/description.svg" alt="">
+                Banco de Questões
+              </a> -->
+              <!-- <a href="https://drive.google.com/drive/u/1/folders/1biJ2q6jxpxN2XMsHuHmcgSILPluhhIJt" target="_blank"> 
+                <img src="./assets/svg/question_answer.svg" alt="">
+                Resumos
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="conteudos fade">
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Vetores e Matrizes</h1>
+              <p>Aula sobre Vetores e Matrizes em C.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1PEU6AeZuQ4aMIsJSqGYEsz582_VU77G0/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/17dTz98F361uO64dTOcLuJ6CJbmHKcLeK?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <!--<a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Vetores e Matrizes</h1>
+              <p>Aula de Vetores e Matrizes em C (Cont.).</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1TTeEXfKCXRybVgwZGkkcvrBop3Pa2jaT/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/17dTz98F361uO64dTOcLuJ6CJbmHKcLeK?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <!--<a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Resolução de Exercícios</h1>
+              <p>Resolução de Exercícicos de Vetores e Matrizes.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1WId5icX4toBu9TuFKHtVm-btisvCDX7N/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!--<a href="https://drive.google.com/drive/folders/17dTz98F361uO64dTOcLuJ6CJbmHKcLeK?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/online-education.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Ponteiros</h1>
+              <p>Aula sobre Ponteiros em C.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1LAA31qb4meAENcE5-e7-zk9GV0OiOagC/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="https://drive.google.com/drive/folders/1oUB-xmb7ZETdohpQHoVIOwbqs3UUhG91?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <!--<a href="" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/maths.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Conversor para binário</h1>
+              <p>Algoritmo para conversão de decimal para binário.</p><br>
+              <div class="links">
+                <a href="https://drive.google.com/file/d/1Q-4HJmgGSDQfoe_Egb-dOZPZ-F2KliFa/view?usp=sharing" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <!--<a href="" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/maths.png" alt="">
+          </div> -->
+          <!-- <div>
+            <div class="details">
+              <h1>Lorem</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="links">
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div> -->
+        <!-- </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Lorem</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="links">
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Lorem</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="links">
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aula">
+          <div class="card lp1">
+            <img src="./assets/images/function.png" alt="">
+          </div>
+          <div>
+            <div class="details">
+              <h1>Lorem</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="links">
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/play_circle.svg" alt="">
+                  Vídeo Aula
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/description.svg" alt="">
+                  Banco de Questões
+                </a>
+                <a href="/" target="_blank"> 
+                  <img src="./assets/svg/question_answer.svg" alt="">
+                  Resumos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
