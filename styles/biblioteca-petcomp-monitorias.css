@@ -54,79 +54,40 @@ footer.fixar-rodape{
   text-align: center;
 }
 
-section.container {
+section .container {
   background: #fafafa;
   margin: auto;
   position: relative;
   width: 100%;
 }
 
-.conteudos {
-  display: none;
+section .conteudos-python,
+section .conteudos-calc1,
+section .conteudos-lp1 {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  padding: 40px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
 }
 
-.conteudos a {
-  display: flex;
-  color: #000;
-  transition: .4s;
+section .details {
+  background: #e7e7e7;
+  border-radius: 10px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
 }
 
-.conteudos .aula {
-  display: flex;
-  flex-direction: row;
-}
-
-.conteudos .aula div {
-  position: relative;
-}
-
-.conteudos .aula .links {
-  font-size: 14px;
-}
-
-.conteudos .aula .links a {
+section .details .links a {
   align-items: center;
   display: flex;
-  text-decoration: none;
-  width: 150px;
+  padding: 2px;
 }
 
-.conteudos a:hover {
-  transform: scale(1.01);
-}
-
-.conteudos .card {
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  height: 140px;
-  padding: 10px;
-  width: 140px;
-}
-
-.conteudos .card img {
-  width: 120px;
-}
-
-.conteudos .aula .details {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0px 8px 8px 8px;
-}
-
-.conteudos .details h1 {
-  font-size: 24px;
-}
-
-.conteudos .details p {
-  color: #868686;
-  margin: 0;
-  font-weight: 300;
-  font-size: 16px;
+section .details .links img {
+  margin-right: 5px;
 }
 
 .python {
@@ -195,7 +156,7 @@ section.container {
     padding: 6px;
   }
 
-  .container .conteudos {
+  .container .conteudos, .container .conteudos-python {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4px;
     padding: 10px 0;
