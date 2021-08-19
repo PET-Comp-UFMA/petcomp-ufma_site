@@ -95,20 +95,25 @@
         <h2>contato</h2>
       </div>
 
-      <div class="mensagem">
-        <div class="nome">
-          <input type="name" name="nome" id="" placeholder="Nome:*" class="nome">
+      <form action="./contato.php" method="post">
+        <div class="mensagem">
+          <div class="nome">
+            <input type="text" name="nome" required="required" id="nome" placeholder="Nome:*" class="nome">
+          </div>
+          <div class="assunto">
+            <input type="text" name="assunto" id="assunto" equired="required" placeholder="Assunto:" class="assunto">
+          </div>
+          <div class="telefone-email">
+            <input type="email" name="email" required="required" id="nome" placeholder="Email:*" class="email">	
+            <input type="tel"   name="phone" id="phone" placeholder="Telefone: " class="telefone">
+          </div>
+          <div class="texto-mensagem">
+            <textarea name="mensagem" id="" placeholder="Mensagem: " class="textarea"></textarea>
+          </div>
         </div>
-        <div class="telefone-email">
-          <input type="email" name="email" id="" placeholder="Email:*" class="email">
-          <input type="phone" name="telefone" id="" placeholder="Telefone:*" class="telefone">
-        </div>
-        <div class="texto-mensagem">
-          <input type="text" name="mensagem" id="" placeholder="Mensagem" class="input-mensagem">
-        </div>
-      </div>
-    </section>
-    <button type="submit">Enviar</button>
+      </section>
+      <button type="submit">Enviar </button>
+      </form>
   </main>
 
   <footer>

@@ -251,6 +251,7 @@ footer .infos a, footer .infos p {
   margin-left: 20px;
 }
 
+
 footer .infos .btn-contato {
   align-items: center;
   background: #6FA9FF;
@@ -315,10 +316,13 @@ footer .contato img {
   width: 25px;
 }
 
-footer .contato a {
+footer .contatos a {
   color: #fff;
   text-decoration: none;
 }
+
+
+
 
 
 @media (max-width: 800px) {
