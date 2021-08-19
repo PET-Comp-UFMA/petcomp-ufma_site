@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/contato.css">
+
 </head>
 <body>
   <header>
@@ -139,10 +140,18 @@
         <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="https://twitter.com/petcompufma" target="_blank">@PetCompUfma</a></li>
       </ul>
     </div>
-    <div class="contato">
-      <img src="./assets/svg/comment icon.svg" alt=""><a href="./contato.html">Fale Conosco</a>
+    <div class="contatos">
+      <a class="contato" href="./contato.php">
+        <img src="./assets/svg/comment icon.svg" alt="Ícone comentário" loading="lazy">Fale Conosco
+      </a>
     </div>
   </footer>
   <script src="./scripts/script.js"></script>
+  <script src="./scripts/dropdown.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <script type="text/javascript">
+    $("#phone").mask("(00) 0000-00009");
+  </script>
 </body>
 </html>
