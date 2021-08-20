@@ -8,6 +8,11 @@
     font-size: 15px;
 }
 
+.resultados{
+  text-align: center;
+  padding-bottom: 16vh;
+} 
+
 .materia{
     display:flex;
     flex-direction: row;
@@ -52,6 +57,8 @@
 .botao a:visited {
     color: white;
 }
+
+
 
 @media (max-width:800px) {
   .noticias {
