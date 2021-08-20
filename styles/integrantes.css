@@ -21,14 +21,20 @@
 .integrantes{
     display: flex;
     flex-direction:column;
-    align-items: flex-start;
+    align-items:center;
     justify-content: center;
     margin: 30px 10% 30px 10%;
 }
 
 .integrantes .tutores{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.integrantes .discentes{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -44,11 +50,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
     
-}
-.integrantes .discentes{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
