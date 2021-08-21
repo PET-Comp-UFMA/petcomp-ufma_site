@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
 }
@@ -8,6 +8,15 @@
 p {
   padding: 0;
   margin: 0 0 20px 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #343564;
 }
 
 /* HEADER */
@@ -33,7 +42,8 @@ header .logos {
   width: 250px;
 }
 
-header .logos img, header .logos a .pet-logo {
+header .logos img,
+header .logos a .pet-logo {
   height: 75px;
   width: 75px;
 }
@@ -51,7 +61,8 @@ header nav {
   margin-right: 100px;
 }
 
-header .open-btn, header .close-btn {
+header .open-btn,
+header .close-btn {
   display: none;
 }
 
@@ -70,7 +81,6 @@ header nav button {
   font-size: 18px;
   padding: 8px;
 }
-
 
 header nav button:hover {
   background: #e1e1e1;
@@ -171,7 +181,7 @@ header .dropdown .show-dropdown-produto {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -245,7 +255,8 @@ footer .infos img {
   width: 25px;
 }
 
-footer .infos a, footer .infos p {
+footer .infos a,
+footer .infos p {
   color: #fff;
   margin: 0;
   margin-left: 20px;
@@ -253,7 +264,7 @@ footer .infos a, footer .infos p {
 
 footer .infos .btn-contato {
   align-items: center;
-  background: #6FA9FF;
+  background: #6fa9ff;
   border-radius: 6px;
 }
 
@@ -286,7 +297,8 @@ footer .sociais img {
   width: 25px;
 }
 
-footer .sociais a, footer .sociais p {
+footer .sociais a,
+footer .sociais p {
   color: #fff;
   margin-left: 20px;
 }
@@ -294,7 +306,7 @@ footer .sociais a, footer .sociais p {
 footer .sociais .btn-contato {
   align-items: center;
   display: flex;
-  background: #6FA9FF;
+  background: #6fa9ff;
   border-radius: 6px;
 }
 
@@ -303,7 +315,7 @@ footer .infos a {
 }
 
 footer .contato {
-  background: #6FA9FF;
+  background: #6fa9ff;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
@@ -320,9 +332,7 @@ footer .contato a {
   text-decoration: none;
 }
 
-
 @media (max-width: 800px) {
-
   header {
     height: auto;
   }
@@ -337,16 +347,19 @@ footer .contato a {
     margin: 0;
   }
 
-  header .logos .ufma-logo, header .divider {
+  header .logos .ufma-logo,
+  header .divider {
     display: none;
   }
 
-  header .logos img, header .logos a .pet-logo {
+  header .logos img,
+  header .logos a .pet-logo {
     height: 50px;
     width: 50px;
   }
 
-  header .open-btn, header .close-btn {
+  header .open-btn,
+  header .close-btn {
     display: block;
   }
 
@@ -356,7 +369,7 @@ footer .contato a {
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .overlay {
     background-color: #343564;
     background-color: #343564f8;
@@ -366,7 +379,7 @@ footer .contato a {
     left: 0;
     z-index: 1;
 
-    transition: .4s;
+    transition: 0.4s;
     height: 0%;
     width: 100%;
   }
@@ -376,14 +389,15 @@ footer .contato a {
     text-align: center;
   }
 
-  .overlay a, .overlay button {
+  .overlay a,
+  .overlay button {
     display: flex;
 
     color: #fff;
     font-size: 20px;
     text-decoration: none;
 
-    transition: .2s;
+    transition: 0.2s;
   }
 
   .overlay .close-btn {
@@ -407,14 +421,16 @@ footer .contato a {
     width: 30px;
   }
 
-  header nav ul li .dropdown .dropdown-content-sobre a, header nav ul li .dropdown .dropdown-content-projetos a, nav ul li .dropdown .dropdown-content-produtos a {
+  header nav ul li .dropdown .dropdown-content-sobre a,
+  header nav ul li .dropdown .dropdown-content-projetos a,
+  nav ul li .dropdown .dropdown-content-produtos a {
     color: #000;
   }
 
   header nav .overlay-content ul li .dropdown .dropbtn span {
     margin-left: -5px;
   }
-  
+
   .dropbtn {
     display: flex;
     margin-left: 12px;

@@ -102,6 +102,24 @@ const data = [
   }
 ]
 
+function renderResumo(urlResumo) {
+  return (urlResumo) ? `
+    <a href="${urlResumo}" target="_blank">
+      <img src="../assets/svg/comment.svg">
+      Resumo
+    </a>
+  ` : ""
+}
+
+function renderQuest(urlQuest) {
+  return (urlQuest) ? `
+    <a href="${urlQuest}" target="_blank">
+      <img src="../assets/svg/question_answer.svg">
+      Questionário
+    </a>
+  ` : ""
+}
+
 const filtrarAlg1 = data.filter((item) => {
   return item.monitoria === 'Alg1'
 })
@@ -116,6 +134,8 @@ const mostrarAlg1 = filtrarAlg1.map((item) => {
             <img src="./assets/svg/play_circle.svg">
             Vídeo Aula
           </a>
+          ${renderResumo(item.urlResumo)}
+          ${renderQuest(item.urlQuest)}
         </div>
       </div>
     </div>
@@ -136,6 +156,7 @@ const mostrarLP1 = filtrarLP1.map((item) => {
             <img src="./assets/svg/play_circle.svg">
             Vídeo Aula
           </a>
+          ${renderResumo(item.urlResumo)}
         </div>
       </div>
     </div>
@@ -156,6 +177,7 @@ const mostrarC1 = filtrarC1.map((item) => {
             <img src="./assets/svg/play_circle.svg">
             Vídeo Aula
           </a>
+          ${renderResumo(item.urlResumo)}
         </div>
       </div>
     </div>

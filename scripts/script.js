@@ -83,18 +83,18 @@ function showSlides() {
 }
 
 var conteudoIndex = 2;
-showConteudos(conteudoIndex);
+mostrarMonitorias(conteudoIndex);
 
 function currentConteudo(n) {
-  showConteudos(conteudoIndex = n);
+  mostrarMonitorias(conteudoIndex = n);
 }
 
-function showConteudos(n) {
+function mostrarMonitorias(n) {
   var i;
-  var conteudos = document.getElementsByClassName("conteudos");
-  var buttons = document.getElementsByClassName("btn-monitoria");
+  var conteudos = document.querySelectorAll('#conteudos')
+  var buttons = document.querySelectorAll('.btn-monitoria')
 
-  if (n > conteudos.lenght) {
+    if (n > conteudos.lenght) {
     conteudoIndex = 1;
   }
 
