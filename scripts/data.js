@@ -35,19 +35,32 @@ const data = [
     urlQuest: 'https://drive.google.com/file/d/1Q0ymLwxbGgeTO-ugRZxUimnPw38UROlG/view?usp=sharing',
     nome: 'Filas'
   },
+{
+    monitoria: 'Alg1',
+    urlVideo: 'https://drive.google.com/file/d/1XDq8xnUMaUCn6lCIwes3kRPrOIoCyCFX/view?usp=sharing',
+    nome: 'Revisão e Continuação de Filas'
+  },
+{
+    monitoria: 'Alg1',
+    urlVideo: 'https://drive.google.com/file/d/1nK1633fpm-S98CfECYirSUZJW5zDrFgO/view?usp=sharing',
+    nome: 'Finalização e Exercícios sobre Filas'
+  },
   {
     monitoria: 'LP1',
     urlVideo: 'https://drive.google.com/file/d/1suYwNR3O2M60S-qgjCyrFLLrVY0iUCo5/view?usp=sharing',
+    urlQuest: 'https://docs.google.com/document/d/1bNHIwijk0IHKE7m6Lhm3CKx9CPfoItK3kyPgTfvc8RM/edit?usp=sharing',
     nome: 'Sintaxe e Condição'
   },
   {
     monitoria: 'LP1',
     urlVideo: 'https://drive.google.com/file/d/1eyHD1SA2lvzmU5UI9zhLnlto2_LfIGBh/view?usp=sharing',
+    urlQuest: 'https://docs.google.com/document/d/1DoR7boqpSuQzUI3ZL26QlmKx6wwniHj3nylbEl1pUJM/edit?usp=sharing',
     nome: 'Comandos de Repetição'
   },
   {
     monitoria: 'LP1',
     urlVideo: 'https://drive.google.com/file/d/12FggmBSzXT1JirYFJ9JQJ2oOzDcdB8HN/view?usp=sharing',
+    urlQuest: 'https://docs.google.com/document/d/19cf4bnJPwyyaCLrV41LwmH8xBMOD7NjjD_q7Gx8Ybyg/edit?usp=sharing',
     nome: 'Macros, Funções e Recursividade'
   },
   {
@@ -63,7 +76,19 @@ const data = [
   {
     monitoria: 'LP1',
     urlVideo: 'https://drive.google.com/file/d/1a3lHhbn3KOsFK8kHeoHTImzrmayombGK/view?usp=sharing',
-    nome: 'Revisão da Prova'
+    nome: 'Resolução da Prova'
+  },
+{
+    monitoria: 'LP1',
+    urlVideo: 'https://drive.google.com/file/d/1h-kp6hnjY81ChbthaLmTNI9zlFQwz-7Z/view?usp=sharing',
+    urlQuest: 'https://docs.google.com/document/d/1YzNtnurQIz5CTuoBmkBnQQYWE3Kb3wOhwB9sGmO-r3E/edit?usp=sharing',
+    nome: 'Ponteiros'
+  },
+{
+    monitoria: 'LP1',
+    urlVideo: 'https://drive.google.com/file/d/1eftlbPjkHOmiPjuoIeNr1yTPjbYqfhd1/view?usp=sharing',
+    urlQuest: 'https://docs.google.com/document/d/1mRICdSokLf6VyzbLz45c-PgsEhO6jfzwR4Hb1DtXCDA/edit?usp=sharing',
+    nome: 'Execícios sobre Ponteiros e Alocação Dinâmica'
   },
   {
     monitoria: 'C1',
@@ -73,7 +98,8 @@ const data = [
   {
     monitoria: 'C1',
     urlVideo: 'https://drive.google.com/file/d/1TWVH-70w3xz3rXFF-0FHL56tNWqOmStM/view?usp=sharing',
-    nome: 'Pré-Cálculo e Início de Limite'
+    urlResumo: 'https://drive.google.com/file/d/1qnQ-ushbpv6hh7bF5M9g-rlNsnjvoWWS/view?usp=sharing',
+    nome: 'Pré-Cálculo e Início de Limite',
   },
   {
     monitoria: 'C1',
@@ -93,6 +119,7 @@ const data = [
   {
     monitoria: 'C1',
     urlVideo: 'https://drive.google.com/file/d/18wVp9O7nZ2sCrUzi8aVSoMzZk_eH6zUs/view?usp=sharing',
+    urlResumo: 'https://drive.google.com/file/d/1sH1KN_JhlhFTywJPhCQ6sOSzw1tOAE-5/view?usp=sharing',
     nome: 'Derivada e Regra da Cadeia'
   },
   {
@@ -157,6 +184,7 @@ const mostrarLP1 = filtrarLP1.map((item) => {
             Vídeo Aula
           </a>
           ${renderResumo(item.urlResumo)}
+          ${renderQuest(item.urlQuest)}
         </div>
       </div>
     </div>
@@ -178,6 +206,7 @@ const mostrarC1 = filtrarC1.map((item) => {
             Vídeo Aula
           </a>
           ${renderResumo(item.urlResumo)}
+          ${renderQuest(item.urlQuest)}
         </div>
       </div>
     </div>
