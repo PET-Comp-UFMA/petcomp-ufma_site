@@ -16,7 +16,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #343564;
+  background-color: #949494;
 }
 
 /* HEADER */
@@ -286,8 +286,6 @@ footer .sociais li {
 footer .sociais li a {
   align-items: center;
   display: flex;
-  justify-content: center;
-  margin-left: -20px;
   padding: 12px;
   text-decoration: none;
   width: 300px;

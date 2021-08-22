@@ -132,7 +132,7 @@ const data = [
 function renderResumo(urlResumo) {
   return (urlResumo) ? `
     <a href="${urlResumo}" target="_blank">
-      <img src="../assets/svg/comment.svg">
+      <img src="./assets/svg/comment.svg">
       Resumo
     </a>
   ` : ""
@@ -141,7 +141,7 @@ function renderResumo(urlResumo) {
 function renderQuest(urlQuest) {
   return (urlQuest) ? `
     <a href="${urlQuest}" target="_blank">
-      <img src="../assets/svg/question_answer.svg">
+      <img src="./assets/svg/question_answer.svg">
       Questionário
     </a>
   ` : ""

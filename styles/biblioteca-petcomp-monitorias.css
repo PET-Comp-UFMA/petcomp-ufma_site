@@ -177,29 +177,20 @@ section .details .links img {
   }
 
   .container {
-    padding: 6px;
+    display: flex;
+    margin: 0 auto;
   }
 
-  .container .conteudos,
-  .container .conteudos-python {
-    grid-template-columns: 1fr 1fr;
+  .container #conteudos {
+    grid-template-columns: 1fr;
     grid-gap: 4px;
     padding: 10px 0;
   }
 
-  .aula .card {
-    height: 75px;
-    width: 75px;
-  }
-
-  .aula .card img {
-    width: 50px;
-  }
-
-  .aula .details {
+  section .details {
     font-size: 14px;
-    padding: 0 6px;
     top: 0;
+    width: 100%;
   }
 
   .aula .details p {
