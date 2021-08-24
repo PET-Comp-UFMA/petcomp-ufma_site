@@ -151,6 +151,118 @@
   grid-row-end: 4;
 }
 
+/*Item 1*/
+.gallery__item--1 {
+  background-image: url('../assets/images/photo-5-med.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width:425px){
+  .gallery__item--1{
+    background-image: url('../assets/images/photo-5-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+  .gallery__item--1{
+    background-image: url('../assets/images/photo-5-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/*Item 2*/
+
+.gallery__item--2{
+  background-image: url('../assets/images/photo-8-med.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width:425px){
+  .gallery__item--2{
+    background-image: url('../assets/images/photo-8-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .gallery__item--2{
+    background-image: url('../assets/images/photo-8-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/*Item 3*/
+
+.gallery__item--3{
+  background-image: url('../assets/images/photo-2-med.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width:425px){
+  .gallery__item--3{
+    background-image: url('../assets/images/photo-2-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .gallery__item--3{
+    background-image: url('../assets/images/photo-2-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+/*Item 4*/
+
+.gallery__item--4{
+  background-image: url('../assets/images/photo-1-med.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media only screen and (max-width:425px){
+  .gallery__item--4{
+    background-image: url('../assets/images/photo-1-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .gallery__item--4{
+    background-image: url('../assets/images/photo-1-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+
 .text-petcomp {
   margin-right: 200px;
 }
