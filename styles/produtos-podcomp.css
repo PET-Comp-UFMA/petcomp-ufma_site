@@ -13,7 +13,7 @@
 .episodio .texto {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: auto;
   padding: 20px;
   width: 85%;
 }
@@ -45,11 +45,7 @@
 }
 
 @media (max-width: 800px) {
-  .episodio-dois {
-    flex-direction: column;
-  }
-
-  .episodio-dois img {
+  .episodio .texto {
     width: 100%;
   }
 }
