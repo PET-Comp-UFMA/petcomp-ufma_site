@@ -85,10 +85,6 @@ section .details {
   width: 350px;
 }
 
-section .details img {
-  width: 100px;
-}
-
 section .details h1 {
   margin-bottom: 10px;
 }

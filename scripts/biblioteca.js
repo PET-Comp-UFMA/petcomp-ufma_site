@@ -197,7 +197,6 @@ const filtrarC1 = data.filter((item) => {
   
 const mostrarC1 = filtrarC1.map((item) => {
   return `
-    <div>
       <div class="details">
         <h1>${item.nome}</h1>
         <div class="links">
@@ -209,7 +208,6 @@ const mostrarC1 = filtrarC1.map((item) => {
           ${renderQuest(item.urlQuest)}
         </div>
       </div>
-    </div>
   `
 })
 
