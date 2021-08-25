@@ -1,14 +1,19 @@
-
-.text{
+.text {
   text-align: justify;
-  margin-left:10%;
+  margin-left: 10%;
   margin-right: 10%;
   color: #888888;
 }
+
+.episodios {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .episodio .texto {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: auto;
   padding: 20px;
   width: 85%;
 }
@@ -18,46 +23,29 @@
   border-radius: 0 0 8px 8px;
   color: #fff;
   font-size: 16px;
-  margin: 20px 0;
+  font-weight: 400;
+  margin: 10px 0;
   margin-top: -10px;
-  padding: 12px;
-  width: 99.98%;
+  padding: 10px;
+  padding-top: 20px;
+  width: 100%;
 }
 
-.episodio-dois {
-  align-items: left;
-  background: #eeeeee70;
+.episodio .texto .description p {
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  margin: 10px auto;
-  padding: 20px;
-  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.episodio-dois .texto {
-  padding: 20px;
-}
-
-.episodio-dois .texto p {
-  margin: 30px 0;
-}
-.episodio-dois img {
-  width: 240px;
-}
-
-.episodio-dois .texto a {
-  color: #33C3FF;
-  font-size: 16px;
-  text-decoration: none;
-  width: 70px;
+.episodio .texto .description p img {
+  width: 20px;
 }
 
 @media (max-width: 800px) {
-  .episodio-dois {
-    flex-direction: column;
-  }
-
-  .episodio-dois img {
+  .episodio .texto {
     width: 100%;
   }
 }
