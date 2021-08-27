@@ -460,6 +460,11 @@ footer .contatos a {
     margin-bottom: 20px;
   }
 
+  footer .logos img {
+    height: 100px;
+    width: 100px;
+  }
+
   footer .container {
     display: flex;
     align-items: center;
@@ -482,6 +487,7 @@ footer .contatos a {
     margin: auto;
     text-align: left;
   }
+  
 
   footer .contatos a {
     margin-top: 30px;
