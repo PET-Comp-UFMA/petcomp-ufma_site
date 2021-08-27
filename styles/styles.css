@@ -202,18 +202,31 @@ header .dropdown .show-dropdown-produto {
 /* FOOTER */
 
 footer {
-  align-items: center;
   background: #343564;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
+
+footer h3 {
+  font-size: 30pt;
+  margin-top: 29px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+
+}
+
+footer .div-1 h3 {
+  margin-bottom: 40px
+}
+
 footer .container {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
-  margin: 100px 0;
+  justify-content: start;
+  flex-direction: column;
 }
 
 footer .sobre {
@@ -221,19 +234,10 @@ footer .sobre {
   flex-direction: column;
 }
 
-footer .logos {
-  margin: auto 0;
-  justify-content: center;
-}
-
 footer .logos img {
-  height: 70px;
+  height: 120px;
   margin: auto 10px;
-  width: 70px;
-}
-
-footer .infos {
-  width: 300px;
+  width: 120px;
 }
 
 footer .infos ul {
@@ -243,8 +247,6 @@ footer .infos ul {
 footer .infos li {
   display: flex;
   margin: 14px 0;
-  padding: 12px;
-  width: 370px;
 }
 
 footer .infos li p {
@@ -279,14 +281,14 @@ footer .sociais ul {
 footer .sociais li {
   align-items: center;
   display: flex;
-  padding: 12px;
   width: 370px;
+  
+  margin-top: 14px;
 }
 
 footer .sociais li a {
   align-items: center;
   display: flex;
-  padding: 12px;
   text-decoration: none;
   width: 300px;
 }
@@ -295,11 +297,13 @@ footer .sociais img {
   width: 25px;
 }
 
-footer .sociais a,
-footer .sociais p {
+footer .sociais a{
   color: #fff;
-  margin-left: 20px;
 }
+
+footer .sociais li a{
+  margin-left: 20px;
+} 
 
 footer .sociais .btn-contato {
   align-items: center;
@@ -317,17 +321,28 @@ footer .contato {
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
   padding: 12px;
-  width: 170px;
+  width: 16 0px;
 }
 
 footer .contato img {
   width: 25px;
 }
 
+footer .contatos {
+  display: flex;
+  justify-content: center;
+} 
+
 footer .contatos a {
   color: #fff;
   text-decoration: none;
+  margin-bottom: 14px;
+  display:flex;
+  justify-content: space-between;
+  width: 160px;
 }
 
 @media (max-width: 800px) {
@@ -336,7 +351,6 @@ footer .contatos a {
   }
 
   header .logos {
-    margin: 0;
     margin-left: 10px;
     width: 75px;
   }
@@ -442,12 +456,15 @@ footer .contatos a {
     width: 100%;
   }
 
-  footer .container {
-    margin: 10px 0;
-  }
-
   footer .container .logos {
     margin-bottom: 20px;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   footer .infos ul li {
@@ -464,5 +481,15 @@ footer .contatos a {
   footer .sociais ul li p {
     margin: auto;
     text-align: left;
+  }
+
+  footer .contatos a {
+    margin-top: 30px;
+  }
+
+  footer h3 {
+    font-size: 24pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
