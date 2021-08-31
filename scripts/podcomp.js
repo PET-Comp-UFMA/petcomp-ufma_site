@@ -45,19 +45,24 @@ const data = [
     urlPodCast: 'https://open.spotify.com/embed/episode/6gPbsFde3WRP2loEBhN2Q5',
     descricao: 'Ohaiooo!! Você certamente já assistiu ou já ouviu falar sobre essa mídia tão popular no mundo todo, o Anime. Vem conhecer e saber alguns animes que falam sobre Tecnologia e Ciência com a gente!',
     isBlue: true,
-    hosts: ['Carlos Silva', ' Kennedy Anderson', ' André Barreto']
+    hosts: ['Carlos Silva', ' Kennedy Anderson', ' André Filipe']
   },
   {
     urlPodCast: 'https://open.spotify.com/embed/episode/0hVJqeAXKzyAjfBC9x02Ul',
     descricao: 'Bem vindos, Calouros!! Estamos muitos felizes que vocês vão fazer parte da família ufmista. Nesse episódio você irá saber mais sobre alguns prédios do Campus Bacanga, algumas dicas, experiências e mais. Ficou curioso? Vem com a gente...',
     isBlue: true,
-    hosts: ['Carlos Silva', ' André Barreto']
+    hosts: ['Carlos Silva', ' André Filipe']
   },
   {
     urlPodCast: 'https://open.spotify.com/embed/episode/0Ovw2X9sNC8dggp9Ht7EYM',
     descricao: 'Você já imaginou baixar sua série favorita inteira com menos de 5 minutos? Ou até baixar sua playlist de músicas preferida em segundos? Saiba que esse sonho já é quase realidade. Quer saber por quê? Vem conversar um pouco com a gente.',
     isBlue: true,
-    hosts: ['Carlos Silva', ' André Barreto']
+    hosts: ['Carlos Silva', ' André Filipe']
+  },
+  {
+    urlPodCast: 'https://open.spotify.com/embed/episode/1ojUIAbpBZDtl5jDTH7zZa',
+    descricao: 'Quando se está na universidade, é imprescindível que haja um contato constante com artigos científicos, pois o conhecimento gerado por pequisadores das mais variadas áreas é compilado nesse tipo de documento. Quer aprender como ler um artigo científico? Vem discutir com a gente.',
+    hosts: ['Carlos Vinicius', ' André Filipe', ' Thalisson Jon']
   }
 ]
 
