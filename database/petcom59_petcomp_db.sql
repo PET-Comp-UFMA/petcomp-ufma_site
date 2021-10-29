@@ -1,3 +1,4 @@
+
 CREATE SCHEMA IF NOT EXISTS `petcom59_petcomp_db` DEFAULT CHARACTER SET utf8 ;
 USE `petcom59_petcomp_db` ;
 
@@ -36,8 +37,8 @@ CREATE TABLE IF NOT EXISTS `petcom59_petcomp_db`.`petianos` (
   `nome_completo` VARCHAR(60) NULL,
   `primeiro_nome` VARCHAR(15) NOT NULL,
   `ultimo_nome` VARCHAR(15) NOT NULL,
-  `ano` VARCHAR(4) NOT NULL,
-  `periodo` VARCHAR(1) NOT NULL,
+  `ano` INT NOT NULL,
+  `periodo` INT NOT NULL,
   `ativo` TINYINT NOT NULL,
   `orientador` TINYINT NOT NULL,
   `voluntario` TINYINT NOT NULL,
@@ -58,3 +59,7 @@ CREATE TABLE IF NOT EXISTS `petcom59_petcomp_db`.`sites` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
