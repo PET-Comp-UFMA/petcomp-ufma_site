@@ -1,7 +1,7 @@
 <?php
 
     $hostname="localhost";
-    $bd="petcomp59_petcomp_bd";
+    $bd="petcom59_petcomp_bd";
     $usuario="root";
     $senha="";
 
