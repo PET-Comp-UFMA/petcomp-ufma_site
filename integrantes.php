@@ -4,17 +4,45 @@
     
     mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
-    $queryOrientador = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos ORDER BY `ano` DESC, `periodo` DESC WHERE ativo=1 and orientador=1";
-    $queryIntegrantes = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos ORDER BY `ano` DESC, `periodo` DESC WHERE ativo=1 and voluntario=0";
-    $queryVoluntarios = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos ORDER BY `ano` DESC, `periodo` DESC WHERE ativo=1 and voluntario=1";
-    $queryInativos = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos ORDER BY `ano` DESC, `periodo` DESC WHERE ativo=0";
+    $queryOrientadoresAtivos = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos WHERE ativo = 1 AND orientador = 1 ORDER BY `ano` DESC, `periodo` DESC";
+    $queryOrientadoresInativos = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos WHERE ativo = 0 AND orientador = 1 ORDER BY `ano` DESC, `periodo` DESC";
+    $queryIntegrantes = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos WHERE ativo = 1 AND voluntario = 0 AND orientador = 0 ORDER BY `ano` DESC, `periodo` DESC";
+    $queryVoluntarios = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos WHERE ativo = 1 AND voluntario = 1 AND orientador = 0 ORDER BY `ano` DESC, `periodo` DESC";
+    $queryInativos = "SELECT primeiro_nome, ultimo_nome, imagem FROM petianos WHERE ativo = 0 AND orientador = 0 ORDER BY `ano` DESC, `periodo` DESC";
     
-    $resultOrientador = mysqli_query($mysqli, $queryOrientador);
+    $resultOrientadoresAtivos = mysqli_query($mysqli, $queryOrientadoresAtivos);
+    $resultOrientadoresInativos = mysqli_query($mysqli, $queryOrientadoresInativos);
     $resultIntegrantes = mysqli_query($mysqli, $queryIntegrantes);
     $resultVoluntarios = mysqli_query($mysqli, $queryVoluntarios);
     $resultInativos = mysqli_query($mysqli, $queryInativos);
+
     
-    //$num_results = mysqli_num_rows($result);
+    while($row = $resultOrientadoresAtivos->fetch_array())  
+    {
+        $arrayOrientadoresAtivos[] = $row;
+    }
+
+    while($row = $resultOrientadoresInativos->fetch_array())
+    {
+        $arrayOrientadoresInativos[] = $row;
+    }
+    
+
+    while($row = $resultIntegrantes->fetch_array())
+    {
+        $arrayIntegrantes[] = $row;
+    }
+
+    
+    while($row = $resultVoluntarios->fetch_array())
+    {
+        $arrayVoluntarios[] = $row;
+    }
+
+    while($row = $resultInativos->fetch_array())
+    {
+        $arrayInativos[] = $row;
+    }
 
 ?>
 
@@ -55,38 +83,44 @@
 
         <div class="integrantes">
             <div class="tutores">
-                <div class="card">
-                    <div class="card-img">
-                        <figure>
-                            <img src="./assets/images/integrantes/lucho.jpg" alt="">
-                        </figure>
+
+                <?php foreach ($arrayOrientadoresAtivos as $orientadorAtivo): ?>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <figure>
+                                <img src="./assets/images/integrantes/<?= $orientadorAtivo["imagem"]?>" alt="">
+                            </figure>
+                        </div>
+                        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="card-name">
+                            <h3><?= $orientadorAtivo["primeiro_nome"]?> <?= $orientadorAtivo["ultimo_nome"]?></h3>
+                            <h6>Orientador</h6>
+                        </div>
                     </div>
-                    <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <div class="card-name">
-                        <h3>Luis Rivero</h3>
-                        <h6>Orientador</h6>
-                    </div>
-                </div>
+
+                <?php endforeach ?>
+
             </div>
 
             <div class="discentes">
             
-            <?php foreach ($resultIntegrantes as $integrante): ?>
+                <?php foreach ($arrayIntegrantes as $integrante): ?>
+                        
+                        <div class="card">
+                            <div class="card-img">
+                            <figure>
+                                <img src="./assets/images/integrantes/<?= $integrante["imagem"]?>" alt="">
+                            </figure>
+                            </div>
+                            <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+                            <div class="card-name">
+                                <h3><?= $integrante["primeiro_nome"]?> <?= $integrante["ultimo_nome"]?></h3>
+                                <h6>Orientando</h6>
+                            </div>
+                        </div>
                     
-                    <div class="card">
-                        <div class="card-img">
-                        <figure>
-                            <img src="./assets/images/integrantes/<?= $integrante["imagem"]?>" alt="">
-                        </figure>
-                        </div>
-                        <div class="job-img"><i class="fas fa-user-graduate"></i></div>
-                        <div class="card-name">
-                            <h3><?= $integrante["primeiro_nome"]?> <?= $integrante["ultimo_nome"]?></h3>
-                            <h6>Orientando</h6>
-                        </div>
-                    </div>
-                
-            <?php endforeach ?>
+                <?php endforeach ?>
 
             </div>
 
@@ -95,8 +129,28 @@
             </div>
             <!-- Voluntários-->
             <div class="integrantes voluntarios">
-                <div class="discentes"></div>
+                <div class="discentes">
+
+                    <?php foreach ($arrayVoluntarios as $voluntario): ?>
+                        
+                        <div class="card">
+                            <div class="card-img">
+                            <figure>
+                                <img src="./assets/images/integrantes/<?= $voluntario["imagem"]?>" alt="">
+                            </figure>
+                            </div>
+                            <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+                            <div class="card-name">
+                                <h3><?= $voluntario["primeiro_nome"]?> <?= $voluntario["ultimo_nome"]?></h3>
+                                <h6>Orientando</h6>
+                            </div>
+                        </div>
+                    
+                    <?php endforeach ?>
+
+                </div>
             </div>
+
             <!-- Ex Integrantes-->
             <div class="section-header">
                 <h2>Ex-Integrantes</h2>
@@ -104,42 +158,51 @@
 
             <div class="integrantes ex">
                 <div class="tutores">
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-img">
-                            <figure>
-                                <img src="./assets/images/integrantes/Geraldo Braz.jpg " alt="">
-                            </figure>
-                        </div>
-                        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
-                        <div class="card-name">
-                            <h3>Geraldo Braz</h3>
-                            <h6>Orientador</h6>
-                        </div>
-                    </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-img">
-                            <figure>
-                                <img src="./assets/images/integrantes/Alexandre Oliveira.jpg " alt="">
-                            </figure>
+                    <?php foreach ($arrayOrientadoresInativos as $orientadorInativo): ?>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <figure>
+                                    <img src="./assets/images/integrantes/<?= $orientadorInativo["imagem"]?>" alt="">
+                                </figure>
+                            </div>
+                            <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="card-name">
+                                <h3><?= $orientadorInativo["primeiro_nome"]?> <?= $orientadorInativo["ultimo_nome"]?></h3>
+                                <h6>Orientador</h6>
+                            </div>
                         </div>
-                        <div class="job-img"><i class="fas fa-chalkboard-teacher"></i></div>
-                        <div class="card-name">
-                            <h3>Alexandre Oliveira</h3>
-                            <h6>Orientador</h6>
-                        </div>
-                    </div>
+
+                    <?php endforeach ?>
+
                 </div>
-                <div class="discentes ex"></div>
+
+                <div class="discentes ex">
+
+                    <?php foreach ($arrayInativos as $inativos): ?>
+                        
+                        <div class="card">
+                            <div class="card-img">
+                            <figure>
+                                <img src="./assets/images/integrantes/<?= $inativos["imagem"]?>" alt="">
+                            </figure>
+                            </div>
+                            <div class="job-img"><i class="fas fa-user-graduate"></i></div>
+                            <div class="card-name">
+                                <h3><?= $inativos["primeiro_nome"]?> <?= $inativos["ultimo_nome"]?></h3>
+                                <h6>Orientando</h6>
+                            </div>
+                        </div>
+                    
+                    <?php endforeach ?>
+
+                </div>
+                
             </div>
         </div>
 
         <?php include('footer.php') ?>
-
-        <script src="./scripts/integrantes.js"></script>
-        <script src="./scripts/script.js"></script>
 </body>
 
 </html>
