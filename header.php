@@ -15,7 +15,7 @@
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="DropdownSobre()" class="dropbtn">
+              <button onclick="DropdownSection('sobre')" class="dropbtn">
                 Conheça o PETComp
                 <span class="material-icons dropbtn">
                   arrow_drop_down
@@ -29,7 +29,7 @@
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="DropdownProjetos()" class="dropbtn">
+              <button onclick="DropdownSection('projetos')" class="dropbtn">
                 Projetos
                 <span class="material-icons dropbtn">
                   arrow_drop_down
@@ -51,7 +51,7 @@
           <li>
             <div class="dropdown">
               <div class="text-button">
-                <button onclick="DropdownProdutos()" class="dropbtn">
+                <button onclick="DropdownSection('produtos')" class="dropbtn">
                 Produtos
                 <span class="material-icons dropbtn">
                   arrow_drop_down
