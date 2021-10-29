@@ -1,53 +1,26 @@
-function DropdownSobre() {
-  document.getElementById("dropdown-sobre").classList.toggle("show-dropdown-sobre");
+
+let SECTION = [];
+
+function DropdownSection(section) {
+
+  document.getElementById(`dropdown-${section}`).classList.toggle(`show-dropdown-${section}`);
 
   window.onclick = function(event) {
+
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-sobre");
+      var dropdowns = document.getElementsByClassName(`dropdown-content-${section}`);
       var i;
       for (i=0; i<dropdowns.length; i++) {
         var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-sobre')) {
-          openDropdowns.classList.remove('show-dropdown-sobre');
+        if (openDropdowns.classList.contains(`show-dropdown-${section}`)) {
+          openDropdowns.classList.remove(`show-dropdown-${section}`);
         }
       }
     }
   }
+
 }
 
-function DropdownProjetos() {
-  document.getElementById("dropdown-projetos").classList.toggle("show-dropdown-projetos");
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-projetos");
-      var i;
-      for (i=0; i<dropdowns.length; i++) {
-        var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-projetos')) {
-          openDropdowns.classList.remove('show-dropdown-projetos');
-        }
-      }
-    }
-  }
-}
-
-function DropdownProdutos() {
-  document.getElementById("dropdown-produtos").classList.toggle("show-dropdown-produto");
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-produtos");
-      var i;
-      for (i=0; i<dropdowns.length; i++) {
-        var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-produto')) {
-          openDropdowns.classList.remove('show-dropdown-produto');
-        }
-      }
-    }
-  }
-}
 
 function openMenu() {
   document.getElementById("nav-bar").style.height = "100%";
