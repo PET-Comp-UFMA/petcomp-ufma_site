@@ -144,7 +144,7 @@ const exIntegrantes = [
   },
   {
     imgPath: './assets/images/integrantes/Ricardo Anchieta.jpeg',
-    nome: '>Ricardo Anchieta',
+    nome: 'Ricardo Anchieta',
     exIntegrante: true
   }
 ]
