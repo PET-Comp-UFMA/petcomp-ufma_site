@@ -93,38 +93,38 @@
         </div>
         <div class="images-atividades">
          
-          <a href="./monitoria.html">
+          <a href="./monitoria.php">
             <div class="card-atividade seminar">
               <h3>Monitoria</h3>
             </div>
           </a>
 
-          <a href="./produtos-podcomp.html">
+          <a href="./produtos-podcomp.php">
             <div class="card-atividade">
               <h3>PodCast</h3>
             </div>
           </a>
           
-          <a href="./desenvolvimento.html">
+          <a href="./desenvolvimento.php">
             <div class="card-atividade">
               <h3>Fábrica de Software</h3>
             </div>
           </a>
           
-          <a href="./eventos.html">
+          <a href="./eventos.php">
             <div class="card-atividade">
               <h3>Organização de Eventos</h3>
             </div>
           </a>
           
           
-          <a href="./minicursos.html">
+          <a href="./minicursos.php">
             <div class="card-atividade">
               <h3>Minicursos e Oficinas</h3>
             </div>
           </a>
           
-          <a href="./publicacoes.html">
+          <a href="./publicacoes.php">
             <div class="card-atividade">
               <h3>Expressão Escrita</h3>
             </div>
