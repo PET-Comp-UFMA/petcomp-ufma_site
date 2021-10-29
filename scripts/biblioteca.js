@@ -46,6 +46,16 @@ const data = [
     nome: 'Finalização e Exercícios sobre Filas'
   },
   {
+	monitoria:'Alg1',
+	urlVideo: 'https://drive.google.com/file/d/1pwwzjbIpO45JHFPHAIr9k33SPP9HODxB/view?usp=sharing',
+	nome: 'Matrizes'
+  },
+  {
+	monitoria: 'Alg1',
+	urlVideo: 'https://drive.google.com/file/d/1KEJ7mOFo1N4EhzqNDFI33ksQ35G7Ghk0/view?usp=sharing',
+	nome:'Resolução de Exercícios'
+  },
+  {
     monitoria: 'LP1',
     urlVideo: 'https://drive.google.com/file/d/1suYwNR3O2M60S-qgjCyrFLLrVY0iUCo5/view?usp=sharing',
     urlQuest: 'https://docs.google.com/document/d/1bNHIwijk0IHKE7m6Lhm3CKx9CPfoItK3kyPgTfvc8RM/edit?usp=sharing',
@@ -91,6 +101,26 @@ const data = [
     nome: 'Execícios sobre Ponteiros e Alocação Dinâmica'
   },
   {
+	monitoria: 'LP1',
+	urlVideo:'https://drive.google.com/file/d/1aUCqzST1Dw4fF-cvAsoW_bUKV4vbjtaC/view?usp=sharing',
+	nome: 'Strings'
+  },
+  {
+	monitoria: 'LP1',
+	urlVideo: 'https://drive.google.com/file/d/1uU7mj3e8XejKOk9cZxEVjryqxk04VlyS/view?usp=sharing',
+	nome: 'Structs'
+  },
+  {
+	monitoria: 'LP1',
+	urlVideo: 'https://drive.google.com/file/d/1rmJf2iBUaB5oq_hqb4xBblo5KGkxm1xo/view?usp=sharing',
+	nome: 'Arquivos'
+  },
+  {
+	monitoria: 'LP1',
+	urlVideo: 'https://drive.google.com/file/d/1rmJf2iBUaB5oq_hqb4xBblo5KGkxm1xo/view?usp=sharing',
+	nome: 'Resolução de Exercícios'
+  },
+  {
     monitoria: 'C1',
     urlVideo: 'https://drive.google.com/file/d/1qfAJlk_Eevalainp65ORIQoKszSapLRR/view?usp=sharing',
     nome: 'Pré-Cálculo'
@@ -126,7 +156,28 @@ const data = [
     monitoria: 'C1',
     urlVideo: 'https://drive.google.com/file/d/1dhuiU1wU0e44sIeebIqo-I-PqM7dZgRg/view?usp=sharing',
     nome: 'Derivada pela Definição e Continuidade'
+  },
+  {
+	monitoria: 'C1',
+	urlVideo: 'https://drive.google.com/file/d/1iI6bNWToKsUn922oTSH-oH8cuvLn-Dup/view?usp=sharing',
+	nome: 'Máximos e Mínimos'
+  },
+  {
+	monitoria: 'C1',
+	urlVideo: 'https://drive.google.com/file/d/14QOus5_DvjnFP4XkoS2-ZSLM_PIATdn7/view?usp=sharing',
+	nome: 'Integral indefinida'
+  },
+  {
+	monitoria: 'C1',
+	urlVideo: 'https://drive.google.com/file/d/13dDmtxUV5i_zffM0cK84KO0Tb1ENSjGd/view?usp=sharing',
+	nome: 'Integração por partes e frações parciais'
+  },
+  {
+	monitoria: 'C1',
+	urlVideo: 'https://drive.google.com/file/d/1nnz_02pNnQG4UJ3xtbpM7VNSgG59nQUg/view?usp=sharing',
+	nome: 'Correção da Prova 3'
   }
+  
 ]
 
 function renderResumo(urlResumo) {

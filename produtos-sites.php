@@ -28,7 +28,7 @@
             <div class="textoMateria">
                 <h3>COCOM</h3>
                 <p>A Coordenação de Ciência da Computação da UFMA é responsável por mudanças no curso, no comportamento dos docentes e dos colaboradores. Suas atividades envolvem funções políticas, gerenciais, acadêmicas e institucionais.</p>
-                <button class="botao"><a href="https://petcompufma.org/cocom/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+                <button class="botao"><a href="https://petcompufma.org/cocom/" target="_blank" style="text-decoration:none;color:white;">Saiba mais</a></button>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
             <div class="textoMateria">
                 <h3>Observatório de Saúde Mental</h3>
                 <p>O Observatório de Saúde Mental e Políticas sobre Drogas é uma iniciativa do Grupo de Estudo e Pesquisa Saúde Mental e Cuidado (GESAM), da Universidade Estadual Vale do Acaraú (UVA), em parceria com a Secretaria de Saúde de Sobral - Ceará, por meio da Célula de Políticas sobre Drogas. Tem por objetivo, captar e compilar pesquisas institucionais, teses, dissertações, monografias, artigos, livros, capítulos de livros e produções técnicas na área de saúde mental e políticas sobre drogas, realizadas no município, com o intuito de impulsionar sua devolução para sociedade em geral.</p>
-                <button class="botao"><a href="http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/" target="_blank" style="text-decoration:none">Saiba mais</a></button>
+                <button class="botao"><a href="http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/" target="_blank" style="text-decoration:none;color:white;">Saiba mais</a></button>
             </div>
         </div>
   </div>
