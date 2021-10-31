@@ -293,13 +293,20 @@
 .atividades {
   display: flex;
   justify-content: space-around;
-  padding: 100px;
+  padding: 80px;
 }
 
 .atividades .atividades-desenvolvidas {
-  margin: 0;
   margin: auto 0;
+  margin-right: 20px;
   width: 300px;
+}
+
+.atividades .atividades-desenvolvidas p {
+  color: #888686;
+  line-height: 22px;
+  margin: 20px 0;
+  width: 350px;
 }
 
 .atividades .atividades-desenvolvidas h1 {
@@ -326,37 +333,47 @@
 }
 
 .atividades .images-atividades .card-atividade {
-  align-items: flex-end;
   background: linear-gradient(45deg, #343564, #0076cd, #01a8ff, #33c3ff);
   border-radius: 4px;
   color: #ffff;
-  cursor: pointer;
   display: flex;
+  flex-direction: column;
   height: 250px;
+  justify-content: space-between;
   margin: 12px 20px;
-  padding: 50px 20px;
+  padding: 20px 15px;
   text-decoration: none;
   transition: ease 0.5s;
-  width: 250px;
+  width: 300px;
 }
-.atividades .images-atividades .card-atividade:hover {
-  align-items: flex-end;
-  background: linear-gradient(45deg, #0076cd, #01a8ff, #33c3ff, #16a1dd);
-  border-radius: 4px;
-  transform: scale(1.1);
+
+.atividades .images-atividades .card-atividade h3 {
+  color: #fff;
+  font-size: 24px;
+  width: 200px;
+  text-decoration: none;
 }
 
 .atividades .images-atividades .card-atividade a {
+  align-items: center;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
   color: #fff;
+  display: flex;
   font-size: 20px;
-  width: 200px;
+  height: fit-content !important;
+  text-align: center;
+  padding: 10px;
+  width: fit-content;
 }
-.atividades .images-atividades .card-atividade h3 {
-  color: #ffff;
-  font-size: 20px;
-  width: 200px;
-  text-decoration: none;
+
+.atividades .images-atividades .card-atividade a:hover {
+  background: #343564;
+  border: 1px solid #343564;
+  transition: 0.2s;
 }
+
 #parceiros {
   background: #eeeeee;
   height: 400px;
