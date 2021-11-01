@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `petcom59_petcomp_db`.`trabalhos_publicados` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(500) NOT NULL,
   `autor` VARCHAR(500) NOT NULL,
-  `data` VARCHAR(10) NULL,
+  `ano` VARCHAR(4) NULL,
   `palavras_chaves` VARCHAR(150) NULL,
   `resumo` TEXT NULL,
   `link` VARCHAR(500) NOT NULL,

@@ -171,6 +171,51 @@ header .dropdown .show-dropdown-produtos {
   display: block;
 }
 
+
+main .container .pagination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+main .container .pagination .numbers {
+  display: flex;
+}
+
+main .container .pagination .numbers div,
+main .container .pagination .prev,
+main .container .pagination .next {
+  align-items: center;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 8px;
+  width: 25px;
+}
+
+main .container .pagination .prev:hover,
+main .container .pagination .next:hover {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+main .container .pagination .numbers .active {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+main .container .pagination .numbers .active:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
 /* HEADER */
 
 .section-header {
@@ -495,4 +540,43 @@ footer .contatos a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
+  main .container .pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  main .container .pagination .numbers {
+    display: flex;
+  }
+
+  main .container .pagination .numbers div,
+  main .container .pagination .prev,
+  main .container .pagination .next {
+    align-items: center;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    margin: 0 4px;
+    padding: 8px;
+    width: 25px;
+  }
+
+  main .container .pagination .prev:hover,
+  main .container .pagination .next:hover {
+    background: var(--bg);
+    color: var(--primary);
+  }
+
+  main .container .pagination .numbers .active {
+    background: var(--bg);
+    color: var(--primary);
+  }
+  
 }
