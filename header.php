@@ -35,6 +35,7 @@
                   arrow_drop_down
                 </span>
               </button>
+              
               <div id="dropdown-projetos" class="dropdown-content-projetos">
                 <a href="./monitoria.php">Monitoria</a>
                 <a href="./desenvolvimento.php">Fáb. de Software</a>
@@ -50,12 +51,12 @@
           </li>
           <li>
             <div class="dropdown">
-                <button onclick="DropdownSection('produtos')" class="dropbtn">
-                  Produtos
-                  <span class="material-icons dropbtn">
-                    arrow_drop_down
-                  </span>
-                </button>
+              <button onclick="DropdownSection('produtos')" class="dropbtn">
+                Produtos
+                <span class="material-icons dropbtn">
+                  arrow_drop_down
+                </span>
+              </button>
                 
               <div id="dropdown-produtos" class="dropdown-content-produtos">
                 <a href="./biblioteca-petcomp-monitoria.php">Biblioteca PETComp</a>

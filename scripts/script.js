@@ -2,6 +2,8 @@ let lastActive;
 
 function CloseAllDropdowns(active) {
   
+  // função que fecha todos os dropdowns ativos, exceto o ultimo clicado
+
   let dropdowns = document.querySelectorAll(".dropdown [id]");
   
   dropdowns.forEach((cur) => {
@@ -14,11 +16,11 @@ function CloseAllDropdowns(active) {
       }
     }
   })
-
 }
 
-
 function DropdownSection(section) {
+
+  // função que controla o dropdown do header
 
   document.getElementById(`dropdown-${section}`).classList.toggle(`show-dropdown-${section}`);
   document.getElementById(`dropdown-${section}`).classList.toggle(`dropdown-open`);
