@@ -490,7 +490,10 @@ footer .contatos a {
     display: flex;
     margin-left: 12px;
   }
+}
 
+@media (max-width: 800px){
+  
   footer {
     display: flex;
     flex-direction: column;
@@ -579,4 +582,11 @@ footer .contatos a {
     color: var(--primary);
   }
   
+
+  footer .lula {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
 }
