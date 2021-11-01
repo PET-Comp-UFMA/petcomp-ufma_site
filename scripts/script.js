@@ -1,12 +1,46 @@
+let lastActive;
 
-let SECTION = [];
+function CloseAllDropdowns(active) {
+  
+  let dropdowns = document.querySelectorAll(".dropdown [id]");
+  
+  dropdowns.forEach((cur) => {
+
+    if (cur.classList.contains("dropdown-open")) {
+      
+      if (active != cur.getAttribute("id")) {
+        let nameSection = cur.getAttribute("id").replace("dropdown-", "")
+        DropdownSection(nameSection)  
+      }
+    }
+  })
+
+}
+
 
 function DropdownSection(section) {
 
   document.getElementById(`dropdown-${section}`).classList.toggle(`show-dropdown-${section}`);
+  document.getElementById(`dropdown-${section}`).classList.toggle(`dropdown-open`);
+  let drops = document.querySelectorAll(".dropdown");
+
+
+  drops.forEach((elem) => {
+    elem.addEventListener("click", (event) => {
+
+      let father = elem.parentNode;
+      let dropdowns = elem.querySelector(".dropdown-open");
+
+      if (dropdowns != null){
+        let id = dropdowns.getAttribute("id")
+        CloseAllDropdowns(id);
+      }
+    }) 
+  })
+
 
   window.onclick = function(event) {
-
+    
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName(`dropdown-content-${section}`);
       var i;
@@ -17,10 +51,11 @@ function DropdownSection(section) {
         }
       }
     }
-  }
 
+
+  } 
+  
 }
-
 
 function openMenu() {
   document.getElementById("nav-bar").style.height = "100%";

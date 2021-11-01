@@ -50,21 +50,18 @@
           </li>
           <li>
             <div class="dropdown">
-              <div class="text-button">
                 <button onclick="DropdownSection('produtos')" class="dropbtn">
-                Produtos
-                <span class="material-icons dropbtn">
-                  arrow_drop_down
-                </span>
-              </button>
-              </div>
-              
+                  Produtos
+                  <span class="material-icons dropbtn">
+                    arrow_drop_down
+                  </span>
+                </button>
+                
               <div id="dropdown-produtos" class="dropdown-content-produtos">
                 <a href="./biblioteca-petcomp-monitoria.php">Biblioteca PETComp</a>
                 <a href="./produtos-podcomp.php">PodCast</a>
                 <a href="./produtos-sites.php">Sites</a>
               </div>
-            </div>
           </li>
           <li>
             <button><a href="./eventos.php">Eventos</a></button>
