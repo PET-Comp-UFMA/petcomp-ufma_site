@@ -43,6 +43,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles2.css">
   <link rel="stylesheet" href="./styles/publicacoes.css">
   <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
 </head>

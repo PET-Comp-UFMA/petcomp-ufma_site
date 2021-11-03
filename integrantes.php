@@ -185,7 +185,7 @@
                         <div class="card">
                             <div class="card-img">
                             <figure>
-                                <img src="./assets/images/integrantes/<?= $inativos["imagem"]?>" alt="">
+                                <img src="./assets/images/integrantes/ex/<?= $inativos["imagem"]?>" alt="">
                             </figure>
                             </div>
                             <div class="job-img"><i class="fas fa-user-graduate"></i></div>
