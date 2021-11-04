@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 04-Nov-2021 às 16:05
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.12
+-- Host: localhost:3306
+-- Tempo de geração: 04-Nov-2021 às 12:24
+-- Versão do servidor: 5.7.23-23
+-- versão do PHP: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -27,8 +28,8 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `petianos`
 --
 
-CREATE TABLE IF NOT EXISTS `petianos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `petianos` (
+  `id` int(11) NOT NULL,
   `nome_completo` varchar(60) DEFAULT NULL,
   `primeiro_nome` varchar(15) NOT NULL,
   `ultimo_nome` varchar(15) NOT NULL,
@@ -37,9 +38,8 @@ CREATE TABLE IF NOT EXISTS `petianos` (
   `ativo` tinyint(4) NOT NULL,
   `orientador` tinyint(4) NOT NULL,
   `voluntario` tinyint(4) NOT NULL,
-  `imagem` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8;
+  `imagem` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `petianos`
@@ -86,7 +86,7 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (38, 'Geovane Menezes', 'Geovane ', 'Menezes', 2012, 2, 0, 0, 0, 'Geovane Menezes.jpg'),
 (39, 'Gilvan Tavares', 'Gilvan ', 'Tavares', 2013, 2, 0, 0, 0, 'Gilvan Tavares.jpg'),
 (40, 'Giovanni Dias', 'Giovanni', 'Dias', 2012, 1, 0, 0, 0, 'Giovanni Dias.jpg'),
-(41, 'Gleidson mendes', 'Gleidson ', 'Mendes', 2012, 1, 0, 0, 0, 'Gleidson mendes.jpg'),
+(41, 'Gleidson mendes', 'Gleidson ', 'Mendes', 2012, 1, 0, 0, 0, 'Gleidson Mendes.jpg'),
 (42, 'Hugo Gois', 'Hugo ', 'Gois', 2015, 1, 0, 0, 0, 'Hugo Gois.jpg'),
 (43, 'Isabel Carvalho', 'Isabel ', 'Carvalho', 2012, 1, 0, 0, 0, 'Isabel Carvalho.jpg'),
 (44, 'Italo Francyles', 'Italo ', 'Francyles', 2013, 1, 0, 0, 0, 'Italo Francyles.jpg'),
@@ -165,6 +165,26 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (117, 'Emily Juliana Costa e Silva', 'Emily', 'Silva', 2018, 2, 0, 0, 0, 'Emily Silva.jpg'),
 (118, 'Igor Rafael Barbosa Estrela', 'Igor', 'Estrela', 2018, 2, 0, 0, 0, 'Igor Estrela.jpg'),
 (119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg');
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `petianos`
+--
+ALTER TABLE `petianos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `petianos`
+--
+ALTER TABLE `petianos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
