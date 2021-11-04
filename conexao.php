@@ -11,8 +11,4 @@
         echo "falha ao conectar ao banco: ".$mysqli->connect_errno." ".$mysqli->connect_error;
     }
 
-//falha ao conectar ao banco: 1044 Access denied for user 'petcom59_petcomp'@'localhost' to database 'petcom59_petcomp_bd'Could not select database
-
-
 ?>
-

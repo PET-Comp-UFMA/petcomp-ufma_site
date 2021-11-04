@@ -22,7 +22,7 @@ wb_obj = openpyxl.load_workbook(xlsx_file)
 
 sheet = wb_obj.active
 i = 0 
-for row in sheet.iter_rows(max_row=108):
+for row in sheet.iter_rows(max_row=124):
 	if(i!=0):
 		Data = []
 		for cell in row:
