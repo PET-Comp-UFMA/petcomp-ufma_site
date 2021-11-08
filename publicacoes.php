@@ -42,12 +42,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/styles2.css">
   <link rel="stylesheet" href="./styles/publicacoes.css">
-  <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
+  
 </head>
 <body>
+    <main>
   <?php include('header.php') ?>
   <div class="section-header"> <!-- para mudar a cor é so acessar essa clase em style.css -->
       <h2>Trabalhos Publicados</h2>
@@ -55,7 +57,7 @@
     
     <section class="container">
     	<h2>Buscar por: </h2>
-    <form action="busca.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
+    <form action="publicacoes.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
       <div class="publication">
         <label for="publication">Título</label>
         <input name="publication" type="text" placeholder="Digite o título" value="<?php echo $pesquisa;?>">
@@ -100,7 +102,7 @@
           <div class="data-name">
                 <!--  -->
             <h5 class="article-name">
-            <?php print_r(utf8_encode($row['titulo']))?>
+            <?php print_r($row['titulo'])?>
             </h5>
           </div>
           <div class="share">
@@ -108,10 +110,10 @@
             <div class="links ">
             <?php
                 $baseUrl = url();
-                $parametro = strtr(utf8_encode($row['titulo']), $caracteres_sem_acento);
+                $parametro = strtr($row['titulo'], $caracteres_sem_acento);
                 $parametro = substr_replace($parametro ,'',-1); //removendo o ultimo ' ' que vem do bd e gera erro no link 
                 $parametro = urlencode((str_replace(" ", "+", $parametro)));
-                $url =  $baseUrl."busca.php?publication=".$parametro;
+                $url =  $baseUrl."publicacoes.php?publication=".$parametro;
               ?>
               <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
 
@@ -119,8 +121,8 @@
 
               <?php 
                 $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
-                $baseUrl = str_replace("busca.php", "", $baseUrl); //removendo "busca.php" do link de compartilhamento
-                $url =  $baseUrl."busca.php?publication=".urlencode(utf8_encode($row['titulo']))."&author=". urlencode(utf8_encode($row['autor']));
+                $baseUrl = str_replace("publicacoes.php", "", $baseUrl); //removendo "publicacoes.php" do link de compartilhamento
+                $url =  $baseUrl."publicacoes.php?publication=".urlencode($row['titulo'])."&author=". urlencode($row['autor']);
               ?>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
@@ -129,7 +131,7 @@
           <div class="authors">
             <p class="authors-names">Autores</p>
             <ul class="list-authors">
-              <li class="item-author-name"><?php print_r(utf8_encode($row['autor'])) ?></li>
+              <li class="item-author-name"><?php print_r($row['autor']) ?></li>
             </ul>
           </div>
         </div>
@@ -138,13 +140,13 @@
           <div class="resume">
             <p class="resume-title">Resumo</p>
             <p class="resume-text">
-              <?php print_r(utf8_encode($row['resumo']))?>
+              <?php print_r($row['resumo'])?>
             </p>
           </div>
           <p class="tags-title">Palavras-chave</p>
           <div class="tags">
             <ul class="list-tags">
-              <li class="item-tag"><?php print_r(utf8_encode($row['palavras_chaves'])) ?></li>
+              <li class="item-tag"><?php print_r($row['palavras_chaves']) ?></li>
             </ul>
           </div>	
         </div>
@@ -160,7 +162,7 @@
                   add
                 </span>
               </button>
-            <a href="./documents/<?php print_r(utf8_encode($row['link']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+            <a href="./documents/<?php print_r($row['link'])?>" download='<?php print_r($row['Titulo']) ?>' class="button-download">
               Download
               <span class="material-icons">
                 file_download
@@ -169,7 +171,7 @@
             
         </div>
           <div class="container-data">
-            <p class="data">Ano de publicação: <span class="data-day"><?php print_r(utf8_encode($row['ano']))?></span></p>
+            <p class="data">Ano de publicação: <span class="data-day"><?php print_r($row['ano'])?></span></p>
           </div>
         </div>
         

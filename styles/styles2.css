@@ -1,21 +1,17 @@
-* {
-  box-sizing: border-box;
-  font-family: "Montserrat";
-  margin: 0;
-  padding: 0;
-}
+
 
 html {
   --bg: #fafafa;
   --bg-black: #111;
   --bg-secondary: #fdfdfd;
   --bg-black-secondary: #333;
-  --primary: #1dd85f;
+  --purple: #3d3d79;
+  --primary: #343564;
   --text-white: #ffff;
   --text-gray: #8d8d8d;
   --text-gray-secondary: #535353;
-  --gray-border: #60df8c;
-  --black-footer: #111;
+  --gray-border: #72728e;
+  --black-footer: #222245;
 }
 
 p {
@@ -32,82 +28,6 @@ p {
   background-color: var(--primary);
 }
 
-/* HEADER */
-
-header {
-  background: var(--bg);
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  width: 100%;
-}
-
-header .logos {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin-left: 30px;
-  padding: 10px;
-  width: 250px;
-}
-
-header .logos a .observatorio-logo {
-  height: 100%;
-  width: 70px;
-}
-
-header .logos .ufma-logo {
-  margin-left: -30px;
-  width: 75px;
-}
-
-header .logos .divider {
-  background: var(--primary);
-  height: 80%;
-  margin: 0 10px;
-  width: 2px;
-}
-
-header nav {
-  align-items: center;
-  display: flex;
-  margin-right: 100px;
-}
-
-header .open-btn,
-header .close-btn {
-  display: none;
-}
-
-header nav ul {
-  align-items: center;
-  display: flex;
-  list-style: none;
-}
-
-header nav button {
-  align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  font-size: 18px;
-  margin-right: 4px;
-  padding: 8px;
-}
-
-header nav button:hover {
-  background: var(--bg-secondary);
-  opacity: 0.7;
-}
-
-header nav a,
-header nav .dropbtn {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-/* HEADER */
 
 .section-header {
   margin-top: 30px;
@@ -758,159 +678,7 @@ main .container .list-videos .item .card .details-videos .description {
   text-transform: none;
 } */
 
-/* FOOTER */
 
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 0;
-  padding: 1.25rem 1.25rem;
-  background: var(--black-footer);
-}
-
-footer .logos-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-footer .logos-footer a img {
-  background: var(--text-gray);
-  padding: 2px;
-  width: 140px;
-}
-
-footer .infos {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100%;
-  margin-left: 75px;
-}
-
-footer .infos ul {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-footer .infos ul .numeros-contatos {
-  letter-spacing: 2px;
-}
-
-footer h4 {
-  padding: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: var(--text-white);
-}
-
-footer .infos > div {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 12px 0px;
-  margin: 0px 0px;
-}
-
-footer .infos div p {
-  margin: 0;
-  margin-left: 5px;
-  margin-bottom: 0;
-  width: 100%;
-}
-
-footer .infos img {
-  width: 25px;
-}
-
-footer .infos a,
-footer .infos p {
-  color: var(--text-white);
-}
-
-footer .infos .btn-contato {
-  align-items: center;
-  border-radius: 6px;
-}
-
-footer .infos a {
-  text-decoration: none;
-}
-
-footer .contatos {
-  display: flex;
-  height: 80%;
-  align-items: center;
-  justify-content: center;
-  /* justify-content: flex-end; caso precise colocar no canto inferior direito*/
-}
-
-footer .contatos .contato {
-  align-self: flex-start;
-  color: #fff;
-  width: 180px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-footer .contatos ul {
-  list-style: none;
-}
-
-footer .contatos li {
-  align-items: center;
-  display: flex;
-  padding: 12px;
-  width: 300px;
-}
-
-footer .contatos img {
-  margin: 0;
-  width: 25px;
-}
-
-footer .contatos a {
-  color: var(--text-white);
-}
-
-footer .contatos .btn-contato {
-  align-items: center;
-  display: flex;
-  border-radius: 6px;
-}
-
-footer .infos a {
-  text-decoration: none;
-}
-
-footer .contato {
-  background: var(--primary);
-  border-radius: 6px;
-  box-shadow: 0px 6px 10px 0px #252629;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  width: 175px;
-}
-
-footer .contato img {
-  width: 25px;
-}
-
-footer .contato a {
-  color: var(--bg-secondary);
-  font-size: 14px;
-  text-decoration: none;
-}
-
-footer .contato a {
-  opacity: 0.8;
-}
 
 .fade {
   -webkit-animation-name: fade;
@@ -1043,137 +811,29 @@ footer .contato a {
     margin-left: 12px;
   }
 
-  footer {
-    padding: 40px 0;
-  }
-
-  footer .logos-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: 100%;
-  }
-
-  footer .logos-footer a {
-    margin: 0 auto;
-  }
-
-  footer .infos {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  footer .infos li {
-    margin-left: 0px;
-  }
-
-  footer .infos li p {
-    font-size: 14px;
-    margin: 0;
-    margin-left: 6px;
-    width: fit-content;
-  }
-
-  footer .infos p {
-    font-size: 13px;
-  }
+  
 }
 
 @media (min-width: 1051px) {
-  footer .infos {
-    padding: 0 3rem;
-  }
+ 
 }
 
 @media (max-width: 1050px) {
-  footer {
-    display: block;
-    padding: 2rem 8rem;
-  }
-
-  footer .projetos-footer {
-    display: block;
-  }
-
-  footer h4 {
-    color: #919496;
-    width: 100%;
-    background: none;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    border-bottom: 1px solid #919496;
-    text-align: center;
-  }
-
-  footer .logos-footer {
-    margin-bottom: 20px;
-  }
+ 
 }
 
 @media (max-width: 700px) {
-  footer {
-    padding: 2rem;
-  }
+ 
 }
 
 @media (max-width: 470px) {
-  footer {
-    padding: 0.5rem;
-  }
-
-  footer .logos-footer img,
-  footer .logos-footer .logos-secundarias img {
-    width: 90%;
-  }
-
-  footer .infos li {
-    margin-left: -10px;
-  }
-
-  footer .infos li img {
-    width: 20px;
-  }
-
-  footer .infos li p {
-    margin-left: 0px;
-    font-size: 12px;
-  }
-
-  footer .contatos .contato {
-    width: 140px;
-  }
-
-  footer .contatos img {
-    width: 20px;
-  }
-
-  footer .contatos .contato {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 700px) {
-  .text-dexters {
-    width: 100%;
-  }
-
-  footer .infos div p {
-    font-size: 14px;
-  }
+  
 }
 
 @media (max-width: 281px) {
-  footer .infos p {
-    font-size: 11px;
-  }
+ 
 }
 
 @media (max-width: 280px) {
-  footer .logos-footer a img {
-    border: 3px solid var(--black-footer);
-    border-top: 1px solid var(--black-footer);
-    border-left: 1px solid var(--black-footer);
-    padding: 2px;
-    width: 120px;
-  }
+  
 }
