@@ -141,6 +141,15 @@ section .details .links img {
   }
 }
 
+@media (max-width: 1270px) {
+  .container #conteudos {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 4px;
+    padding: 10px 0;
+  }
+}
+
 @media (max-width: 800px) {
   .monitorias {
     padding: 10px 0;
