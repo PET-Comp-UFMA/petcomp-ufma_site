@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Nov-2021 às 12:56
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.12
+-- Generation Time: 08-Nov-2021 às 13:47
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `petcom59_petcomp_db`
+-- Database: `petcom59_petcomp_db`
 --
 
 -- --------------------------------------------------------
@@ -27,14 +28,12 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `noticias`
 --
 
-DROP TABLE IF EXISTS `noticias`;
-CREATE TABLE IF NOT EXISTS `noticias` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `noticias` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(500) NOT NULL,
   `texto` text NOT NULL,
-  `data` varchar(10) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `data` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -42,9 +41,8 @@ CREATE TABLE IF NOT EXISTS `noticias` (
 -- Estrutura da tabela `petianos`
 --
 
-DROP TABLE IF EXISTS `petianos`;
-CREATE TABLE IF NOT EXISTS `petianos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `petianos` (
+  `id` int(11) NOT NULL,
   `nome_completo` varchar(60) DEFAULT NULL,
   `primeiro_nome` varchar(15) NOT NULL,
   `ultimo_nome` varchar(15) NOT NULL,
@@ -53,109 +51,8 @@ CREATE TABLE IF NOT EXISTS `petianos` (
   `ativo` tinyint(4) NOT NULL,
   `orientador` tinyint(4) NOT NULL,
   `voluntario` tinyint(4) NOT NULL,
-  `imagem` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `petianos`
---
-
-INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES
-(1, 'Luis Rivero', 'Luis', 'Rivero', 2019, 1, 1, 1, 0, 'Luis Riveiro.jpg'),
-(2, 'Geraldo Braz Junior', 'Geraldo', 'Braz', 2016, 1, 0, 1, 0, 'Geraldo Braz.jpg'),
-(3, 'Alexandre Cesar Muniz de Oliveira', 'Alexandre', 'Oliveira', 2007, 2, 0, 1, 0, 'Alexandre Oliveira.jpg'),
-(4, 'Antonio Pinto', 'Antonio', 'Pinto', 2017, 2, 0, 0, 0, 'Antonio Pinto.jpg'),
-(5, 'Arthur Costa Serra', 'Arthur', 'Serra', 2017, 2, 0, 0, 0, 'Arthur Costa.jpg'),
-(6, 'Celielma Baldez Costa', 'Celielma', 'Costa', 2017, 2, 0, 0, 0, 'Celielma Costa.jpg'),
-(7, 'Ednara Pereira', 'Ednara', 'Pereira', 2017, 2, 0, 0, 0, 'Ednara Pereira.jpg'),
-(8, 'Fernando Henrique', 'Fernando', 'Henrique', 2018, 1, 0, 0, 0, 'Fernando Henrique.jpg'),
-(9, 'Gabriel Phelipe', 'Gabriel', 'Phelipe', 2017, 1, 0, 0, 0, 'Gabriel Phelipe.jpg'),
-(10, 'Jéssica Costa', 'Jéssica', 'Costa', 2018, 2, 0, 0, 0, 'Jéssica Costa.jpg'),
-(11, 'Kelly Rebeca', 'Kelly', 'Rebeca', 2018, 1, 0, 0, 0, 'Kelly Rebeca.jpg'),
-(12, 'Marcos Santos', 'Marcos', 'Santos', 2017, 2, 0, 0, 0, 'Marcos Santos.jpg'),
-(13, 'Micael Gomes', 'Micael', 'Gomes', 2017, 2, 0, 0, 0, 'Micael Gomes.jpg'),
-(14, 'Vinicius Augusto', 'Vinicius', 'Augusto', 2017, 1, 0, 0, 0, 'Vinicius Augusto.jpg'),
-(15, 'Yandson Costa', 'Yandson', 'Costa', 2018, 1, 0, 0, 0, 'Yandson Costa.jpg'),
-(16, 'Alex Newman', 'Alex', 'Newman', 2012, 1, 0, 0, 0, 'Alex Newman.jpg'),
-(17, 'Alisson Santos', 'Alisson', 'Santos', 2017, 2, 0, 0, 0, 'Alisson Santos.jpg'),
-(18, 'Allexandre de Carvalho Araújo', 'Allexandre', 'Araújo', 2015, 1, 0, 0, 0, 'Allexandre Araújo.jpg'),
-(19, 'Anderson Silva', 'Anderson', 'Silva', 2016, 1, 0, 0, 0, 'Anderson Silva.jpg'),
-(20, 'Antonio Jesus', 'Antonio', 'Jesus', 2014, 2, 0, 0, 0, 'Antonio Jesus.jpg'),
-(21, 'Antonio Mourão', 'Antonio', 'Mourão', 2012, 2, 0, 0, 0, 'Antonio Mourao.jpg'),
-(22, 'Antonio Raposo', 'Antonio', 'Raposo', 2012, 2, 0, 0, 0, 'Antonio Raposo.jpg'),
-(23, 'Aristóteles Junior', 'Aristóteles', 'Junior', 2015, 1, 0, 0, 0, 'Aristóteles Junior.jpg'),
-(24, 'Artur Albuquerque', 'Artur', 'Albuquerque', 2015, 1, 0, 0, 0, 'Artur Albuquerque.jpg'),
-(25, 'Bruno Eduardo', 'Bruno', 'Eduardo', 2014, 2, 0, 0, 0, 'Bruno Eduardo.jpg'),
-(26, 'Caio Manfredini', 'Caio', 'Manfredini', 2017, 2, 0, 0, 0, 'Caio Manfredini.jpg'),
-(27, 'Dalai dos Santos', 'Dalai', 'dos Santos', 2012, 1, 0, 0, 0, 'Dalai dos Santos.jpg'),
-(28, 'Daniel Soares Carvalho', 'Daniel', 'Carvalho', 2016, 1, 0, 0, 0, 'Daniel Soares.jpg'),
-(29, 'Daniela Costa', 'Daniela', 'Costa', 2013, 2, 0, 0, 0, 'Daniela Costa.jpg'),
-(30, 'Dayson Nascimento', 'Dayson', 'Nascimento', 2012, 2, 0, 0, 0, 'Dayson Nascimento.jpg'),
-(31, 'Diego Oliveira', 'Diego', 'Oliveira', 2016, 2, 0, 0, 0, 'Diego Oliveira.jpg'),
-(32, 'Eduardo Dorneles', 'Eduardo', 'Dorneles', 2013, 1, 0, 0, 0, 'Eduardo Dorneles.jpg'),
-(33, 'Eduardo Roger', 'Eduardo', 'Roger', 2016, 1, 0, 0, 0, 'Eduardo Roger.jpg'),
-(34, 'Emanuel Amaral', 'Emanuel', 'Amaral', 2012, 2, 0, 0, 0, 'Emanuel Amaral.jpg'),
-(35, 'Êmile Cunha', 'Êmile', 'Cunha', 2013, 1, 0, 0, 0, 'Êmile Cunha.jpg'),
-(36, 'Gabriel Garcez', 'Gabriel', 'Garcez', 2014, 1, 0, 0, 0, 'Gabriel Garcez.jpg'),
-(37, 'Gabriel Monteles', 'Gabriel', 'Monteles', 2016, 1, 0, 0, 0, 'Gabriel Monteles.jpg'),
-(38, 'Geovane Menezes', 'Geovane', 'Menezes', 2012, 2, 0, 0, 0, 'Geovane Menezes.jpg'),
-(39, 'Gilvan Tavares', 'Gilvan', 'Tavares', 2013, 2, 0, 0, 0, 'Gilvan Tavares.jpg'),
-(40, 'Giovanni Dias', 'Giovanni', 'Dias', 2012, 1, 0, 0, 0, 'Giovanni Dias.jpg'),
-(41, 'Gleidson mendes', 'Gleidson', 'Mendes', 2012, 1, 0, 0, 0, 'Gleidson mendes.jpg'),
-(42, 'Hugo Gois', 'Hugo', 'Gois', 2015, 1, 0, 0, 0, 'Hugo Gois.jpg'),
-(43, 'Isabel Carvalho', 'Isabel', 'Carvalho', 2012, 1, 0, 0, 0, 'Isabel Carvalho.jpg'),
-(44, 'Italo Francyles', 'Italo', 'Francyles', 2013, 1, 0, 0, 0, 'Italo Francyles.jpg'),
-(45, 'Jeferson Pereira Diniz', 'Jefferson', 'Diniz', 2015, 2, 0, 0, 0, 'Jefferson Diniz.jpg'),
-(46, 'Jorge Ribeiro', 'Jorge', 'Ribeiro', 2014, 2, 0, 0, 0, 'Jorge Ribeiro.jpg'),
-(47, 'Julia Manayra', 'Julia', 'Manayra', 2014, 1, 0, 0, 0, 'Julia Manayra.jpg'),
-(48, 'Juliano Ramos', 'Juliano', 'Ramos', 2012, 1, 0, 0, 0, 'Juliano Ramos.jpg'),
-(49, 'Kassio Sousa', 'Kassio', 'Sousa', 2012, 1, 0, 0, 0, 'Kassio Sousa.jpg'),
-(50, 'Lazaro Henrique', 'Lazaro', 'Henrique', 2012, 1, 0, 0, 0, 'Lazaro Henrique.jpg'),
-(51, 'Luann Marques', 'Luann', 'Marques', 2013, 2, 0, 0, 0, 'Luann Marques.jpg'),
-(52, 'Lucas Abreu', 'Lucas', 'Abreu', 2015, 2, 0, 0, 0, 'Lucas Abreu.jpg'),
-(53, 'Luiza Helena', 'Luiza', 'Helena', 2012, 1, 0, 0, 0, 'Luiza Helena.jpg'),
-(54, 'Marcelo Branco', 'Marcelo', 'Branco', 2012, 1, 0, 0, 0, 'Marcelo Branco.jpg'),
-(55, 'Marcos Vinicius', 'Marcos', 'Vinicius', 2016, 1, 0, 0, 0, 'Marcos Vinicius.jpg'),
-(56, 'Matheus Coimbra', 'Matheus', 'Coimbra', 2013, 1, 0, 0, 0, 'Matheus Coimbra.jpg'),
-(57, 'Matheus Menezes', 'Matheus', 'Menezes', 2012, 2, 0, 0, 0, 'Matheus Menezes.jpg'),
-(58, 'Nelia Reis', 'Nelia', 'Reis', 2017, 1, 0, 0, 0, 'Nelia Reis.jpg'),
-(59, 'Nubia Cristine', 'Nubia', 'Cristine', 2012, 1, 0, 0, 0, 'Nubia Cristine.jpg'),
-(60, 'Phillipe Mendonça', 'Phillipe', 'Mendonça', 2016, 1, 0, 0, 0, 'Phillipe Mendonça.jpg'),
-(61, 'Polyanna Costa', 'Polyanna', 'Costa', 2013, 2, 0, 0, 0, 'Polyanna Costa.jpg'),
-(62, 'Rafael Dias', 'Rafael', 'Dias', 2014, 1, 0, 0, 0, 'Rafael Dias.jpg'),
-(63, 'Rafael Drummond', 'Rafael', 'Drummond', 2012, 1, 0, 0, 0, 'Rafael Drummond.jpg'),
-(64, 'Robert Santos', 'Robert', 'Santos', 2017, 2, 0, 0, 0, 'Robert Santos.jpg'),
-(65, 'Rodrigo Garcês', 'Rodrigo', 'Garcês', 2015, 1, 0, 0, 0, 'Rodrigo Garcês.jpg'),
-(66, 'Samyle Lindsay', 'Samyle', 'Lindsay', 2012, 1, 0, 0, 0, 'Samyle Lindsay.jpg'),
-(67, 'Sidney Melo', 'Sidney', 'Melo', 2012, 1, 0, 0, 0, 'Sidney Melo.jpg'),
-(68, 'Tarcio Almeida', 'Tarcio', 'Almeida', 2014, 2, 0, 0, 0, 'Tarcio Almeida.jpg'),
-(69, 'Victor Henrique', 'Victor', 'Henrique', 2015, 1, 0, 0, 0, 'Victor Henrique.jpg'),
-(70, 'Weldson Amaral', 'Weldson', 'Amaral', 2012, 1, 0, 0, 0, 'Weldson Amaral.jpg'),
-(71, 'Werliton Carlos', 'Werliton', 'Carlos', 2014, 1, 0, 0, 0, 'Werliton Carlos.jpg'),
-(72, 'Alyson Estrela Silva', 'Alyson', 'Estrela', 2021, 2, 1, 0, 0, 'Alyson Estrela.jpg'),
-(73, 'André Barreto', 'André', 'Barreto', 2021, 1, 1, 0, 0, 'Andre Barreto.jpg'),
-(74, 'Arthur Passos', 'Arthur', 'Passos', 2019, 2, 1, 0, 0, 'Arthur Passos.jpg'),
-(75, 'Iago Victor', 'Iago', 'Victor', 2021, 1, 1, 0, 0, 'Iago Victor.jpg'),
-(76, 'João Davi', 'João', 'Davi', 2021, 1, 1, 0, 0, 'João Davi.jpg'),
-(77, 'João Victor', 'João', 'Victor', 2021, 2, 1, 0, 0, 'João Victor.jpg'),
-(78, 'José Florêncio', 'José', 'Florêncio', 2021, 2, 1, 0, 0, 'Jose Florencio.jpg'),
-(79, 'Maikon Kessley', 'Maikon', 'Kessley', 2021, 1, 1, 0, 0, 'Maikon Kessley.jpg'),
-(80, 'Matheus Levy de Lima Bessa', 'Matheus', 'Levy', 2021, 1, 1, 0, 0, 'Matheus Levy.jpg'),
-(81, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 1, 0, 0, 'Luigi Dovera.jpg'),
-(82, 'Lukas Gabriel Cruz Mota', 'Lukas', 'Mota', 2021, 2, 1, 0, 0, 'Lukas Mota.jpg'),
-(83, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 0, 'Pedro Rocha.jpg'),
-(84, 'Brenno Izaias', 'Brenno', 'Izaias', 2020, 2, 1, 0, 1, 'Brenno Izaias.jpg'),
-(85, 'Carlos Vinicius', 'Carlos', 'Vinicius', 2020, 1, 1, 0, 1, 'Carlos Vinicius.jpg'),
-(86, 'Gabriel Costa', 'Gabriel', 'Costa', 2020, 1, 1, 0, 1, 'Gabriel Costa.jpg'),
-(87, 'Gabriel Silva', 'Gabriel', 'Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpg'),
-(88, 'Kennedy Anderson', 'Kennedy', 'Anderson', 2020, 1, 1, 0, 1, 'Kennedy Anderson.jpg'),
-(89, 'Paulo Victor', 'Paulo', 'Victor', 2021, 1, 1, 0, 1, 'Paulo Victor.jpg'),
-(90, 'Thalisson Jon', 'Thalisson', 'Jon', 2021, 1, 1, 0, 1, 'Thalisson Jon.jpg'),
-(91, 'João Mateus Silva Lopes', 'João', 'Mateus', 2021, 1, 0, 0, 0, 'Joao Mateus.jpg'),
-(92, 'Nathasha Araújo Pinto', 'Nathasha', 'Pinto', 2019, 2, 0, 0, 0, 'Nathasha Pinto.jpg'),
-(93, 'Alana Cristina de Carvalho Araújo', 'Alana', 'Araújo', 2018, 2, 0, 0, 0, 'Alana Araújo.jpg'),
-(94, 'Jadiel Costa Santos Junior', 'Jadiel', 'Junior', 2018, 2, 0, 0, 0, 'Jadiel Junior.jpg');
+  `imagem` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -163,15 +60,13 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 -- Estrutura da tabela `sites`
 --
 
-DROP TABLE IF EXISTS `sites`;
-CREATE TABLE IF NOT EXISTS `sites` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `sites` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(60) NOT NULL,
   `link` varchar(500) NOT NULL,
   `descricao` text NOT NULL,
-  `evento` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `evento` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -179,25 +74,98 @@ CREATE TABLE IF NOT EXISTS `sites` (
 -- Estrutura da tabela `trabalhos_publicados`
 --
 
-DROP TABLE IF EXISTS `trabalhos_publicados`;
-CREATE TABLE IF NOT EXISTS `trabalhos_publicados` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `trabalhos_publicados` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(500) NOT NULL,
   `autor` varchar(500) NOT NULL,
   `ano` varchar(4) DEFAULT NULL,
   `palavras_chaves` varchar(150) DEFAULT NULL,
-  `resumo` text DEFAULT NULL,
-  `link` varchar(500) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `resumo` text,
+  `link` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `trabalhos_publicados`
 --
 
 INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_chaves`, `resumo`, `link`) VALUES
-(1, 'Educação Tutorial em Computação: Uma Análise Retrospectiva das Atividades Realizadas para a Formação Pessoal e Profissional de Cientistas da Computação', 'Fernando Leite, Gabriel Cardoso, Yandson Costa, Igor Estrela, Antônio Pinto, Ednara Pereira, Geraldo Braz Júnior, Luis Rivero', '2018', 'teste', 'O  Programa  de  Educação  Tutorial  (PET)  atua  como  uma  iniciativa  de promover  a  formação  integrada  de  todos  os  atores  envolvidos  combatendo  a evasão, estimulando o desenvolvimento criativo e empreendedor, assim como a continuação   para   níveis   superiores   de   formação   acadêmica.   Apesar   da existência  de  37  grupos  PET  na  área  de  computação  segundo  a Sociedade Brasileira  de  Computação  (SBC),  poucos  grupos  divulgam  os  resultados  das ações  realizadas  em  eventos  científicos  da  computação  para  discutir  suas implicações.   Nesse   contexto,   este   trabalho   apresenta   uma   análise   das atividades  desenvolvidas  em  um  grupo  PET  de Ciência  da Computação  do ponto de vista dos discentes. Os resultados apontam o impacto das atividades na formação dos alunos, lições aprendidas e oportunidades de melhoria para o sucesso das atividades.', 'https://sol.sbc.org.br/index.php/wei/article/view/6621/6517'),
-(2, 'SIEPET: Uma proposta de remodelagem de um sistema para novas necessidades acadêmicas', 'Lucas Reis Abreu, Simara Vieira da Rocha, Geraldo Braz Júnior', '2019', 'ENGENHARIA DE SOFTWARE; RECURSO; INTERFACE', 'O Programa de Educação Tutorial (PET) tem em seu escopo de desenvolvimento\natividades de pesquisa, ensino e extensão que complementam a educação de seus alunos.\nMuitas dessas atividades resultam em criação de eventos abertos à comunidade acadêmica.\nPor sua vez, o gerenciamento destes eventos envolve inscrição, controle de frequência e\nemissão de certificados. Neste contexto, o PET Ciência da Computação (PETComp)\ndesenvolveu o XSCERT, uma plataforma de eventos como forma de facilitar o gerenciamento\nde algumas atividades e aproximar os grupos PET da UFMA. Com o decorrer do tempo,\nnovas necessidades surgiram, como a criação de sub-eventos dentro de um evento, eventos\npagos e inscrições coletivas para eventos que possuem competições. De posse dessa\nnecessidade, e também com o objetivo de criar uma proposta mais intuitiva e que possa ser\ncompartilhada com os outros grupos, houve a iniciativa de reformular o antigo sistema de\neventos do grupo. O sistema foi denominado de SIEPET (Sistema de Inscrições em Eventos\ndo PET).', 'SIEPET Uma proposta de remodelagem de um sistema para novas necessidades acadêmicas.pdf');
+(1, 'Artigo: De Veteranos para os Novatos: Avaliação das Atividades de Recepção aos Calouros Organizado pelo Grupo PETComp', 'Daniel Pinto, Eduarda Chagas, Gabriel Costa, Kennedy Nunes, Ricardo Anchieta, Simara Rocha, Anselmo Paiva, Luis Rivero', NULL, NULL, 'Alunos ingressantes em cursos de ensino superior sentem dificuldade em se adaptar à nova modalidade de ensino. Nesse contexto, oevento da Semana do Calouro é realizado pelos discentes dogrupo PET de Ciência da Computação da Universidade Federal  do  Maranhãoacompanhados  por  professores como  uma atividade de integração aos novos discentesdo curso de Ciência da Computação. Este  artigo  relata  a  experiência  de  aplicar  diversas  atividades com  o  intuito  de esclarecer as dúvidas geradas pelo ingresso no novo ambiente, bem como aumentara  visibilidade  dos  contextos  do  curso.  Ao  término  das  atividades, o  feedback  dos discentes  apontou  para  a  utilidade  das  mesmas  para  conhecer  as  oportunidades dentro da universidade em termos de projetos, pesquisas e áreas de atuação, assim como soluções para problemas que surgiram durante sua execução.', 'https://sol.sbc.org.br/index.php/wei/article/view/11130/11001'),
+(2, 'Artigo: Identificando as Atividades dos Grupos do Programa de Educação Tutorial na Área de Computação no Apoio à Inclusão e Alfabetização Digital', 'Emily Costa, Antônio Pinto, José Ribamar Durand Rodrigues Junior, Alana Araújo, Ednara Pereira, Geraldo Braz Junior, Rodrigo Santos, Luis Rivero', NULL, NULL, 'O Programa de Educação Tutorial (PET) tem o objetivo de incentivar grupos de alunos de graduação a desenvolver atividades relacionadas com o Ensino, a Pesquisa e a Extensão. Existem 37 grupos PET listados no site da SBC que realizam atividades voltadas para a comunidade (público externo à universidade, idosos, crianças, entre outros). Este artigo apresenta uma análise de quais das atividades divulgadas por estes grupos são voltadas para o apoio à inclusão e alfabetização digital. As informações sobre casos de sucesso destas atividades podem servir como base para outros grupos e incentivar parcerias para realizar atividades afins.', 'https://br-ie.org/pub/index.php/wie/article/view/8594'),
+(3, 'Artigo: Identificação das Expectativas e Dificuldades de Alunos de Graduação no Ensino de Engenharia de Software', 'Jéssica Mendes, Yandson Costa, Kastney Frazão, Rodrigo Santos, Davi Santos, Luis Rivero', NULL, NULL, 'A  Engenharia  de  Software  visa  apoiar  o  desenvolvimento  de  sistemas computacionais de qualidade, reduzindo os custos de produção e aumentando a produtividade dos profissionais. Buscar entender as necessidades dos alunos iniciantes  nessa  área  da  computação  é  vital  para  propor  metodologias adequadas  de  ensino.  Este  artigo  apresenta  o  resultado  da  aplicação  de  um questionário quanto à experiência dos alunos de uma disciplina introdutória de Engenharia de Software. Foi capturada a expectativa de alunos que ainda não cursaram  a  disciplina,  assim  como  a  visão  de  alunos  que  já  a  cursaram, reprovando  ou  não.  Os  resultados  desta  pesquisa  permitiram  identificar eventuais aspectos que possam ter influência positiva ou negativa no processo de aprendizado.', 'https://sol.sbc.org.br/index.php/wei/article/view/6640/6536'),
+(4, 'Artigo: Educação Tutorial em Computação: Uma Análise Retrospectiva das Atividades Realizadas para a Formação Pessoal e Profissional de Cientistas da Computação', 'Fernando Leite, Gabriel Cardoso, Yandson Costa, Igor Estrela, Antônio Pinto, Ednara Pereira, Geraldo Braz Júnior, Luis Rivero', NULL, NULL, 'O  Programa  de  Educação  Tutorial  (PET)  atua  como  uma  iniciativa  de promover  a  formação  integrada  de  todos  os  atores  envolvidos  combatendo  a evasão, estimulando o desenvolvimento criativo e empreendedor, assim como a continuação   para   níveis   superiores   de   formação   acadêmica.   Apesar   da existência  de  37  grupos  PET  na  área  de  computação  segundo  a Sociedade Brasileira  de  Computação  (SBC),  poucos  grupos  divulgam  os  resultados  das ações  realizadas  em  eventos  científicos  da  computação  para  discutir  suas implicações.   Nesse   contexto,   este   trabalho   apresenta   uma   análise   das atividades  desenvolvidas  em  um  grupo  PET  de Ciência  da Computação  do ponto de vista dos discentes. Os resultadosapontam o impacto das atividades na formação dos alunos, lições aprendidas e oportunidades de melhoria para o sucesso das atividades.', 'https://sol.sbc.org.br/index.php/wei/article/view/6621/6517'),
+(5, 'Resumo: SIEPET: Uma proposta de remodelagem de um sistema para novas necessidades acadêmicas', 'Gabriel Silva Monteles, Eduardo Roger Silva Nascimento, Diego da Silva Oliveira, Vinícius Augusto Cardoso Reis, Geraldo Braz Júnior', NULL, 'ENGENHARIA DE SOFTWARE, RECURSO, INTERFACE', NULL, 'https://petcompufma.org/documents/SIEPET%20Uma%20proposta%20de%20remodelagem%20de%20um%20sistema%20para%20novas%20necessidades%20acad%C3%AAmicas.pdf'),
+(6, 'Resumo: Impacto da Análise de Sentimentos em redes sociais na sociedade moderna', 'Lucas Reis Abreu, Simara Vieira da Rocha, Geraldo Braz Júnior', NULL, 'Análise de sentimentos, impactos sociais, polaridade, opiniões', 'Devido ao avanço das mídias sociais observou-se um enorme crescimento de\r\ndados gerados e armazenados diariamente nesses ambientes. Dentro de tais redes sociais os\r\nusuários podem expressar opiniões próprias sobre diversificados assuntos, e é nesta esfera que\r\natua a Análise de Sentimentos. Com a alta inclusão digital fornecida pela difusão da tecnologia,\r\norganizações e empresas voltaram sua atenção para as mídias digitais, procurando identificar\r\ndentro dos comentários dos usuários, características de seu interesse, como um produto está\r\nsendo recebido ou quais melhorias podem ser aplicadas sobre ele, por exemplo. A análise de\r\nsentimentos será responsável por classificar como positivo ou negativo (também chamado de\r\npolaridade) aquele comentário.', 'https://petcompufma.org/documents/Impacto-da-An%C3%A1lise-de-Sentimentos-em-redes-sociais-na-sociedade-moderna.pdf'),
+(7, 'Resumo: Reformulação do site PET Computação, com ênfase na gestão do conteúdo', 'Micael Machado Gomes, Gabriel Phelipe Costa Freitas, Geraldo Braz Júnior', NULL, 'ENGENHARIA DE SOFTWARE, RECURSO, INTERFACE.', '', 'https://petcompufma.org/documents/SIEPET-Uma-proposta-de-remodelagem-de-um-sistema-para-novas-necessidades-acad%C3%AAmicas.pdf'),
+(8, 'Resumo: Uma abordagem competitiva para o estímulo ao aprendizado', 'Lucas Reis Abreu, Anderson Silva, Bruno Eduardo, Daniel Soares Carvalho, Diego Oliveira, Eduardo Roger, Gabriel Monteles, Hugo Gois, Marcos Vinicius, Phillipe Mendonça, Rodrigo Garcês, Rodrigo Nascimento, Tarcio Almeida, Victor Henrique, Geraldo Braz Junior', NULL, NULL, 'Transmitir o conhecimento apropriado de um determinado conteúdo sempre é\r\nacompanhado de desafios e o maior deles é ter a garantia que os alunos realmente absorveram\r\na matéria lecionada de forma eficaz. Em vista de tal disputa, o grupo do Programa de Educação\r\nTutorial de Ciência da Computação (PETComp) da Universidade Federal do Maranhão\r\n(UFMA), apresenta através deste trabalho uma proposta de abordagem competitiva\r\nmetodológica para estruturação de competições envolvendo temáticas presentes no curso, tais\r\ncomo programação, robótica e jogos com a finalidade de subsidiar práticas de ensino, pesquisa\r\ne extensão', 'https://petcompufma.org/documents/Uma-abordagem-competitiva-para-o-estimulo-ao-aprendizado-.pdf'),
+(9, 'Resumo: Plataforma gamificada de auxílio para exames de POSCOMP e ENADE', 'Lucas Reis Abreu,  Anderson Silva,  Bruno Eduardo, Daniel Soares Carvalho, Diego Oliveira, Eduardo Roger, Gabriel Monteles, Hugo Gois, Marcos Vinicius, Phillipe Mendonça, Rodrigo Garcês, Rodrigo Nascimento, Tárcio Almeida, Victor Henrique, Geraldo Braz Junior', NULL, NULL, 'Testes como ENADE e POSCOMP (exame de ingresso na pós graduação do curso de\r\ncomputação) são constantemente realizados pelos discentes do curso, visando melhorar sua carreira\r\nprofissional. Em prol de ajudar estes alunos, o Programa de Educação Tutorial de Ciência da\r\nComputação (PETComp) da Universidade Federal do Maranhão (UFMA) se propôs a construir uma\r\nplataforma gamificada denominada COMPET, cuja proposta é auxiliar os estudantes do curso e\r\ninteressados nesta área de uma forma dinâmica, interativa e mais atrativa, visando melhorar seu\r\ndesempenho nos respectivos exames citados através de um jogo de perguntas e respostas, na qual as\r\nperguntas foram retiradas de provas anteriores do ENADE e POSCOMP, além de questões temáticas\r\nelaboradas pelos próprios docentes da universidade.', 'https://petcompufma.org/documents/Plataforma-gamificada-de-aux%C3%ADlio-para-exames-de-POSCOMP-e-ENADE.pdf'),
+(10, 'Artigo: Melhoria da Grade Curricular do Curso de Ciência da Computação da Universidade Federal do Maranhão: uma Abordagem Analítica', 'Anderson S. Fonseca, Eduardo R. S. Nascimento, Marcos Vinicius C. Gomes, Geraldo Braz Junior', NULL, NULL, NULL, 'https://petcompufma.org/documents/Melhoria-da-grade%20curricular-do-curso-de-ciencia-da-Computacao-da-Universidade-federal-do-maranhao-uma-abordagem-analitica.pdf'),
+(11, 'Artigo: BodyRating: Uma proposta para anotção de silhueta corporal para avaliação de autopercepção', 'Anderson S. Fonseca, Victor H. B. de Lemos, Artur A. Silva, Geraldo Braz Junior,  Anselmo C. Paiva, Antonio A. M. da Silva', NULL, NULL, 'Atualmente, a aparencia ˆ e de grande import ´ ancia na vida de muitos e ˆ\r\na forma que pessoas avaliam a propria imagem pode levar a diversos transtor- ´\r\nnos de autopercepc¸ao. Avaliar o n ˜ ´ıvel desses transtornos levou a proposta da\r\nferramenta BodyRating que anota a classificac¸ao de modelos 3D de pacientes ˜\r\nvoluntarios feita por especialistas da ´ area levando em considerac¸ ´ ao a Escala ˜\r\nde Silhuetas. A ferramenta foi apresentada e percebeu-se uma grande aceitac¸ao˜\r\nda mesma. Apos a anotac¸ ´ ao dos modelos 3D, os dados coletados ser ˜ ao utili- ˜\r\nzados como base para o desenvolvimento de uma ferramenta de classificac¸ao˜\r\nautomatica que ´ e uma futura proposta de aux ´ ´ılio a especialistas.\r\n', 'https://petcompufma.org/documents/BodyRating-Uma-proposta-para-anotacao-de-silhueta-corporal-para-avaliacao-de-autopercepcao.pdf'),
+(12, 'Artigo: O Uso de Competições como Ferramenta de Ensino e Fortalecimento do Aprendizado dentro do Curso de Ciência da Computação', 'Lucas Reis Abreu, Daniel Soares Carvalho, Diego Oliveira, Geraldo Braz Junior', NULL, NULL, NULL, 'https://petcompufma.org/documents/O-Uso-de-Competicoes-como-Ferramenta-de-Ensino-e-Fortalecimento-do-Aprendizado-dentro-do-Curso-de-Ciencia-da-Computacao.pdf'),
+(13, 'Artigo: COMPET Um software de Integralização do Curso de Ciência da Computação', 'Bruno Eduardo Silva Ferreira, Hugo Gois Santos, Lucas Reis Abreu,  Tarcio Almeida Lima, Rodrigo do Nascimento Siqueira, Jefferson Pereira Diniz, Phillipe Idivaldo Mendonça Silva, Victor Henrique Bezerra de Lemos, Geraldo Braz Junior', NULL, NULL, NULL, 'https://petcompufma.org/documents/COMPET-Um-software-de-Integralizacao-do-Curso-de-Ciencia-da-Computacao.pdf'),
+(14, 'Artigo: Estímulo ao pensamento computacional e a divulgação dos grupos PET UFMA: Desenvolvimento de WebPages como prática interdisciplinar', 'Hugo G. Santos ,Celielma Costa, Lucas R. Abreu, Eduardo R. S. Nascimento, Geraldo B. Junior', NULL, NULL, NULL, 'https://petcompufma.org/documents/Estimulo-ao-pensamento-computacional-e-a-divulgacao-dos-grupos-PET-UFMA-Desenvolvimento-de-WebPages-como-pratica-interdisciplinar.pdf'),
+(15, 'Artigo: Acompanhamento de Discentes: A monitoria como forma de incentivo e motivação da disciplina de Algoritmos I', 'Nelia Cantanhede Reis, Ednara Aparecida dos Santos Pereira, Gabriel Phelipe Costa Freitas, Vinicius Augusto Cardoso Reis, Geraldo Braz Junior.', NULL, NULL, 'Este artigo tem como objetivo analisar de forma parcial sob o ponto\r\nde vista de alunos e professor as contribuic¸oes na aprendizagem da disciplina ˜\r\nde Algoritmos I por meio de atividades de monitoria. Nossa abordagem envolve\r\na aplicac¸ao de atividades e desafios que despertam o interesse do aluno em pro- ˜\r\ngramar, tambem foram utilizadas plataformas que facilitam o aprendizado. Os ´\r\ndados foram obtidos atraves de question ´ arios aplicados aos alunos e entrevista ´\r\nsemi-estruturada com o professor da disciplina, assim, foi constatado que essas atividades de fato tem impactos na aprendizagem. Os resultados obtidos ˆ\r\nmostram que a maioria dos estudantes foi de fato motivada.', 'https://petcompufma.org/documents/Acompanhamento-de-Discentes-a-monitoria-como-forma-de-incentivo-e-motivacao-da-disciplina-de-Algoritmos-I.pdf'),
+(16, 'Artigo: Educação Tutorial em Ciência de Computação para o WEI 2015', 'Julia Manayra da S. Ferreira, Jorge Luis M. Ribeiro, Aristóteles T. de Freitas Júnior, Gabriel Garcez Barros Sousa, Italo Francyles Santos da Silva, Hugo Gois Santos, Matheus Chaves Menezes, Artur Albuquerque Silva, Bruno Eduardo Silva Ferreira, Lucas Gabriel Rezende de Jesus, Victor Henrique Bezerra de Lemos , Antônio de Jesus Moraes Neto , Alexandre C. M de Oliveira.', NULL, NULL, 'No intuito de proporcionar a formac¸ao acad ˜ emica ampla e de qua- ˆ\r\nlidade, o Programa de Educac¸ao Tutorial (PET) ˜ e um modelo indissoci ´ avel ´\r\nde ensino, pesquisa e extensao, que preza tamb ˜ em por valores de cidadania ´\r\ne consciencia social. Apesar de existir desde a d ˆ ecada de 90, com o nome ´\r\nde Programa Especial de Treinamento, e ter se expandido para mais de 37\r\ngrupos na area de Computac¸ ´ ao, pouca ou nenhuma literatura tem sido pro- ˜\r\nduzida com intuito de prover uma base metodologica de atuac¸ ´ ao desses grupos. ˜\r\nEste artigo descreve metodos e pr ´ aticas que t ´ em sido utilizados com ˆ exito pelo ˆ\r\nPET de Ciencia da Computac¸ ˆ ao da Universidade Federal do Maranh ˜ ao (PET- ˜\r\nComp/UFMA) no desenvolvimento de suas atividades, aprimorados ao longo de\r\nseus oito anos de existencia. ', 'https://petcompufma.org/documents/Educacao-Tutorial-em-Ciencia-da-Computacao-uma-proposta.pdf'),
+(17, 'Artigo: XSCERT publicado para o ENAPET 2014', 'Alex Newman Veloso dos Santos, Dayson Newton Corrêa Rodrigues do Nascimento, Eduardo Dorneles Ferreira de Souza, Lázaro Henrique de Carvalho Marques e Alexandre César Muniz de Oliveira.', NULL, NULL, NULL, 'https://petcompufma.org/documents/xscert-final.pdf'),
+(18, 'Resenha: Crítica de “Futuro: O imaginado e o real”', 'Rodrigo Kanehisa', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-Futuro-O-Real-e-o-Imaginada.pdf'),
+(19, 'Resenha: Crítica de “A Tradução Universal e os Call Centers”', 'Gabriel Garcez Barros Sousa', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-a-traducao-universal-e-os-call-centers.pdf'),
+(20, 'Resenha: Crítica de “Empresas em redes, riscos também”', 'Daniela de Sousa Costa', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-nem-tao-longe.pdf'),
+(21, 'Resenha: Crítica de “Até onde vai a internet?”', 'Julia Manayra da Silva Ferreira', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-Critica-do-artigo-sociedade-paralela.pdf');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `noticias`
+--
+ALTER TABLE `noticias`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `petianos`
+--
+ALTER TABLE `petianos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sites`
+--
+ALTER TABLE `sites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `trabalhos_publicados`
+--
+ALTER TABLE `trabalhos_publicados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `noticias`
+--
+ALTER TABLE `noticias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `petianos`
+--
+ALTER TABLE `petianos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `sites`
+--
+ALTER TABLE `sites`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `trabalhos_publicados`
+--
+ALTER TABLE `trabalhos_publicados`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
