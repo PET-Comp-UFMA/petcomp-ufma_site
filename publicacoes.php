@@ -162,10 +162,10 @@
                   add
                 </span>
               </button>
-            <a href="./documents/<?php print_r($row['link'])?>" download='<?php print_r($row['Titulo']) ?>' class="button-download">
-              Download
+            <a href="<?php print_r($row['link'])?>" class="button-download">
+              Ver arquivo
               <span class="material-icons">
-                file_download
+                  link
               </span>
             </a>
             
