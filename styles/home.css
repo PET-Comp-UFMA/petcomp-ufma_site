@@ -307,13 +307,13 @@
   color: #888686;
   line-height: 22px;
   margin: 20px 0;
-  width: 350px;
+  width: 100%;
 }
 
 .atividades .atividades-desenvolvidas h1 {
   color: #545457;
   font-size: 48px;
-  width: 300px;
+  width: 100%;
 }
 
 .atividades .atividades-desenvolvidas a {
@@ -351,7 +351,6 @@
 .atividades .images-atividades .card-atividade h3 {
   color: #fff;
   font-size: 24px;
-  width: 200px;
   text-decoration: none;
 }
 
@@ -419,6 +418,7 @@
   }
   .resumo-petcomp .text-petcomp {
     margin-right: 0;
+    width: 100%;
   }
 }
 
@@ -446,7 +446,7 @@
   }
 
   .atividades .atividades-desenvolvidas h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -512,14 +512,15 @@
 
   .resumo-petcomp .text-petcomp h1 {
     color: #545457;
-    font-size: 48px;
+    font-size: 30px;
+    margin: 0 auto;
     margin-top: 20px;
-    width: 300px;
+    width: 50% ;
   }
 
   .resumo-petcomp .text-petcomp p {
     padding: 0;
-    width: 275px;
+    width: 100%;
   }
 
   .atividades {
@@ -557,5 +558,39 @@
   .atividades .images-atividades .card-atividade h3 {
     font-size: 16px;
     width: 100%;
+    font-size: 13px;
   }
+}
+
+/*@media (max-width: 1100px){
+  .atividades {
+    display: grid;
+    justify-content: space-around;
+    padding: 80px;
+    margin: 0 auto ;
+  }
+  .atividades .atividades-desenvolvidas {
+    width: 100%; /* Valor da Largura 
+  }
+  .atividades .atividades-desenvolvidas p {
+    color: #888686;
+    line-height: 22px;
+    margin: 20px 0; 
+  }
+  .atividades .atividades-desenvolvidas h1 {
+    margin: 0 auto;
+    width: 50%; /* Valor da Largura
+  }
+}*/
+
+@media (max-width: 351px){
+  .atividades .images-atividades {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .atividades .atividades-desenvolvidas h1 {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
 }
