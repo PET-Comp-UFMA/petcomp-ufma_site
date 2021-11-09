@@ -1,4 +1,4 @@
-<footer>
+<footer class="fixar-rodape">
 
     <div class="div-1">
 
