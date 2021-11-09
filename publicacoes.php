@@ -135,20 +135,27 @@
             </ul>
           </div>
         </div>
-
+      
         <div class="panel fade">
+
+        <?php if(isset($row['resumo'])): ?>
           <div class="resume">
             <p class="resume-title">Resumo</p>
             <p class="resume-text">
               <?php print_r($row['resumo'])?>
             </p>
           </div>
+        <?php endif ?>
+        
+        <?php if(isset($row['palavras-chaves'])): ?>
           <p class="tags-title">Palavras-chave</p>
           <div class="tags">
             <ul class="list-tags">
               <li class="item-tag"><?php print_r($row['palavras_chaves']) ?></li>
             </ul>
-          </div>	
+          </div>
+        <?php endif ?>
+
         </div>
       
         <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
@@ -168,12 +175,16 @@
                   link
               </span>
             </a>
-            
         </div>
+
+        <?php if (isset($row['ano'])): ?>
           <div class="container-data">
             <p class="data">Ano de publicação: <span class="data-day"><?php print_r($row['ano'])?></span></p>
           </div>
+        <?php endif ?>
+
         </div>
+        
         
         <!-- </div> -->
         

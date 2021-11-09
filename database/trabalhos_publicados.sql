@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08-Nov-2021 às 15:26
+-- Tempo de geração: 09-Nov-2021 às 13:15
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 8.0.12
 
@@ -27,16 +27,15 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `trabalhos_publicados`
 --
 
-CREATE TABLE IF NOT EXISTS `trabalhos_publicados` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `trabalhos_publicados` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(500) NOT NULL,
   `autor` varchar(500) NOT NULL,
   `ano` varchar(4) DEFAULT NULL,
   `palavras_chaves` varchar(150) DEFAULT NULL,
   `resumo` text DEFAULT NULL,
-  `link` varchar(500) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+  `link` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `trabalhos_publicados`
@@ -49,7 +48,7 @@ INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_ch
 (4, 'Artigo: Educação Tutorial em Computação: Uma Análise Retrospectiva das Atividades Realizadas para a Formação Pessoal e Profissional de Cientistas da Computação', 'Fernando Leite, Gabriel Cardoso, Yandson Costa, Igor Estrela, Antônio Pinto, Ednara Pereira, Geraldo Braz Júnior, Luis Rivero', NULL, NULL, 'O  Programa  de  Educação  Tutorial  (PET)  atua  como  uma  iniciativa  de promover  a  formação  integrada  de  todos  os  atores  envolvidos  combatendo  a evasão, estimulando o desenvolvimento criativo e empreendedor, assim como a continuação   para   níveis   superiores   de   formação   acadêmica.   Apesar   da existência  de  37  grupos  PET  na  área  de  computação  segundo  a Sociedade Brasileira  de  Computação  (SBC),  poucos  grupos  divulgam  os  resultados  das ações  realizadas  em  eventos  científicos  da  computação  para  discutir  suas implicações.   Nesse   contexto,   este   trabalho   apresenta   uma   análise   das atividades  desenvolvidas  em  um  grupo  PET  de Ciência  da Computação  do ponto de vista dos discentes. Os resultadosapontam o impacto das atividades na formação dos alunos, lições aprendidas e oportunidades de melhoria para o sucesso das atividades.', 'https://sol.sbc.org.br/index.php/wei/article/view/6621/6517'),
 (5, 'Resumo: SIEPET: Uma proposta de remodelagem de um sistema para novas necessidades acadêmicas', 'Gabriel Silva Monteles, Eduardo Roger Silva Nascimento, Diego da Silva Oliveira, Vinícius Augusto Cardoso Reis, Geraldo Braz Júnior', NULL, 'ENGENHARIA DE SOFTWARE, RECURSO, INTERFACE', NULL, 'https://petcompufma.org/documents/SIEPET-Uma-proposta-de-remodelagem-de-um-sistema-para-novas-necessidades-acadêmicas.pdf'),
 (6, 'Resumo: Impacto da Análise de Sentimentos em redes sociais na sociedade moderna', 'Lucas Reis Abreu, Simara Vieira da Rocha, Geraldo Braz Júnior', NULL, 'Análise de sentimentos, impactos sociais, polaridade, opiniões', 'Devido ao avanço das mídias sociais observou-se um enorme crescimento de\r\ndados gerados e armazenados diariamente nesses ambientes. Dentro de tais redes sociais os\r\nusuários podem expressar opiniões próprias sobre diversificados assuntos, e é nesta esfera que\r\natua a Análise de Sentimentos. Com a alta inclusão digital fornecida pela difusão da tecnologia,\r\norganizações e empresas voltaram sua atenção para as mídias digitais, procurando identificar\r\ndentro dos comentários dos usuários, características de seu interesse, como um produto está\r\nsendo recebido ou quais melhorias podem ser aplicadas sobre ele, por exemplo. A análise de\r\nsentimentos será responsável por classificar como positivo ou negativo (também chamado de\r\npolaridade) aquele comentário.', 'https://petcompufma.org/documents/Impacto-da-An%C3%A1lise-de-Sentimentos-em-redes-sociais-na-sociedade-moderna.pdf'),
-(7, 'Resumo: Reformulação do site PET Computação, com ênfase na gestão do conteúdo', 'Micael Machado Gomes, Gabriel Phelipe Costa Freitas, Geraldo Braz Júnior', NULL, 'ENGENHARIA DE SOFTWARE, RECURSO, INTERFACE.', '', 'https://petcompufma.org/documents/Reformulacao-do-site-PET-computacao-com-enfase-na-gestao-do-conteudo.pdf'),
+(7, 'Resumo: Reformulação do site PET Computação, com ênfase na gestão do conteúdo', 'Micael Machado Gomes, Gabriel Phelipe Costa Freitas, Geraldo Braz Júnior', NULL, 'ENGENHARIA DE SOFTWARE, RECURSO, INTERFACE.', NULL, 'https://petcompufma.org/documents/Reformulacao-do-site-PET-computacao-com-enfase-na-gestao-do-conteudo.pdf'),
 (8, 'Resumo: Uma abordagem competitiva para o estímulo ao aprendizado', 'Lucas Reis Abreu, Anderson Silva, Bruno Eduardo, Daniel Soares Carvalho, Diego Oliveira, Eduardo Roger, Gabriel Monteles, Hugo Gois, Marcos Vinicius, Phillipe Mendonça, Rodrigo Garcês, Rodrigo Nascimento, Tarcio Almeida, Victor Henrique, Geraldo Braz Junior', NULL, NULL, 'Transmitir o conhecimento apropriado de um determinado conteúdo sempre é\r\nacompanhado de desafios e o maior deles é ter a garantia que os alunos realmente absorveram\r\na matéria lecionada de forma eficaz. Em vista de tal disputa, o grupo do Programa de Educação\r\nTutorial de Ciência da Computação (PETComp) da Universidade Federal do Maranhão\r\n(UFMA), apresenta através deste trabalho uma proposta de abordagem competitiva\r\nmetodológica para estruturação de competições envolvendo temáticas presentes no curso, tais\r\ncomo programação, robótica e jogos com a finalidade de subsidiar práticas de ensino, pesquisa\r\ne extensão', 'https://petcompufma.org/documents/Uma-abordagem-competitiva-para-o-estimulo-ao-aprendizado-.pdf'),
 (9, 'Resumo: Plataforma gamificada de auxílio para exames de POSCOMP e ENADE', 'Lucas Reis Abreu,  Anderson Silva,  Bruno Eduardo, Daniel Soares Carvalho, Diego Oliveira, Eduardo Roger, Gabriel Monteles, Hugo Gois, Marcos Vinicius, Phillipe Mendonça, Rodrigo Garcês, Rodrigo Nascimento, Tárcio Almeida, Victor Henrique, Geraldo Braz Junior', NULL, NULL, 'Testes como ENADE e POSCOMP (exame de ingresso na pós graduação do curso de\r\ncomputação) são constantemente realizados pelos discentes do curso, visando melhorar sua carreira\r\nprofissional. Em prol de ajudar estes alunos, o Programa de Educação Tutorial de Ciência da\r\nComputação (PETComp) da Universidade Federal do Maranhão (UFMA) se propôs a construir uma\r\nplataforma gamificada denominada COMPET, cuja proposta é auxiliar os estudantes do curso e\r\ninteressados nesta área de uma forma dinâmica, interativa e mais atrativa, visando melhorar seu\r\ndesempenho nos respectivos exames citados através de um jogo de perguntas e respostas, na qual as\r\nperguntas foram retiradas de provas anteriores do ENADE e POSCOMP, além de questões temáticas\r\nelaboradas pelos próprios docentes da universidade.', 'https://petcompufma.org/documents/Plataforma-gamificada-de-aux%C3%ADlio-para-exames-de-POSCOMP-e-ENADE.pdf'),
 (10, 'Artigo: Melhoria da Grade Curricular do Curso de Ciência da Computação da Universidade Federal do Maranhão: uma Abordagem Analítica', 'Anderson S. Fonseca, Eduardo R. S. Nascimento, Marcos Vinicius C. Gomes, Geraldo Braz Junior', NULL, NULL, NULL, 'https://petcompufma.org/documents/Melhoria-da-grade%20curricular-do-curso-de-ciencia-da-Computacao-da-Universidade-federal-do-maranhao-uma-abordagem-analitica.pdf'),
@@ -64,6 +63,26 @@ INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_ch
 (19, 'Resenha: Crítica de “A Tradução Universal e os Call Centers”', 'Gabriel Garcez Barros Sousa', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-a-traducao-universal-e-os-call-centers.pdf'),
 (20, 'Resenha: Crítica de “Empresas em redes, riscos também”', 'Daniela de Sousa Costa', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-nem-tao-longe.pdf'),
 (21, 'Resenha: Crítica de “Até onde vai a internet?”', 'Julia Manayra da Silva Ferreira', NULL, NULL, NULL, 'https://petcompufma.org/documents/Resenha-Critica-do-artigo-sociedade-paralela.pdf');
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `trabalhos_publicados`
+--
+ALTER TABLE `trabalhos_publicados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `trabalhos_publicados`
+--
+ALTER TABLE `trabalhos_publicados`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
