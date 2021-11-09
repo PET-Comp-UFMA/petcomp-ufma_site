@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
 }
+
 #slider {
   margin: auto;
   width: 100%;
@@ -277,6 +278,7 @@
   line-height: 22px;
   margin: 20px 0;
   width: 350px;
+  text-align: justify;
 }
 
 .resumo-petcomp .text-petcomp a {
@@ -292,19 +294,27 @@
 .atividades {
   display: flex;
   justify-content: space-around;
-  padding: 100px;
+  padding: 80px;
 }
 
 .atividades .atividades-desenvolvidas {
-  margin: 0;
   margin: auto 0;
+  margin-right: 20px;
   width: 300px;
+}
+
+.atividades .atividades-desenvolvidas p {
+  color: #888686;
+  line-height: 22px;
+  margin: 20px 0;
+  width: 100%;
+  text-align: justify;
 }
 
 .atividades .atividades-desenvolvidas h1 {
   color: #545457;
   font-size: 48px;
-  width: 300px;
+  width: 100%;
 }
 
 .atividades .atividades-desenvolvidas a {
@@ -325,37 +335,46 @@
 }
 
 .atividades .images-atividades .card-atividade {
-  align-items: flex-end;
   background: linear-gradient(45deg, #343564, #0076cd, #01a8ff, #33c3ff);
   border-radius: 4px;
   color: #ffff;
-  cursor: pointer;
   display: flex;
+  flex-direction: column;
   height: 250px;
+  justify-content: space-between;
   margin: 12px 20px;
-  padding: 50px 20px;
+  padding: 20px 15px;
   text-decoration: none;
   transition: ease 0.5s;
-  width: 250px;
+  width: 300px;
 }
-.atividades .images-atividades .card-atividade:hover {
-  align-items: flex-end;
-  background: linear-gradient(45deg, #0076cd, #01a8ff, #33c3ff, #16a1dd);
-  border-radius: 4px;
-  transform: scale(1.1);
+
+.atividades .images-atividades .card-atividade h3 {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .atividades .images-atividades .card-atividade a {
+  align-items: center;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
   color: #fff;
+  display: flex;
   font-size: 20px;
-  width: 200px;
+  height: fit-content !important;
+  text-align: center;
+  padding: 10px;
+  width: fit-content;
 }
-.atividades .images-atividades .card-atividade h3 {
-  color: #ffff;
-  font-size: 20px;
-  width: 200px;
-  text-decoration: none;
+
+.atividades .images-atividades .card-atividade a:hover {
+  background: #343564;
+  border: 1px solid #343564;
+  transition: 0.2s;
 }
+
 #parceiros {
   background: #eeeeee;
   height: 400px;
@@ -400,6 +419,54 @@
   }
   .resumo-petcomp .text-petcomp {
     margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .atividades {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .atividades .images-atividades {
+    justify-items: center;
+  }
+
+  .atividades .atividades-desenvolvidas {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .atividades > .atividades-desenvolvidas > p {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .atividades .atividades-desenvolvidas h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .atividades .atividades-desenvolvidas a {
+    font-size: 16px;
+  }
+
+  .atividades .images-atividades .card-atividade {
+    height: 300px;
+    padding: 20px 15px 20px 15px;
+    margin: 10px;
+    width: 310px;
+  }
+
+  .atividades .images-atividades .card-atividade h3 {
+    font-size: 28px;
   }
 }
 
@@ -446,20 +513,25 @@
 
   .resumo-petcomp .text-petcomp h1 {
     color: #545457;
-    font-size: 48px;
+    font-size: 30px;
+    margin: 0 auto;
     margin-top: 20px;
-    width: 300px;
+    width: 50% ;
   }
 
   .resumo-petcomp .text-petcomp p {
     padding: 0;
-    width: 275px;
+    width: 100%;
   }
 
   .atividades {
     flex-direction: column;
     height: 100%;
     padding: 0;
+  }
+
+  .atividades .images-atividades {
+    justify-items: flex-start;
   }
 
   .atividades .atividades-desenvolvidas {
@@ -486,5 +558,40 @@
 
   .atividades .images-atividades .card-atividade h3 {
     font-size: 16px;
+    width: 100%;
+    font-size: 13px;
   }
+}
+
+/*@media (max-width: 1100px){
+  .atividades {
+    display: grid;
+    justify-content: space-around;
+    padding: 80px;
+    margin: 0 auto ;
+  }
+  .atividades .atividades-desenvolvidas {
+    width: 100%; /* Valor da Largura 
+  }
+  .atividades .atividades-desenvolvidas p {
+    color: #888686;
+    line-height: 22px;
+    margin: 20px 0; 
+  }
+  .atividades .atividades-desenvolvidas h1 {
+    margin: 0 auto;
+    width: 50%; /* Valor da Largura
+  }
+}*/
+
+@media (max-width: 351px){
+  .atividades .images-atividades {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .atividades .atividades-desenvolvidas h1 {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
 }

@@ -1,52 +1,62 @@
-function DropdownSobre() {
-  document.getElementById("dropdown-sobre").classList.toggle("show-dropdown-sobre");
+let lastActive;
 
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-sobre");
-      var i;
-      for (i=0; i<dropdowns.length; i++) {
-        var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-sobre')) {
-          openDropdowns.classList.remove('show-dropdown-sobre');
-        }
+function CloseAllDropdowns(active) {
+  
+  // função que fecha todos os dropdowns ativos, exceto o ultimo clicado
+
+  let dropdowns = document.querySelectorAll(".dropdown [id]");
+  
+  dropdowns.forEach((cur) => {
+
+    if (cur.classList.contains("dropdown-open")) {
+      
+      if (active != cur.getAttribute("id")) {
+        let nameSection = cur.getAttribute("id").replace("dropdown-", "")
+        DropdownSection(nameSection)  
       }
     }
-  }
+  })
 }
 
-function DropdownProjetos() {
-  document.getElementById("dropdown-projetos").classList.toggle("show-dropdown-projetos");
+function DropdownSection(section) {
+
+  // função que controla o dropdown do header
+
+  document.getElementById(`dropdown-${section}`).classList.toggle(`show-dropdown-${section}`);
+  document.getElementById(`dropdown-${section}`).classList.toggle(`dropdown-open`);
+  let drops = document.querySelectorAll(".dropdown");
+
+
+  drops.forEach((elem) => {
+    elem.addEventListener("click", (event) => {
+
+      let father = elem.parentNode;
+      let dropdowns = elem.querySelector(".dropdown-open");
+
+      if (dropdowns != null){
+        let id = dropdowns.getAttribute("id")
+        CloseAllDropdowns(id);
+      }
+    }) 
+  })
+
 
   window.onclick = function(event) {
+    
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-projetos");
+      var dropdowns = document.getElementsByClassName(`dropdown-content-${section}`);
       var i;
       for (i=0; i<dropdowns.length; i++) {
         var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-projetos')) {
-          openDropdowns.classList.remove('show-dropdown-projetos');
+        if (openDropdowns.classList.contains(`show-dropdown-${section}`)) {
+          openDropdowns.classList.remove(`show-dropdown-${section}`);
         }
       }
     }
-  }
-}
 
-function DropdownProdutos() {
-  document.getElementById("dropdown-produtos").classList.toggle("show-dropdown-produto");
 
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content-produtos");
-      var i;
-      for (i=0; i<dropdowns.length; i++) {
-        var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains('show-dropdown-produto')) {
-          openDropdowns.classList.remove('show-dropdown-produto');
-        }
-      }
-    }
-  }
+  } 
+  
 }
 
 function openMenu() {

@@ -58,7 +58,7 @@ header .divider {
 header nav {
   align-items: center;
   display: flex;
-  margin-right: 100px;
+  margin-right: 30px;
 }
 
 header .open-btn,
@@ -167,8 +167,53 @@ header .dropdown .dropdown-content-produtos a:hover {
   background: #e1e1e1;
 }
 
-header .dropdown .show-dropdown-produto {
+header .dropdown .show-dropdown-produtos {
   display: block;
+}
+
+
+main .container .pagination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+main .container .pagination .numbers {
+  display: flex;
+}
+
+main .container .pagination .numbers div,
+main .container .pagination .prev,
+main .container .pagination .next {
+  align-items: center;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 8px;
+  width: 25px;
+}
+
+main .container .pagination .prev:hover,
+main .container .pagination .next:hover {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+main .container .pagination .numbers .active {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+main .container .pagination .numbers .active:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 /* HEADER */
@@ -250,7 +295,7 @@ footer .infos li {
 }
 
 footer .infos li p {
-  width: 400px;
+  width: 300px;
 }
 
 footer .infos img {
@@ -345,13 +390,12 @@ footer .contatos a {
   width: 160px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   header {
     height: auto;
   }
 
   header .logos {
-    margin-left: 10px;
     width: 75px;
   }
 
@@ -377,7 +421,6 @@ footer .contatos a {
 
   ul {
     align-items: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -429,8 +472,8 @@ footer .contatos a {
   }
 
   header .open-btn {
-    margin-right: 10px;
-    width: 30px;
+    margin-right: 30px;
+    width: 40px;
   }
 
   header nav ul li .dropdown .dropdown-content-sobre a,
@@ -447,7 +490,10 @@ footer .contatos a {
     display: flex;
     margin-left: 12px;
   }
+}
 
+@media (max-width: 800px){
+  
   footer {
     display: flex;
     flex-direction: column;
@@ -488,7 +534,6 @@ footer .contatos a {
     text-align: left;
   }
   
-
   footer .contatos a {
     margin-top: 30px;
   }
@@ -497,5 +542,51 @@ footer .contatos a {
     font-size: 24pt;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  
+  main .container .pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  main .container .pagination .numbers {
+    display: flex;
+  }
+
+  main .container .pagination .numbers div,
+  main .container .pagination .prev,
+  main .container .pagination .next {
+    align-items: center;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    margin: 0 4px;
+    padding: 8px;
+    width: 25px;
+  }
+
+  main .container .pagination .prev:hover,
+  main .container .pagination .next:hover {
+    background: var(--bg);
+    color: var(--primary);
+  }
+
+  main .container .pagination .numbers .active {
+    background: var(--bg);
+    color: var(--primary);
+  }
+  
+
+  footer .lula {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
   }
 }

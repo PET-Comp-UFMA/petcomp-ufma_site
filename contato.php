@@ -16,80 +16,7 @@
 
 </head>
 <body>
-  <header>
-    <div class="logos">
-      <a href="./index.html"><img src="./assets/images/logos/PETComp.png" alt="Logo PETComp UFMA" class="pet-logo"></a>
-      <div class="divider"></div>
-      <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/logos/UFMA.png" alt="Logo UFMA" class="ufma-logo"></a>
-    </div>
-    <nav id="nav-bar" class="overlay">
-      <img src="./assets/svg/close_black_24dp.svg" alt="" class="close-btn" onclick="closeMenu()">
-      <div class="overlay-content">
-        <ul>
-          <li>
-            <button>
-              <a href="./index.html">Início</a>
-            </button>
-          </li>
-          <li>
-            <div class="dropdown">
-              <button onclick="DropdownSobre()" class="dropbtn">
-                Conheça o PETComp
-                <span class="material-icons dropbtn">
-                  arrow_drop_down
-                </span>
-              </button>
-              <div id="dropdown-sobre" class="dropdown-content-sobre">
-                <a href="./sobre.html">Sobre Nós</a>
-                <a href="./integrantes.html">Integrantes</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-              <button onclick="DropdownProjetos()" class="dropbtn">
-                Projetos
-                <span class="material-icons dropbtn">
-                  arrow_drop_down
-                </span>
-              </button>
-              <div id="dropdown-projetos" class="dropdown-content-projetos">
-                <a href="./monitoria.html">Monitoria</a>
-                <a href="./desenvolvimento.html">Fáb. de Software</a>
-                <a href="./minicursos.html">Minicursos e Oficinas</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <button><a href="./publicacoes.html">Publicações</a></button>
-          </li>
-          <li>
-            <button><a href="./noticias.html">Notícias</a></button>
-          </li>
-          <li>
-            <div class="dropdown">
-              <div class="text-button">
-                <button onclick="DropdownProdutos()" class="dropbtn">
-                Produtos
-                <span class="material-icons dropbtn">
-                  arrow_drop_down
-                </span>
-              </button>
-              </div>
-              
-              <div id="dropdown-produtos" class="dropdown-content-produtos">
-                <a href="./eventos.html">Eventos</a>
-                <a href="./produtos-podcomp.html">PodCast</a>
-                <a href="./biblioteca-petcomp-monitoria.html">Biblioteca PETComp</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <img src="./assets/svg/menu_black_24dp.svg" alt="" class="open-btn" onclick="openMenu()">
-  </header>
-  <!-- END MENU -->
+  <?php include('header.php') ?>
 
   <?php
     if(!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem']) or !isset($_POST['phone'])){
@@ -116,35 +43,9 @@
     }
 
   ?>
-
-
-
+  
   <!-- START FOOTER-->
-  <footer>
-    <div class="container">
-      <div class="logos">
-        <a href="./index.html"><img src="./assets/images/Logo Monocromática Branca.png" alt="Logo PETComp UFMA" class="pet-logo"></a>
-        <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/logos/UFMA.png" alt="Logo UFMA" class="ufma-logo"></a>
-      </div>
-    </div>
-    <div class="infos">
-      <ul>
-        <li><img src="./assets/svg/map icon.svg" alt=""><p>Av. dos Portugueses, 1966 - Vila Bacanga, São Luís - MA, 65080-805, CCET - Bloco 2 </p></li>
-        <li><img src="./assets/svg/email icon.svg" alt=""><p>petcomputacao.ufma@gmail.com</p></li>
-      </ul>
-    </div>
-    <div class="sociais">
-      <ul>
-        <li><img src="./assets/svg/instagram icon.svg" alt=""><a href="https://www.instagram.com/petcompufma/" target="_blank">@PetCompUfma</a></li>
-        <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="https://twitter.com/petcompufma" target="_blank">@PetCompUfma</a></li>
-        <div class="contatos">
-          <a class="contato" href="./contato.php">
-            <img src="./assets/svg/comment icon.svg" alt="Ícone comentário" loading="lazy">Fale Conosco
-          </a>
-        </div>
-      </ul>
-    </div>
-  </footer>
+  <?php include('footer.php') ?>
   <script src="./scripts/script.js"></script>
   <script src="./scripts/dropdown.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
