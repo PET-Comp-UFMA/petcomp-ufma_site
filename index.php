@@ -92,7 +92,6 @@
       <div class="atividades">
         <div class="atividades-desenvolvidas">
           <h1>Atividades</h1>
-          <p>O PETComp desenvolve diversas atividades. Uma delas não é a criatividade, prova disso é que eu não tenho capacidade de criar um breve texto para colocar aqui.</p>
         </div>
         <div class="images-atividades">
 

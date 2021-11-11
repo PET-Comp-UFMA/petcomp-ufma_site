@@ -204,5 +204,5 @@
 
         <?php include('footer.php') ?>
 </body>
-
+<script src="./scripts/script.js"></script>
 </html>

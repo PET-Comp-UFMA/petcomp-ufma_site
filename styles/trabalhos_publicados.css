@@ -15,7 +15,9 @@ main .container .filtro {
 main .container .filtro .publication,
 main .container .filtro .author,
 main .container .filtro .keyword,
-main .container .filtro .type {
+main .container .filtro .type,
+main .container .filtro .titulo,
+main .container .filtro .texto {
   display: flex;
   flex-direction: column;
 }
@@ -24,6 +26,8 @@ main .container .filtro .publication label,
 main .container .filtro .author label,
 main .container .filtro .keyword label,
 main .container .filtro .type label,
+main .container .filtro .titulo label,
+main .container .filtro .texto label,
 main .container .search label {
   font-size: calc((12px + 0.25vw) * 0.875);
   font-weight: 700;
@@ -35,6 +39,8 @@ main .container .search label {
 main .container .filtro .publication input,
 main .container .filtro .author input,
 main .container .filtro .keyword input,
+main .container .filtro .titulo input,
+main .container .filtro .texto input,
 main .container .filtro .type select {
   background: none;
   border: 1px solid var(--gray-border);
