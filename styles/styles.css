@@ -246,6 +246,17 @@ main .container .pagination .numbers .active:hover {
 
 /* FOOTER */
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fixar-rodape {
+  width: 100%;
+  margin-top: auto;
+}
+
 footer {
   background: #343564;
   display: flex;

@@ -197,6 +197,7 @@
   </body>
 
 <?php include('footer.php') ?>
+</div>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
