@@ -48,20 +48,21 @@
     
     <section class="container">
       <h2>Buscar por: </h2>
-    <form action="noticias.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
-      <div class="titulo">
-        <label for="titulo">Título</label>
-        <input name="titulo" type="text" placeholder="Digite o título" value="<?php echo $titulo;?>">
-      </div>
-      <div class="texto">
-        <label for="texto">Autor</label>
-        <input name="texto" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto;?>">
-      </div>
-      <div class="search">
-        <label for="search-button">Buscar</label>
-        <button name="search-button" class="search-button"><img src="./assets/svg/search.svg" alt=""></button>
-      </div>
-    </form>
+
+      <form action="noticias.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
+        <div class="titulo">
+          <label for="titulo">Título</label>
+          <input name="titulo" type="text" placeholder="Digite o título" value="<?php echo $titulo;?>">
+        </div>
+        <div class="texto">
+          <label for="texto">Texto</label>
+          <input name="texto" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto;?>">
+        </div>
+        <div class="search">
+          <label for="search-button">Buscar</label>
+          <button name="search-button" class="search-button"><img src="./assets/svg/search.svg" alt=""></button>
+        </div>
+      </form>
   
     <!-- START  -->
     <section id="paginate">
@@ -82,40 +83,45 @@
               for($i=0; $i<$num_results; $i++) {
                   $row = mysqli_fetch_array($result);
         ?>
+          
+        <?php
+          $baseUrl = url();
+          $id = $row['id'];
+          $parametros = "noticia.php?id=".$id;
+          $url =  $baseUrl.$parametros;
+        ?>
 
       <li class="item">
       <div class="card">
         <div class="details">
           <div class="data-name">
-                <!--  -->
             <h5 class="article-name">
-            <?php print_r($row['titulo'])?>
+              <a href="<?php echo $parametros?>">
+                <?php print_r($row['titulo'])?>
+              </a>
             </h5>
           </div>
+                
           <div class="share">
             <p class="type">Compartilhe</p>
             <div class="links ">
-            <?php
-                $baseUrl = url();
-                $parametro = strtr($row['titulo'], $caracteres_sem_acento);
-                $parametro = substr_replace($parametro ,'',-1); //removendo o ultimo ' ' que vem do bd e gera erro no link 
-                $parametro = urlencode((str_replace(" ", "+", $parametro)));
-                $url =  $baseUrl."publicacoes.php?publication=".$parametro;
-              ?>
-              <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
 
+            <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
 
-
-              <?php 
-                $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
-                $baseUrl = str_replace("publicacoes.php", "", $baseUrl); //removendo "publicacoes.php" do link de compartilhamento
-                $url =  $baseUrl."publicacoes.php?publication=".urlencode($row['titulo'])."&author=". urlencode($row['autor']);
-              ?>
-              <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
-            </div>
+            <?php 
+              $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
+              $baseUrl = str_replace("publicacoes.php", "", $baseUrl); //removendo "publicacoes.php" do link de compartilhamento
+              $url =  $baseUrl."noticia.php?id=".$id;
+            ?>
+            <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
+            <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
           </div>
-
+        </div>
+      </div>
+      
+        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
+        
+        <div class="card-bottom">
           <div class="resume">
             <?php
               $tamanho_resumo = 450;
@@ -129,26 +135,11 @@
             </p>
           </div>
 
-        </div>
-      
-        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-        
-        <div class="card-bottom">
-
-          <div class="buttons-container">
-            <a href="<?php print_r($row['id'])?>" class="button-download">
-              Ver arquivo
-              <span class="material-icons">
-                  link
-              </span>
-            </a>
-        </div>
-
-        <?php if (isset($row['data'])): ?>
-          <div class="container-data">
-            <p class="data">Data de publicação: <span class="data-day"><?php print_r($row['data'])?></span></p>
-          </div>
-        <?php endif ?>
+          <?php if (isset($row['data'])): ?>
+            <div class="container-data">
+              <p class="data">Data de publicação: <span class="data-day"><?php print_r($row['data'])?></span></p>
+            </div>
+          <?php endif ?>
 
         </div>
         

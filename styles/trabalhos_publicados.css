@@ -10,6 +10,7 @@ main .container {
 main .container .filtro {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 main .container .filtro .publication,
@@ -179,7 +180,7 @@ main .container .card .panel .resume {
 
 main .container .card .details .share p,
 main .container .card .details .authors p,
-main .container .card .panel .resume .resume-title,
+main .container .card .resume .resume-title,
 main .container .card .panel .tags-title {
   font-size: calc((12px + 0.25vw) * 0.875);
   font-weight: 700;
@@ -192,6 +193,13 @@ main .container .card .panel .tags-title {
 main .container .card .details .data-name .article-name {
   font-size: 22px;
   font-weight: 500;
+}
+
+main .container .card .details .data-name .article-name a {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration:none;
+  color: var(--purple);
 }
 
 main .container .card .details .share a img {

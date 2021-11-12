@@ -28,18 +28,6 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `petianos`
 --
 
-CREATE TABLE `petianos` (
-  `id` int(11) NOT NULL,
-  `nome_completo` varchar(60) DEFAULT NULL,
-  `primeiro_nome` varchar(15) NOT NULL,
-  `ultimo_nome` varchar(15) NOT NULL,
-  `ano` int(11) NOT NULL,
-  `periodo` int(11) NOT NULL,
-  `ativo` tinyint(4) NOT NULL,
-  `orientador` tinyint(4) NOT NULL,
-  `voluntario` tinyint(4) NOT NULL,
-  `imagem` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `petianos`
