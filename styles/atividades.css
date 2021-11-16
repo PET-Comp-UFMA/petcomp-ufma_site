@@ -15,7 +15,7 @@ main .images {
 main img {
   border: 10px solid #eee;
   margin: 20px auto;
-  transition: .2s;
+  transition: 0.2s;
   width: 90%;
 }
 
@@ -32,6 +32,52 @@ main .images-fab-software .images-desenvolvimento {
 
 main img:hover {
   transform: scale(1.01);
+}
+
+.monitoria-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0;
+}
+
+.monitoria-card {
+  background: #fff;
+  border-radius: 0.7em;
+  margin: 1em;
+  margin: 0 auto;
+  width: 16em;
+}
+
+.monitoria-card .title {
+  background: #dddddd;
+  border-radius: 0.4em 0.4em 0 0;
+  font-weight: bold;
+  padding: 0.8em;
+}
+
+.monitoria-card .title h2 {
+  background: none;
+}
+
+.monitoria-card .text p {
+  background: #060b3f;
+  color: #fff;
+  margin: 0;
+  padding: 0.9em;
+  text-align: left;
+}
+
+.monitoria-card .link {
+  background: #191d4c;
+  border-radius: 0 0 0.4em 0.4em;
+  font-weight: bold;
+  padding: 0.8em;
+}
+
+.monitoria-card .link a {
+  background: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -55,7 +101,7 @@ main img:hover {
   main img {
     border: 2px solid #eee;
     margin: 20px auto;
-    transition: .2s;
+    transition: 0.2s;
     width: 90%;
   }
 

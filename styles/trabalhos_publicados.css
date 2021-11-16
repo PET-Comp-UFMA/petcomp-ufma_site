@@ -153,7 +153,7 @@ main .container .card .pub-details {
   width: 100%;
 }
 
-main .container .card .pub-type{
+main .container .card .pub-type {
   font-size: 14px;
   margin-top: 20px;
 }
@@ -198,8 +198,8 @@ main .container .card .details .data-name .article-name {
 main .container .card .details .data-name .article-name a {
   font-size: 22px;
   font-weight: 500;
-  text-decoration:none;
-  color: var(--purple);
+  text-decoration: none;
+  color: var(--primary);
 }
 
 main .container .card .details .share a img {
@@ -324,7 +324,7 @@ main .container .pagination .numbers .active:hover {
   color: #fff;
 }
 
-.line-purple {
+.line-primary {
   background: var(--primary);
 }
 
@@ -332,7 +332,7 @@ main .container .pagination .numbers .active:hover {
   background: #9d9dc4;
 }
 
-.line-purple,
+.line-primary,
 .line-gray {
   height: 1px;
   margin: 10px 0;
