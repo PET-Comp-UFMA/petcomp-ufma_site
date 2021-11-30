@@ -6,16 +6,20 @@
 
     if(isset($_GET['titulo'])){
       $titulo = $_GET['titulo'];
-      $buscaRealizada = true;
+      if ($titulo == "") $titulo = null;
     }else{
       $titulo = null;
     }
 
     if(isset($_GET['texto'])){
       $texto = $_GET['texto'];
-      $buscaRealizada = true;
+      if ($texto == "") $texto = null;
     }else{
       $texto = null;
+    }
+
+    if (!is_null($titulo) || !is_null($texto)){
+      $buscaRealizada = true;
     }
 
 ?>
@@ -71,8 +75,22 @@
           mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
           if($buscaRealizada){
-            $query = "SELECT * FROM noticias WHERE (titulo LIKE '%". strtr($titulo, $caracteres_sem_acento) 
-            . "%') and texto LIKE '%". strtr($texto, $caracteres_sem_acento) ."%' ORDER BY data DESC;";
+            $query = "SELECT * FROM noticias WHERE ";
+              
+            if(!is_null($titulo)){
+              $query = $query . "titulo LIKE '%". $titulo . "%'";
+
+              if(!is_null($texto)){
+                $query = $query . " and ";
+              }
+            }
+
+            if(!is_null($texto)){
+              $query = $query . "texto LIKE '%". $texto . "%'";
+
+            }
+            
+            $query = $query . " ORDER BY data DESC;";
           } else {
             $query = "SELECT * FROM noticias ORDER BY data DESC";  
           }

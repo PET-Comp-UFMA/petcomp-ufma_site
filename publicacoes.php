@@ -5,24 +5,29 @@
     $buscaRealizada =  false;
 
     if(isset($_GET['publication'])){
-      $pesquisa = $_GET['publication'];
-      $buscaRealizada = true;
+      $publicacao = $_GET['publication'];
+      if ($publicacao == "") $publicacao = null;
+      
     }else{
-      $pesquisa = null;
+      $publicacao = null;
     }
 
     if(isset($_GET['author'])){
       $autor = $_GET['author'];
-      $buscaRealizada = true;
+      if ($autor == "") $autor = null;
     }else{
       $autor = null;
     }
 
     if(isset($_GET['keyword'])){
       $palavra_chave = $_GET['keyword'];
-      $buscaRealizada = true;
+      if ($palavra_chave == "") $palavra_chave = null;
     }else{
       $palavra_chave = null;
+    }
+
+    if (!is_null($publicacao) || !is_null($autor) || !is_null($palavra_chave)){
+      $buscaRealizada = true;
     }
 
 ?>
@@ -60,7 +65,7 @@
     <form action="publicacoes.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
       <div class="publication">
         <label for="publication">Título</label>
-        <input name="publication" type="text" placeholder="Digite o título" value="<?php echo $pesquisa;?>">
+        <input name="publication" type="text" placeholder="Digite o título" value="<?php echo $publicacao;?>">
       </div>
       <div class="author">
         <label for="author">Autor</label>
@@ -83,8 +88,31 @@
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
             if($buscaRealizada){
-              $query = "SELECT * FROM trabalhos_publicados WHERE (titulo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%') and autor LIKE '%". strtr($autor, $caracteres_sem_acento) ."%' and  palavras_chaves LIKE 
-                        '%". strtr($palavra_chave, $caracteres_sem_acento)  ."%' ORDER BY ano DESC;";
+              $query = "SELECT * FROM trabalhos_publicados WHERE ";
+              
+              if(!is_null($publicacao)){
+                $query = $query . "titulo LIKE '%". $publicacao . "%'";
+
+                if(!is_null($autor) || !is_null($palavra_chave)){
+                  $query = $query . " and ";
+                }
+              }
+
+              if(!is_null($autor)){
+                $query = $query . "autor LIKE '%". $autor . "%'";
+
+                if(!is_null($palavra_chave)){
+                  $query = $query . " and ";
+                }
+              }
+
+              if(!is_null($palavra_chave)){
+                $query = $query . "palavra_chave LIKE '%". $palavra_chave . "%'";
+              }
+
+
+              $query = $query . " ORDER BY ano DESC;";
+
             } else {
               $query = "SELECT * FROM trabalhos_publicados ORDER BY ano DESC";  
             }
@@ -138,7 +166,7 @@
       
         <div class="panel fade">
 
-        <?php if(isset($row['resumo'])): ?>
+        <?php if(!is_null($row['resumo'])): ?>
           <div class="resume">
             <p class="resume-title">Resumo</p>
             <p class="resume-text">
