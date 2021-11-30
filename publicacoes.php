@@ -26,6 +26,13 @@
       $palavra_chave = null;
     }
 
+    if(isset($_GET['year'])){
+      $ano = $_GET['ano'];
+      if ($ano == "") $ano = null;
+    }else{
+      $ano = null;
+    }
+
     if (!is_null($publicacao) || !is_null($autor) || !is_null($palavra_chave)){
       $buscaRealizada = true;
     }
@@ -75,6 +82,10 @@
         <label for="keyword">Palavra-chave</label>
         <input name="keyword" type="text" placeholder="Digite uma palavra chave" value="<?php echo $palavra_chave;?>">
       </div>
+      <div class="year">
+        <label for="year">Ano de publicação</label>
+        <input name="year" type="text" placeholder="Digite o ano de publicação" value="<?php echo $ano;?>">
+      </div>
       <div class="search">
         <label for="search-button">Buscar</label>
         <button name="search-button" class="search-button"><img src="./assets/svg/search.svg" alt=""></button>
@@ -93,7 +104,7 @@
               if(!is_null($publicacao)){
                 $query = $query . "titulo LIKE '%". $publicacao . "%'";
 
-                if(!is_null($autor) || !is_null($palavra_chave)){
+                if(!is_null($autor) || !is_null($palavra_chave || !is_null($ano))){
                   $query = $query . " and ";
                 }
               }
@@ -101,15 +112,22 @@
               if(!is_null($autor)){
                 $query = $query . "autor LIKE '%". $autor . "%'";
 
-                if(!is_null($palavra_chave)){
+                if(!is_null($palavra_chave) || !is_null($ano)){
                   $query = $query . " and ";
                 }
               }
 
               if(!is_null($palavra_chave)){
                 $query = $query . "palavra_chave LIKE '%". $palavra_chave . "%'";
+
+                if(!is_null($ano)){
+                  $query = $query . " and ";
+                }
               }
 
+              if(!is_null($ano)){
+                $query = $query . "ano LIKE '%". $ano . "%'";
+              }
 
               $query = $query . " ORDER BY ano DESC;";
 

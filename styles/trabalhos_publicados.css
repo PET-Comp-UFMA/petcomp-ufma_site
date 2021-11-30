@@ -13,22 +13,14 @@ main .container .filtro {
   padding-bottom: 20px;
 }
 
-main .container .filtro .publication,
-main .container .filtro .author,
-main .container .filtro .keyword,
-main .container .filtro .type,
-main .container .filtro .titulo,
-main .container .filtro .texto {
+main .container .filtro,
+main .container .filtro .year
+{
   display: flex;
   flex-direction: column;
 }
 
-main .container .filtro .publication label,
-main .container .filtro .author label,
-main .container .filtro .keyword label,
-main .container .filtro .type label,
-main .container .filtro .titulo label,
-main .container .filtro .texto label,
+main .container .filtro label,
 main .container .search label {
   font-size: calc((12px + 0.25vw) * 0.875);
   font-weight: 700;
@@ -37,11 +29,8 @@ main .container .search label {
   text-transform: uppercase;
 }
 
-main .container .filtro .publication input,
-main .container .filtro .author input,
-main .container .filtro .keyword input,
-main .container .filtro .titulo input,
-main .container .filtro .texto input,
+main .container .filtro input,
+
 main .container .filtro .type select {
   background: none;
   border: 1px solid var(--gray-border);
@@ -354,12 +343,6 @@ main .container .pagination .numbers .active:hover {
     flex-direction: column;
   }
 
-  main .container .filtro .publication,
-  main .container .filtro .author,
-  main .container .filtro .keyword {
-    display: flex;
-    flex-direction: column;
-  }
 
   main .container .card .details .share {
     padding: 10px 0 0 0;
@@ -385,11 +368,7 @@ main .container .pagination .numbers .active:hover {
     text-align: end;
   } */
 
-  main .container .filtro .publication label,
-  main .container .filtro .author label,
-  main .container .filtro .keyword label,
-  main .container .filtro .type label,
-  main .container .search label {
+  main .container .filtro label {
     font-size: calc((12px + 0.25vw) * 0.875);
     font-weight: 700;
     letter-spacing: 4px;
@@ -397,9 +376,7 @@ main .container .pagination .numbers .active:hover {
     text-transform: uppercase;
   }
 
-  main .container .filtro .publication input,
-  main .container .filtro .author input,
-  main .container .filtro .keyword input,
+  main .container .filtro input,
   main .container .filtro .type select {
     background: none;
     border: 1px solid var(--gray-border);
