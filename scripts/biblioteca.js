@@ -144,7 +144,7 @@ const data = [
   {
     monitoria: 'C1',
     urlVideo: 'https://drive.google.com/file/d/1TIjh9VNE19DlDF7uUEQ3H_L03QkUiTkO/view?usp=sharing',
-    nome: 'Limites Trigonométricos e Condutividade'
+    nome: 'Limites Trigonométricos e Continuidade'
   },
   {
     monitoria: 'C1',
@@ -205,11 +205,11 @@ const filtrarAlg1 = data.filter((item) => {
 const mostrarAlg1 = filtrarAlg1.map((item) => {
   return `
     <div>
-      <div class="details">
-        <h1>${item.nome}</h1>
-        <div class="links">
+      <div class="aula-card">
+        <h2 class="title">${item.nome}</h2>
+        <div class="wrapper-links">
           <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg">
+            <img src="./assets/svg/play_circle.svg" alt="">
             Vídeo Aula
           </a>
           ${renderResumo(item.urlResumo)}
@@ -227,11 +227,11 @@ const filtrarLP1 = data.filter((item) => {
 const mostrarLP1 = filtrarLP1.map((item) => {
   return `
     <div>
-      <div class="details">
-        <h1>${item.nome}</h1>
-        <div class="links">
+      <div class="aula-card">
+        <h2 class="title">${item.nome}</h2>
+        <div class="wrapper-links">
           <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg">
+            <img src="./assets/svg/play_circle.svg" alt="">
             Vídeo Aula
           </a>
           ${renderResumo(item.urlResumo)}
@@ -248,17 +248,19 @@ const filtrarC1 = data.filter((item) => {
   
 const mostrarC1 = filtrarC1.map((item) => {
   return `
-      <div class="details">
-        <h1>${item.nome}</h1>
-        <div class="links">
+      <div>
+      <div class="aula-card">
+        <h2 class="title">${item.nome}</h2>
+        <div class="wrapper-links">
           <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg">
+            <img src="./assets/svg/play_circle.svg" alt="">
             Vídeo Aula
           </a>
           ${renderResumo(item.urlResumo)}
           ${renderQuest(item.urlQuest)}
         </div>
       </div>
+    </div>
   `
 })
 
