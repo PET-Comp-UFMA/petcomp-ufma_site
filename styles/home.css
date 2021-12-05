@@ -46,18 +46,20 @@
 
 .texto-banner {
   align-items: center;
-  background-image: url(../assets/images/Background.png);
-  background-repeat: round;
+  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: #343564;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 30em;
   justify-content: center;
 }
 
 .texto-banner .intro-noticia {
   align-items: center;
-  background: #ffffffd0;
+  background: #ffffff94;
   display: flex;
   flex-direction: column;
   height: 80%;
@@ -82,6 +84,11 @@
   margin-top: 20px;
   padding: 14px;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.texto-banner .intro-noticia a:hover {
+  background: #343564;
 }
 
 .active,
@@ -268,13 +275,13 @@
 }
 
 .resumo-petcomp .text-petcomp h1 {
-  color: #545457;
+  color: #343564;
   font-size: 48px;
   width: 300px;
 }
 
 .resumo-petcomp .text-petcomp p {
-  color: #888686;
+  color: #1d1d1d;
   line-height: 22px;
   margin: 20px 0;
   width: 350px;
@@ -282,12 +289,15 @@
 }
 
 .resumo-petcomp .text-petcomp a {
-  color: #0adafe;
+  color: #0004ff;
   text-decoration: none;
 }
 
 #atividades {
-  background: #fafafa;
+  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%;
 }
 
@@ -304,7 +314,7 @@
 }
 
 .atividades .atividades-desenvolvidas p {
-  color: #888686;
+  color: #fff;
   line-height: 22px;
   margin: 20px 0;
   width: 100%;
@@ -312,7 +322,7 @@
 }
 
 .atividades .atividades-desenvolvidas h1 {
-  color: #545457;
+  color: #fafafa;
   font-size: 48px;
   width: 100%;
 }
@@ -325,57 +335,59 @@
 .atividades .images-atividades {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
 }
 
 .atividades .images-atividades img {
-  background: #eee;
-  border-radius: 4px;
-  padding: 20px;
-  margin: 30px;
+  background: #33c3ff;
+  border-radius: 0.4em;
+  color: #fff;
+  padding: 0.6em;
+  width: 30%;
 }
 
 .atividades .images-atividades .card-atividade {
-  background: linear-gradient(45deg, #343564, #0076cd, #01a8ff, #33c3ff);
-  border-radius: 4px;
-  color: #ffff;
+  background: #fff;
+  border-radius: 0.4em;
   display: flex;
   flex-direction: column;
-  height: 250px;
-  justify-content: space-between;
-  margin: 12px 20px;
-  padding: 20px 15px;
-  text-decoration: none;
-  transition: ease 0.5s;
-  width: 300px;
+  padding: 2em;
+  transition: 0.4s;
+  width: 15em;
+}
+
+.atividades .images-atividades .card-atividade:hover {
+  background: #fafafa;
+  box-shadow: #4242425e 0px 9px 20px 7px;
 }
 
 .atividades .images-atividades .card-atividade h3 {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
+  height: 20px;
+  margin: 2em 0;
 }
 
 .atividades .images-atividades .card-atividade a {
   align-items: center;
-  background: none;
-  border: 1px solid #fff;
+  background: #ccc;
+  border: 1px solid #ccc;
   border-radius: 15px;
-  color: #fff;
+  color: #000;
   display: flex;
   font-size: 20px;
   height: fit-content !important;
   text-align: center;
+  transition: 0.4s;
   padding: 10px;
   width: fit-content;
 }
 
 .atividades .images-atividades .card-atividade a:hover {
-  background: #343564;
-  border: 1px solid #343564;
+  background: #33c3ff;
+  border: 1px solid #33c3ff;
+  color: #fff;
   transition: 0.2s;
 }
-
-#parceiros {
+*/ #parceiros {
   background: #eeeeee;
   height: 400px;
 }
@@ -516,7 +528,7 @@
     font-size: 30px;
     margin: 0 auto;
     margin-top: 20px;
-    width: 50% ;
+    width: 50%;
   }
 
   .resumo-petcomp .text-petcomp p {
@@ -584,7 +596,7 @@
   }
 }*/
 
-@media (max-width: 351px){
+@media (max-width: 351px) {
   .atividades .images-atividades {
     display: grid;
     grid-template-columns: 1fr;
@@ -593,5 +605,4 @@
     margin: 0 auto;
     width: 100%;
   }
-  
 }

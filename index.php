@@ -92,36 +92,42 @@
       <div class="atividades">
         <div class="atividades-desenvolvidas">
           <h1>Atividades</h1>
-          <p>O PETComp desenvolve diversas atividades. Uma delas não é a criatividade, prova disso é que eu não tenho capacidade de criar um breve texto para colocar aqui.</p>
+          <p>O PETComp desenvolve diversas atividades. Clique em um dos cards para obter mais informações.</p>
         </div>
         <div class="images-atividades">
 
           <div class="card-atividade">
+            <img src="./assets/images/graduation-hat.png" alt="">
             <h3>Monitoria</h3>
             <a href="./monitoria.php">Saiba mais</a>
           </div>
 
           <div class="card-atividade">
+            <img src="./assets/images/mic-podcast.png" alt="">
             <h3>PodCast</h3>
             <a href="./produtos-podcomp.php">Saiba mais</a>
           </div>
 
           <div class="card-atividade">
+            <img src="./assets/images/web-programming.png" alt="">
             <h3>Fábrica de Software</h3>
             <a href="./desenvolvimento.php">Saiba mais</a>
           </div>
 
           <div class="card-atividade">
+            <img src="./assets/images/talk-show.png" alt="">
             <h3>Organização de Eventos</h3>
             <a href="./eventos.php">Saiba mais</a>
           </div>
 
           <div class="card-atividade">
+            <img src="./assets/images/online-course.png" alt="">
             <h3>Minicursos e Oficinas</h3>
             <a href="./minicursos.php">Saiba mais</a>
           </div>
 
           <div class="card-atividade">
+            <img src="./assets/images/contract.png" alt="">
             <h3>Expressão Escrita</h3>
             <a href="./publicacoes.php">Saiba mais</a>
           </div>
