@@ -27,13 +27,13 @@
     }
 
     if(isset($_GET['year'])){
-      $ano = $_GET['ano'];
+      $ano = $_GET['year'];
       if ($ano == "") $ano = null;
     }else{
       $ano = null;
     }
 
-    if (!is_null($publicacao) || !is_null($autor) || !is_null($palavra_chave)){
+    if (!is_null($publicacao) || !is_null($autor) || !is_null($palavra_chave) || !is_null($ano)){
       $buscaRealizada = true;
     }
 
@@ -104,7 +104,7 @@
               if(!is_null($publicacao)){
                 $query = $query . "titulo LIKE '%". $publicacao . "%'";
 
-                if(!is_null($autor) || !is_null($palavra_chave || !is_null($ano))){
+                if(!is_null($autor) || !is_null($palavra_chave) || !is_null($ano)){
                   $query = $query . " and ";
                 }
               }
