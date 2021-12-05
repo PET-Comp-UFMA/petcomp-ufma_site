@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="images">
+    <div class="images images-monitoria">
       <img src="./assets/images/monitoria-photo-1.jpg" alt="">
       <img src="./assets/images/monitoria-photo-4.jpg" alt="">
       <img src="./assets/images/monitoria-photo-2.jpg" alt="">

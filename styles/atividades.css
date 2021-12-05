@@ -1,15 +1,14 @@
 main p {
   color: #888990;
   font-size: 18px;
-  padding: 0 40px;
+  padding: 0 150px;
   text-align: justify;
 }
 
 main .images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin: 20px auto 40px;
 }
 
 main img {
@@ -19,14 +18,17 @@ main img {
   width: 90%;
 }
 
-main .images-fab-software {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  flex-direction: row;
-  margin-bottom: 40px;
+main .images-monitoria {
+  width: 100%;
 }
 
-main .images-fab-software .images-desenvolvimento {
+main .images-fab-software {
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  flex-direction: row;
+}
+
+main .images-minicursos {
   width: 80%;
 }
 

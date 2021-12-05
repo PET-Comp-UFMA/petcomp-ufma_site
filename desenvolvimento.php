@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PETComp </title>
+    <title> Desenvolvimento | PETComp </title>
   
     <link rel="icon" href="./assets/images/logos/PETComp.png">
   
@@ -23,13 +23,11 @@
     </div>
     <p>A Engenharia de Softwares é uma das vertentes mais fortes na área de Ciência da Computação. A construção de um software pode ser para fins administrativos, de pesquisa, entretenimento, etc. A atividade visa a coleta, criação e manutenção de softwares para a UFMA, também visa solucionar problemáticas da comunidade e projetos apoiados pela IES. Além disso, a atividade colabora juntamente para o ensino de tecnologias aos integrantes do grupo PET e para o compartilhamento desse conhecimento fazendo o uso de políticas de troca de conhecimento, pesquisa e desenvolvimento de tecnologias, e a extensão tecnológica.</p>
     <p>A atividade da continuidade às políticas já realizadas pelo PETComp. Os projetos serão adotados por toda a equipe, de forma que cada um se responsabiliza por algumas sub funcionalidades, usando de processos de desenvolvimento de software hábil a ser pesquisado pelos alunos, bem como metodologias para a gestão de atividades. O software que apresentar melhor desempenho no processo de ensino e aprendizagem será escolhido e produzido. Poderão ser produzidos durante o desenvolvimento da atividade: objetos de aprendizado, aplicações móveis para fins diversos, sistemas de informação, e sistemas computacionais para atender demandas, através das pesquisas realizadas em outras políticas desta proposta.</p>
-    <div class="images-fab-software">
+    <div class="images images-fab-software">
       <img src="./assets/images/fab-software-photo-1.jpg" alt="" class="images-desenvolvimento">
       <img src="./assets/images/fab-software-photo-2.jpg" alt="" class="images-desenvolvimento">
-      <img src="./assets/images/fab-software-photo-3.jpg" alt=""
-      class="images-desenvolvimento">
-      <img src="./assets/images/fab-software-photo-4.jpg" alt=""
-      class="images-desenvolvimento">
+      <img src="./assets/images/fab-software-photo-3.jpg" alt="" class="images-desenvolvimento">
+      <img src="./assets/images/fab-software-photo-4.jpg" alt="" class="images-desenvolvimento">
     </div>
   </main>
 
