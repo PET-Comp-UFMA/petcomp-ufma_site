@@ -339,9 +339,8 @@
 }
 
 .atividades .images-atividades img {
-  background: #33c3ff;
+  background: #343564;
   border-radius: 0.4em;
-  color: #fff;
   padding: 0.6em;
   width: 30%;
 }
@@ -373,7 +372,7 @@
   border-radius: 15px;
   color: #000;
   display: flex;
-  font-size: 20px;
+  font-size: 16px;
   height: fit-content !important;
   text-align: center;
   transition: 0.4s;
@@ -444,6 +443,7 @@
   }
 
   .atividades .images-atividades {
+    grid-template-columns: 1fr;
     justify-items: center;
   }
 
@@ -466,19 +466,20 @@
     text-align: center;
   }
 
-  .atividades .atividades-desenvolvidas a {
-    font-size: 16px;
+  .atividades .atividades-desenvolvidas .card-atividade a {
+    font-size: 12px;
   }
 
   .atividades .images-atividades .card-atividade {
     height: 300px;
     padding: 20px 15px 20px 15px;
     margin: 10px;
-    width: 310px;
+    width: 80%;
   }
 
   .atividades .images-atividades .card-atividade h3 {
-    font-size: 28px;
+    font-size: 38px;
+    margin: 1em 0;
   }
 }
 
@@ -544,6 +545,7 @@
 
   .atividades .images-atividades {
     justify-items: flex-start;
+    margin-bottom: 70px;
   }
 
   .atividades .atividades-desenvolvidas {
@@ -558,20 +560,25 @@
   }
 
   .atividades .atividades-desenvolvidas a {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .atividades .images-atividades .card-atividade {
+    display: flex;
+    flex-direction: row;
     height: 150px;
-    margin: 10px;
+    margin: 0 auto;
     padding: 10px;
-    width: 160px;
+    width: 60%;
+  }
+
+  .atividades .images-atividades .card-atividade img {
+    width: 40%;
   }
 
   .atividades .images-atividades .card-atividade h3 {
-    font-size: 16px;
+    font-size: 22px;
     width: 100%;
-    font-size: 13px;
   }
 }
 
