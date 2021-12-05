@@ -1,31 +1,32 @@
 <?php
-    require_once('conexao.php');
-    require_once('scripts.php/utils.php');
+require_once('conexao.php');
+require_once('scripts.php/utils.php');
 
-    $buscaRealizada =  false;
+$buscaRealizada =  false;
 
-    if(isset($_GET['titulo'])){
-      $titulo = $_GET['titulo'];
-      if ($titulo == "") $titulo = null;
-    }else{
-      $titulo = null;
-    }
+if (isset($_GET['titulo'])) {
+  $titulo = $_GET['titulo'];
+  if ($titulo == "") $titulo = null;
+} else {
+  $titulo = null;
+}
 
-    if(isset($_GET['texto'])){
-      $texto = $_GET['texto'];
-      if ($texto == "") $texto = null;
-    }else{
-      $texto = null;
-    }
+if (isset($_GET['texto'])) {
+  $texto = $_GET['texto'];
+  if ($texto == "") $texto = null;
+} else {
+  $texto = null;
+}
 
-    if (!is_null($titulo) || !is_null($texto)){
-      $buscaRealizada = true;
-    }
+if (!is_null($titulo) || !is_null($texto)) {
+  $buscaRealizada = true;
+}
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,9 +40,10 @@
 
   <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./styles/styles2.css"> 
+  <link rel="stylesheet" href="./styles/styles2.css">
   <link rel="stylesheet" href="./styles/publicacoes.css">
 </head>
+
 <body>
   <main>
     <?php include('header.php') ?>
@@ -49,130 +51,132 @@
     <div class="section-header">
       <h2>Notícias</h2>
     </div>
-    
+
     <section class="container">
       <h2>Buscar por: </h2>
 
-      <form action="noticias.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF']?>"> 
+      <form action="noticias.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF'] ?>">
         <div class="titulo">
           <label for="titulo">Título</label>
-          <input name="titulo" type="text" placeholder="Digite o título" value="<?php echo $titulo;?>">
+          <input name="titulo" type="text" placeholder="Digite o título" value="<?php echo $titulo; ?>">
         </div>
         <div class="texto">
           <label for="texto">Texto</label>
-          <input name="texto" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto;?>">
+          <input name="texto" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto; ?>">
         </div>
         <div class="search">
           <label for="search-button">Buscar</label>
           <button name="search-button" class="search-button"><img src="./assets/svg/search.svg" alt=""></button>
         </div>
       </form>
-  
-    <!-- START  -->
-    <section id="paginate">
-      <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
-        <?php
+
+      <!-- START  -->
+      <section id="paginate">
+        <ul class="list" style="list-style: none;">
+          <!-- lista com cada li e cada li tem a box dentro-->
+          <?php
           mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
-          if($buscaRealizada){
+          if ($buscaRealizada) {
             $query = "SELECT * FROM noticias WHERE ";
-              
-            if(!is_null($titulo)){
-              $query = $query . "titulo LIKE '%". $titulo . "%'";
 
-              if(!is_null($texto)){
+            if (!is_null($titulo)) {
+              $query = $query . "titulo LIKE '%" . $titulo . "%'";
+
+              if (!is_null($texto)) {
                 $query = $query . " and ";
               }
             }
 
-            if(!is_null($texto)){
-              $query = $query . "texto LIKE '%". $texto . "%'";
-
+            if (!is_null($texto)) {
+              $query = $query . "texto LIKE '%" . $texto . "%'";
             }
-            
+
             $query = $query . " ORDER BY data DESC;";
           } else {
-            $query = "SELECT * FROM noticias ORDER BY data DESC";  
+            $query = "SELECT * FROM noticias ORDER BY data DESC";
           }
           $result = mysqli_query($mysqli, $query);
           $num_results = mysqli_num_rows($result);
 
-          if($num_results > 0) {
-              for($i=0; $i<$num_results; $i++) {
-                  $row = mysqli_fetch_array($result);
-        ?>
-          
-        <?php
-          $baseUrl = url();
-          $id = $row['id'];
-          $parametros = "noticia.php?id=".$id;
-          $url =  $baseUrl.$parametros;
-        ?>
+          if ($num_results > 0) {
+            for ($i = 0; $i < $num_results; $i++) {
+              $row = mysqli_fetch_array($result);
+          ?>
 
-      <li class="item">
-      <div class="card">
-        <div class="details">
-          <div class="data-name">
-            <h5 class="article-name">
-              <a href="<?php echo $parametros?>">
-                <?php print_r($row['titulo'])?>
-              </a>
-            </h5>
-          </div>
-                
-          <div class="share">
-            <p class="type">Compartilhe</p>
-            <div class="links ">
+              <?php
+              $baseUrl = url();
+              $id = $row['id'];
+              $parametros = "noticia.php?id=" . $id;
+              $url =  $baseUrl . $parametros;
+              ?>
 
-            <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <li class="item">
+                <div class="card">
+                  <div class="details">
+                    <div class="data-name">
+                      <h5 class="article-name">
+                        <a href="<?php echo $parametros ?>">
+                          <?php print_r($row['titulo']) ?>
+                        </a>
+                      </h5>
+                    </div>
 
-            <?php 
-              $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
-              $baseUrl = str_replace("publicacoes.php", "", $baseUrl); //removendo "publicacoes.php" do link de compartilhamento
-              $url =  $baseUrl."noticia.php?id=".$id;
-            ?>
-            <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-            <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
-          </div>
-        </div>
-      </div>
-      
-        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-        
-        <div class="card-bottom">
-          <div class="resume">
-            <?php
-              $tamanho_resumo = 450;
-              $result = substr($row['texto'], 0, $tamanho_resumo); //escolhendo quantos caracteres aparecerão no resumo (450)
-            ?>
+                    <div class="share">
+                      <p class="type">Compartilhe</p>
+                      <div class="links ">
 
-            <p class="resume-title">Resumo</p>
-            <p class="resume-text">
-              <?php print_r($result)?>
-              <?php if($tamanho_resumo < strlen($row['texto'])): ?>...<?php endif ?>
-            </p>
-          </div>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url ?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
 
-          <?php if (isset($row['data'])): ?>
-            <div class="container-data">
-              <p class="data">Data de publicação: <span class="data-day"><?php print_r($row['data'])?></span></p>
-            </div>
-          <?php endif ?>
+                        <?php
+                        $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
+                        $baseUrl = str_replace("publicacoes.php", "", $baseUrl); //removendo "publicacoes.php" do link de compartilhamento
+                        $url =  $baseUrl . "noticia.php?id=" . $id;
+                        ?>
+                        <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url ?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
+                        <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - ' . $url) ?>"><img src="./assets/svg/whatsapp.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
 
-        </div>
-        
-        
-        <!-- </div> -->
-        
-        <div class="line-gray"></div>
-        <!-- fim -->
-      <?php
-        }
-      ?>
+                  <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
+
+                  <div class="card-bottom">
+                    <div class="resume">
+                      <?php
+                      $tamanho_resumo = 450;
+                      $result = substr($row['texto'], 0, $tamanho_resumo); //escolhendo quantos caracteres aparecerão no resumo (450)
+                      ?>
+
+                      <p class="resume-title">Resumo</p>
+                      <p class="resume-text">
+                        <?php print_r($result) ?>
+                        <?php if ($tamanho_resumo < strlen($row['texto'])) : ?>...<?php endif ?>
+                      </p>
+                    </div>
+
+                    <?php if (isset($row['data'])) : ?>
+                      <div class="container-data">
+                        <p class="data">Data de publicação: <span class="data-day"><?php print_r($row['data']) ?></span></p>
+                      </div>
+                    <?php endif ?>
+
+                  </div>
+
+
+                  <!-- </div> -->
+
+                  <div class="line-gray"></div>
+                  <!-- fim -->
+                <?php
+              }
+                ?>
         </ul>
-      </section> <!--END section id="paginate"-->
+      </section>
+      <!--END section id="paginate"-->
 
-      <div class="pagination"> <!-- botões -->
+      <div class="pagination">
+        <!-- botões -->
         <div class="prev">
           <span class="material-icons">
             navigate_before
@@ -187,26 +191,28 @@
           <span class="material-icons">
             navigate_next
           </span>
-        </div>
       </div>
-      <?php }else{ ?>
-        <li class="item">
-          <div class="resultados">
-            <h2>Sem resultados!</h2>
-          </div>
-        </li>
-        <?php } ?>
-    </section> <!--END section class="container"-->
+      </div>
+    <?php } else { ?>
+      <li class="item">
+        <div class="resultados">
+          <h2>Sem resultados!</h2>
+        </div>
+      </li>
+    <?php } ?>
+    </section>
+    <!--END section class="container"-->
 
 
 
 
   </main>
-        
-  </body>
+
+</body>
 
 <?php include('footer.php') ?>
 </div>
-  <script src="./scripts/script.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
+
 </html>

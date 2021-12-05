@@ -1,14 +1,15 @@
 main p {
   color: #888990;
   font-size: 18px;
-  padding: 0 150px;
+  padding: 0 40px;
   text-align: justify;
 }
 
 main .images {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: row;
-  margin: 20px auto 40px;
+  margin-bottom: 40px;
 }
 
 main img {
@@ -18,17 +19,14 @@ main img {
   width: 90%;
 }
 
-main .images-monitoria {
-  width: 100%;
-}
-
 main .images-fab-software {
-  grid-template-columns: 1fr 1fr;
-  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
-main .images-minicursos {
+main .images-fab-software .images-desenvolvimento {
   width: 80%;
 }
 
@@ -36,50 +34,75 @@ main img:hover {
   transform: scale(1.01);
 }
 
-.monitoria-wrapper {
+main .sites-cards {
+  display: grid;
+  grid-gap: 5em;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.software-card {
+  background: #fafafa;
+  border-radius: 0.4em;
+  margin: 0 auto !important;
+  width: 20em;
+}
+
+.software-card img {
+  border: none;
+  height: 10em;
+  width: 20em;
+}
+
+.software-card .text {
+  background: #060b3f;
+  border-radius: 0 0 0.4em 0.4em;
+  padding: 1em;
+}
+
+.software-card h2,
+.software-card a {
+  color: #fafafa;
+  margin-bottom: 0.2em;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.software-card .wrapper-labels {
   display: flex;
   flex-direction: row;
-  margin: 2em 0;
+  justify-content: left;
 }
 
-.monitoria-card {
-  background: #fff;
-  border-radius: 0.7em;
-  margin: 1em;
-  margin: 0 auto;
-  width: 16em;
-}
-
-.monitoria-card .title {
-  background: #dddddd;
-  border-radius: 0.4em 0.4em 0 0;
-  font-weight: bold;
-  padding: 0.8em;
-}
-
-.monitoria-card .title h2 {
-  background: none;
-}
-
-.monitoria-card .text p {
-  background: #060b3f;
+.software-card .label {
   color: #fff;
-  margin: 0;
-  padding: 0.9em;
-  text-align: left;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-right: 0.4em;
+  padding: 0.1em 0.4em;
+  width: fit-content;
 }
 
-.monitoria-card .link {
-  background: #191d4c;
-  border-radius: 0 0 0.4em 0.4em;
-  font-weight: bold;
-  padding: 0.8em;
+.react {
+  background: #61dafb;
 }
 
-.monitoria-card .link a {
-  background: none;
-  color: #fff;
-  text-decoration: none;
+.css {
+  background: #563d7c;
+}
+
+.php {
+  background: #4f5d95;
+}
+
+.html {
+  background: #e34c26;
+}
+
+.software-card .javascript {
+  background: #f1e05a;
+  color: #000;
 }
 
 @media (max-width: 800px) {

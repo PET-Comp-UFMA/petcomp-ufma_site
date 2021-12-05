@@ -76,28 +76,49 @@ section .conteudos-lp1 {
   display: none;
 }
 
-section .details {
-  background: #e7e7e7;
-  border-radius: 10px;
-  height: 130px;
-  margin: 10px auto;
-  padding: 10px;
-  width: 350px;
+section .conteudos-python > div,
+section .conteudos-calc1 > div,
+section .conteudos-lp1 > div {
+  margin: 0 auto;
+  width: fit-content;
 }
 
-section .details h1 {
-  margin-bottom: 10px;
+.aula-card {
+  margin: 1em;
+  width: 13em;
 }
 
-section .details .links a {
-  align-items: center;
+.aula-card .title {
+  background: #e9e8e8;
+  border-radius: 0.4em 0.4em 0 0;
+  font-weight: bold;
+  padding: 0.8em;
+}
+
+.aula-card .title h2 {
+  background: none;
+}
+
+.aula-card .wrapper-links {
+  background: #060b3f;
+  border-radius: 0 0 0.4em 0.4em;
   display: flex;
-  padding: 2px;
+  flex-direction: column;
+  padding: 0.9em;
 }
 
-section .details .links img {
-  width: 20px;
-  margin-right: 5px;
+.aula-card .wrapper-links a img {
+  margin-right: 0.2em;
+  width: 1.2em;
+}
+
+.aula-card .wrapper-links a {
+  align-items: center;
+  background: none;
+  color: #fff;
+  display: flex;
+  margin: 0.2em;
+  text-decoration: none;
 }
 
 .comment {
