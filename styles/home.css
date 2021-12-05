@@ -229,7 +229,8 @@
 
 @media only screen and (min-width: 1024px) {
   .gallery__item--3 {
-    background-image: url("../assets/images/photo-2-big.jpg");
+    /*background-image: url("../assets/images/photo-2-big.jpg");*/
+    background-image: url("../assets/images/photo-2-med-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
