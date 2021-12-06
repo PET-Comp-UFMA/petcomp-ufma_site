@@ -423,6 +423,16 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .resumo-petcomp .text-petcomp {
+    margin-left: 20px;
+  }
+
+  .resumo-petcomp .text-petcomp p {
+    width: 550px;
+  }
+}
+
 @media (max-width: 1400px) {
   .resumo-petcomp .images {
     margin-right: 20px;
@@ -525,7 +535,7 @@
   }
 
   .resumo-petcomp .text-petcomp h1 {
-    color: #545457;
+    color: #343564;
     font-size: 30px;
     margin: 0 auto;
     margin-top: 20px;
@@ -581,27 +591,6 @@
     width: 100%;
   }
 }
-
-/*@media (max-width: 1100px){
-  .atividades {
-    display: grid;
-    justify-content: space-around;
-    padding: 80px;
-    margin: 0 auto ;
-  }
-  .atividades .atividades-desenvolvidas {
-    width: 100%; /* Valor da Largura 
-  }
-  .atividades .atividades-desenvolvidas p {
-    color: #888686;
-    line-height: 22px;
-    margin: 20px 0; 
-  }
-  .atividades .atividades-desenvolvidas h1 {
-    margin: 0 auto;
-    width: 50%; /* Valor da Largura
-  }
-}*/
 
 @media (max-width: 351px) {
   .atividades .images-atividades {

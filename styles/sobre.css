@@ -8,7 +8,7 @@ main .container {
 }
 
 main .container p {
-  color: #888990;
+  color: #010101;
   padding: 40px;
   padding-top: 0;
 }
@@ -34,7 +34,7 @@ main .container p {
 
 /*Item 1*/
 .gallery__item--1 {
-  background-image: url('../assets/images/photo-6-about.jpg');
+  background-image: url("../assets/images/photo-6-about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,9 +44,9 @@ main .container p {
   grid-row-end: 3;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--2{
-    background-image: url('../assets/images/photo-6-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--2 {
+    background-image: url("../assets/images/photo-6-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,7 +55,7 @@ main .container p {
 /*Item 2*/
 
 .gallery__item--2 {
-  background-image: url('../assets/images/photo-7-big.jpg');
+  background-image: url("../assets/images/photo-7-big.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -65,9 +65,9 @@ main .container p {
   grid-row-end: 3;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--2{
-    background-image: url('../assets/images/photo-7-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--2 {
+    background-image: url("../assets/images/photo-7-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -77,7 +77,7 @@ main .container p {
 /*Item 3*/
 
 .gallery__item--3 {
-  background-image: url('../assets/images/photo-8-med.jpg');
+  background-image: url("../assets/images/photo-8-med.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -87,19 +87,18 @@ main .container p {
   grid-row-end: 5;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--3{
-    background-image: url('../assets/images/photo-8-small-about.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--3 {
+    background-image: url("../assets/images/photo-8-small-about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 }
 
-
 /*Item 4*/
 .gallery__item--4 {
-  background-image: url('../assets/images/photo-5-big.jpg');
+  background-image: url("../assets/images/photo-5-big.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,9 +108,9 @@ main .container p {
   grid-row-end: 5;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--4{
-    background-image: url('../assets/images/photo-5-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--4 {
+    background-image: url("../assets/images/photo-5-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -120,7 +119,7 @@ main .container p {
 
 /*Item 5*/
 .gallery__item--5 {
-  background-image: url('../assets/images/photo-2-big-about.jpg');
+  background-image: url("../assets/images/photo-2-big-about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -130,9 +129,9 @@ main .container p {
   grid-row-end: 5;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--5{
-    background-image: url('../assets/images/photo-2-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--5 {
+    background-image: url("../assets/images/photo-2-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -141,7 +140,7 @@ main .container p {
 
 /*Item 6*/
 .gallery__item--6 {
-  background-image: url('../assets/images/photo-3-big.jpg');
+  background-image: url("../assets/images/photo-3-big.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -151,9 +150,9 @@ main .container p {
   grid-row-end: 7;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--6{
-    background-image: url('../assets/images/photo-3-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--6 {
+    background-image: url("../assets/images/photo-3-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -162,7 +161,7 @@ main .container p {
 
 /*Item 7*/
 .gallery__item--7 {
-  background-image: url('../assets/images/photo-4-big.jpg');
+  background-image: url("../assets/images/photo-4-big.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -172,9 +171,9 @@ main .container p {
   grid-row-end: 7;
 }
 
-@media only screen and (max-width:425px){
-  .gallery__item--7{
-    background-image: url('../assets/images/photo-4-small.jpg');
+@media only screen and (max-width: 425px) {
+  .gallery__item--7 {
+    background-image: url("../assets/images/photo-4-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

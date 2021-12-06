@@ -27,7 +27,7 @@
     <p>A atividade é realizada 3 vezes por semana, durante duas horas em uma sala do Google Meet criada previamente. Os petianos responsáveis pela atividade ficam a disposição para responder as perguntas surgidas durante a aula e/ou durante a resolução dos exercícios e passam exercícios sobre o atual assunto dado naquele momento da disciplina que podem ser respondidos durante a monitoria ou em um momento posterior. Ao final do semestre, que é quando acaba a monitoria, é dado um formulário para os alunos darem suas opiniões sobre a monitoria, possíveis formas de melhorar a explicação e abordagem do assunto e quais foram as dificuldades enfrentadas durante a monitoria.</p>
     <p>Os principais resultados esperados após a realização dessa atividade são melhoria no rendimento dos discentes que participaram das monitorias, o desenvolvimento de novas metodologias de ensino e uma maior união dos petianos com o resto dos discentes do curso. Os arquivos da monitoria podem ser vistos neste <a href="./biblioteca-petcomp-monitoria.php">link</a>.</p>
 
-    <div class="monitoria-wrapper">
+    <!-- <div class="monitoria-wrapper">
       <div class="monitoria-card">
         <div class="title">
           <h2>Algoritmos I</h2>
@@ -57,7 +57,7 @@
         </div>
         <div class="link"><a class="monitoria-link" href="biblioteca-petcomp-monitoria.php">Link para a Biblioteca GAD</a></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="images images-monitoria">
       <img src="./assets/images/monitoria-photo-1.jpg" alt="">

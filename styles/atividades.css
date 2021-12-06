@@ -1,5 +1,14 @@
+main .container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 main p {
-  color: #888990;
+  color: #010101;
   font-size: 18px;
   padding: 0 40px;
   text-align: justify;
@@ -105,6 +114,18 @@ main .sites-cards {
   color: #000;
 }
 
+@media (max-width: 1360px) {
+  main .sites-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  main .sites-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   main p {
     font-size: 16px;
@@ -132,5 +153,25 @@ main .sites-cards {
 
   main img:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 450px) {
+  .software-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .software-card img {
+    width: 50%;
+  }
+  .software-card .wrapper-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .software-card .label {
+    margin: 0.2em;
   }
 }
