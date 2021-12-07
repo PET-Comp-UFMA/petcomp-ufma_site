@@ -1,16 +1,15 @@
 main .container {
-  width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin-bottom: 3rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  width: 70%;
 }
 
 main .container p {
   color: #010101;
-  padding: 40px;
-  padding-top: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+  text-align: justify;
+  text-indent: 0.8em;
+  padding: 0 3em;
 }
 
 .gallery {

@@ -73,7 +73,7 @@ const mostrarPodCast = data.map((item) => {
         <iframe src="${item.urlPodCast}" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
         <div class="description">
           ${item.descricao}
-          <p class="hosts"><img src="./assets/svg/mic_white_24dp.svg">${item.hosts}</p>
+          <p class="hosts" style="padding: 0; color: #fff"><img src="./assets/svg/mic_white_24dp.svg">${item.hosts}</p>
         </div>
       </div>
     </div>

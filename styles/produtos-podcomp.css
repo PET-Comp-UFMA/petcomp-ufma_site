@@ -1,8 +1,15 @@
-.text {
+main .container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+main .container p {
+  color: #010101;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
   text-align: justify;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: #888888;
+  text-indent: 0.8em;
+  padding: 0 3em;
 }
 
 .episodios {
