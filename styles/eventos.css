@@ -12,13 +12,14 @@ main .container p {
 }
 
 .noticias {
-  padding: 100px;
   padding-top: 40px;
   border: none;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  padding: 0 3em;
+  margin-bottom: 2em;
 }
 
 .noticias > p {
@@ -29,13 +30,14 @@ main .container p {
 
 .materia {
   display: flex;
+  background: #eeeeee;
   flex-direction: row;
   align-items: center;
-  background: #eeeeee70;
   margin: 20px 0;
   padding: 15px;
 }
 .materia > img {
+  background: #eeeeee;
   width: 200px;
   height: 200px;
 }
@@ -51,9 +53,11 @@ main .container p {
   font-size: 28px;
 }
 
-.textoMateria p {
+.materia .textoMateria p {
   font-size: 16px;
-  margin: 20px 0;
+  margin: 1em 0;
+  padding: 0;
+  text-indent: 0;
 }
 .botao {
   background: #33c3ff;
@@ -75,6 +79,13 @@ main .container p {
 }
 
 @media (max-width: 800px) {
+  main .container {
+    width: 90%;
+  }
+
+  main .container p {
+    padding: 0;
+  }
   .noticias {
     margin-bottom: 20px;
     padding: 0;
@@ -83,6 +94,6 @@ main .container p {
 
   .materia {
     flex-direction: column;
-    margin: 0 10px;
+    margin: 10px 0;
   }
 }

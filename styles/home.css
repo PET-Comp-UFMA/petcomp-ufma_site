@@ -49,11 +49,12 @@
   background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   color: #343564;
   display: flex;
   flex-direction: column;
-  height: 30em;
+  height: 35em;
   justify-content: center;
 }
 
@@ -424,10 +425,6 @@
 }
 
 @media (max-width: 1450px) {
-  .resumo-petcomp .text-petcomp {
-    margin-left: 20px;
-  }
-
   .resumo-petcomp .text-petcomp p {
     width: 550px;
   }
@@ -453,7 +450,7 @@
   }
 
   .atividades .images-atividades {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 
@@ -477,19 +474,27 @@
   }
 
   .atividades .atividades-desenvolvidas .card-atividade a {
+    margin-left: 1em;
     font-size: 12px;
   }
 
   .atividades .images-atividades .card-atividade {
+    display: flex;
+    flex-direction: row;
     height: 300px;
     padding: 20px 15px 20px 15px;
     margin: 10px;
-    width: 80%;
+    width: 100%;
+  }
+
+  .atividades .images-atividades .card-atividade img {
+    width: 6em;
   }
 
   .atividades .images-atividades .card-atividade h3 {
     font-size: 38px;
     margin: 1em 0;
+    width: 6em;
   }
 }
 
@@ -520,12 +525,13 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    padding: 1em;
   }
 
   .resumo-petcomp .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 15vw);
     grid-gap: 4px;
     width: 100%;
   }
@@ -539,7 +545,6 @@
     font-size: 30px;
     margin: 0 auto;
     margin-top: 20px;
-    width: 50%;
   }
 
   .resumo-petcomp .text-petcomp p {
@@ -554,12 +559,15 @@
   }
 
   .atividades .images-atividades {
-    justify-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 10%;
     margin-bottom: 70px;
+    width: 100%;
   }
 
   .atividades .atividades-desenvolvidas {
-    padding: 24px;
+    margin-right: 0;
   }
 
   .atividades .atividades-desenvolvidas h1 {
@@ -576,10 +584,8 @@
   .atividades .images-atividades .card-atividade {
     display: flex;
     flex-direction: row;
-    height: 150px;
-    margin: 0 auto;
-    padding: 10px;
-    width: 60%;
+    height: 10em;
+    width: 70%;
   }
 
   .atividades .images-atividades .card-atividade img {
@@ -588,7 +594,13 @@
 
   .atividades .images-atividades .card-atividade h3 {
     font-size: 22px;
+    margin: 0;
+    margin-top: 0.5em;
     width: 100%;
+  }
+
+  .atividades .images-atividades .card-atividade a {
+    width: 15em;
   }
 }
 

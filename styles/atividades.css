@@ -19,7 +19,6 @@ main .images {
 }
 
 main img {
-  border: 10px solid #eee;
   margin: 20px auto;
   transition: 0.2s;
   width: 90%;
@@ -46,6 +45,7 @@ main .sites-cards {
   grid-gap: 5em;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
+  margin-bottom: 2em;
   width: 90%;
 }
 
@@ -71,7 +71,7 @@ main .sites-cards {
 .software-card h2,
 .software-card a {
   color: #fafafa;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.4em;
   font-size: 20px;
   text-decoration: none;
 }
@@ -130,6 +130,14 @@ main .sites-cards {
     text-align: justify;
   }
 
+  main .container {
+    width: 90%;
+  }
+
+  main .container p {
+    padding: 0;
+  }
+
   main .images {
     display: flex;
     flex-direction: column;
@@ -151,6 +159,20 @@ main .sites-cards {
 
   main img:hover {
     transform: scale(1.1);
+  }
+
+  .software-card {
+    width: 90%;
+  }
+
+  .software-card img {
+    width: 100%;
+  }
+
+  .software-card .wrapper-labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
   }
 }
 

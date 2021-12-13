@@ -17,12 +17,12 @@ const data = [
     isBlue: true,
     hosts: ['Carlos Silva', ' Natasha Araújo']
   },
-  {
-    urlPodCast: 'https://open.spotify.com/embed/episode/2X9INwrLSsSI1sUUF9fyg9?theme=0',
-    descricao: 'Hoje é dia de Pop Culture!! Nesse episódio falamos sobre o filme O Jogo da Imitação. Já assistiu? Ainda não? Não perde tempo e vem descobrir mais sobre ele aqui com a gente.',
-    isBlue: false,
-    hosts: ['Carlos Silva', ' Natasha Araújo', ' Maykon Keslley']
-  },
+  // {
+  //   urlPodCast: 'https://open.spotify.com/embed/episode/2X9INwrLSsSI1sUUF9fyg9?theme=0',
+  //   descricao: 'Hoje é dia de Pop Culture!! Nesse episódio falamos sobre o filme O Jogo da Imitação. Já assistiu? Ainda não? Não perde tempo e vem descobrir mais sobre ele aqui com a gente.',
+  //   isBlue: false,
+  //   hosts: ['Carlos Silva', ' Natasha Araújo', ' Maykon Keslley']
+  // },
   {
     urlPodCast: 'https://open.spotify.com/embed/episode/4QtX69HqDoeO5IivXneRJR',
     descricao: 'Está difícil, né? Nesse episódio falamos sobre a dificuldade de mantermos a sanidade em meio a pandemia e a importância do lazer para lidar com todos esses problemas. Vamos bater um papo?',
@@ -71,10 +71,8 @@ const mostrarPodCast = data.map((item) => {
     <div class="episodio">
       <div class="texto">
         <iframe src="${item.urlPodCast}" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-        <div class="description">
           ${item.descricao}
           <p class="hosts" style="padding: 0; color: #fff"><img src="./assets/svg/mic_white_24dp.svg">${item.hosts}</p>
-        </div>
       </div>
     </div>
   `

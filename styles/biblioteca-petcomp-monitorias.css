@@ -68,7 +68,7 @@ section .conteudos-lp1 {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   padding: 20px;
-  width: 90%;
+  width: 80%;
 }
 
 section .conteudos-python,
@@ -204,7 +204,6 @@ section .conteudos-lp1 > div {
 
   .container {
     display: flex;
-    margin: 0 auto;
   }
 
   .container #conteudos {

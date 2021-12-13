@@ -15,19 +15,22 @@ main .container p {
 .episodios {
   display: flex;
   flex-direction: column-reverse;
+  margin: auto;
+  padding: 0 3em;
+}
+
+.episodio {
+  margin-top: 3em;
 }
 
 .episodio .texto {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: 20px;
-  width: 85%;
 }
 
-.episodio .texto .description {
+.episodio .texto {
   background: #000838;
-  border-radius: 0 0 8px 8px;
+  border-radius: 1em;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -38,7 +41,7 @@ main .container p {
   width: 100%;
 }
 
-.episodio .texto .description p {
+.episodio .texto p {
   align-items: center;
   display: flex;
   margin-top: 10px;
@@ -47,12 +50,29 @@ main .container p {
   font-weight: 300;
 }
 
-.episodio .texto .description p img {
+.episodio .texto p img {
   width: 20px;
 }
 
 @media (max-width: 800px) {
+  main .container {
+    width: 90%;
+  }
+
+  main .container p {
+    padding: 0;
+  }
+
+  .episodios {
+    padding: 0;
+    width: 100%;
+  }
+
   .episodio .texto {
     width: 100%;
+  }
+
+  .hosts {
+    padding: 0.2em;
   }
 }
