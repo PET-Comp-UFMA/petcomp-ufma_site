@@ -125,17 +125,14 @@ main .sites-cards {
 }
 
 @media (max-width: 800px) {
-  main p {
-    font-size: 16px;
+  main .container p {
+    font-size: 18px;
+    padding: 0;
     text-align: justify;
   }
 
   main .container {
     width: 90%;
-  }
-
-  main .container p {
-    padding: 0;
   }
 
   main .images {

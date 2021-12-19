@@ -516,7 +516,7 @@
   }
 
   .texto-banner .intro-noticia p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 10px;
     width: 80%;
   }
@@ -561,9 +561,7 @@
   .atividades .images-atividades {
     display: grid;
     grid-template-columns: 1fr;
-    margin-right: 10%;
-    margin-bottom: 70px;
-    width: 100%;
+    margin: o auto;
   }
 
   .atividades .atividades-desenvolvidas {
