@@ -13,7 +13,7 @@ main .container p {
 
 main .images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   flex-direction: row;
   margin-bottom: 40px;
 }
