@@ -561,7 +561,9 @@
   .atividades .images-atividades {
     display: grid;
     grid-template-columns: 1fr;
-    margin: o auto;
+    margin: 0 auto;
+    margin-left: -20px;
+    width: 375px;
   }
 
   .atividades .atividades-desenvolvidas {
