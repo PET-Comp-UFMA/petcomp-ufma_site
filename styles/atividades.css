@@ -7,7 +7,6 @@ main .container p {
   font-family: "Montserrat", sans-serif;
   line-height: 2em;
   text-align: justify;
-  text-indent: 0.8em;
   padding: 0 3em;
 }
 
@@ -21,7 +20,7 @@ main .images {
 main img {
   margin: 20px auto;
   transition: 0.2s;
-  width: 90%;
+  width: 100%;
 }
 
 main .images-fab-software,
@@ -30,14 +29,11 @@ main .images-monitoria {
   grid-template-columns: 1fr;
   flex-direction: row;
   margin-bottom: 40px;
+  padding: 0 3em;
 }
 
 main .images-fab-software .images-desenvolvimento {
   width: 80%;
-}
-
-main img:hover {
-  transform: scale(1.01);
 }
 
 main .sites-cards {
@@ -46,7 +42,8 @@ main .sites-cards {
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   margin-bottom: 2em;
-  width: 90%;
+  padding: 0 3em;
+  width: 100%;
 }
 
 .software-card {
@@ -118,6 +115,34 @@ main .sites-cards {
   }
 }
 
+@media (max-width: 1250px) {
+  main .sites-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .software-card {
+    width: 50%;
+  }
+
+  .software-card img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  main .sites-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .software-card {
+    width: 100%;
+  }
+
+  .software-card img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   main .sites-cards {
     grid-template-columns: 1fr;
@@ -125,28 +150,29 @@ main .sites-cards {
 }
 
 @media (max-width: 800px) {
+  main .sites-cards {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
   main .container p {
     font-size: 18px;
-    padding: 0;
+    padding: 0 1em;
     text-align: justify;
   }
 
   main .container {
-    width: 90%;
+    width: 100%;
   }
 
-  main .images {
+  main .images,
+  main .images-fab-software,
+  main .images-monitoria {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    padding: 0;
   }
-
-  main .images-fab-software {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-
   main img {
     border: 2px solid #eee;
     margin: 20px auto;
@@ -177,11 +203,19 @@ main .sites-cards {
   .software-card {
     width: 90%;
   }
+
+  .software-card img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 300px) {
+  .software-card {
+    width: 90%;
+  }
+
   .software-card img {
-    width: 50%;
+    width: 100%;
   }
   .software-card .wrapper-labels {
     display: flex;
