@@ -28,6 +28,7 @@ function DropdownSection(section) {
 
 
   drops.forEach((elem) => {
+      
     elem.addEventListener("click", (event) => {
 
       let father = elem.parentNode;
@@ -50,6 +51,7 @@ function DropdownSection(section) {
         var openDropdowns = dropdowns[i];
         if (openDropdowns.classList.contains(`show-dropdown-${section}`)) {
           openDropdowns.classList.remove(`show-dropdown-${section}`);
+          openDropdowns.classList.remove(`dropdown-open`);
         }
       }
     }
