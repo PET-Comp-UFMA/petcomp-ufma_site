@@ -1,21 +1,27 @@
-let lastActive;
+// let lastActive;
 
 function CloseAllDropdowns(active) {
-  
-  // função que fecha todos os dropdowns ativos, exceto o ultimo clicado
 
   let dropdowns = document.querySelectorAll(".dropdown [id]");
   
-  dropdowns.forEach((cur) => {
-
-    if (cur.classList.contains("dropdown-open")) {
-      
-      if (active != cur.getAttribute("id")) {
-        let nameSection = cur.getAttribute("id").replace("dropdown-", "")
+  // se for undefined quer dizer que queremos fechar todos os dropdowns, senao, queremos fechar todos menos o ultmo
+  if (active === undefined) {
+    dropdowns.forEach((cur) => {
+      if (cur.classList.contains("dropdown-open")) {
+        let nameSection = cur.getAttribute("id").replace("dropdown-", "") 
         DropdownSection(nameSection)  
       }
-    }
-  })
+    })
+  } else {
+    dropdowns.forEach((cur) => {
+      if (cur.classList.contains("dropdown-open")) {        
+        if (active != cur.getAttribute("id")) {
+          let nameSection = cur.getAttribute("id").replace("dropdown-", "") 
+          DropdownSection(nameSection)  
+        }
+      }
+    })
+  }
 }
 
 function DropdownSection(section) {
@@ -31,7 +37,7 @@ function DropdownSection(section) {
       
     elem.addEventListener("click", (event) => {
 
-      let father = elem.parentNode;
+      // let father = elem.parentNode;
       let dropdowns = elem.querySelector(".dropdown-open");
 
       if (dropdowns != null){
@@ -45,16 +51,28 @@ function DropdownSection(section) {
   window.onclick = function(event) {
     
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName(`dropdown-content-${section}`);
-      var i;
-      for (i=0; i<dropdowns.length; i++) {
-        var openDropdowns = dropdowns[i];
-        if (openDropdowns.classList.contains(`show-dropdown-${section}`)) {
-          openDropdowns.classList.remove(`show-dropdown-${section}`);
-          openDropdowns.classList.remove(`dropdown-open`);
-        }
-      }
-    }
+     
+      // var dropdowns = document.getElementsByClassName(`dropdown-content-${section}`);
+      // var i;
+      // console.log(dropdowns)
+      // for (i=0; i < dropdowns.length; i++) {
+        
+      //   var openDropdowns = dropdowns[i];
+        
+      //   if (openDropdowns.classList.contains(`show-dropdown-${section}`)) {
+      //     console.log(openDropdowns)
+      //     openDropdowns.classList.remove(`show-dropdown-${section}`);
+      //     console.log(`apagou a classe show-dropdown-${section}`)
+      //   }
+
+      //   if (openDropdowns.classList.contains(`dropdown-open`)) {
+      //     openDropdowns.classList.remove(`dropdown-open`);
+      //     console.log("sexo2")
+      //   }
+      // } 
+
+      CloseAllDropdowns();
+    } 
 
 
   } 
