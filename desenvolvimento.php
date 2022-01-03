@@ -63,6 +63,16 @@
             </div>
           </div>
         </div>
+        <div class="software-card">
+          <img src="./assets/images/logos/mamaprev.png" alt="">
+          <div class="text">
+            <h2>MAMAPrev</h2>
+            <div class="wrapper-labels">
+              <div class="label react">React-Native</div>
+              <div class="label javascript">JavaScript</div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- <div class="images-fab-software">
         <img src="./assets/images/fab-software-photo-1.jpg" alt="" class="images-desenvolvimento">

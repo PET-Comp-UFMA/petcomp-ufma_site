@@ -24,7 +24,8 @@ main img {
 }
 
 main .images-fab-software,
-main .images-monitoria {
+main .images-monitoria,
+main .images-minicursos {
   display: grid;
   grid-template-columns: 1fr;
   flex-direction: row;

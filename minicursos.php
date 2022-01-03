@@ -30,13 +30,13 @@
       <p>A atividade será organizada pelos petianos que irão organizar um espaço para a apresentação do minicurso/oficina/palestra. Os alunos irão apresentar de acordo com o que foi decidido dentro da atividade e/ou será convidado um profissional para abordar diversos assuntos que atraiam e ajudem os participantes no futuro. A aplicação do minicurso/palestra/oficina ocorrerá dependendo do público alvo, sempre aplicando uma metodologia que permita a participação prática dentro da atividade. Cada atividade será divulgada nas redes sociais e no site do PETComp para que o máximo de pessoas possam comparecer à apresentação.</p>
       <div class="images images-minicursos">
         <img src="./assets/images/minicursos-photo-1.jpg" alt="">
-        <img src="./assets/images/minicursos-photo-2.jpg" alt="">
+        <img src=" ./assets/images/minicursos-photo-2.jpg" alt="">
       </div>
     </div>
   </main>
 
   <?php include('footer.php') ?>
-  <script src="./scripts/script.js"></script>
+  <script src=" ./scripts/script.js"></script>
 </body>
 
 </html>

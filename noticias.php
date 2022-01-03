@@ -56,13 +56,13 @@ if (!is_null($titulo) || !is_null($texto)) {
       <h2>Buscar por: </h2>
 
       <form action="noticias.php" class="filtro" method="<?php echo $_SERVER['PHP_SELF'] ?>">
-        <div class="titulo">
-          <label for="titulo">Título</label>
-          <input name="titulo" type="text" placeholder="Digite o título" value="<?php echo $titulo; ?>">
+        <div class="author">
+          <label for="author">Título</label>
+          <input name="author" type="text" placeholder="Digite o título" value="<?php echo $titulo; ?>">
         </div>
-        <div class="texto">
-          <label for="texto">Texto</label>
-          <input name="texto" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto; ?>">
+        <div class="keyword">
+          <label for="keyword">Texto</label>
+          <input name="keyword" type="text" placeholder="Digite uma parte de texto" value="<?php echo $texto; ?>">
         </div>
         <div class="search">
           <label for="search-button">Buscar</label>

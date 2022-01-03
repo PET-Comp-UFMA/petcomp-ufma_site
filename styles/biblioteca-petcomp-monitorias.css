@@ -10,7 +10,7 @@
   min-height: 100vh;
 }
 footer.fixar-rodape {
-  background: #343564;
+  background: linear-gradient(180deg, #060b3f, #232433);
   width: 100%;
   margin-top: auto;
 }

@@ -257,7 +257,7 @@ main .container .pagination .numbers .active:hover {
 }
 
 footer {
-  background: #343564;
+  background: linear-gradient(180deg, #060b3f, #232433);
   display: flex;
   justify-content: space-around;
   width: 100%;

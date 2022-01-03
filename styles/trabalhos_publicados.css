@@ -14,12 +14,13 @@ main .container .filtro {
 }
 
 main .container .filtro,
-main .container .filtro .year
-{
+main .container .filtro .year {
   display: flex;
   flex-direction: column;
 }
 
+main .container .titulo label,
+main .container .texto label,
 main .container .filtro label,
 main .container .search label {
   font-size: calc((12px + 0.25vw) * 0.875);
@@ -30,7 +31,6 @@ main .container .search label {
 }
 
 main .container .filtro input,
-
 main .container .filtro .type select {
   background: none;
   border: 1px solid var(--gray-border);
@@ -342,7 +342,6 @@ main .container .pagination .numbers .active:hover {
     display: flex;
     flex-direction: column;
   }
-
 
   main .container .card .details .share {
     padding: 10px 0 0 0;
