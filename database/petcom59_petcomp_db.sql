@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Tempo de geração: 06-Dez-2021 às 11:20
--- Versão do servidor: 5.7.23-23
--- versão do PHP: 7.3.32
+-- Host: 127.0.0.1
+-- Generation Time: 06-Maio-2022 às 16:42
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `petcom59_petcomp_db`
+-- Database: `petcom59_petcomp_db`
 --
 
 -- --------------------------------------------------------
@@ -135,26 +135,26 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (74, 'Weldson Amaral', 'Weldson ', 'Amaral', 2012, 1, 0, 0, 0, 'Weldson Amaral.jpg'),
 (75, 'Werliton Carlos', 'Werliton ', 'Carlos', 2014, 1, 0, 0, 0, 'Werliton Carlos.jpg'),
 (76, 'Alyson Estrela Silva', 'Alyson ', ' Estrela', 2021, 2, 1, 0, 0, 'Alyson Estrela.jpg'),
-(77, 'André Barreto', 'André', ' Barreto', 2021, 1, 1, 0, 0, 'Andre Barreto.jpg'),
-(78, 'Arthur Passos', 'Arthur', ' Passos', 2019, 2, 1, 0, 0, 'Arthur Passos.jpg'),
-(79, 'Iago Victor', 'Iago ', 'Victor', 2021, 1, 1, 0, 0, 'Iago Victor.jpg'),
-(80, 'João Davi', 'João ', ' Davi', 2021, 1, 1, 0, 0, 'João Davi.jpg'),
-(81, 'João Victor', 'João ', 'Victor', 2021, 2, 1, 0, 0, 'João Victor.jpg'),
+(77, 'André Barreto', 'André', ' Barreto', 2021, 1, 0, 0, 0, 'Andre Barreto.jpg'),
+(78, 'Arthur Passos', 'Arthur', ' Passos', 2019, 2, 0, 0, 0, 'Arthur Passos.jpg'),
+(79, 'Iago Victor', 'Iago ', 'Victor', 2021, 1, 0, 0, 0, 'Iago Victor.jpg'),
+(80, 'João Davi', 'João ', ' Davi', 2021, 1, 0, 0, 0, 'João Davi.jpg'),
+(81, 'João Victor', 'João ', 'Victor', 2021, 2, 0, 0, 0, 'João Victor.jpg'),
 (82, 'José Florêncio de Melo Neto', 'José ', 'Florêncio', 2021, 2, 1, 0, 0, 'José Florêncio.jpg'),
-(83, 'Maikon Kessley', 'Maikon ', 'Kessley', 2021, 1, 1, 0, 0, 'Maikon Kessley.jpg'),
+(83, 'Maikon Kessley', 'Maikon ', 'Kessley', 2021, 1, 0, 0, 0, 'Maikon Kessley.jpg'),
 (84, 'Matheus Levy de Lima Bessa', 'Matheus ', ' Levy', 2021, 1, 1, 0, 0, 'Matheus Levy.jpg'),
-(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 1, 0, 0, 'Luigi Dovera.jpg'),
-(86, 'João Pedro Uchoa da Silva Araújo', 'João', 'Uchoa', 2021, 2, 1, 0, 0, 'João Uchoa.jpg'),
+(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 0, 0, 0, 'Luigi Dovera.jpg'),
+(86, 'João Pedro Uchoa da Silva Araújo', 'João', 'Uchoa', 2021, 2, 0, 0, 0, 'João Uchoa.jpg'),
 (87, 'Lucas Farias Pereira', 'Lucas ', 'Farias', 2021, 2, 1, 0, 0, 'Lucas Farias.jpg'),
 (88, 'Lukas Gabriel Cruz Mota', 'Lukas', 'Mota', 2021, 2, 1, 0, 0, 'Lukas Mota.jpg'),
-(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 0, 'Pedro Rocha.jpg'),
-(90, 'Brenno Izaias', 'Brenno ', ' Izaias', 2020, 2, 1, 0, 1, 'Brenno Izaias.jpg'),
-(91, 'Carlos Vinicius', 'Carlos ', ' Vinicius', 2020, 1, 1, 0, 1, 'Carlos Vinicius.jpg'),
-(92, 'Gabriel Costa', 'Gabriel ', ' Costa', 2020, 1, 1, 0, 1, 'Gabriel Costa.jpg'),
+(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 1, 'Pedro Rocha.jpg'),
+(90, 'Brenno Izaias', 'Brenno ', ' Izaias', 2020, 2, 0, 0, 0, 'Brenno Izaias.jpg'),
+(91, 'Carlos Vinicius', 'Carlos ', ' Vinicius', 2020, 1, 0, 0, 0, 'Carlos Vinicius.jpg'),
+(92, 'Gabriel Costa', 'Gabriel ', ' Costa', 2020, 1, 0, 0, 0, 'Gabriel Costa.jpg'),
 (93, 'Gabriel Silva', 'Gabriel ', ' Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpg'),
-(94, 'Kennedy Anderson', 'Kennedy ', ' Anderson', 2020, 1, 1, 0, 1, 'Kennedy Anderson.jpg'),
+(94, 'Kennedy Anderson', 'Kennedy ', ' Anderson', 2020, 1, 0, 0, 0, 'Kennedy Anderson.jpg'),
 (95, 'Paulo Victor', 'Paulo ', 'Victor', 2021, 1, 1, 0, 1, 'Paulo Victor.jpg'),
-(96, 'Thalisson Jon', 'Thalisson ', 'Jon', 2021, 1, 1, 0, 1, 'Thalisson Jon.jpg'),
+(96, 'Thalisson Jon', 'Thalisson ', 'Jon', 2021, 1, 0, 0, 0, 'Thalisson Jon.jpg'),
 (97, 'João Mateus Silva Lopes', 'João', 'Mateus', 2021, 1, 0, 0, 0, 'Joao Mateus.jpg'),
 (98, 'Nathasha Araújo Pinto', 'Nathasha', 'Pinto', 2019, 2, 0, 0, 0, 'Nathasha Pinto.jpg'),
 (99, 'Alana Cristina de Carvalho Araújo', 'Alana', 'Araújo', 2018, 2, 0, 0, 0, 'Alana Araújo.jpg'),
@@ -177,7 +177,17 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (116, 'Jonas Jakiminski Silva', 'Jonas', 'Jakiminski', 2018, 2, 0, 0, 0, 'Jonas Jakiminski.jpg'),
 (117, 'Emily Juliana Costa e Silva', 'Emily', 'Silva', 2018, 2, 0, 0, 0, 'Emily Silva.jpg'),
 (118, 'Igor Rafael Barbosa Estrela', 'Igor', 'Estrela', 2018, 2, 0, 0, 0, 'Igor Estrela.jpg'),
-(119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg');
+(119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg'),
+(120, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 0, 0, 1, 0, 0, ''),
+(121, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 2022, 4, 1, 0, 0, 'Jackson Silva.jpg'),
+(122, 'Matheus Vinicius Garcia Cardoso', 'Matheus', 'Cardoso', 2022, 2, 1, 0, 0, 'Matheus Vinicius.jpg'),
+(123, 'Valter Abreu Silva Junior', 'Valter ', 'Junior', 2022, 2, 1, 0, 0, 'Valter Abreu.jpg'),
+(124, 'Adriano França Monteiro', 'Adriano ', 'Monteiro', 2022, 2, 1, 0, 0, 'Adriano França.png'),
+(125, 'Pedro Alexandre Ferreira França', 'Pedro', 'França', 2022, 2, 1, 0, 0, 'Pedro Alexandre.jpeg'),
+(126, 'Manoel De Jesus De Júnior', 'Manoel', 'Júnior', 2022, 4, 1, 0, 0, 'Manoel de Jesus.jpg'),
+(127, 'Melquezedeque Costa Bezerra', 'Melquezedeque', 'Bezerra', 2022, 2, 1, 0, 0, 'Melquezedeque Costa.jpg'),
+(128, 'Jessica Cristina Santos do Nascimento', 'Jessica', 'Nascimento', 2022, 2, 1, 0, 0, 'Jessica Cristina.png'),
+(129, 'Luiza Karine de Melo Borges', 'Luiza', 'Karine', 2022, 2, 1, 0, 0, 'Luiza Karine.jpg');
 
 -- --------------------------------------------------------
 
@@ -243,63 +253,64 @@ INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_ch
 (27, 'Artigo: Adoção de Práticas EaD Como Forma de Capacitação e Aperfeiçoamento Durante a Quarentena', 'José Durand, Eduarda Chagas, Arthur Passos, Carlos Vinicius Silva Da Silva, Daniel Pinto, Gabriel Sousa, Kennedy Nunes, Maikon Keslley Costa, Pedro Arthur Freitas Dias, Luis Rivero', '2020', NULL, 'Diante do cenário desta pandemia, uma solução possível para a\r\ncarga total de trabalho estabelecida por vários programas universitários e\r\nde estágio é a educação à distância. A qualificação do EAD é uma abordagem\r\nalternativa porque permite um melhor aproveitamento da equipe durante o\r\nreinício das atividades habituais.', 'https://petcompufma.org/jim/anexos/anais/eJIM_2020_paper_7.pdf'),
 (28, 'Artigo: Criando uma Revista Interativa para Divulgar Histórias de Mulheres na Computação', 'Guilherme Silva, Daniel Pinto, Karla Silva, Gabriel Costa, Jadiel Costa, Maikon Costa, Luis Rivero', '2020', NULL, 'O presente artigo apresenta o progresso de um projeto que visa utilizar um modelo interativo de revista digital com o propósito de disseminar a história e as conquistas de personalidades femininas em áreas da computação.', 'https://petcompufma.org/jim/anexos/anais/eJIM_2020_paper_8.pdf'),
 (29, 'Artigo: Peça em Casa: Desenvolvimento de Um Aplicativo para Apoiar o Isolamento Social em Tempos de Pandemia', 'Gabriel Sousa, Alana Araujo, Jose Durand, Eduarda Chagas, Luis Dias, Natasha Pinto, Ricardo Anchieta, Luis Rivero', '2020', NULL, 'Para conter a disseminação do vírus COVID-19, vários estados têm proposto medidas de isolamento social. Para evitar que os cidadãos saiam de casa, foi desenvolvido o aplicativo “Peça em Casa”. O aplicativo publicado fornece informações sobre estabelecimentos que possuem serviço de delivery, e caso seja necessário, fornece informações sobre lotação de estabelecimentos.', 'https://petcompufma.org/jim/anexos/anais/eJIM_2020_paper_5.pdf'),
-(30, 'Artigo: Análise de Ferramentas de Gerenciamento para Testes de Software: Propondo uma Alternativa para Realidade Local', 'Dayanne Gomes, Kennedy Anderson, Carlos Silva, Estephane Mendes, Luís Dias, Pedro Freitas, Geraldo Braz, Luis Rivero', '2020', NULL, 'Muitas ferramentas buscam auxiliar os testadores de software no gerenciamento de casos de teste seja automatizando processos ou gerando relatórios de projetos. Contudo, muitos problemas ainda não foram resolvidos pelas ferramentas disponíveis. Assim, um estudo comparativo foi realizado a fim de propor uma alternativa ao ferramentas existentes.', 'https://petcompufma.org/jim/anexos/anais/eJIM_2020_paper_9.pdf');
+(30, 'Artigo: Análise de Ferramentas de Gerenciamento para Testes de Software: Propondo uma Alternativa para Realidade Local', 'Dayanne Gomes, Kennedy Anderson, Carlos Silva, Estephane Mendes, Luís Dias, Pedro Freitas, Geraldo Braz, Luis Rivero', '2020', NULL, 'Muitas ferramentas buscam auxiliar os testadores de software no gerenciamento de casos de teste seja automatizando processos ou gerando relatórios de projetos. Contudo, muitos problemas ainda não foram resolvidos pelas ferramentas disponíveis. Assim, um estudo comparativo foi realizado a fim de propor uma alternativa ao ferramentas existentes.', 'https://petcompufma.org/jim/anexos/anais/eJIM_2020_paper_9.pdf'),
+(31, 'Artigo: Adaptando a Recepção de Calouros ao Contexto Virtual: Um Relato de Experiência do Uso de Tecnologias de Informação e Comunicação no Contexto da COVID-19', 'Luís Dias, Arthur Passos, Gabriel Costa, Guilherme de Carvalho, Kennedy Nunes, Alyson Silva, Gabriel Silva, Maikon Costa, Simara Rocha, Anselmo Paiva, Luis Rivero.', '2021', NULL, 'Devido a pandemia de COVID-19, medidas de distanciamento social foram adotadas. Tendo em vista esse cenário, atividades de integração e ensino para alunos ingressantes na graduação precisaram ser adaptadas para o formato virtual. Nesse contexto, o grupo do Programa de Educação Tutorial em Computação da Universidade Federal do Maranhão criou o evento Acalorada Virtual. O evento foi organizado no período de dois meses e ocorreu durante três dias por meio de videoconferências. A Acalorada contou com atividades como apresentações sobre o curso e a universidade, dinâmicas interativas e palestras. Este artigo relata como o evento foi organizado pelos discentes veteranos utilizando diversas tecnologias de informação e comunicação gratuitas para que outras instituições interessadas possam replica-lo. Após uma avaliação através de questionário, os discentes participantes indicaram que o evento foi útil para sua formação e adaptação a nova rotina da universidade, e que as atividades realizadas foram bem desenvolvidas no ambiente virtual.', 'https://petcompufma.org/eacomp/Anais%202021/Adaptando%20a%20Recepc%C2%B8ao%20de%20Calouros%20ao%20Contexto%20Virtual%20Um%20.pdf');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `noticias`
+-- Indexes for table `noticias`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `petianos`
+-- Indexes for table `petianos`
 --
 ALTER TABLE `petianos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `sites`
+-- Indexes for table `sites`
 --
 ALTER TABLE `sites`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `trabalhos_publicados`
+-- Indexes for table `trabalhos_publicados`
 --
 ALTER TABLE `trabalhos_publicados`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `noticias`
+-- AUTO_INCREMENT for table `noticias`
 --
 ALTER TABLE `noticias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `petianos`
+-- AUTO_INCREMENT for table `petianos`
 --
 ALTER TABLE `petianos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
--- AUTO_INCREMENT de tabela `sites`
+-- AUTO_INCREMENT for table `sites`
 --
 ALTER TABLE `sites`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `trabalhos_publicados`
+-- AUTO_INCREMENT for table `trabalhos_publicados`
 --
 ALTER TABLE `trabalhos_publicados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
