@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: 06-Maio-2022 às 16:42
--- Versão do servidor: 10.1.35-MariaDB
--- versão do PHP: 7.2.9
+-- Host: localhost:3306
+-- Tempo de geração: 07-Maio-2022 às 15:15
+-- Versão do servidor: 5.7.23-23
+-- versão do PHP: 7.3.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `petcom59_petcomp_db`
+-- Banco de dados: `petcom59_petcomp_db`
 --
 
 -- --------------------------------------------------------
@@ -139,19 +139,19 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (78, 'Arthur Passos', 'Arthur', ' Passos', 2019, 2, 0, 0, 0, 'Arthur Passos.jpg'),
 (79, 'Iago Victor', 'Iago ', 'Victor', 2021, 1, 0, 0, 0, 'Iago Victor.jpg'),
 (80, 'João Davi', 'João ', ' Davi', 2021, 1, 0, 0, 0, 'João Davi.jpg'),
-(81, 'João Victor', 'João ', 'Victor', 2021, 2, 0, 0, 0, 'João Victor.jpg'),
+(81, 'João Victor', 'João ', 'Victor', 2021, 2, 1, 0, 1, 'João Victor.jpg'),
 (82, 'José Florêncio de Melo Neto', 'José ', 'Florêncio', 2021, 2, 1, 0, 0, 'José Florêncio.jpg'),
 (83, 'Maikon Kessley', 'Maikon ', 'Kessley', 2021, 1, 0, 0, 0, 'Maikon Kessley.jpg'),
 (84, 'Matheus Levy de Lima Bessa', 'Matheus ', ' Levy', 2021, 1, 1, 0, 0, 'Matheus Levy.jpg'),
-(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 0, 0, 0, 'Luigi Dovera.jpg'),
+(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 1, 0, 1, 'Luigi Dovera.jpg'),
 (86, 'João Pedro Uchoa da Silva Araújo', 'João', 'Uchoa', 2021, 2, 0, 0, 0, 'João Uchoa.jpg'),
 (87, 'Lucas Farias Pereira', 'Lucas ', 'Farias', 2021, 2, 1, 0, 0, 'Lucas Farias.jpg'),
 (88, 'Lukas Gabriel Cruz Mota', 'Lukas', 'Mota', 2021, 2, 1, 0, 0, 'Lukas Mota.jpg'),
-(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 1, 'Pedro Rocha.jpg'),
+(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 1, 'Pedro Boucinhas.png'),
 (90, 'Brenno Izaias', 'Brenno ', ' Izaias', 2020, 2, 0, 0, 0, 'Brenno Izaias.jpg'),
 (91, 'Carlos Vinicius', 'Carlos ', ' Vinicius', 2020, 1, 0, 0, 0, 'Carlos Vinicius.jpg'),
 (92, 'Gabriel Costa', 'Gabriel ', ' Costa', 2020, 1, 0, 0, 0, 'Gabriel Costa.jpg'),
-(93, 'Gabriel Silva', 'Gabriel ', ' Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpg'),
+(93, 'Gabriel Silva', 'Gabriel ', ' Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpeg'),
 (94, 'Kennedy Anderson', 'Kennedy ', ' Anderson', 2020, 1, 0, 0, 0, 'Kennedy Anderson.jpg'),
 (95, 'Paulo Victor', 'Paulo ', 'Victor', 2021, 1, 1, 0, 1, 'Paulo Victor.jpg'),
 (96, 'Thalisson Jon', 'Thalisson ', 'Jon', 2021, 1, 0, 0, 0, 'Thalisson Jon.jpg'),
@@ -178,16 +178,15 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (117, 'Emily Juliana Costa e Silva', 'Emily', 'Silva', 2018, 2, 0, 0, 0, 'Emily Silva.jpg'),
 (118, 'Igor Rafael Barbosa Estrela', 'Igor', 'Estrela', 2018, 2, 0, 0, 0, 'Igor Estrela.jpg'),
 (119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg'),
-(120, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 0, 0, 1, 0, 0, ''),
-(121, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 2022, 4, 1, 0, 0, 'Jackson Silva.jpg'),
+(121, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 2022, 4, 1, 0, 0, 'Jackson Nascimento.png'),
 (122, 'Matheus Vinicius Garcia Cardoso', 'Matheus', 'Cardoso', 2022, 2, 1, 0, 0, 'Matheus Vinicius.jpg'),
-(123, 'Valter Abreu Silva Junior', 'Valter ', 'Junior', 2022, 2, 1, 0, 0, 'Valter Abreu.jpg'),
-(124, 'Adriano França Monteiro', 'Adriano ', 'Monteiro', 2022, 2, 1, 0, 0, 'Adriano França.png'),
-(125, 'Pedro Alexandre Ferreira França', 'Pedro', 'França', 2022, 2, 1, 0, 0, 'Pedro Alexandre.jpeg'),
+(123, 'Valter Abreu Silva Junior', 'Valter ', 'Junior', 2022, 2, 1, 0, 0, 'Valter Abreu.png'),
+(124, 'Adriano França Monteiro', 'Adriano ', 'Monteiro', 2022, 2, 1, 0, 0, 'Adriano França.jpeg'),
+(125, 'Pedro Alexandre Ferreira França', 'Pedro', 'França', 2022, 2, 1, 0, 0, 'Pedro Alexandre.png'),
 (126, 'Manoel De Jesus De Júnior', 'Manoel', 'Júnior', 2022, 4, 1, 0, 0, 'Manoel de Jesus.jpg'),
-(127, 'Melquezedeque Costa Bezerra', 'Melquezedeque', 'Bezerra', 2022, 2, 1, 0, 0, 'Melquezedeque Costa.jpg'),
+(127, 'Melquezedeque Costa Bezerra', 'Melquezedeque', 'Bezerra', 2022, 2, 1, 0, 0, 'Melquezedeque Costa.png'),
 (128, 'Jessica Cristina Santos do Nascimento', 'Jessica', 'Nascimento', 2022, 2, 1, 0, 0, 'Jessica Cristina.png'),
-(129, 'Luiza Karine de Melo Borges', 'Luiza', 'Karine', 2022, 2, 1, 0, 0, 'Luiza Karine.jpg');
+(129, 'Luiza Karine de Melo Borges', 'Luiza', 'Karine', 2022, 2, 1, 0, 0, 'Luiza Karine.png');
 
 -- --------------------------------------------------------
 
@@ -257,57 +256,57 @@ INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_ch
 (31, 'Artigo: Adaptando a Recepção de Calouros ao Contexto Virtual: Um Relato de Experiência do Uso de Tecnologias de Informação e Comunicação no Contexto da COVID-19', 'Luís Dias, Arthur Passos, Gabriel Costa, Guilherme de Carvalho, Kennedy Nunes, Alyson Silva, Gabriel Silva, Maikon Costa, Simara Rocha, Anselmo Paiva, Luis Rivero.', '2021', NULL, 'Devido a pandemia de COVID-19, medidas de distanciamento social foram adotadas. Tendo em vista esse cenário, atividades de integração e ensino para alunos ingressantes na graduação precisaram ser adaptadas para o formato virtual. Nesse contexto, o grupo do Programa de Educação Tutorial em Computação da Universidade Federal do Maranhão criou o evento Acalorada Virtual. O evento foi organizado no período de dois meses e ocorreu durante três dias por meio de videoconferências. A Acalorada contou com atividades como apresentações sobre o curso e a universidade, dinâmicas interativas e palestras. Este artigo relata como o evento foi organizado pelos discentes veteranos utilizando diversas tecnologias de informação e comunicação gratuitas para que outras instituições interessadas possam replica-lo. Após uma avaliação através de questionário, os discentes participantes indicaram que o evento foi útil para sua formação e adaptação a nova rotina da universidade, e que as atividades realizadas foram bem desenvolvidas no ambiente virtual.', 'https://petcompufma.org/eacomp/Anais%202021/Adaptando%20a%20Recepc%C2%B8ao%20de%20Calouros%20ao%20Contexto%20Virtual%20Um%20.pdf');
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `noticias`
+-- Índices para tabela `noticias`
 --
 ALTER TABLE `noticias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `petianos`
+-- Índices para tabela `petianos`
 --
 ALTER TABLE `petianos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sites`
+-- Índices para tabela `sites`
 --
 ALTER TABLE `sites`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `trabalhos_publicados`
+-- Índices para tabela `trabalhos_publicados`
 --
 ALTER TABLE `trabalhos_publicados`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `noticias`
+-- AUTO_INCREMENT de tabela `noticias`
 --
 ALTER TABLE `noticias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `petianos`
+-- AUTO_INCREMENT de tabela `petianos`
 --
 ALTER TABLE `petianos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
--- AUTO_INCREMENT for table `sites`
+-- AUTO_INCREMENT de tabela `sites`
 --
 ALTER TABLE `sites`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `trabalhos_publicados`
+-- AUTO_INCREMENT de tabela `trabalhos_publicados`
 --
 ALTER TABLE `trabalhos_publicados`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
