@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 04-Nov-2021 às 12:24
+-- Tempo de geração: 29-Maio-2022 às 15:10
 -- Versão do servidor: 5.7.23-23
--- versão do PHP: 7.3.28
+-- versão do PHP: 7.3.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,6 +28,18 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `petianos`
 --
 
+CREATE TABLE `petianos` (
+  `id` int(11) NOT NULL,
+  `nome_completo` varchar(60) DEFAULT NULL,
+  `primeiro_nome` varchar(15) NOT NULL,
+  `ultimo_nome` varchar(15) NOT NULL,
+  `ano` int(11) NOT NULL,
+  `periodo` int(11) NOT NULL,
+  `ativo` tinyint(4) NOT NULL,
+  `orientador` tinyint(4) NOT NULL,
+  `voluntario` tinyint(4) NOT NULL,
+  `imagem` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `petianos`
@@ -110,26 +122,26 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (74, 'Weldson Amaral', 'Weldson ', 'Amaral', 2012, 1, 0, 0, 0, 'Weldson Amaral.jpg'),
 (75, 'Werliton Carlos', 'Werliton ', 'Carlos', 2014, 1, 0, 0, 0, 'Werliton Carlos.jpg'),
 (76, 'Alyson Estrela Silva', 'Alyson ', ' Estrela', 2021, 2, 1, 0, 0, 'Alyson Estrela.jpg'),
-(77, 'André Barreto', 'André', ' Barreto', 2021, 1, 1, 0, 0, 'Andre Barreto.jpg'),
-(78, 'Arthur Passos', 'Arthur', ' Passos', 2019, 2, 1, 0, 0, 'Arthur Passos.jpg'),
-(79, 'Iago Victor', 'Iago ', 'Victor', 2021, 1, 1, 0, 0, 'Iago Victor.jpg'),
-(80, 'João Davi', 'João ', ' Davi', 2021, 1, 1, 0, 0, 'João Davi.jpg'),
-(81, 'João Victor', 'João ', 'Victor', 2021, 2, 1, 0, 0, 'João Victor.jpg'),
+(77, 'André Barreto', 'André', ' Barreto', 2021, 1, 0, 0, 0, 'Andre Barreto.jpg'),
+(78, 'Arthur Passos', 'Arthur', ' Passos', 2019, 2, 0, 0, 0, 'Arthur Passos.jpg'),
+(79, 'Iago Victor', 'Iago ', 'Victor', 2021, 1, 0, 0, 0, 'Iago Victor.jpg'),
+(80, 'João Davi', 'João ', ' Davi', 2021, 1, 0, 0, 0, 'João Davi.jpg'),
+(81, 'João Victor', 'João ', 'Victor', 2021, 2, 1, 0, 1, 'João Victor.jpg'),
 (82, 'José Florêncio de Melo Neto', 'José ', 'Florêncio', 2021, 2, 1, 0, 0, 'José Florêncio.jpg'),
-(83, 'Maikon Kessley', 'Maikon ', 'Kessley', 2021, 1, 1, 0, 0, 'Maikon Kessley.jpg'),
+(83, 'Maikon Kessley', 'Maikon ', 'Kessley', 2021, 1, 0, 0, 0, 'Maikon Kessley.jpg'),
 (84, 'Matheus Levy de Lima Bessa', 'Matheus ', ' Levy', 2021, 1, 1, 0, 0, 'Matheus Levy.jpg'),
-(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 1, 0, 0, 'Luigi Dovera.jpg'),
-(86, 'João Pedro Uchoa da Silva Araújo', 'João', 'Uchoa', 2021, 2, 1, 0, 0, 'João Uchoa.jpg'),
+(85, 'Italo Luigi Cerqueira Dovera', 'Luigi', 'Dovera', 2021, 2, 1, 0, 1, 'Luigi Dovera.jpg'),
+(86, 'João Pedro Uchoa da Silva Araújo', 'João', 'Uchoa', 2021, 2, 0, 0, 0, 'João Uchoa.jpg'),
 (87, 'Lucas Farias Pereira', 'Lucas ', 'Farias', 2021, 2, 1, 0, 0, 'Lucas Farias.jpg'),
 (88, 'Lukas Gabriel Cruz Mota', 'Lukas', 'Mota', 2021, 2, 1, 0, 0, 'Lukas Mota.jpg'),
-(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 0, 'Pedro Rocha.jpg'),
-(90, 'Brenno Izaias', 'Brenno ', ' Izaias', 2020, 2, 1, 0, 1, 'Brenno Izaias.jpg'),
-(91, 'Carlos Vinicius', 'Carlos ', ' Vinicius', 2020, 1, 1, 0, 1, 'Carlos Vinicius.jpg'),
-(92, 'Gabriel Costa', 'Gabriel ', ' Costa', 2020, 1, 1, 0, 1, 'Gabriel Costa.jpg'),
-(93, 'Gabriel Silva', 'Gabriel ', ' Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpg'),
-(94, 'Kennedy Anderson', 'Kennedy ', ' Anderson', 2020, 1, 1, 0, 1, 'Kennedy Anderson.jpg'),
+(89, 'Pedro Rocha Boucinhas Pacheco', 'Pedro', 'Pacheco', 2021, 2, 1, 0, 1, 'Pedro Boucinhas.png'),
+(90, 'Brenno Izaias', 'Brenno ', ' Izaias', 2020, 2, 0, 0, 0, 'Brenno Izaias.jpg'),
+(91, 'Carlos Vinicius', 'Carlos ', ' Vinicius', 2020, 1, 0, 0, 0, 'Carlos Vinicius.jpg'),
+(92, 'Gabriel Costa', 'Gabriel ', ' Costa', 2020, 1, 0, 0, 0, 'Gabriel Costa.jpg'),
+(93, 'Gabriel Silva', 'Gabriel ', ' Silva', 2021, 2, 1, 0, 1, 'Gabriel Silva.jpeg'),
+(94, 'Kennedy Anderson', 'Kennedy ', ' Anderson', 2020, 1, 0, 0, 0, 'Kennedy Anderson.jpg'),
 (95, 'Paulo Victor', 'Paulo ', 'Victor', 2021, 1, 1, 0, 1, 'Paulo Victor.jpg'),
-(96, 'Thalisson Jon', 'Thalisson ', 'Jon', 2021, 1, 1, 0, 1, 'Thalisson Jon.jpg'),
+(96, 'Thalisson Jon', 'Thalisson ', 'Jon', 2021, 1, 0, 0, 0, 'Thalisson Jon.jpg'),
 (97, 'João Mateus Silva Lopes', 'João', 'Mateus', 2021, 1, 0, 0, 0, 'Joao Mateus.jpg'),
 (98, 'Nathasha Araújo Pinto', 'Nathasha', 'Pinto', 2019, 2, 0, 0, 0, 'Nathasha Pinto.jpg'),
 (99, 'Alana Cristina de Carvalho Araújo', 'Alana', 'Araújo', 2018, 2, 0, 0, 0, 'Alana Araújo.jpg'),
@@ -152,7 +164,16 @@ INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `
 (116, 'Jonas Jakiminski Silva', 'Jonas', 'Jakiminski', 2018, 2, 0, 0, 0, 'Jonas Jakiminski.jpg'),
 (117, 'Emily Juliana Costa e Silva', 'Emily', 'Silva', 2018, 2, 0, 0, 0, 'Emily Silva.jpg'),
 (118, 'Igor Rafael Barbosa Estrela', 'Igor', 'Estrela', 2018, 2, 0, 0, 0, 'Igor Estrela.jpg'),
-(119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg');
+(119, 'Guilherme Alberto Sousa Ribeiro', 'Guilherme', 'Ribeiro', 2009, 1, 0, 0, 0, 'Guilherme Ribeiro.jpg'),
+(121, 'Jackson Silva Nascimento', 'Jackson', 'Nascimento', 2022, 4, 1, 0, 0, 'Jackson Nascimento.png'),
+(122, 'Matheus Vinicius Garcia Cardoso', 'Matheus', 'Cardoso', 2022, 2, 1, 0, 0, 'Matheus Vinicius.jpg'),
+(123, 'Valter Abreu Silva Junior', 'Valter ', 'Junior', 2022, 2, 1, 0, 0, 'Valter Abreu.png'),
+(124, 'Adriano França Monteiro', 'Adriano ', 'Monteiro', 2022, 2, 1, 0, 0, 'Adriano França.jpeg'),
+(125, 'Pedro Alexandre Ferreira França', 'Pedro', 'França', 2022, 2, 0, 0, 0, 'Pedro Alexandre.png'),
+(126, 'Manoel De Jesus De Júnior', 'Manoel', 'Júnior', 2022, 4, 1, 0, 0, 'Manoel de Jesus.jpg'),
+(127, 'Melquezedeque Costa Bezerra', 'Melquezedeque', 'Bezerra', 2022, 2, 1, 0, 0, 'Melquezedeque Costa.png'),
+(128, 'Jessica Cristina Santos do Nascimento', 'Jessica', 'Nascimento', 2022, 2, 1, 0, 0, 'Jessica Cristina.png'),
+(129, 'Luiza Karine de Melo Borges', 'Luiza', 'Karine', 2022, 2, 1, 0, 0, 'Luiza Karine.png');
 
 --
 -- Índices para tabelas despejadas
@@ -172,7 +193,7 @@ ALTER TABLE `petianos`
 -- AUTO_INCREMENT de tabela `petianos`
 --
 ALTER TABLE `petianos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
