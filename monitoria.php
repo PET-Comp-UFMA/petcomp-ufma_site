@@ -62,10 +62,10 @@
     </div> -->
 
       <div class="images images-monitoria">
-        <img src="./assets/images/monitoria-photo-1.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-4.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-2.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-3.jpg" alt="">
+        <img src="./assets/images/monitoria-photo-1.jpg" alt="Monitoria de Cálculo 1 com slides no Google Meet. Kennedy Anderson está explicando as propriedades das Integrais.">
+        <img src="./assets/images/monitoria-photo-4.jpg" alt="Kennedy Anderson está dando monitoria de Cálculo 1 com slide no Google Meet, resolvendo a questão 12 da Lista de Exércicios.">
+        <img src="./assets/images/monitoria-photo-2.jpg" alt="Gabriel de Jesus está mostrando um programa em python para ordenar uma lista de nomes, utilizando o site repl.it.">
+        <img src="./assets/images/monitoria-photo-3.jpg" alt="Arthur Passos está conversando no Google Meet com os alunos da monitoria de Linguagem de Programação.">
       </div>
     </div>
   </main>
