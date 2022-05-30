@@ -228,24 +228,27 @@ const data = [
 function renderResumo(urlResumo) {
   return urlResumo
     ? `
-    <a href="${urlResumo}" target="_blank">
-      <img src="./assets/svg/comment.svg">
-      Resumo
+    <a href="${urlResumo}" target="_blank" class="card-link">
+    <img src="./assets/svg/question_answer.svg"/>
+          Resumo
     </a>
   `
     : "";
 }
 
+
+
 function renderQuest(urlQuest) {
   return urlQuest
     ? `
-    <a href="${urlQuest}" target="_blank">
-      <img src="./assets/svg/question_answer.svg">
-      Questionário
+    <a href="${urlQuest}" target="_blank" class="card-link">
+    <img src="./assets/svg/question_answer.svg"/>
+          Questionário
     </a>
   `
     : "";
 }
+
 
 const filtrarAlg1 = data.filter((item) => {
   return item.monitoria === "Alg1";
@@ -253,21 +256,30 @@ const filtrarAlg1 = data.filter((item) => {
 
 const mostrarAlg1 = filtrarAlg1.map((item) => {
   return `
-    <div>
-      <div class="aula-card">
-        <h2 class="title">${item.nome}</h2>
+  <div class="col" style="margin-top:2rem; margin-botton: 2rem;">
+    <div class="card h-100 aula-card" style="width: 18rem;">
+      <div class="card-body">
+      <div class="card-header"  >
+          <h5 class="card-title" >${item.nome}</h5>
+      </div>
+        
         <div class="wrapper-links">
-          <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg" alt="">
-            Vídeo Aula
-          </a>
-          ${renderResumo(item.urlResumo)}
-          ${renderQuest(item.urlQuest)}
+        <a href="${item.urlVideo}" target="_blank" class="card-link">
+          <img src="./assets/svg/play_circle.svg" alt=""/>
+          Vídeo Aula
+        </a>
+        ${renderResumo(item.urlResumo)}
+        ${renderQuest(item.urlQuest)}
+
         </div>
       </div>
     </div>
+  </div>
   `;
 });
+
+
+
 
 const filtrarLP1 = data.filter((item) => {
   return item.monitoria === "LP1";
@@ -275,19 +287,25 @@ const filtrarLP1 = data.filter((item) => {
 
 const mostrarLP1 = filtrarLP1.map((item) => {
   return `
-    <div>
-      <div class="aula-card">
-        <h2 class="title">${item.nome}</h2>
+  <div class="col" style="margin-top:2rem; margin-botton: 2rem;">
+    <div class="card h-100 aula-card" style="width: 18rem;">
+      <div class="card-body">
+      <div class="card-header"  >
+          <h5 class="card-title" >${item.nome}</h5>
+      </div>
+        
         <div class="wrapper-links">
-          <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg" alt="">
-            Vídeo Aula
-          </a>
-          ${renderResumo(item.urlResumo)}
-          ${renderQuest(item.urlQuest)}
+        <a href="${item.urlVideo}" target="_blank" class="card-link">
+          <img src="./assets/svg/play_circle.svg" alt=""/>
+          Vídeo Aula
+        </a>
+        ${renderResumo(item.urlResumo)}
+        ${renderQuest(item.urlQuest)}
+
         </div>
       </div>
     </div>
+  </div>
   `;
 });
 
@@ -297,19 +315,25 @@ const filtrarC1 = data.filter((item) => {
 
 const mostrarC1 = filtrarC1.map((item) => {
   return `
-      <div>
-      <div class="aula-card">
-        <h2 class="title">${item.nome}</h2>
+  <div class="col" style="margin-top:2rem; margin-botton: 2rem;">
+    <div class="card h-100 aula-card" style="width: 18rem;">
+      <div class="card-body">
+      <div class="card-header"  >
+          <h5 class="card-title" >${item.nome}</h5>
+      </div>
+        
         <div class="wrapper-links">
-          <a href="${item.urlVideo}" target="_blank">
-            <img src="./assets/svg/play_circle.svg" alt="">
-            Vídeo Aula
-          </a>
-          ${renderResumo(item.urlResumo)}
-          ${renderQuest(item.urlQuest)}
+        <a href="${item.urlVideo}" target="_blank" class="card-link">
+          <img src="./assets/svg/play_circle.svg" alt=""/>
+          Vídeo Aula
+        </a>
+        ${renderResumo(item.urlResumo)}
+        ${renderQuest(item.urlQuest)}
+
         </div>
       </div>
     </div>
+  </div>
   `;
 });
 
