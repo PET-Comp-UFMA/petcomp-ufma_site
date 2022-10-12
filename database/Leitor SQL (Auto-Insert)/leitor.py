@@ -4,7 +4,7 @@ import sys
 import io
 import mysql.connector
 
-con = mysql.connector.connect(host='localhost',database='petcom59_petcomp_db', user='root', password='')
+con = mysql.connector.connect(host='localhost',database='petcom59_petcomp_db', user='root', password='')  #Conexão com o banco de dados (EDITÁVEL)
 if con.is_connected():
     db_info = con.get_server_info()
     print("Conectado ao servidor MySQL versão ", db_info)
@@ -16,7 +16,7 @@ if con.is_connected():
 
 
 # Setting the path to the xlsx file:
-xlsx_file = Path('C:/xampp/htdocs/petcomp-ufma_site/database/Petianos.xlsx')
+xlsx_file = Path('C:/xampp/htdocs/petcomp-ufma_site/database/Petianos.xlsx') # Caminho até a planilha (EDITÁVEL)
 wb_obj = openpyxl.load_workbook(xlsx_file)
 
 
@@ -28,8 +28,10 @@ for row in sheet.iter_rows(max_row=124):
 		for cell in row:
 			print(cell.value)
 			Data.append(cell.value)
+		#SQL Query (EDITÁVEL)
 		sql = "INSERT INTO `petianos` (`nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-		if not Data[9]==1:
+		#EDITÁVEL CONFORME QUANTIDADE DE VALORES A SEREM INSERIDOS
+		if not Data[9]==1:																					
 			continue
 		val = (Data[0], Data[1],Data[2], Data[3], Data[4], Data[5], Data[6], Data[7], Data[8])
 		cursor.execute(sql,val)

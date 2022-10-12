@@ -1,26 +1,36 @@
-.text {
+main .container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+main .container p {
+  color: #010101;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
   text-align: justify;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: #888888;
+  text-indent: 0.8em;
+  padding: 0 3em;
 }
 
 .episodios {
   display: flex;
   flex-direction: column-reverse;
+  margin: auto;
+  padding: 0 3em;
+}
+
+.episodio {
+  margin-top: 3em;
 }
 
 .episodio .texto {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: 20px;
-  width: 85%;
 }
 
-.episodio .texto .description {
+.episodio .texto {
   background: #000838;
-  border-radius: 0 0 8px 8px;
+  border-radius: 1em;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -31,7 +41,7 @@
   width: 100%;
 }
 
-.episodio .texto .description p {
+.episodio .texto p {
   align-items: center;
   display: flex;
   margin-top: 10px;
@@ -40,12 +50,29 @@
   font-weight: 300;
 }
 
-.episodio .texto .description p img {
+.episodio .texto p img {
   width: 20px;
 }
 
 @media (max-width: 800px) {
+  main .container {
+    width: 90%;
+  }
+
+  main .container p {
+    padding: 0;
+  }
+
+  .episodios {
+    padding: 0;
+    width: 100%;
+  }
+
   .episodio .texto {
     width: 100%;
+  }
+
+  .hosts {
+    padding: 0.2em;
   }
 }
