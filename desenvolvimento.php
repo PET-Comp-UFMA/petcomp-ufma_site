@@ -31,7 +31,7 @@
         <div class="software-card">
           <img src="./assets/images/logos/observatorio.svg" alt="">
           <div class=" text">
-            <h2><a target="_blank" href="http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/">Observatório Saúde Mental</a></h2>
+            <h2><a target="_blank" href="http://observatoriodesaudemental.com.br/">Observatório Saúde Mental</a></h2>
             <div class="wrapper-labels">
               <div class="label php">PHP</div>
               <div class="label html">HTML</div>
