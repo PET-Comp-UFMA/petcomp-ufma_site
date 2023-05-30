@@ -76,6 +76,17 @@
             </div>
           </div>
         </div>
+
+        <div class="software-card">
+          <img src="./assets/images/logos/aconchego.svg" alt="">
+          <div class="text">
+            <h2>Aconchego</h2>
+            <div class="wrapper-labels">
+              <div class="label react">React-Native</div>
+              <div class="label javascript">JavaScript</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
