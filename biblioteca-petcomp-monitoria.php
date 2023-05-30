@@ -38,7 +38,7 @@
         </div>
       </div>
       <div>
-        <button id="ed-1" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
+        <button id="ed-1" class="btn-monitoria" style="background: #ff1102" onclick="currentConteudo(3)">
           <img src="./assets/svg/ed1.svg" alt="Monitoria Estrutura de Dados I">
         </button>
         <div class="title">
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div>
-        <button id="c-lang" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
+        <button id="c-lang" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(4)">
           <img src="./assets/svg/c.svg" alt="Monitoria Linguagem de Programação I">
         </button>
         <div class="title">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div>
-        <button id="mdl" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
+        <button id="mdl" class="btn-monitoria" style="background: #72BCD4" onclick="currentConteudo(5)">
           <img src="./assets/svg/mdl.svg" alt="Monitoria Matemática Discreta e Lógica">
         </button>
         <div class="title">
@@ -66,7 +66,9 @@
     <section class="container">
       <div id="conteudos" class="conteudos-python fade"></div>
       <div id="conteudos" class="conteudos-calc1 fade" style="display: grid;"></div>
+      <div id="conteudos" class="conteudos-ed1 fade"></div>
       <div id="conteudos" class="conteudos-lp1 fade"></div>
+      <div id="conteudos" class="conteudos-mdl fade"></div>
     </section>
 
     <?php include('footer.php') ?>

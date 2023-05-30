@@ -63,7 +63,9 @@ section .container {
 
 section .conteudos-python,
 section .conteudos-calc1,
-section .conteudos-lp1 {
+section .conteudos-lp1,
+section .conteudos-ed1,
+section .conteudos-mdl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
@@ -72,13 +74,17 @@ section .conteudos-lp1 {
 }
 
 section .conteudos-python,
-section .conteudos-lp1 {
+section .conteudos-lp1,
+section .conteudos-ed1,
+section .conteudos-mdl {
   display: none;
 }
 
 section .conteudos-python > div,
 section .conteudos-calc1 > div,
-section .conteudos-lp1 > div {
+section .conteudos-lp1 > div,
+section .conteudos-ed1 > div,
+section .conteudos-mdl > div {
   margin: 0 auto;
   width: fit-content;
 }
