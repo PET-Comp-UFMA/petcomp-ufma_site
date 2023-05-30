@@ -38,11 +38,27 @@
         </div>
       </div>
       <div>
+        <button id="ed-1" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
+          <img src="./assets/svg/ed1.svg" alt="Monitoria Estrutura de Dados I">
+        </button>
+        <div class="title">
+          <h1>Estrutura de Dados I</h1>
+        </div>
+      </div>
+      <div>
         <button id="c-lang" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
           <img src="./assets/svg/c.svg" alt="Monitoria Linguagem de Programação I">
         </button>
         <div class="title">
           <h1>Linguagem de Programação I</h1>
+        </div>
+      </div>
+      <div>
+        <button id="mdl" class="btn-monitoria" style="background: #fafafa" onclick="currentConteudo(3)">
+          <img src="./assets/svg/mdl.svg" alt="Monitoria Matemática Discreta e Lógica">
+        </button>
+        <div class="title">
+          <h1>Matemática Discreta e Lógica</h1>
         </div>
       </div>
     </div>
