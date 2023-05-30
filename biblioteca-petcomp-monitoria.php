@@ -48,9 +48,9 @@
     </div>
 
     <section class="container">
-      <div id="conteudos" class="conteudos-python row row-cols-1 row-cols-md-3 g-4"></div>
-      <div id="conteudos" class="conteudos-calc1" style="display: grid;"></div>
-      <div id="conteudos" class="conteudos-lp1"></div>
+      <div id="conteudos" class="conteudos-python fade"></div>
+      <div id="conteudos" class="conteudos-calc1 fade" style="display: grid;"></div>
+      <div id="conteudos" class="conteudos-lp1 fade"></div>
     </section>
 
     <?php include('footer.php') ?>
@@ -59,4 +59,5 @@
 
 <script src="./scripts/script.js"></script>
 <script src="./scripts/biblioteca.js"></script>
+
 </html>

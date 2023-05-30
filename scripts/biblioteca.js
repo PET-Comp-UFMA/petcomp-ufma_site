@@ -228,27 +228,24 @@ const data = [
 function renderResumo(urlResumo) {
   return urlResumo
     ? `
-    <a href="${urlResumo}" target="_blank" class="card-link">
-    <img src="./assets/svg/question_answer.svg"/>
-          Resumo
+    <a href="${urlResumo}" target="_blank">
+      <img src="./assets/svg/comment.svg">
+      Resumo
     </a>
   `
     : "";
 }
-
-
 
 function renderQuest(urlQuest) {
   return urlQuest
     ? `
-    <a href="${urlQuest}" target="_blank" class="card-link">
-    <img src="./assets/svg/question_answer.svg"/>
-          Questionário
+    <a href="${urlQuest}" target="_blank">
+      <img src="./assets/svg/question_answer.svg">
+      Questionário
     </a>
   `
     : "";
 }
-
 
 const filtrarAlg1 = data.filter((item) => {
   return item.monitoria === "Alg1";
@@ -269,12 +266,8 @@ const mostrarAlg1 = filtrarAlg1.map((item) => {
         </div>
       </div>
     </div>
-  </div>
   `;
 });
-
-
-
 
 const filtrarLP1 = data.filter((item) => {
   return item.monitoria === "LP1";
@@ -295,7 +288,6 @@ const mostrarLP1 = filtrarLP1.map((item) => {
         </div>
       </div>
     </div>
-  </div>
   `;
 });
 
@@ -318,8 +310,8 @@ const mostrarC1 = filtrarC1.map((item) => {
         </div>
       </div>
     </div>
-  `
-})
+  `;
+});
 
 document.querySelector(".conteudos-python").innerHTML = mostrarAlg1.join("");
 document.querySelector(".conteudos-calc1").innerHTML = mostrarC1.join("");
