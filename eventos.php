@@ -55,6 +55,17 @@
         </div>
 
         <div class="evento">
+          <img src="./assets/images/logos/enepet2020.png">
+          <div class="textoMateria">
+            <h3>ENEPET</h3>
+            <p>
+              O Encontro Nordestino dos Grupos do Programa de Educação Tutorial (ENEPET) é um evento em que a comunidade petiana da região Nordeste se encontra para discutir questões relacionadas ao Programa de Educação Tutorial (PET) na região. O encontro é caracterizado por assembleias, grupos de discussão e trabalhos, apresentação de trabalhos acadêmicos, atividades culturais, além da troca de experiências entre discentes e tutores nordestinos.
+            </p>
+            <a href="https://www.even3.com.br/enepet2020/" target="_blank">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="evento">
           <img src="./assets/images/logos/ercemapi.svg">
           <div class="textoMateria">
             <h3>ERCEMAPI</h3>
