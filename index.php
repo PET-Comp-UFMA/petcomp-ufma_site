@@ -26,7 +26,7 @@
             <div class="intro-noticia">
               <h1>Seja bem-vindo ao novo site PETComp</h1>
               <p>De cara nova e com muito mais informações!</p>
-              <a href="./integrantes.html">Conheça</a>
+              <a href="./integrantes.php">Conheça</a>
             </div>
           </div>
         </li>
@@ -35,16 +35,16 @@
             <div class="intro-noticia">
               <h1>Conheça nossa história</h1>
               <p>O grupo existe desde 2007 e desenvolve atividades de Monitoria, Desenvolvimento e Pesquisas</p>
-              <a href="./sobre.html">Conheça</a>
+              <a href="./sobre.php">Conheça</a>
             </div>
           </div>
         </li>
         <li class="slider-item fade">
           <div class="texto-banner">
             <div class="intro-noticia">
-              <h1>Seletivo 2021.1</h1>
+              <h1>Seletivo</h1>
               <p>Veja a lista de integrantes do grupo e conheça os novos participantes</p>
-              <a href="./integrantes.html">Conheça</a>
+              <a href="./integrantes.php">Conheça</a>
             </div>
           </div>
         </li>
@@ -53,7 +53,7 @@
             <div class="intro-noticia">
               <h1>PodComp</h1>
               <p>Acompanhe todos o episódios já lançados do nosso podcast</p>
-              <a href="./produtos-podcomp.html">Conheça</a>
+              <a href="./produtos-podcomp.php">Conheça</a>
             </div>
           </div>
         </li>
