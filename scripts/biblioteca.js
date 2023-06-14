@@ -223,32 +223,142 @@ const data = [
       "https://drive.google.com/file/d/1nnz_02pNnQG4UJ3xtbpM7VNSgG59nQUg/view?usp=sharing",
     nome: "Correção da Prova 3",
   },
+  {
+    monitoria: "ED1",
+    nome: "Como Compilar",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Representação de Dados",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Vetores e Matrizes",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Tipos Abstratos de Dados",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Pilhas e Filas",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Listas Lineares Simplesmente Encadeadas",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Listas Lineares Duplamente Encadeadas",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Listas Circulares",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Conceitos de Árvores",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Árvores Binárias",
+  },
+  {
+    monitoria: "ED1",
+    nome: "Algoritmos em Árvores",
+  },
+ 
+  {
+    monitoria: "MDL",
+    nome: "Introdução a Matemática lógica e discreta",
+  },
+  {
+    monitoria: "MDL",
+    urlResumo:
+      "https://docs.google.com/document/d/1yaq6-94mr_XFJEI6_YHvbVjt1A_zPM2dTun_2WHjOzk/edit?usp=sharing",
+    urlQuest:
+	"https://drive.google.com/file/d/18Zb1kJg9oDPV4IOPGrBohqnt8IcjXF2f/view?usp=sharing",
+    nome: "Lógica proposicional",
+  },
+  {
+    monitoria: "MDL",
+    urlResumo:
+	"https://docs.google.com/document/d/16fr9-uKwpvO6ViA7zXVC5Lj5fYQBFqYtZ6EJ7cNISas/edit?usp=sharing",
+    nome: "Equivalências Proposicionais",
+  },
+  {
+    monitoria: "MDL",
+    urlResumo:
+	"https://docs.google.com/document/d/1DK6L9xyZklKUqfDEhfpvw6Lwf5t3shQyJ5fsf9Ih6tU/edit?usp=sharing",
+    nome: "Predicados e Quantificadores",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Regras de Inferência",
+  },
+  {
+    monitoria: "MDL",
+    urlResumo:
+	"https://docs.google.com/document/d/19CRO8Mwf3rWEM79P_LlrJ20igvwN4UQndLBTA2G_Dds/edit?usp=share_link",
+    nome: "Teoria dos Conjuntos",
+  },
+  {
+    monitoria: "MDL",
+     urlResumo:
+	"https://docs.google.com/document/d/1jBpgZEd-7N964xN14oqP4uwxDJ-6GQ8bI7M261g2_y0/edit?usp=sharing",
+    nome: "Operações de Conjuntos",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Funções",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Sequências e Somatórias",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Cardinalidade dos Conjuntos",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Crescimento de Funções",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Indução Matemática",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Contagem",
+  },
+  {
+    monitoria: "MDL",
+    nome: "Relações",
+  }
 ];
 
 function renderResumo(urlResumo) {
   return urlResumo
     ? `
-    <a href="${urlResumo}" target="_blank" class="card-link">
-    <img src="./assets/svg/question_answer.svg"/>
-          Resumo
+    <a href="${urlResumo}" target="_blank">
+      <img src="./assets/svg/comment.svg">
+      Resumo
     </a>
   `
     : "";
 }
-
-
 
 function renderQuest(urlQuest) {
   return urlQuest
     ? `
-    <a href="${urlQuest}" target="_blank" class="card-link">
-    <img src="./assets/svg/question_answer.svg"/>
-          Questionário
+    <a href="${urlQuest}" target="_blank">
+      <img src="./assets/svg/question_answer.svg">
+      Questionário
     </a>
   `
     : "";
 }
-
 
 const filtrarAlg1 = data.filter((item) => {
   return item.monitoria === "Alg1";
@@ -269,12 +379,8 @@ const mostrarAlg1 = filtrarAlg1.map((item) => {
         </div>
       </div>
     </div>
-  </div>
   `;
 });
-
-
-
 
 const filtrarLP1 = data.filter((item) => {
   return item.monitoria === "LP1";
@@ -295,7 +401,6 @@ const mostrarLP1 = filtrarLP1.map((item) => {
         </div>
       </div>
     </div>
-  </div>
   `;
 });
 
@@ -318,9 +423,48 @@ const mostrarC1 = filtrarC1.map((item) => {
         </div>
       </div>
     </div>
-  `
-})
+  `;
+});
+
+const filtrarMDL = data.filter((item) => {
+  return item.monitoria === "MDL";
+});
+
+const mostrarMDL = filtrarMDL.map((item) => {
+  return `
+      <div>
+      <div class="aula-card">
+        <h2 class="title">${item.nome}</h2>
+        <div class="wrapper-links">
+          ${renderResumo(item.urlResumo)}
+          ${renderQuest(item.urlQuest)}
+        </div>
+      </div>
+    </div>
+  `;
+});
+
+const filtrarED1 = data.filter((item) => {
+  return item.monitoria === "ED1";
+});
+
+const mostrarED1 = filtrarED1.map((item) => {
+  return `
+      <div>
+      <div class="aula-card">
+        <h2 class="title">${item.nome}</h2>
+        <div class="wrapper-links">
+          ${renderResumo(item.urlResumo)}
+          ${renderQuest(item.urlQuest)}
+        </div>
+      </div>
+    </div>
+  `;
+});
 
 document.querySelector(".conteudos-python").innerHTML = mostrarAlg1.join("");
 document.querySelector(".conteudos-calc1").innerHTML = mostrarC1.join("");
 document.querySelector(".conteudos-lp1").innerHTML = mostrarLP1.join("");
+document.querySelector(".conteudos-mdl").innerHTML = mostrarMDL.join("");
+document.querySelector(".conteudos-ed1").innerHTML = mostrarED1.join("");
+
