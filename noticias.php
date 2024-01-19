@@ -98,10 +98,11 @@ if (!is_null($titulo) || !is_null($texto)) {
           }
           $result = mysqli_query($mysqli, $query);
           $num_results = mysqli_num_rows($result);
-
+          $row = mysqli_fetch_array($result);
+          
           if ($num_results > 0) {
             for ($i = 0; $i < $num_results; $i++) {
-              $row = mysqli_fetch_array($result);
+              
           ?>
 
               <?php

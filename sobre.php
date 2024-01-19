@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  
+
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/sobre.css">
 </head>
@@ -38,6 +40,8 @@
           Para participar do nosso grupo, sempre tem seletivos durante o ano, basta acompanhar as redes sociais Instagram e Twitter @petcompufma.
         </p>
 
+       
+        
         <div class="gallery">
           <figure class="gallery__item gallery__item--1">
           </figure>
@@ -64,6 +68,7 @@
 
   <?php include('footer.php') ?>
   <script src="./scripts/script.js"></script>
+  
 </body>
 
 </html>

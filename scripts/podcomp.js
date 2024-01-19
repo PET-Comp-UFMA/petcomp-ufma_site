@@ -64,9 +64,15 @@ const data = [
     descricao: 'Quando se está na universidade, é imprescindível que haja um contato constante com artigos científicos, pois o conhecimento gerado por pequisadores das mais variadas áreas é compilado nesse tipo de documento. Quer aprender como ler um artigo científico? Vem discutir com a gente.',
     hosts: ['Carlos Vinicius', ' André Filipe', ' Thalisson Jon']
   },
+  
   {
     urlPodCast: 'https://open.spotify.com/embed/episode/3qVO8s24JVKJ3xvRkw4NkK',     descricao: 'Nesse episodio, os apresentadores Ramille Santana, Thiago Augusto e William Martins falam sobre suas experiências com o ChatGPT, desmistificam a ideia de que o mesmo irá roubar empregos e como ele pode ser usado para facilitar o aprendizado no curso.',
     hosts: ['Ramille Santana', ' Thiago Augusto', ' William Martins']
+  },
+  
+  {
+    urlPodCast: 'https://open.spotify.com/embed/episode/0F9f8Reg6bHXWGkOIsbnqb',     descricao: 'O episódio discute os desafios e tendências em cibersegurança, destacando conceitos como malware, ransomware e engenharia social. Os apresentadores compartilham experiências pessoais de ataques cibernéticos. Exploram o uso de cookies na internet, alertando sobre permissões concedidas a sites. Abordam os perigos das redes Wi-Fi públicas e oferecem dicas de proteção, como evitar acessar informações sensíveis nesses ambientes e considerar o uso de VPNs. Mencionam a pesquisa do MIT sobre defesa cibernética no Brasil e ressaltam a necessidade de conscientização e treinamento para usuários e empresas. No final, destacam medidas essenciais de segurança, como senhas fortes e autenticação de dois fatores, enfatizando a responsabilidade do usuário na proteção de suas informações.',
+    hosts: ['André Ribeiro', ' Mikael Silva', 'Thiago Augusto']
   }
 ]
 
