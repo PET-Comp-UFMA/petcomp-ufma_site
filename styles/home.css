@@ -49,7 +49,7 @@
   background-image: url(../assets/svg/imagemdefundo.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   color: #343564;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,7 @@
 
 /*Item 1*/
 .gallery__item--1 {
-  background-image: url("../assets/images/photo-5-med.jpg");
+  background-image: url("../assets/images/petnatal.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -173,7 +173,7 @@
 
 @media only screen and (max-width: 425px) {
   .gallery__item--1 {
-    background-image: url("../assets/images/photo-5-small.jpg");
+    background-image: url("../assets/images/petnatal.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -182,7 +182,7 @@
 
 @media only screen and (min-width: 1024px) {
   .gallery__item--1 {
-    background-image: url("../assets/images/photo-5-big.jpg");
+    background-image: url("../assets/images/petnatal.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -192,7 +192,7 @@
 /*Item 2*/
 
 .gallery__item--2 {
-  background-image: url("../assets/images/photo-8-med.jpg");
+  background-image: url("../assets/images/feira.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -200,7 +200,7 @@
 
 @media only screen and (max-width: 425px) {
   .gallery__item--2 {
-    background-image: url("../assets/images/photo-8-small.jpg");
+    background-image: url("../assets/images/feira.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -209,7 +209,7 @@
 
 @media only screen and (min-width: 1024px) {
   .gallery__item--2 {
-    background-image: url("../assets/images/photo-8-big.jpg");
+    background-image: url("../assets/images/feira.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -246,7 +246,7 @@
 /*Item 4*/
 
 .gallery__item--4 {
-  background-image: url("../assets/images/photo-7-big.jpg");
+  background-image: url("../assets/images/acalourada.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -254,7 +254,7 @@
 
 @media only screen and (max-width: 800px) {
   .gallery__item--4 {
-    background-image: url("../assets/images/photo-7-small.jpg");
+    background-image: url("../assets/images/acalourada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -263,7 +263,7 @@
 
 @media only screen and (min-width: 1024px) {
   .gallery__item--4 {
-    background-image: url("../assets/images/photo-7-big.jpg");
+    background-image: url("../assets/images/acalourada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
