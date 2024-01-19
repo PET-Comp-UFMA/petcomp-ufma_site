@@ -62,10 +62,15 @@
     </div> -->
 
       <div class="images images-monitoria">
+        <img src="./assets/images/monitoria-photo-5.png" alt="">
+        <img src="./assets/images/monitoria-photo-6.png" alt="">
+        <img src="./assets/images/monitoria-photo-7.png" alt="">
+        <img src="./assets/images/monitoria-photo-8.png" alt="">
         <img src="./assets/images/monitoria-photo-1.jpg" alt="">
         <img src="./assets/images/monitoria-photo-4.jpg" alt="">
         <img src="./assets/images/monitoria-photo-2.jpg" alt="">
         <img src="./assets/images/monitoria-photo-3.jpg" alt="">
+        
       </div>
     </div>
   </main>
