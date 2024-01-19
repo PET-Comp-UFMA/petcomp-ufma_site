@@ -14,15 +14,15 @@ use PHPMailer\PHPMailer\Exception;
     //Server settings
     $mail->isSMTP();    //Send using SMTP
     $mail->CharSet = 'UTF-8';  //Set Charset                                        
-    $mail->Host       = 'Servidor de email aqui';  //Set the SMTP server to send through
+    $mail->Host       = 'smtp.titan.email';  //Set the SMTP server to send through
     $mail->SMTPAuth   = true; //Enable SMTP authentication
-    $mail->Username   = 'Username do Servidor';       //SMTP username
-    $mail->Password   = 'Senha do Servidor';          //SMTP password
+    $mail->Username   = 'contato@petcompufma.org';       //SMTP username
+    $mail->Password   = '1fbPvbiN1M';          //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;     //Enable implicit TLS encryption
     $mail->Port       = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('Email que envia', 'PetComp');
+    $mail->setFrom('contato@petcompufma.org', 'PetComp Site Contato');
     $mail->addAddress($para_email, $para_nome);    //Add a recipient
 
     //Content
@@ -45,5 +45,5 @@ use PHPMailer\PHPMailer\Exception;
 	$assunto = $_POST['assunto'];
 
 	$corpo_email = "<h3>Nome: $nome </h3> <p>Email: $email </p> <p>Telefone: $telefone </p> <p>Assunto: $assunto </p>  <p>Mensagem:</p> $mensagem";
-	email("Email que recebe", "PetComp", $assunto, $corpo_email);
+	email("petcomputacao.ufma@gmail.com", "PetComp", $assunto, $corpo_email);
 ?>

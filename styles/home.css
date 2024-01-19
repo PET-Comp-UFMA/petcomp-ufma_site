@@ -46,15 +46,14 @@
 
 .texto-banner {
   align-items: center;
-  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-image: url(../assets/svg/imagemdefundo.svg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: #343564;
   display: flex;
   flex-direction: column;
-  height: 35em;
+  height: 70vh; 
   justify-content: center;
 }
 
@@ -247,15 +246,15 @@
 /*Item 4*/
 
 .gallery__item--4 {
-  background-image: url("../assets/images/photo-1-med.jpg");
+  background-image: url("../assets/images/photo-7-big.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 800px) {
   .gallery__item--4 {
-    background-image: url("../assets/images/photo-1-small.jpg");
+    background-image: url("../assets/images/photo-7-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -264,7 +263,7 @@
 
 @media only screen and (min-width: 1024px) {
   .gallery__item--4 {
-    background-image: url("../assets/images/photo-1-big.jpg");
+    background-image: url("../assets/images/photo-7-big.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -295,11 +294,16 @@
 }
 
 #atividades {
-  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-image: url(../assets/svg/imagemdefundo.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
-  height: 100%;
+  color: #343564;
+  display: flex;
+  justify-content: center;
+  
+
 }
 
 .atividades {
@@ -506,10 +510,8 @@
   ul li {
     padding: 0;
   }
-  .texto-banner {
-    height: 400px;
-    text-align: center;
-  }
+  
+  
 
   .texto-banner .intro-noticia h1 {
     font-size: 28px;
@@ -612,5 +614,8 @@
   .atividades .atividades-desenvolvidas h1 {
     margin: 0 auto;
     width: 100%;
+  }
+  .texto-banner {
+    text-align: center;
   }
 }

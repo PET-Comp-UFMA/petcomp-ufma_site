@@ -225,47 +225,81 @@ const data = [
   },
   {
     monitoria: "ED1",
-    nome: "Como Compilar",
-  },
-  {
-    monitoria: "ED1",
-    nome: "Representação de Dados",
+    nome: "Introdução à Estrutura de Dados",
+    urlResumo:
+      "https://docs.google.com/document/d/17Ku-AM7lyCxYpf2vmHVNkwE96jwNdr2U8oAle2Gx7_0/edit?usp=sharing",
   },
   {
     monitoria: "ED1",
     nome: "Vetores e Matrizes",
+    urlResumo:
+      "https://docs.google.com/document/d/1zNLx4mJ5U6n2Ed61OJlwlrwId5GbH0uLPgHFeAeHJPw/edit?usp=sharing",
+    urlQuest:
+      "https://docs.google.com/document/d/1Kgscy1J_JPx-zbdNfv-lALJvi2E8ogcvIuaqab4Yp60/edit?usp=sharing",
   },
   {
     monitoria: "ED1",
     nome: "Tipos Abstratos de Dados",
+    urlResumo:
+      "https://docs.google.com/document/d/19BIzO0yOPrGscmpjaqYKO5-WyYOVbnBX5mOI4nLDDzc/edit?usp=sharing",
+    urlQuest:
+      "",
   },
   {
     monitoria: "ED1",
     nome: "Pilhas e Filas",
+    urlResumo:
+      "https://docs.google.com/document/d/1ayZW5Al4qzley0k0lxNxxUh5eoV8FwSLK9cc9-pHQs0/edit?usp=sharing",
   },
   {
     monitoria: "ED1",
     nome: "Listas Lineares Simplesmente Encadeadas",
+    urlResumo:
+      "https://docs.google.com/document/d/1fCN8d9x_WG55TYY26qEhg1yD7yH3ahHKmAb24ZppSO8/edit?usp=sharing",
+    urlQuest:
+      "https://docs.google.com/document/d/19OEETIR3Bj4p7m6RKCyzlrndOp0Fss0DkO7oLkngVR0/edit?usp=drive_link",
   },
   {
     monitoria: "ED1",
     nome: "Listas Lineares Duplamente Encadeadas",
+    urlResumo:
+      "https://docs.google.com/document/d/1fCN8d9x_WG55TYY26qEhg1yD7yH3ahHKmAb24ZppSO8/edit?usp=sharing",
+    urlQuest:
+      "https://docs.google.com/document/d/1lekQ7dSxSDmUkjvZIuUcPI4W8OxueVCULkwwVV_XFQg/edit?usp=drive_link",
   },
   {
     monitoria: "ED1",
     nome: "Listas Circulares",
+    urlResumo:
+      "https://docs.google.com/document/d/1fCN8d9x_WG55TYY26qEhg1yD7yH3ahHKmAb24ZppSO8/edit?usp=sharing",
+    urlQuest:
+      "https://docs.google.com/document/d/1C04YoZpU15OAhhmMSmXpoxwERpXNyzMWQ44R2mlW2fI/edit?usp=drive_link",
   },
   {
     monitoria: "ED1",
     nome: "Conceitos de Árvores",
+    urlResumo:
+      "https://docs.google.com/document/d/1ff0aK5wTH1N-6JWLA4AXdW-IjkZadCMgKiebaq37LRc/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/12QaS-PRJpLmnpyOALB5mhpjL9nuFPYuQ04HNauAKfHk/edit?usp=drive_link",
   },
   {
     monitoria: "ED1",
     nome: "Árvores Binárias",
+    urlResumo:
+      "https://docs.google.com/document/d/1ff0aK5wTH1N-6JWLA4AXdW-IjkZadCMgKiebaq37LRc/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/12QaS-PRJpLmnpyOALB5mhpjL9nuFPYuQ04HNauAKfHk/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/16XgSxfpEgXC2B6El4ydhVPuF-qDWWWcBf9gJ-0Dxbs0/edit?usp=drive_link",
   },
   {
     monitoria: "ED1",
     nome: "Algoritmos em Árvores",
+    urlResumo:
+      "https://docs.google.com/document/d/1ff0aK5wTH1N-6JWLA4AXdW-IjkZadCMgKiebaq37LRc/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/12QaS-PRJpLmnpyOALB5mhpjL9nuFPYuQ04HNauAKfHk/edit?usp=drive_link",
   },
  
   {
@@ -274,51 +308,72 @@ const data = [
   },
   {
     monitoria: "MDL",
-    urlResumo:
-      "https://docs.google.com/document/d/1yaq6-94mr_XFJEI6_YHvbVjt1A_zPM2dTun_2WHjOzk/edit?usp=sharing",
-    urlQuest:
-	"https://drive.google.com/file/d/18Zb1kJg9oDPV4IOPGrBohqnt8IcjXF2f/view?usp=sharing",
     nome: "Lógica proposicional",
+    urlResumo:
+      "https://docs.google.com/document/d/1yaq6-94mr_XFJEI6_YHvbVjt1A_zPM2dTun_2WHjOzk/edit?usp=drive_link",
+    urlQuest:
+	    "https://docs.google.com/document/d/1IertJioyn_e3nLwIKfhGbUJiiJhUE0dz/edit?usp=sharing&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     urlResumo:
 	"https://docs.google.com/document/d/16fr9-uKwpvO6ViA7zXVC5Lj5fYQBFqYtZ6EJ7cNISas/edit?usp=sharing",
     nome: "Equivalências Proposicionais",
+    urlQuest:
+      "https://docs.google.com/document/d/1gBby-Ujuyt7gdZQLcoSDkDm39e5t6d0C/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     urlResumo:
 	"https://docs.google.com/document/d/1DK6L9xyZklKUqfDEhfpvw6Lwf5t3shQyJ5fsf9Ih6tU/edit?usp=sharing",
     nome: "Predicados e Quantificadores",
+    urlQuest:
+      "https://docs.google.com/document/d/1E8KC4exzqyQvnltTfi-u6PB8yHp-qOhx/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     nome: "Regras de Inferência",
+    urlQuest:
+      "https://docs.google.com/document/d/1HLSvxhiD3TFpljlTOQzqtAGZD2csNWR-/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     urlResumo:
 	"https://docs.google.com/document/d/19CRO8Mwf3rWEM79P_LlrJ20igvwN4UQndLBTA2G_Dds/edit?usp=share_link",
     nome: "Teoria dos Conjuntos",
+    urlQuest:
+      "https://docs.google.com/document/d/1Vt20kNWcbQjwAFoTzJhXM_-xibKMLiIJ/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
+
   },
   {
     monitoria: "MDL",
-     urlResumo:
-	"https://docs.google.com/document/d/1jBpgZEd-7N964xN14oqP4uwxDJ-6GQ8bI7M261g2_y0/edit?usp=sharing",
     nome: "Operações de Conjuntos",
+    urlResumo:
+      "https://docs.google.com/document/d/1jBpgZEd-7N964xN14oqP4uwxDJ-6GQ8bI7M261g2_y0/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/1xlrjuisb-ew_mrQIGHDEjr3uoTlQBEHN/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     nome: "Funções",
+    urlResumo:
+      "https://docs.google.com/document/d/1GUOn-D21_McL3Rr-gytFfU86gxfKNxI_boX51zZNv18/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/1zwxgjAV8ZJDWj8uGEOWpMyyYyewO64oP/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     nome: "Sequências e Somatórias",
+    urlResumo:
+      "https://docs.google.com/document/d/1gMyCAXprGPlVakrnGyWcrPy584g3Dj9tkY4bxs8LR3w/edit?usp=drive_link",
+    urlQuest:
+      "https://docs.google.com/document/d/1UBgswhtglWaL0Ikh_u3Y73IFeHvJQajv/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     nome: "Cardinalidade dos Conjuntos",
+    urlResumo:
+      "https://docs.google.com/document/d/1IknW6pGH5Xz_DyDsBU1WGpJmaiNczo_lnVKg0gVyIs0/edit?usp=drive_link",
   },
   {
     monitoria: "MDL",
@@ -327,14 +382,20 @@ const data = [
   {
     monitoria: "MDL",
     nome: "Indução Matemática",
+    urlQuest:
+      "https://docs.google.com/document/d/10U71RSMHm1TeWvSW15Pl4Z2QaqJHTaiL/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   },
   {
     monitoria: "MDL",
     nome: "Contagem",
-  },
+    urlQuest:
+      "https://docs.google.com/document/d/1KNsPSRjoeOFvF-IriWLwI7JKMqoybECc/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
+  },  
   {
     monitoria: "MDL",
     nome: "Relações",
+    urlQuest:
+      "https://docs.google.com/document/d/10N764CVXB8VJOThKIH-l2vKi_U6x7h_t/edit?usp=drive_link&ouid=102456862974426269612&rtpof=true&sd=true",
   }
 ];
 

@@ -2,8 +2,8 @@
 
     $hostname="localhost";
     $bd="petcom59_petcomp_db";
-    $usuario="root";
-    $senha="";
+    $usuario="petcom59_petcomp_site";
+    $senha="Z][;5(TM2Q~~";
 
     $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
 
