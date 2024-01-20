@@ -75,42 +75,37 @@ if (!is_null($titulo) || !is_null($texto)) {
         <ul class="list" style="list-style: none;">
           <!-- lista com cada li e cada li tem a box dentro-->
           <?php
-          mysqli_select_db($mysqli, $bd) or die("Could not select database");
+            mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
-          if ($buscaRealizada) {
-            $query = "SELECT * FROM noticias WHERE ";
+            if ($buscaRealizada) {
+              $query = "SELECT * FROM noticias WHERE ";
 
-            if (!is_null($titulo)) {
-              $query = $query . "titulo LIKE '%" . $titulo . "%'";
+              if (!is_null($titulo)) {
+                $query = $query . "titulo LIKE '%" . $titulo . "%'";
+
+                if (!is_null($texto)) {
+                  $query = $query . " and ";
+                }
+              }
 
               if (!is_null($texto)) {
-                $query = $query . " and ";
+                $query = $query . "texto LIKE '%" . $texto . "%'";
               }
-            }
 
-            if (!is_null($texto)) {
-              $query = $query . "texto LIKE '%" . $texto . "%'";
+              $query = $query . " ORDER BY data DESC;";
+            } else {
+              $query = "SELECT * FROM noticias ORDER BY data DESC";
             }
-
-            $query = $query . " ORDER BY data DESC;";
-          } else {
-            $query = "SELECT * FROM noticias ORDER BY data DESC";
-          }
-          $result = mysqli_query($mysqli, $query);
-          $num_results = mysqli_num_rows($result);
-          $row = mysqli_fetch_array($result);
-          
-          if ($num_results > 0) {
-            for ($i = 0; $i < $num_results; $i++) {
-              
+            $result = mysqli_query($mysqli, $query);
+            $num_results = mysqli_num_rows($result);
+            if ($num_results > 0) {
+              for ($i = 0; $i < $num_results; $i++) :  
+                $row = mysqli_fetch_array($result);  
+                $baseUrl = url();
+                $id = $row['id'];
+                $parametros = "noticia.php?id=" . $id;
+                $url =  $baseUrl . $parametros;
           ?>
-
-              <?php
-              $baseUrl = url();
-              $id = $row['id'];
-              $parametros = "noticia.php?id=" . $id;
-              $url =  $baseUrl . $parametros;
-              ?>
 
               <li class="item">
                 <div class="card">
@@ -140,41 +135,40 @@ if (!is_null($titulo) || !is_null($texto)) {
                     </div>
                   </div>
 
-                  <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-
                   <div class="card-bottom">
                     <div class="resume">
                       <?php
-                      $tamanho_resumo = 450;
-                      $result = substr($row['texto'], 0, $tamanho_resumo); //escolhendo quantos caracteres aparecerão no resumo (450)
+                        $tamanho_resumo = 450;
+                        $resumo= substr($row['texto'], 0, $tamanho_resumo); //escolhendo quantos caracteres aparecerão no resumo (450)
                       ?>
 
                       <p class="resume-title">Resumo</p>
                       <p class="resume-text">
-                        <?php print_r($result) ?>
-                        <?php if ($tamanho_resumo < strlen($row['texto'])) : ?>...<?php endif ?>
+                        <?php 
+                          if ($tamanho_resumo < strlen($row['texto'])){
+                            $resumo .= "...";
+                          }
+                          echo $resumo;
+                        ?>
                       </p>
                     </div>
 
                     <?php if (isset($row['data'])) : ?>
                       <div class="container-data">
-                        <p class="data">Data de publicação: <span class="data-day"><?php print_r($row['data']) ?></span></p>
+                        <p class="data">Data de publicação: <span class="data-day"><?=$row['data']?></span></p>
                       </div>
                     <?php endif ?>
 
                   </div>
 
-
-                  <!-- </div> -->
-
                   <div class="line-gray"></div>
-                  <!-- fim -->
-                <?php } ?>
+              </li>
+
+          <?php endfor; ?>
                 
         </ul>
       </section>
-      <!--END section id="paginate"-->
-
+     
       <div class="pagination">
         <!-- botões -->
         <div class="prev">
@@ -201,11 +195,7 @@ if (!is_null($titulo) || !is_null($texto)) {
       </li>
     <?php } ?>
     </section>
-    <!--END section class="container"-->
-
-
-
-
+  
   </main>
 
 </body>
