@@ -60,7 +60,7 @@
     <section class="container">
       <div class="noticia-especifica">
         <h1 class="titulo-noticia"><?php print_r($Titulo) ?></h1>
-        <?php print_r(utf8_encode($Texto)) ?>
+        <?php echo $Texto ?>
         <div class="voltar">
             <a href="./noticias.php">
             <button class="button-back">
