@@ -45,7 +45,6 @@
     <div class="container-images">
       <img src="../assets/images/photo-6-about.jpeg" alt="foto1" class="slider on">
       <img src="../assets/images/photo-7-big.jpg" alt="foto2" class="slider">
-      <img src="../assets/images/photo-8-med.jpg" alt="foto3" class="slider">
       <img src="../assets/images/photo-12.jpg" alt="foto4" class="slider">
       <img src="../assets/images/photo13.jpg" alt="foto5" class="slider">
       <img src="../assets/images/photo-15.jpg" alt="foto7" class="slider">

@@ -196,4 +196,14 @@ main .container p {
     grid-gap: 4px;
     margin-bottom: 10px;
   }
+  .container-slider{
+    min-height: 50vh;
+    margin: 1rem 0
+  }
+  .container-images img{
+    height: 50vh;
+    object-fit: cover;
+  }
+ 
+
 }
