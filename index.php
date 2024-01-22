@@ -71,12 +71,16 @@
       <div class="resumo-petcomp">
         <div class="images">
           <figure class="gallery__item gallery__item--1">
+            <img src="../assets/images/photo-1.jpg" alt="">
           </figure>
           <figure class="gallery__item gallery__item--2">
+            <img src="../assets/images/photo-2.jpg" alt="">
           </figure>
           <figure class="gallery__item gallery__item--3">
+            <img src="../assets/images/feira.JPG" alt="">
           </figure>
           <figure class="gallery__item gallery__item--4">
+            <img src="../assets/images/photo-4.jpg" alt="">
           </figure>
 
         </div>

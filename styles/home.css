@@ -97,6 +97,7 @@
 }
 
 #sobre {
+  display: flex;
   background: #eeeeee;
   height: 100%;
   width: 100%;
@@ -134,7 +135,7 @@
 .resumo-petcomp .images figure:hover {
   transform: scale(1.02);
 }
-
+ 
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -162,112 +163,17 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
-
+.gallery__item--1 img,.gallery__item--2 img,
+.gallery__item--3 img,.gallery__item--4 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /*Item 1*/
-.gallery__item--1 {
-  background-image: url("../assets/images/petnatal.JPG");
+.gallery__item--1, .gallery__item--2, .gallery__item--3,.gallery__item--4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--1 {
-    background-image: url("../assets/images/petnatal.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--1 {
-    background-image: url("../assets/images/petnatal.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 2*/
-
-.gallery__item--2 {
-  background-image: url("../assets/images/feira.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--2 {
-    background-image: url("../assets/images/feira.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--2 {
-    background-image: url("../assets/images/feira.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 3*/
-
-.gallery__item--3 {
-  background-image: url("../assets/images/photo-2-med.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--3 {
-    background-image: url("../assets/images/photo-2-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--3 {
-    background-image: url("../assets/images/photo-2-big.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 4*/
-
-.gallery__item--4 {
-  background-image: url("../assets/images/acalourada.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 800px) {
-  .gallery__item--4 {
-    background-image: url("../assets/images/acalourada.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--4 {
-    background-image: url("../assets/images/acalourada.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 }
 
 .text-petcomp {
@@ -437,11 +343,10 @@
 @media (max-width: 1400px) {
   .resumo-petcomp .images {
     margin-right: 20px;
-    width: 600px;
+    width: 60%;
   }
   .resumo-petcomp .text-petcomp {
-    margin-right: 0;
-    width: 100%;
+    width: 40%;
   }
 }
 
@@ -541,7 +446,9 @@
   .resumo-petcomp .images figure:hover {
     transform: scale(1.5);
   }
-
+  .resumo-petcomp .text-petcomp{
+    width: 100%;
+  }
   .resumo-petcomp .text-petcomp h1 {
     color: #343564;
     font-size: 30px;
