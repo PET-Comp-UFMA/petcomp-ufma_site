@@ -85,9 +85,26 @@ main .voltar {
   padding-top: 30px;
 }
 
+.img-noticia {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  max-height: 25rem;
+  margin-bottom: 2rem;
+}
+
+.texto-noticia-esp {
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
   main .container {
     width: 90%;
+  }
+
+  .img-noticia {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -95,8 +112,10 @@ main .voltar {
   main .container {
     width: 80%;
   }
-  main .container .noticia-especifica img {
-    width: 100px;
+
+  .img-noticia {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   main .container .noticia-especifica h1.titulo-noticia {

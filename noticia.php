@@ -24,6 +24,7 @@
     
     $Titulo = $row['titulo'];
     $Texto = $row['texto'];
+    $Imagem = $row['foto'];
 
     if($row){
 
@@ -60,7 +61,8 @@
     <section class="container">
       <div class="noticia-especifica">
         <h1 class="titulo-noticia"><?php print_r($Titulo) ?></h1>
-        <?php echo $Texto ?>
+        <img class="img-noticia" src="<?php print_r($Imagem) ?>" alt="">
+        <p class="texto-noticia-esp"><?php echo $Texto ?></p>
         <div class="voltar">
             <a href="./noticias.php">
             <button class="button-back">

@@ -1,7 +1,7 @@
 <?php
 
     $hostname="localhost";
-    $bd="petcom59";
+    $bd="banco_petcomp";
     $usuario="root";
     $senha="490751";
 
