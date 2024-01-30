@@ -71,16 +71,12 @@
       <div class="resumo-petcomp">
         <div class="images">
           <figure class="gallery__item gallery__item--1">
-            <img src="../assets/images/photo-1.jpg" alt="">
           </figure>
           <figure class="gallery__item gallery__item--2">
-            <img src="../assets/images/photo-2.jpg" alt="">
           </figure>
           <figure class="gallery__item gallery__item--3">
-            <img src="../assets/images/feira.JPG" alt="">
           </figure>
           <figure class="gallery__item gallery__item--4">
-            <img src="../assets/images/photo-4.jpg" alt="">
           </figure>
 
         </div>
@@ -92,6 +88,27 @@
         </div>
       </div>
     </section>
+    <section id="historia">
+      <div class="historia">
+        <div>
+          <h1 class="count">245</h1>
+          <p>integrantes</p>
+        </div>
+        <div>
+          <h1 class="count">1000</h1>
+          <p>Pessoas influenciadas</p>
+        </div>
+        <div>
+          <h1 class="count">20</h1>
+          <p>Projetos</p>
+        </div>
+        <div>
+          <h1 class="count">40</h1>
+          <p>Artigos Publicados</p>
+        </div>
+      </div>
+    </section>
+    <br>
 
     <section id="atividades">
       <div class="atividades">
