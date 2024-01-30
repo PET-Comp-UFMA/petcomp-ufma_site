@@ -238,54 +238,78 @@ function currentConteudo(n) {
 
 }
 
+//função que controla os numero da nossa historia e fazem crescer em ordemcresecente
+
+  function animateNumbers() {
+    const elements = document.querySelectorAll('.count');
+    
+    elements.forEach(element => {
+      const targetNumber = parseInt(element.textContent.replace('+', ''), 10);
+      element.textContent = '+0';
+
+      let currentNumber = 0;
+      const interval = setInterval(() => {
+        currentNumber++;
+        element.textContent = '+' + currentNumber;
+
+        if (currentNumber === targetNumber) {
+          clearInterval(interval);
+        }
+      }, 1); // Ajuste o intervalo conforme necessário para a velocidade desejada
+    });
+  }
+
+  // Executar a animação quando o DOM estiver pronto
+  document.addEventListener('DOMContentLoaded', function () {
+    animateNumbers();
+  });
+
+  // Executar a animação novamente quando toda a página estiver carregada
+  window.addEventListener('load', function () {
+    animateNumbers();
+  });
+
+
+
+
 
 
 function mostrarMonitorias(n) {
-
   var i;
+  var conteudoIndex = n;
 
-  var conteudos = document.querySelectorAll('#conteudos')
+  var conteudos = document.querySelectorAll('#conteudos');
+  var buttons = document.querySelectorAll('.btn-monitoria');
 
-  var buttons = document.querySelectorAll('.btn-monitoria')
-
-
-
-    if (n > conteudos.lenght) {
-
-    conteudoIndex = 1;
-
+  if (conteudos.length === 0) {
+    console.error("Nenhum elemento com o ID 'conteudos' encontrado.");
+    return;
   }
 
-
+  if (n > conteudos.length) {
+    conteudoIndex = 1;
+  }
 
   if (n < 1) {
-
     conteudoIndex = conteudos.length;
-
   }
-
-
 
   for (i = 0; i < conteudos.length; i++) {
-
     conteudos[i].style.display = "none";
-
   }
-
-
 
   for (i = 0; i < buttons.length; i++) {
-
     buttons[i].className = buttons[i].className.replace(" active", "");
-
   }
 
-
-
-  conteudos[conteudoIndex-1].style.display = "grid";
-
-  buttons[conteudoIndex-1].className += " active";
-
+  if (conteudoIndex >= 1 && conteudoIndex <= conteudos.length) {
+    conteudos[conteudoIndex - 1].style.display = "grid";
+    buttons[conteudoIndex - 1].className += " active";
+  } else {
+    console.error("Índice de conteúdo inválido: " + conteudoIndex);
+  }
 }
+
+
 
 

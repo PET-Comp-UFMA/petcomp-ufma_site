@@ -97,7 +97,6 @@
 }
 
 #sobre {
-  display: flex;
   background: #eeeeee;
   height: 100%;
   width: 100%;
@@ -135,7 +134,7 @@
 .resumo-petcomp .images figure:hover {
   transform: scale(1.02);
 }
- 
+
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -163,17 +162,112 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
-.gallery__item--1 img,.gallery__item--2 img,
-.gallery__item--3 img,.gallery__item--4 img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 /*Item 1*/
-.gallery__item--1, .gallery__item--2, .gallery__item--3,.gallery__item--4 {
+.gallery__item--1 {
+  background-image: url("../assets/images/photo-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery__item--1 {
+    background-image: url("../assets/images/photo-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery__item--1 {
+    background-image: url("../assets/images/photo-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/*Item 2*/
+
+.gallery__item--2 {
+  background-image: url("../assets/images/photo-2-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery__item--2 {
+    background-image: url("../assets/images/photo-2-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery__item--2 {
+    background-image: url("../assets/images/photo-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/*Item 3*/
+
+.gallery__item--3 {
+  background-image: url("../assets/images/photo-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery__item--3 {
+    background-image: url("../assets/images/photo-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery__item--3 {
+    background-image: url("../assets/images/photo-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/*Item 4*/
+
+.gallery__item--4 {
+  background-image: url("../assets/images/photo-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery__item--4 {
+    background-image: url("../assets/images/photo-4-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery__item--4 {
+    background-image: url("../assets/images/photo-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .text-petcomp {
@@ -198,6 +292,39 @@
   color: #0004ff;
   text-decoration: none;
 }
+
+#historia{
+  text-align:center;
+  align-items: center;
+  background: linear-gradient(180deg, #060b3f, #232433);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.historia{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align:center;
+  min-height: 10rem;
+  justify-content: space-between;
+  padding: 50px;
+  width: 60%;
+}
+
+.count{
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
 
 #atividades {
   background-image: url(../assets/svg/imagemdefundo.svg);
@@ -343,10 +470,11 @@
 @media (max-width: 1400px) {
   .resumo-petcomp .images {
     margin-right: 20px;
-    width: 60%;
+    width: 600px;
   }
   .resumo-petcomp .text-petcomp {
-    width: 40%;
+    margin-right: 0;
+    width: 100%;
   }
 }
 
@@ -446,9 +574,7 @@
   .resumo-petcomp .images figure:hover {
     transform: scale(1.5);
   }
-  .resumo-petcomp .text-petcomp{
-    width: 100%;
-  }
+
   .resumo-petcomp .text-petcomp h1 {
     color: #343564;
     font-size: 30px;
