@@ -25,6 +25,7 @@
     $Titulo = $row['titulo'];
     $Texto = $row['texto'];
     $Imagem = $row['foto'];
+    $imagens = explode("|", $Imagem, 2);
 
     if($row){
 
@@ -61,7 +62,11 @@
     <section class="container">
       <div class="noticia-especifica">
         <h1 class="titulo-noticia"><?php print_r($Titulo) ?></h1>
-        <img class="img-noticia" src="<?php print_r($Imagem) ?>" alt="">
+        <div class="img_noticias">
+          <img class="img-noticia" src="<?php print_r($imagens[0]) ?>" alt="">
+          <img class="img-noticia" src="<?php print_r($imagens[1]) ?>" alt="">
+        </div>
+        
         <p class="texto-noticia-esp"><?php echo $Texto ?></p>
         <div class="voltar">
             <a href="./noticias.php">
