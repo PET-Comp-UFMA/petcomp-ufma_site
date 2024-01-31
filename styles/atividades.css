@@ -99,13 +99,10 @@ main .sites-cards {
   width: fit-content;
 }
 
-/*//////////////*/
-
 .software-card-monitoria {
   display: grid;
   grid-gap: 0;
-  grid-template-columns: auto;
-  flex-direction: column;
+  grid-template-columns: 1fr;
   justify-content: center;
   background: #fafafa;
   border-radius: 0.4em;
@@ -152,7 +149,7 @@ main .sites-cards {
 
 .software-card-monitoria .label {
   color: #fff;
-  border-radius: 50px;
+  border-radius: 11px;
   font-size: 18px;
   margin-right: 0.4em;
   padding: 0.1em 0.4em;
@@ -160,19 +157,43 @@ main .sites-cards {
 }
 
 
+.software-card-monitoria .label.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #180D68;
+}
+
+.ajuste{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 0.4em;
+}
+
+
+.react,
+.css,
+.php,
+.html {
+  width: 100%;
+}
+
 .react {
   background: #61dafb;
 }
 
-.css {
+.css{
   background: #563d7c;
 }
 
-.php {
+.php,
+.nome1 {
   background: #4f5d95;
 }
 
-.html {
+.html,
+.nome2 {
   background: #e34c26;
 }
 
@@ -264,11 +285,11 @@ main .sites-cards {
     width: 100%;
   }
 
-  .software-card .wrapper-labels {
+  /*.software-card .wrapper-labels {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5em;
-  }
+  }*/
 }
 
 @media (max-width: 450px) {

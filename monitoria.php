@@ -71,8 +71,13 @@
           <div class="text">
             <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">Algortimos I</a></h2>
             <div class="wrapper-labels">
-               <div class="label php">Petiano 1</div>
-               <div class="label html">Petiano 2</div>
+              <div class="label mid">
+                <p>Tutores</p>
+              <div class="ajuste">
+               <div class="label nome1">nome1</div>
+               <div class="label nome2">nome2</div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -87,8 +92,13 @@
           <div class="text">
             <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">Cálculo I</a></h2>
             <div class="wrapper-labels">
-               <div class="label php">Petiano 1</div>
-               <div class="label html">Petiano 2</div>
+              <div class="label mid">
+                <p>Tutores</p>
+              <div class="ajuste">
+               <div class="label nome1">nome1</div>
+               <div class="label nome2">nome2</div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -100,8 +110,13 @@
           <div class="text">
             <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">MDL</a></h2>
             <div class="wrapper-labels">
-               <div class="label php">Petiano 1</div>
-               <div class="label html">Petiano 2</div>
+              <div class="label mid">
+                <p>Tutores</p>
+              <div class="ajuste">
+               <div class="label nome1">nome1</div>
+               <div class="label nome2">nome2</div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
