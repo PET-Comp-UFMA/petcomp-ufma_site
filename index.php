@@ -66,50 +66,43 @@
         </button>
       </ul>
     </section>
-
     <section id="sobre">
-      <div class="resumo-petcomp">
-        <div class="images">
-          <figure class="gallery__item gallery__item--1">
-          </figure>
-          <figure class="gallery__item gallery__item--2">
-          </figure>
-          <figure class="gallery__item gallery__item--3">
-          </figure>
-          <figure class="gallery__item gallery__item--4">
-          </figure>
-
+    <div class="resumo-petcomp">
+        <div class="imagensSobrePet">
         </div>
         <div class="text-petcomp">
           <h1>Conheça o PETComp</h1>
           <p>O Programa de Educação Tutorial de Ciência da Computação da UFMA foi criado em 1 de Setembro de 2007, tendo como tutor o professor Alexandre César Muniz de Oliveira, em 19 de Janeiro de 2016 o professor Geraldo Braz Junior tornou-se o novo tutor do grupo. E após sua excelente gestão, em 2019 assume o professor Luis Rivero. O PET Computação já realizou diversas atividades de pesquisa, ensino e extensão. Dentre algumas das atividades podemos citar minicursos, Projetos de Extensão, como por exemplo, ensino de pensamento computacional, organiza o Encontro Acadêmico de Computação (EAComp), desenvolvimento de sistemas, entre outros.
           </p>
-          <a href="./sobre.php">Veja Mais ></a>
+          <a href="./sobre.php">Conheça Mais</a>
         </div>
+      </div>
+    </section>
+    <section id="petSignifica">
+      <h1 class="tituloPet">O PETComp representa a tríade Acadêmica:</h1>
+      <div class="imagemTriade">
       </div>
     </section>
     <section id="historia">
       <div class="historia">
-        <div>
+        <div class="topico">
           <h1 class="count">245</h1>
           <p>integrantes</p>
         </div>
-        <div>
+        <div class="topico">
           <h1 class="count">1000</h1>
           <p>Pessoas influenciadas</p>
         </div>
-        <div>
+        <div class="topico">
           <h1 class="count">20</h1>
           <p>Projetos</p>
         </div>
-        <div>
+        <div class="topico">
           <h1 class="count">40</h1>
           <p>Artigos Publicados</p>
         </div>
       </div>
     </section>
-    <br>
-
     <section id="atividades">
       <div class="atividades">
         <div class="atividades-desenvolvidas">
