@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/sobre.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -40,27 +41,45 @@
           Para participar do nosso grupo, sempre tem seletivos durante o ano, basta acompanhar as redes sociais Instagram e Twitter @petcompufma.
         </p>
 
-        <div class="container-slider">
-    <button id="prev-button"><img src="../assets/images/arrow.png" alt="prev-button"></button>
-    <div class="container-images">
-      <img src="../assets/images/photo-6-about.jpeg" alt="foto1" class="slider on">
-      <img src="../assets/images/photo-7-big.jpg" alt="foto2" class="slider">
-      <img src="../assets/images/photo-12.jpg" alt="foto4" class="slider">
-      <img src="../assets/images/photo13.jpg" alt="foto5" class="slider">
-      <img src="../assets/images/photo-15.jpg" alt="foto7" class="slider">
-      <img src="../assets/images/photo-16.jpg" alt="foto7" class="slider">
-      <img src="../assets/images/photo-17.png" alt="foto7" class="slider">
-      <img src="../assets/images/photo-18.jpg" alt="foto8" class="slider">
-      <img src="../assets/images/photo-19.jpg" alt="foto8" class="slider">
-      <img src="../assets/images/photo-3-big.jpg" alt="foto9" class="slider">
-      <img src="../assets/images/photo-4-big.jpg" alt="foto10" class="slider">
-
-      
-
-    </div>
-    <button id="next-button"><img src="../assets/images/arrow.png" alt="next-button"></button>
-  </div>
-        
+        <div class="galery-about">
+          <div class="galery-about__container-image" id="img1">
+            <img class="galery-about__img" src="../assets/images/galery-about/photo1.jpg">
+            <div class="galery-about__legend"> 
+              <p>Petianos na recepção de calouros 2023.2</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          </div>
+          <div class="galery-about__container-image">
+            <img class="galery-about__img" src="../assets/images/galery-about/photo2.svg">
+            <div class="galery-about__legend"> 
+              <p>Confraternização PETComp 2023</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          </div>
+          <div class="galery-about__container-image">
+            <img class="galery-about__img" src="../assets/images/galery-about/photo3.svg">
+            <div class="galery-about__legend"> 
+              <p>Apresentação do PETComp para L.A.B.I</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          </div>
+          <div class="galery-about__container-image">
+            <img class="galery-about__img" src="../assets/images/galery-about/photo4.jpg">
+            <div class="galery-about__legend"> 
+              <p>Palestra ministrada pelo tutor do petcomp na acalourada</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          </div>
+          <div class="galery-about__container-image">
+            <img class="galery-about__img" src="../assets/images/galery-about/photo5.jpg">
+            <div class="galery-about__legend"> 
+              <p>Stand do grupo PETComp na Feira de profissões 2023</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          </div>
+         
+        </div>
+           
         <!-- <div class="gallery">
           <figure class="gallery__item gallery__item--1">
           </figure>
@@ -88,6 +107,7 @@
   <?php include('footer.php') ?>
   <script src="./scripts/script.js"></script>
   <script src="./scripts/slader.js"></script>
+  <script src="./scripts/scrollReveal.js"></script>
   
 </body>
 

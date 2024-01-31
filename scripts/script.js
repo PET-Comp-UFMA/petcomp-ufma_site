@@ -226,66 +226,123 @@ function showSlides() {
 
 
 
-var conteudoIndex = 2;
 
-mostrarMonitorias(conteudoIndex);
+//função que controla os numero da nossa historia e fazem crescer em ordemcresecente
+function animateNumbers() {
+  const elements = document.querySelectorAll('.count');
 
+  elements.forEach(element => {
+    const targetNumber = parseInt(element.textContent.replace('+', ''), 10);
+    element.textContent = '+0';
 
+    let currentNumber = 0;
+    const interval = setInterval(() => {
+      currentNumber++;
+      element.textContent = '+' + currentNumber;
 
-function currentConteudo(n) {
-
-  mostrarMonitorias(conteudoIndex = n);
-
+      if (currentNumber === targetNumber) {
+        clearInterval(interval);
+      } else if (currentNumber > targetNumber) {
+        // Para lidar com condições inesperadas, limpa o intervalo se currentNumber ultrapassar targetNumber
+        clearInterval(interval);
+        element.textContent = '+' + targetNumber;
+      }
+    }, 1);
+  });
 }
 
+// Executa a animação quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function () {
+  animateNumbers();
+});
+
+// Executa a animação novamente quando toda a página estiver carregada
+window.addEventListener('load', function () {
+  animateNumbers();
+});
 
 
-function mostrarMonitorias(n) {
-
-  var i;
-
-  var conteudos = document.querySelectorAll('#conteudos')
-
-  var buttons = document.querySelectorAll('.btn-monitoria')
 
 
+function adicionarImagensAnimadas(container, urls, intervalo) {
+  let imagemIndex = 0;
 
-    if (n > conteudos.lenght) {
+  function mostrarProximaImagem() {
+    const imagemAtual = container.querySelector('.imagemSobre:nth-child(' + (imagemIndex + 1) + ')');
+    imagemAtual.style.display = 'none';
 
-    conteudoIndex = 1;
+    imagemIndex = (imagemIndex + 1) % urls.length;
 
+    const proximaImagem = container.querySelector('.imagemSobre:nth-child(' + (imagemIndex + 1) + ')');
+    proximaImagem.style.display = 'block';
   }
 
+  urls.forEach((url, index) => {
+    const imagem = new Image();
+    imagem.src = url;
+    imagem.alt = `Imagem ${index + 1}`;
+    imagem.classList.add('imagemSobre');
 
+    container.appendChild(imagem);
 
-  if (n < 1) {
+    if (index === 0) {
+      imagem.style.display = 'block';
+    } else {
+      imagem.style.display = 'none';
+    }
+  });
 
-    conteudoIndex = conteudos.length;
-
-  }
-
-
-
-  for (i = 0; i < conteudos.length; i++) {
-
-    conteudos[i].style.display = "none";
-
-  }
-
-
-
-  for (i = 0; i < buttons.length; i++) {
-
-    buttons[i].className = buttons[i].className.replace(" active", "");
-
-  }
-
-
-
-  conteudos[conteudoIndex-1].style.display = "grid";
-
-  buttons[conteudoIndex-1].className += " active";
-
+  setInterval(mostrarProximaImagem, intervalo);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const imagensContainer = document.querySelector('.imagensSobrePet');
+  const intervaloTrocaImagem = 3000; // Intervalo em milissegundos (3 segundos)
 
+  const imagensUrls = [
+    '../assets/images/photo-5.jpg',
+    '../assets/images/photo-2.jpg',
+    '../assets/images/photo-3.jpg',
+  ]
+  adicionarImagensAnimadas(imagensContainer, imagensUrls, intervaloTrocaImagem);
+});
+
+
+
+
+function adicionarImagemComAnimacao(container, urls, index) {
+  const imagem = new Image();
+  imagem.src = urls[index];
+  imagem.alt = `Imagem ${index + 1}`;
+  imagem.classList.add('imagem');
+
+  imagem.onload = function () {
+    container.appendChild(imagem);
+
+    // Adiciona um pequeno atraso para criar a animação sequencial
+    setTimeout(() => {
+      imagem.style.opacity = '1';
+
+      // Adiciona a próxima imagem recursivamente
+      if (index < urls.length - 1) {
+        adicionarImagemComAnimacao(container, urls, index + 1);
+      }
+    }, 1000); // Ajuste o valor para o tempo entre cada imagem
+  };
+}
+document.addEventListener('DOMContentLoaded', function () {
+  const imagemTriadeContainer = document.querySelector('.imagemTriade');
+
+  const imagensUrls = [
+    '../assets/images/photo-ensino.svg',
+  '../assets/images/photo-pesquisa.svg',
+  '../assets/images/photo-extensao.svg',
+  ];
+
+  // Inicia a adição das imagens recursivamente
+  adicionarImagemComAnimacao(imagemTriadeContainer, imagensUrls, 0);
+});
+
+
+
+  

@@ -2,6 +2,8 @@
   text-decoration: none;
 }
 
+/*section slider*/
+
 #slider {
   margin: auto;
   width: 100%;
@@ -96,108 +98,134 @@
   background-color: #717171;
 }
 
+
+
+/*section sobre*/
 #sobre {
-  display: flex;
   background: #eeeeee;
-  height: 100%;
-  width: 100%;
+  
 }
 
-/* Resumo com grid das imagens */
-
-.resumo-petcomp {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 40px;
-}
-
-.resumo-petcomp .images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 10vw);
-  grid-gap: 2rem;
-  width: 800px;
-}
-
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: ease 0.2s;
-}
-
-.resumo-petcomp .images figure {
-  box-shadow: 0px 15px 10px 4px #d4d4d4;
-}
-
-.resumo-petcomp .images figure:hover {
-  transform: scale(1.02);
-}
- 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.gallery__item--2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.gallery__item--4 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-.gallery__item--1 img,.gallery__item--2 img,
-.gallery__item--3 img,.gallery__item--4 img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-/*Item 1*/
-.gallery__item--1, .gallery__item--2, .gallery__item--3,.gallery__item--4 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.imagemSobre{
+  max-width: 100%; /* A imagem terá no máximo 100% da largura do contêiner */
+  max-height:40rem; /* Mantém a proporção original da imagem */
+  display: block; 
+  margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .text-petcomp {
-  margin-right: 200px;
+  flex: 1;
+  width: 100%; 
 }
 
+
+.resumo-petcomp {
+  background: linear-gradient(0deg, #060b3f, #232433);
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap:20px;
+  align-items: center;
+  padding: 20px;
+
+}
+
+
+.resumo-petcomp .text-petcomp p {
+  text-align: justify;
+}
 .resumo-petcomp .text-petcomp h1 {
-  color: #343564;
+  color: white;
   font-size: 48px;
-  width: 300px;
+  width: 800px;
 }
 
 .resumo-petcomp .text-petcomp p {
-  color: #1d1d1d;
+  color:  white;
+  font-size: 20px;
   line-height: 22px;
   margin: 20px 0;
-  width: 350px;
+  width: 800px;
   text-align: justify;
 }
 
 .resumo-petcomp .text-petcomp a {
-  color: #0004ff;
+  width: 10rem;
+  background: #33c3ff;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 14px;
   text-decoration: none;
+  transition: 0.2s;
 }
+
+/*section petSignifica*/
+
+
+#petSignifica{
+  background-color: hsl(0, 10%, 94%);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+.tituloPet{
+  font-size: 30px;
+  font-weight: 800;
+
+}
+.imagemTriade {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-top:20px;
+}
+
+.imagemTriade .imagem {
+  max-width: 15rem;
+  height: auto;
+  margin-right: 1rem; /* Espaço entre as imagens */
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out;
+}
+
+@keyframes fadeInFromRight {
+  to {
+    opacity: 1;
+  }
+}
+
+/*section historia*/
+#historia{
+  text-align:center;
+  align-items: center;
+  background: linear-gradient(180deg, #060b3f, #232433);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.historia{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align:center;
+  min-height: 10rem;
+  justify-content: space-between;
+  padding: 50px;
+  width: 60%;
+}
+.topico{
+  margin:10px;
+}
+.count{
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+/*section atividades*/
 
 #atividades {
   background-image: url(../assets/svg/imagemdefundo.svg);
@@ -334,23 +362,37 @@
   }
 }
 
-@media (max-width: 1450px) {
-  .resumo-petcomp .text-petcomp p {
-    width: 550px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .resumo-petcomp .images {
-    margin-right: 20px;
-    width: 60%;
-  }
-  .resumo-petcomp .text-petcomp {
-    width: 40%;
-  }
-}
 
 @media (max-width: 1180px) {
+  /*section sobre*/
+  .resumo-petcomp .text-petcomp h1 {
+    color: white;
+    font-size: 48px;
+    width:450px;
+  }
+  
+  .resumo-petcomp .text-petcomp p {
+    color:  white;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px 0;
+    width: 450px;
+    text-align: justify;
+  }
+  
+  
+  /*section petSignifica*/
+  
+
+
+
+  /*section historia*/
+
+
+
+
+
+  /*section atividades*/
   .atividades {
     flex-direction: column;
     height: 100%;
@@ -408,6 +450,8 @@
 }
 
 @media (max-width: 800px) {
+
+  /*section slider*/
   .slider-content {
     display: block;
   }
@@ -415,8 +459,6 @@
   ul li {
     padding: 0;
   }
-  
-  
 
   .texto-banner .intro-noticia h1 {
     font-size: 28px;
@@ -428,39 +470,66 @@
     width: 80%;
   }
 
+
+  /*section sobre*/
+
   .resumo-petcomp {
+    background: linear-gradient(0deg, #060b3f, #232433);
     display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 1em;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    
   }
-
-  .resumo-petcomp .images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 15vw);
-    grid-gap: 4px;
-    width: 100%;
-  }
-
-  .resumo-petcomp .images figure:hover {
-    transform: scale(1.5);
-  }
-  .resumo-petcomp .text-petcomp{
-    width: 100%;
-  }
+  
+  
   .resumo-petcomp .text-petcomp h1 {
-    color: #343564;
-    font-size: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
+    font-size:30px;
+    text-align: right;
   }
-
   .resumo-petcomp .text-petcomp p {
-    padding: 0;
-    width: 100%;
+    font-size: 15px;
+    text-align: justify;
   }
 
+  /*section petSignifica*/
+  .imagemTriade .imagem {
+    max-width: 8rem;
+    height: auto;
+    margin-right: 10px; 
+    
+  }
+
+
+
+  /*section historia*/
+  #historia{
+    width: 100%;
+   
+
+  }
+  .historia{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align:center;
+    min-height: 8rem;
+    justify-content: space-between;
+    padding: 20px;
+
+  }
+  .topico{
+    margin:10px;
+  }
+  .count{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+
+
+  /*section atividades*/
   .atividades {
     flex-direction: column;
     height: 100%;
@@ -514,6 +583,11 @@
 }
 
 @media (max-width: 351px) {
+  /*section slider*/
+  .texto-banner {
+    text-align: center;
+  }
+  /*section atividades*/
   .atividades .images-atividades {
     display: grid;
     grid-template-columns: 1fr;
@@ -522,7 +596,5 @@
     margin: 0 auto;
     width: 100%;
   }
-  .texto-banner {
-    text-align: center;
-  }
+  
 }

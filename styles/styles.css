@@ -146,6 +146,32 @@ header .dropdown .show-dropdown-projetos {
   display: block;
 }
 
+
+header .dropdown .dropdown-content-publicacoes {
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  display: none;
+  font-size: 16px;
+  overflow: auto;
+  min-width: 160px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .dropdown .dropdown-content-publicacoes a {
+  display: block;
+  padding: 10px;
+}
+
+header .dropdown .dropdown-content-publicacoes a:hover {
+  background: #e1e1e1;
+}
+
+header .dropdown .show-dropdown-publicacoes {
+  display: block;
+}
+
 header .dropdown .dropdown-content-produtos {
   background: #fff;
   box-shadow: 0px 8px 16px 0px #00000033;

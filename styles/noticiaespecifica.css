@@ -85,37 +85,45 @@ main .voltar {
   padding-top: 30px;
 }
 
-.img-noticia {
+.img_noticias {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  padding-left: 30%;
-  padding-right: 30%;
-  max-height: 25rem;
+  justify-content: center;
+  gap: 2rem;
   margin-bottom: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-noticia {
+  
+  max-width: 26rem;
+  object-fit: cover;
+  max-height: 23rem;
 }
 
 .texto-noticia-esp {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main .container {
     width: 90%;
   }
 
   .img-noticia {
-    padding-left: 15%;
-    padding-right: 15%;
+   width: 15rem;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
   main .container {
     width: 80%;
   }
 
   .img-noticia {
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 10rem;
   }
 
   main .container .noticia-especifica h1.titulo-noticia {
