@@ -8,7 +8,6 @@
   <title> Monitoria | PETComp </title>
 
   <link rel="icon" href="./assets/images/logos/PETComp.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -62,15 +61,50 @@
     </div> -->
 
       <div class="images images-monitoria">
-        <img src="./assets/images/monitoria-photo-5.png" alt="">
-        <img src="./assets/images/monitoria-photo-6.png" alt="">
-        <img src="./assets/images/monitoria-photo-7.png" alt="">
-        <img src="./assets/images/monitoria-photo-8.png" alt="">
-        <img src="./assets/images/monitoria-photo-1.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-4.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-2.jpg" alt="">
-        <img src="./assets/images/monitoria-photo-3.jpg" alt="">
-        
+
+        <div class="software-card-monitoria">
+          <div class=" itens">
+            <img src="./assets/images/monitoria-photo-5.png" alt="Foto 1 monitoria">
+            <img src="./assets/images/monitoria-photo-2.jpg" alt="Foto 2 monitoria">
+            <img src="./assets/images/monitoria-photo-3.jpg" alt="Foto 3 monitoria">
+          </div>
+          <div class="text">
+            <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">Algortimos I</a></h2>
+            <div class="wrapper-labels">
+               <div class="label php">Petiano 1</div>
+               <div class="label html">Petiano 2</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software-card-monitoria">
+          <div class=" itens">
+            <img src="./assets/images/monitoria-photo-6.png" alt="Foto 1 monitoria">
+            <img src="./assets/images/monitoria-photo-7.png" alt="Foto 2 monitoria">
+            <img src="./assets/images/monitoria-photo-1.jpg" alt="Foto 3 monitoria">
+            <img src="./assets/images/monitoria-photo-4.jpg" alt="Foto 3 monitoria">
+          </div>
+          <div class="text">
+            <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">Cálculo I</a></h2>
+            <div class="wrapper-labels">
+               <div class="label php">Petiano 1</div>
+               <div class="label html">Petiano 2</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="software-card-monitoria">
+          <div class=" itens">
+            <img src="./assets/images/monitoria-photo-8.png" alt="Foto 1 monitoria">
+          </div>
+          <div class="text">
+            <h2 class="legenda"><a target="_blank" href="biblioteca-petcomp-monitoria.php">MDL</a></h2>
+            <div class="wrapper-labels">
+               <div class="label php">Petiano 1</div>
+               <div class="label html">Petiano 2</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

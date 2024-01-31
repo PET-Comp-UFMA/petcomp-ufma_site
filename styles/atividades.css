@@ -10,10 +10,13 @@ main .container p {
   padding: 0 3em;
 }
 
-main .images {
-  display: grid;
+main .images{
+  display: flex;
   grid-template-columns: 1fr;
   flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  padding: 5px;
   margin-bottom: 40px;
 }
 
@@ -24,11 +27,14 @@ main img {
 }
 
 main .images-fab-software,
-main .images-monitoria,
+main > div > .images-monitoria,
 main .images-minicursos {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
-  flex-direction: row;
+  gap: 5px;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
   margin-bottom: 40px;
   padding: 0 3em;
 }
@@ -45,6 +51,10 @@ main .sites-cards {
   margin-bottom: 2em;
   padding: 0 3em;
   width: 100%;
+}
+
+.legenda{
+  text-align: center;
 }
 
 .software-card {
@@ -89,6 +99,67 @@ main .sites-cards {
   width: fit-content;
 }
 
+/*//////////////*/
+
+.software-card-monitoria {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto;
+  flex-direction: column;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 0.4em;
+  margin: 0 auto !important;
+  width: 20em;
+}
+
+.software-card-monitoria img {
+  border: none;
+  height: 10em;
+  width: 20em;
+}
+
+.software-card-monitoria .itens {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  background: #fafafa;
+  border-radius: 0 0 0.4em 0.4em;
+  padding: 2em;
+}
+.software-card-monitoria .text {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: auto;
+  background: #060b3f;
+  border-radius: 0 0 0.4em 0.4em;
+  padding: 1em;
+}
+
+.software-card-monitoria h2,
+.software-card-monitoria a {
+  color: #fafafa;
+  margin-bottom: 0.4em;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.software-card-monitoria .wrapper-labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.software-card-monitoria .label {
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-right: 0.4em;
+  padding: 0.1em 0.4em;
+  width: fit-content;
+}
+
+
 .react {
   background: #61dafb;
 }
@@ -118,7 +189,7 @@ main .sites-cards {
 
 @media (max-width: 1250px) {
   main .sites-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
   }
 
   .software-card {
