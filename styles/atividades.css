@@ -36,7 +36,7 @@ main .images-minicursos {
   align-items: left;
   justify-content: left;
   margin-bottom: 40px;
-  padding: 0 3em;
+  /* padding: 0 3em; */
 }
 
 main .images-fab-software .images-desenvolvimento {
@@ -124,6 +124,7 @@ main .sites-cards {
   border-radius: 0 0 0.4em 0.4em;
   padding: 2em;
 }
+
 .software-card-monitoria .text {
   display: grid;
   grid-gap: 0;
@@ -202,6 +203,8 @@ main .sites-cards {
   color: #000;
 }
 
+
+
 @media (max-width: 1360px) {
   main .sites-cards {
     grid-template-columns: 1fr 1fr;
@@ -248,6 +251,7 @@ main .sites-cards {
     padding: 0;
   }
 
+  
   main .container p {
     font-size: 18px;
     padding: 0 1em;
@@ -290,6 +294,12 @@ main .sites-cards {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5em;
   }*/
+}
+
+@media screen and (max-width:700px){
+  .software-card-monitoria .itens{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {
