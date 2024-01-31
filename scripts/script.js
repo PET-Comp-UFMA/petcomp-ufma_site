@@ -227,7 +227,7 @@ function showSlides() {
 
 
 
-//função que controla os numero da nossa historia e fazem crescer em ordemcresecente
+
 function animateNumbers() {
   const elements = document.querySelectorAll('.count');
 
@@ -243,7 +243,7 @@ function animateNumbers() {
       if (currentNumber === targetNumber) {
         clearInterval(interval);
       } else if (currentNumber > targetNumber) {
-        // Para lidar com condições inesperadas, limpa o intervalo se currentNumber ultrapassar targetNumber
+      
         clearInterval(interval);
         element.textContent = '+' + targetNumber;
       }
@@ -251,12 +251,12 @@ function animateNumbers() {
   });
 }
 
-// Executa a animação quando o DOM estiver pronto
+
 document.addEventListener('DOMContentLoaded', function () {
   animateNumbers();
 });
 
-// Executa a animação novamente quando toda a página estiver carregada
+
 window.addEventListener('load', function () {
   animateNumbers();
 });
@@ -297,7 +297,7 @@ function adicionarImagensAnimadas(container, urls, intervalo) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const imagensContainer = document.querySelector('.imagensSobrePet');
-  const intervaloTrocaImagem = 3000; // Intervalo em milissegundos (3 segundos)
+  const intervaloTrocaImagem = 3000;
 
   const imagensUrls = [
     '../assets/images/photo-5.jpg',
@@ -319,15 +319,15 @@ function adicionarImagemComAnimacao(container, urls, index) {
   imagem.onload = function () {
     container.appendChild(imagem);
 
-    // Adiciona um pequeno atraso para criar a animação sequencial
+    
     setTimeout(() => {
       imagem.style.opacity = '1';
 
-      // Adiciona a próxima imagem recursivamente
+      
       if (index < urls.length - 1) {
         adicionarImagemComAnimacao(container, urls, index + 1);
       }
-    }, 1000); // Ajuste o valor para o tempo entre cada imagem
+    }, 1000); 
   };
 }
 document.addEventListener('DOMContentLoaded', function () {
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function () {
   '../assets/images/photo-extensao.svg',
   ];
 
-  // Inicia a adição das imagens recursivamente
+ 
   adicionarImagemComAnimacao(imagemTriadeContainer, imagensUrls, 0);
 });
 

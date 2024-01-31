@@ -79,7 +79,7 @@
       </div>
     </section>
     <section id="petSignifica">
-      <h1 class="tituloPet">O PETComp representa a tríade Acadêmica:</h1>
+      <h1 class="tituloPet">O PETComp representa a Tríade Acadêmica:</h1>
       <div class="imagemTriade">
       </div>
     </section>
