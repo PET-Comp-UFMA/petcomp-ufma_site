@@ -63,8 +63,9 @@
       <div class="noticia-especifica">
         <h1 class="titulo-noticia"><?php print_r($Titulo) ?></h1>
         <div class="img_noticias">
-          <img class="img-noticia" src="<?php print_r($imagens[0]) ?>" alt="">
-          <img class="img-noticia" src="<?php print_r($imagens[1]) ?>" alt="">
+          <?php foreach($imagens as $image):?>
+            <img class="img-noticia" src="<?php print_r($image) ?>" alt="">
+          <?php endforeach?>
         </div>
         
         <p class="texto-noticia-esp"><?php echo $Texto ?></p>

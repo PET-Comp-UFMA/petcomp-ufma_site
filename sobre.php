@@ -66,7 +66,7 @@
           <div class="galery-about__container-image">
             <img class="galery-about__img" src="../assets/images/galery-about/photo4.jpg">
             <div class="galery-about__legend"> 
-              <p>Palestra ministrada pelo tutor do petcomp na acalourada</p>
+              <p>Palestra ministrada pelo tutor do PETComp na acalourada</p>
               <img src="../assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
