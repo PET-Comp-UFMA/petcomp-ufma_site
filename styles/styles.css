@@ -512,7 +512,8 @@ footer .contatos a {
 
   header nav ul li .dropdown .dropdown-content-sobre a,
   header nav ul li .dropdown .dropdown-content-projetos a,
-  nav ul li .dropdown .dropdown-content-produtos a {
+  nav ul li .dropdown .dropdown-content-produtos a,
+  header nav ul li .dropdown .dropdown-content-publicacoes a {
     color: #000;
   }
 

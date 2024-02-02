@@ -114,6 +114,14 @@ main .voltar {
 
   .img-noticia {
    width: 15rem;
+   padding-bottom: 1rem;
+  }
+
+  .img_noticias {
+
+    display: block;
+    margin-left: 37%;
+    
   }
 }
 
