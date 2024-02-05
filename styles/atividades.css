@@ -17,6 +17,18 @@ main .images {
   margin-bottom: 40px;
 }
 
+.container-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.container-images img{
+  height: 100%;
+  max-width: 480px;
+  max-height: 300px;
+  object-fit: cover;
+}
 main img {
   margin: 20px auto;
   transition: 0.2s;
@@ -141,6 +153,9 @@ main .sites-cards {
 
   .software-card img {
     width: 100%;
+  }
+  .container-images{
+    grid-template-columns: 1fr;
   }
 }
 

@@ -61,7 +61,7 @@
       </div>
     </div> -->
 
-      <div class="images images-monitoria">
+      <div class="container-images">
         <img src="./assets/images/monitoria-photo-5.png" alt="">
         <img src="./assets/images/monitoria-photo-6.png" alt="">
         <img src="./assets/images/monitoria-photo-7.png" alt="">
