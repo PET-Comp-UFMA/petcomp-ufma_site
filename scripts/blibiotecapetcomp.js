@@ -13,7 +13,10 @@ function currentConteudo(n) {
 function mostrarMonitorias(n) {
     var i;
     var conteudoIndex = n;
-  
+    
+    // nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+    // nomeMonitoria.style.textDecoration = 'underline';
+
     var conteudos = document.querySelectorAll('#conteudos');
     var buttons = document.querySelectorAll('.btn-monitoria');
   
@@ -43,6 +46,45 @@ function mostrarMonitorias(n) {
       buttons[conteudoIndex - 1].className += " active";
     } else {
       console.error("Índice de conteúdo inválido: " + conteudoIndex);
+    }
+    console.log(conteudoIndex);
+
+    var anterior = 1
+
+    if(conteudoIndex==1) {
+      nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
+      nomeMonitoria.style.textDecoration = 'none';
+      nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+      nomeMonitoria.style.textDecoration = 'underline';
+      anterior = 1;
+    }
+    if(conteudoIndex==2) {
+      nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
+      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+      nomeMonitoria.style.textDecoration = 'underline';
+      anterior=2;
+    }
+    if(conteudoIndex==3) {
+      nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
+      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+      nomeMonitoria.style.textDecoration = 'underline';
+      anterior=3;
+    }
+    if(conteudoIndex==4) {
+      nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
+      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+      nomeMonitoria.style.textDecoration = 'underline';
+      anterior=4;
+    }
+    if(conteudoIndex==5) {
+      nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
+      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
+      nomeMonitoria.style.textDecoration = 'underline';
+      anterior=5;
     }
   }
   
