@@ -142,6 +142,10 @@ section .conteudos-mdl > div {
   animation-duration: 1.5s;
 }
 
+.title h1 {
+  background-color: #dde3e6;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
