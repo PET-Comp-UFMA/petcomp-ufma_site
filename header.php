@@ -54,7 +54,7 @@
 
             <div id="dropdown-publicacoes" class="dropdown-content-publicacoes">
               <a href="./publicacoes.php">Trabalhos Publicados</a>
-              <a target="_blank" href="./assets/revistas/revistaPETComp1.pdf" >Revista PETComp</a>
+              <a target="_blank" href="https://online.fliphtml5.com/hyccq/wkkw/" >Revista PETComp</a>
             </div>
           </div>
         </li>
