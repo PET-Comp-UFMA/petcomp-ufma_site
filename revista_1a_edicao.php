@@ -46,7 +46,19 @@
           </div>
         </div>
 
+        </br>
+
         <p align="justify">
+
+        <!-- 
+        A 1ª edição da revista do PET Computação está disponível. 
+        Nessa edição abordamos os projetos desenvolvidos pelo PET Computação ao longo de 2023 destacando três artigos preparados por membros do nosso grupo. 
+        Além dos artigos, apresentamos nossas notícias, mantendo você atualizado sobre as
+        atividades, conquistas e eventos do nosso grupo e da comunidade acadêmica,
+        abrangendo as áreas de ensino, pesquisa e fábrica de software, dedicada à excelência
+        em Ciência da Computação.
+        Esperamos que gostem e aproveitem para conhecer um pouco mais sobre o nosso PET.
+        -->
         É com grande entusiasmo que apresentamos a primeira edição da nossa revista, um
         marco significativo para o PETComp da UFMA. Nesta edição inaugural, temos o prazer
         de destacar três artigos preparados por membros do nosso grupo, oferecendo uma
@@ -60,10 +72,10 @@
         <!-- text-align: center; align-content: center; -->
         </br>
         <div style="height: 100px;" >
-          <a class="botao-download" target="_blank" href="https://online.fliphtml5.com/hyccq/wkkw/">
-            Abrir
+          <a class="botao botao-abrir" target="_blank" href="https://online.fliphtml5.com/hyccq/wkkw/">
+            Visualizar
           </a>
-          <a class="botao-download" target="_blank" download="Revista PETComp 1ª Edição" 
+          <a class="botao botao-download" target="_blank" download="Revista PETComp 1ª Edição" 
               href="./assets/revistas/1a_edicao/revista_1a_edicao.pdf">
               Download
           </a>
