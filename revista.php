@@ -43,7 +43,7 @@
         <p align="justify">
         A Revista PETComp foi lançada com o propósito de oferecer ao público uma visão abrangente dos projetos desenvolvidos pelo PETComp da UFMA,
         destacando nossa trajetória aos leitores interessados em conhecer mais sobre o PET de Ciência da Computação da Universidade Federal do Maranhão. 
-        A primeira edição foi lançada no ano de 2023, marcando o início desta iniciativa de compartilhar nossas atividades e conquistas. Nela, 
+        A primeira edição foi lançada no ano de 2024, marcando o início desta iniciativa de compartilhar nossas atividades e conquistas. Nela, 
         exploramos os projetos em que estamos envolvidos, combinando textos informativos com imagens ilustrativas para proporcionar uma experiência completa aos leitores.
         Aguardem as próximas edições para mais novidades sobre o nosso PETComp UFMA!
         </p>
@@ -57,7 +57,7 @@
     <section id="revistas">
       <div class="container">
         <div style="height: 100px;" >
-            <a class="botao botao-revista" target="_blank" href="./revista_1a_edicao.php">
+            <a class="botao botao-revista" target="_blank" href="./revista_view.php">
                 1º Edição - Revista PET Computação 
             </a>
         </div>
