@@ -60,32 +60,30 @@ function mostrarMonitorias(n) {
     }
     if(conteudoIndex==2) {
       nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
-      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria.style.textDecoration = 'none';
       nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
       nomeMonitoria.style.textDecoration = 'underline';
       anterior=2;
     }
     if(conteudoIndex==3) {
       nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
-      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria.style.textDecoration = 'none';
       nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
       nomeMonitoria.style.textDecoration = 'underline';
       anterior=3;
     }
     if(conteudoIndex==4) {
       nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
-      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria.style.textDecoration = 'none';
       nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
       nomeMonitoria.style.textDecoration = 'underline';
       anterior=4;
     }
     if(conteudoIndex==5) {
       nomeMonitoria = document.getElementById(`nomeMonitoria${anterior}`);
-      nomeMonitoria.style.textDecoration = none;
+      nomeMonitoria.style.textDecoration = 'none';
       nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
       nomeMonitoria.style.textDecoration = 'underline';
       anterior=5;
     }
   }
-  
-  
