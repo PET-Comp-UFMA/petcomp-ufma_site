@@ -58,7 +58,7 @@
       <div class="container">
         <div style="height: 100px;" >
             <a class="botao botao-revista" target="_blank" href="./revista_view.php">
-                Acessar Edições
+                Acessar Edições da Revista
             </a>
         </div>
 
