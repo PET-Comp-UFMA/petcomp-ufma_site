@@ -58,7 +58,7 @@
       <div class="container">
         <div style="height: 100px;" >
             <a class="botao botao-revista" target="_blank" href="./revista_view.php">
-                1º Edição - Revista PET Computação 
+                Acessar Edições
             </a>
         </div>
 

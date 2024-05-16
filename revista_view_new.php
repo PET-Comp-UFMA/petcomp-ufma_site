@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="/styles/styles.css">
   <link rel="stylesheet" href="/styles/revista.css">
 
-  <link rel="stylesheet" href="./styles/revista_view_new.css">
   
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -30,29 +29,29 @@
 
   <main>
 
-  <div class="seletor">
-    <div>
-      <button id="btn-revista" class="btn-revista active" onclick="currentConteudo(1)">
-      </button>
-      <div class="title">
-        <h1 id="edicao" >1º - Edição</h1>
+    <div class="seletor">
+      <div>
+        <button id="btn-revista" class="btn-revista active" onclick="currentConteudo(1)">
+        </button>
+        <div class="title">
+          <h1 id="edicao" >1º - Edição</h1>
+        </div>
       </div>
-    </div>
-<!--
-    <div>
-      <button id="btn-revista" class="btn-revista " onclick="currentConteudo(2) ">
-      </button>
-      <div class="title">
-        <h1 id="edicao" >2º - Edição</h1>
+  <!--
+      <div>
+        <button id="btn-revista" class="btn-revista " onclick="currentConteudo(2) ">
+        </button>
+        <div class="title">
+          <h1 id="edicao" >2º - Edição</h1>
+        </div>
       </div>
+  -->
     </div>
--->
-  </div>
 
-  <section class="sobre" id="sobre">
-    <div id="revista-sobre" class="revista-1A" style="display: grid"></div>
-    <!--<div id="revista-sobre" class="revista-2A" style="display: grid"></div>-->
-  </section>
+    <section class="sobre" id="sobre">
+      <div id="revista-sobre" class="revista-1A" style="display: grid"></div>
+      <!--<div id="revista-sobre" class="revista-2A" style="display: grid"></div>-->
+    </section>
   </main>
 
   <?php include('footer.php') ?>

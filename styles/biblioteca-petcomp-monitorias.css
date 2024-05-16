@@ -45,6 +45,10 @@ footer.fixar-rodape {
   width: 100px;
 }
 
+.monitorias .title .underline{
+  text-decoration-line: underline;
+}
+
 .monitorias .title h1 {
   align-items: center;
   display: flex;

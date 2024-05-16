@@ -26,7 +26,7 @@
           <img src="./assets/svg/python.svg" alt="Monitoria Algoritmos I">
         </button>
         <div class="title">
-          <h1 id="nomeMonitoria1" >Algoritmos I</h1>
+          <h1 id="nomeMonitoria1" class="nomeMonitoria" >Algoritmos I</h1>
         </div>
       </div>
       <div>
@@ -34,7 +34,7 @@
           <img src="./assets/svg/pi-mathematical.svg" alt="Monitoria Cálculo I">
         </button>
         <div class="title">
-          <h1 id="nomeMonitoria2" >Cálculo I</h1>
+          <h1 id="nomeMonitoria2" class="nomeMonitoria" >Cálculo I</h1>
         </div>
       </div>
       <div>
@@ -42,7 +42,7 @@
           <img src="./assets/svg/ed1.svg" alt="Monitoria Estrutura de Dados I">
         </button>
         <div class="title">
-          <h1 id="nomeMonitoria3">Estrutura de Dados I</h1>
+          <h1 id="nomeMonitoria3" class="nomeMonitoria" >Estrutura de Dados I</h1>
         </div>
       </div>
       <div>
@@ -50,7 +50,7 @@
           <img src="./assets/svg/c.svg" alt="Monitoria Linguagem de Programação I">
         </button>
         <div class="title">
-          <h1 id="nomeMonitoria4" >Linguagem de Programação I</h1>
+          <h1 id="nomeMonitoria4" class="nomeMonitoria" >Linguagem de Programação I</h1>
         </div>
       </div>
       <div>
@@ -58,7 +58,7 @@
           <img src="./assets/svg/mdl.svg" alt="Monitoria Matemática Discreta e Lógica">
         </button>
         <div class="title">
-          <h1 id="nomeMonitoria5" >Matemática Discreta e Lógica</h1>
+          <h1 id="nomeMonitoria5" class="nomeMonitoria" >Matemática Discreta e Lógica</h1>
         </div>
       </div>
     </div>
