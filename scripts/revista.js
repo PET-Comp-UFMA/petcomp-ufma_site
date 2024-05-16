@@ -44,6 +44,8 @@ const revistaCriarDivs = function (item) {
   `;
 };
 
+mostrarRevista(0)
+
 function currentConteudo(n) {
 
   mostrarRevista(n);
