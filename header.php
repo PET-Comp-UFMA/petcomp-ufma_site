@@ -44,7 +44,19 @@
           </div>
         </li>
         <li>
-          <button><a href="./publicacoes.php">Publicações</a></button>
+        <div class="dropdown">
+            <button onclick="DropdownSection('publicacoes')" class="dropbtn">
+              Publicações
+              <span class="material-icons dropbtn">
+                arrow_drop_down
+              </span>
+            </button>
+
+            <div id="dropdown-publicacoes" class="dropdown-content-publicacoes">
+              <a href="./publicacoes.php">Trabalhos Publicados</a>
+              <a href="./revista.php" >Revista PETComp</a>
+            </div>
+          </div>
         </li>
         <li>
           <button><a href="./noticias.php">Notícias</a></button>

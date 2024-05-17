@@ -55,6 +55,27 @@
         </div>
 
         <div class="evento">
+          <img src="./assets/images/logos/eea.svg">
+          <div class="textoMateria">
+            <h3>EEA</h3>
+            <p>
+              As competências digitais tornaram-se essenciais para o processo de ensino e aprendizagem, envolvendo a utilização segura e crítica das TDIC (Tecnologias Digitais de Informação e Comunicação) e da Internet para pesquisar, encontrar, avaliar, processar, armazenar, utilizar, produzir, apresentar e trocar informações, inclusive em rede. Nesse contexto, o I Encontro sobre Experiências Acadêmicas da UFMA (I EEA da UFMA) é um evento com o objetivo de permitir que toda a comunidade da Universidade Federal do Maranhão (UFMA) e demais Instituições de Ensino Superior públicas do Maranhão possam trocar experiências, aprender e divulgar ações bem-sucedidas no contexto do desenvolvimento e disponibilização de produções técnicas inovadoras.</p>
+            <a href="https://eea.ufma.br/index.html" target="_blank">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="evento">
+          <img src="./assets/images/logos/enepet2020.png">
+          <div class="textoMateria">
+            <h3>ENEPET</h3>
+            <p>
+              O Encontro Nordestino dos Grupos do Programa de Educação Tutorial (ENEPET) é um evento em que a comunidade petiana da região Nordeste se encontra para discutir questões relacionadas ao Programa de Educação Tutorial (PET) na região. O encontro é caracterizado por assembleias, grupos de discussão e trabalhos, apresentação de trabalhos acadêmicos, atividades culturais, além da troca de experiências entre discentes e tutores nordestinos.
+            </p>
+            <a href="https://www.even3.com.br/enepet2020/" target="_blank">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="evento">
           <img src="./assets/images/logos/ercemapi.svg">
           <div class="textoMateria">
             <h3>ERCEMAPI</h3>

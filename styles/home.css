@@ -2,6 +2,8 @@
   text-decoration: none;
 }
 
+/*section slider*/
+
 #slider {
   margin: auto;
   width: 100%;
@@ -46,15 +48,14 @@
 
 .texto-banner {
   align-items: center;
-  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-image: url(../assets/svg/imagemdefundo.svg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   color: #343564;
   display: flex;
   flex-direction: column;
-  height: 35em;
+  height: 70vh; 
   justify-content: center;
 }
 
@@ -97,209 +98,147 @@
   background-color: #717171;
 }
 
+
+
+/*section sobre*/
 #sobre {
   background: #eeeeee;
-  height: 100%;
-  width: 100%;
+  padding: 10px;
+  background: linear-gradient(0deg, #060b3f, #232433);
 }
 
-/* Resumo com grid das imagens */
-
-.resumo-petcomp {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 40px;
-}
-
-.resumo-petcomp .images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 10vw);
-  grid-gap: 2rem;
-  width: 800px;
-}
-
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: ease 0.2s;
-}
-
-.resumo-petcomp .images figure {
-  box-shadow: 0px 15px 10px 4px #d4d4d4;
-}
-
-.resumo-petcomp .images figure:hover {
-  transform: scale(1.02);
-}
-
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.gallery__item--2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.gallery__item--4 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-/*Item 1*/
-.gallery__item--1 {
-  background-image: url("../assets/images/photo-5-med.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--1 {
-    background-image: url("../assets/images/photo-5-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--1 {
-    background-image: url("../assets/images/photo-5-big.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 2*/
-
-.gallery__item--2 {
-  background-image: url("../assets/images/photo-8-med.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--2 {
-    background-image: url("../assets/images/photo-8-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--2 {
-    background-image: url("../assets/images/photo-8-big.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 3*/
-
-.gallery__item--3 {
-  background-image: url("../assets/images/photo-2-med.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--3 {
-    background-image: url("../assets/images/photo-2-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--3 {
-    background-image: url("../assets/images/photo-2-big.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/*Item 4*/
-
-.gallery__item--4 {
-  background-image: url("../assets/images/photo-1-med.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 425px) {
-  .gallery__item--4 {
-    background-image: url("../assets/images/photo-1-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .gallery__item--4 {
-    background-image: url("../assets/images/photo-1-big.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+.imagemSobre{
+  max-width: 100%; 
+  max-height:35rem; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .text-petcomp {
-  margin-right: 200px;
+  flex: 1;
+  width: 100%; 
 }
 
+
+.resumo-petcomp {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap:20px;
+  align-items: center;
+  padding: 20px;
+
+}
+
+
+.resumo-petcomp .text-petcomp p {
+  text-align: justify;
+}
 .resumo-petcomp .text-petcomp h1 {
-  color: #343564;
+  color: white;
   font-size: 48px;
-  width: 300px;
 }
 
 .resumo-petcomp .text-petcomp p {
-  color: #1d1d1d;
+  color:  white;
+  font-size: 20px;
   line-height: 22px;
   margin: 20px 0;
-  width: 350px;
+
   text-align: justify;
 }
 
 .resumo-petcomp .text-petcomp a {
-  color: #0004ff;
+  width: 10rem;
+  background: #33c3ff;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 14px;
   text-decoration: none;
+  transition: 0.2s;
 }
 
+/*section petSignifica*/
+
+
+#petSignifica{
+  background-color: hsl(0, 10%, 94%);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+.tituloPet{
+  font-size: 30px;
+  font-weight: 800;
+
+}
+.imagemTriade {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-top:20px;
+
+}
+
+.imagemTriade .imagem {
+  max-width: 15rem;
+  height: auto;
+  margin-right: 1rem; 
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out;
+}
+
+@keyframes fadeInFromRight {
+  to {
+    opacity: 1;
+  }
+}
+
+/*section historia*/
+#historia{
+  text-align:center;
+  align-items: center;
+  background: linear-gradient(180deg, #060b3f, #232433);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.historia{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align:center;
+  min-height: 10rem;
+  justify-content: space-between;
+  padding: 50px;
+  width: 60%;
+}
+.topico{
+  margin:10px;
+}
+.count{
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+/*section atividades*/
+
 #atividades {
-  background-image: url(../assets/images/lala-azizli-cBUTPbTeDB0-unsplash.jpg);
+  background-image: url(../assets/svg/imagemdefundo.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
-  height: 100%;
+  color: #343564;
+  display: flex;
+  justify-content: center;
+  
+
 }
 
 .atividades {
@@ -424,24 +363,51 @@
   }
 }
 
-@media (max-width: 1450px) {
-  .resumo-petcomp .text-petcomp p {
-    width: 550px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .resumo-petcomp .images {
-    margin-right: 20px;
-    width: 600px;
-  }
-  .resumo-petcomp .text-petcomp {
-    margin-right: 0;
-    width: 100%;
-  }
-}
 
 @media (max-width: 1180px) {
+  /*section sobre*/
+  .resumo-petcomp .text-petcomp h1 {
+    color: white;
+    font-size: 48px;
+  }
+  
+  .resumo-petcomp .text-petcomp p {
+    color:  white;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px 0;
+    text-align: justify;
+  }
+  
+  
+  /*section petSignifica*/
+  
+
+
+
+  /*section historia*/
+  .historia{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align:center;
+    min-height: 8rem;
+    padding: 40px;
+    width: 100%;
+
+  }
+  .topico{
+    margin:10px;
+  }
+  .count{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+
+
+
+  /*section atividades*/
   .atividades {
     flex-direction: column;
     height: 100%;
@@ -499,16 +465,14 @@
 }
 
 @media (max-width: 800px) {
+
+  /*section slider*/
   .slider-content {
     display: block;
   }
 
   ul li {
     padding: 0;
-  }
-  .texto-banner {
-    height: 400px;
-    text-align: center;
   }
 
   .texto-banner .intro-noticia h1 {
@@ -521,37 +485,84 @@
     width: 80%;
   }
 
+
+  /*section sobre*/
+
+  #sobre{
+    object-fit: contain;
+  }
+
   .resumo-petcomp {
     display: flex;
     flex-direction: column;
-    height: auto;
-    padding: 1em;
-  }
-
-  .resumo-petcomp .images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 15vw);
-    grid-gap: 4px;
     width: 100%;
   }
 
-  .resumo-petcomp .images figure:hover {
-    transform: scale(1.5);
+  .imagemSobre{
+    max-width: 100%; 
+    max-height:20rem; 
+    display: block; 
+    margin: 0 auto; 
   }
-
+  
+  
   .resumo-petcomp .text-petcomp h1 {
-    color: #343564;
-    font-size: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
+    font-size:30px;
   }
-
   .resumo-petcomp .text-petcomp p {
-    padding: 0;
-    width: 100%;
+    font-size: 15px;
+    text-align: justify;
   }
 
+
+  /*section petSignifica*/
+  .imagemTriade {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.imagemTriade .imagem {
+    max-width: 30%; 
+    height: auto;
+}
+
+
+  /*section historia*/
+
+  #historia{
+    max-width: 100%;
+  }
+  .historia{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align:center;
+    align-items: center;
+    min-height: 8rem;
+    justify-content: space-around; 
+    padding: 20px;
+    flex-wrap: wrap;
+    gap:10px;
+    
+
+  }
+  .topico{
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:10px;
+  }
+  .topico p{
+    align-items: center;
+    text-align: center;
+  }
+  .count{
+    box-sizing: border-box;
+    font-size: 3em; 
+    font-weight: 600;
+  }
+
+
+  /*section atividades*/
   .atividades {
     flex-direction: column;
     height: 100%;
@@ -605,12 +616,80 @@
 }
 
 @media (max-width: 351px) {
+  /*section slider*/
+  .texto-banner {
+    text-align: center;
+  }
+
+
+   /*section sobre*/
+   
+   .resumo-petcomp .text-petcomp h1 {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .resumo-petcomp .text-petcomp p {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: justify;
+  }
+  
+
+  /*section historia*/
+  #historia{
+    width: 100%;
+  }
+  .historia{
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    gap:20px;
+    text-align:center;
+    min-height: 8rem;
+    padding: 20px;
+    width: 100%;
+
+  }
+  .topico{
+    margin:10px;
+  }
+  .count{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+/*section petSignifica*/
+  .imagemTriade {
+    display: flex;
+    justify-content: space-between;
+    margin:5px;
+}
+
+.imagemTriade .imagem {
+    max-width: 30%; 
+    height: auto; 
+    margin:5px;
+}
+
+  /*section atividades*/
+  
   .atividades .images-atividades {
     display: grid;
     grid-template-columns: 1fr;
+    width: 290px;
+  }
+  .atividades .images-atividades .card-atividade {
+    display: flex;
+    flex-direction: row;
+    height: 10em;
+    width: 50%;
   }
   .atividades .atividades-desenvolvidas h1 {
     margin: 0 auto;
     width: 100%;
   }
+  
 }
