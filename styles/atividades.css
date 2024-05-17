@@ -36,7 +36,7 @@ main img {
 }
 
 main .images-fab-software,
-main .images-monitoria,
+main .images-revistas,
 main .images-minicursos {
   display: grid;
   grid-template-columns: 1fr;
@@ -183,7 +183,7 @@ main .sites-cards {
 
   main .images,
   main .images-fab-software,
-  main .images-monitoria {
+  main .images-revistas {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;

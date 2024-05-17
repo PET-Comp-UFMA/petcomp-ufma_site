@@ -4,6 +4,13 @@
   justify-content: center;
   padding: 20px;
 }
+
+.monitorias div {
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -22,7 +29,9 @@ footer.fixar-rodape {
   margin: 0 25px;
   padding: 25px;
   transition: 0.2s;
-  
+  width: 18vh;
+  height: 18vh;
+  align-items: center;
   
 }
 
@@ -37,12 +46,16 @@ footer.fixar-rodape {
   opacity: 0.7;
 }
 .monitorias button img {
-  width: 60px;
+  width: 11vh;
 }
 
 .monitorias .title {
   margin: 0 auto;
   width: 100px;
+}
+
+.monitorias .title .underline{
+  text-decoration-line: underline;
 }
 
 .monitorias .title h1 {
@@ -53,6 +66,10 @@ footer.fixar-rodape {
   margin-top: 10px;
   padding: 2px;
   text-align: center;
+}
+
+.monitorias .title .underline{
+  text-decoration-line: underline;
 }
 
 section .container {
@@ -171,15 +188,27 @@ section .conteudos-mdl > div {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 5px;
+    width: 14vw;
+    height: 14vw;
     
     
+  }
+
+  .monitorias button img {
+    width: 9vw;
   }
   .container #conteudos {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-gap: 4px;
     padding: 10px 0;
+  }
+
+  .monitorias div {
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+  
   }
 }
 
@@ -194,35 +223,26 @@ section .conteudos-mdl > div {
   .monitorias div {
     display: grid;
     flex-direction: column;
-    
+    justify-items: center;
+    margin: 10px;
   }
 
   .monitorias button {
-    align-items: center;
+    width: 80px;
+    height: 80px;
     display: grid;
-    height: 72.5px;
     padding:1px 15px;
     justify-content: center;
+    margin-top: 60px;
     margin: 5px;
     grid-gap:5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100px); 
-
-    
   }
 
-  .monitorias .active {
-    opacity: 0.3;
+  .monitorias button img {
+    width: 45px;
   }
  
-  .monitorias button img {
-    width: 40px;
-    margin: 0 10px;
-    position: absolute;
-
-  }
   .monitorias .title {
-    background: #fff;
     margin: 0 3px;
     width: 95px;
   }
