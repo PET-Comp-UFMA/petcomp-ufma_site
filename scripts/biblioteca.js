@@ -199,6 +199,13 @@ const data = [
   {
     id: 3,
     monitoria: "ED1",
+    nome: "Introdução à Estrutura de Dados",
+    urlResumo:
+      "https://docs.google.com/document/d/17Ku-AM7lyCxYpf2vmHVNkwE96jwNdr2U8oAle2Gx7_0/edit?usp=sharing",
+  },
+  {
+    id: 3,
+    monitoria: "ED1",
     nome: "Vetores e Matrizes",
     urlResumo:
       "https://docs.google.com/document/d/1zNLx4mJ5U6n2Ed61OJlwlrwId5GbH0uLPgHFeAeHJPw/edit?usp=sharing",
@@ -401,13 +408,6 @@ const data = [
     nome: "Resolução de Exercícios",
   },
   {
-    id: 3,
-    monitoria: "ED1",
-    nome: "Introdução à Estrutura de Dados",
-    urlResumo:
-      "https://docs.google.com/document/d/17Ku-AM7lyCxYpf2vmHVNkwE96jwNdr2U8oAle2Gx7_0/edit?usp=sharing",
-  },
-  {
     id: 5,
     monitoria: "MDL",
     urlVideo:"https://drive.google.com/file/d/10ChoZTmf6BjKXtA471akhnp1dCl4r9dl/view?usp=drive_link",
@@ -594,15 +594,15 @@ const criarDivs = function(item){
   }
 };
 
-function mostrarMonitoria(id){
+function mostrarMonitoriaConteudo(id){
   var item = data.filter(filtrarData(id));
   return item.map(criarDivs)
 }
 
-document.querySelector(".conteudos-python").innerHTML = mostrarMonitoria(1).join("");
-document.querySelector(".conteudos-calc1").innerHTML = mostrarMonitoria(2).join("");
-document.querySelector(".conteudos-ed1").innerHTML = mostrarMonitoria(3).join("");
-document.querySelector(".conteudos-lp1").innerHTML = mostrarMonitoria(4).join("");
-document.querySelector(".conteudos-mdl").innerHTML = mostrarMonitoria(5).join("");
+document.querySelector(".conteudos-python").innerHTML = mostrarMonitoriaConteudo(1).join("");
+document.querySelector(".conteudos-calc1").innerHTML = mostrarMonitoriaConteudo(2).join("");
+document.querySelector(".conteudos-ed1").innerHTML = mostrarMonitoriaConteudo(3).join("");
+document.querySelector(".conteudos-lp1").innerHTML = mostrarMonitoriaConteudo(4).join("");
+document.querySelector(".conteudos-mdl").innerHTML = mostrarMonitoriaConteudo(5).join("");
 
 
