@@ -617,7 +617,7 @@ function mostrarMonitorias(n) {
     if (conteudoIndex >= 0 && conteudoIndex<=buttons.length) {
       buttons[conteudoIndex].className += " active";
       nomeMonitoria[conteudoIndex].classList.add('underline');
-      document.querySelector(".conteudos-data").innerHTML = mostrarMonitoria(n).join("");
+      document.querySelector(".conteudos-data").innerHTML = mostrarMonitoriaConteudo(n).join("");
     } else {
       console.error("Índice de conteúdo inválido: " + n);
     }
