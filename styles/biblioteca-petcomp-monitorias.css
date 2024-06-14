@@ -79,11 +79,7 @@ section .container {
   width: 100%;
 }
 
-section .conteudos-python,
-section .conteudos-calc1,
-section .conteudos-lp1,
-section .conteudos-ed1,
-section .conteudos-mdl,
+
 section .conteudos-data {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -94,20 +90,11 @@ section .conteudos-data {
 
 
 
-section .conteudos-python,
-section .conteudos-lp1,
-section .conteudos-calc1,
-section .conteudos-ed1,
-section .conteudos-mdl,
+
 section .conteudos-data {
   display: grid;
 }
 
-section .conteudos-python > div,
-section .conteudos-calc1 > div,
-section .conteudos-lp1 > div,
-section .conteudos-ed1 > div,
-section .conteudos-mdl > div,
 section .conteudos-data > div {
   margin: 0 auto;
   width: fit-content;
