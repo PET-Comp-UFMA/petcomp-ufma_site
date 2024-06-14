@@ -31,7 +31,7 @@
 
     <div class="seletor">
       <div>
-        <button id="btn-revista" class="btn-revista active" onclick="currentConteudo(1)">
+        <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(1)">
           <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="1º Edicão">  
         </button>
         <div class="title">

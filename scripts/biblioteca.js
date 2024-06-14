@@ -599,10 +599,29 @@ function mostrarMonitoria(id){
   return item.map(criarDivs)
 }
 
-document.querySelector(".conteudos-python").innerHTML = mostrarMonitoria(1).join("");
-document.querySelector(".conteudos-calc1").innerHTML = mostrarMonitoria(2).join("");
-document.querySelector(".conteudos-ed1").innerHTML = mostrarMonitoria(3).join("");
-document.querySelector(".conteudos-lp1").innerHTML = mostrarMonitoria(4).join("");
-document.querySelector(".conteudos-mdl").innerHTML = mostrarMonitoria(5).join("");
+function mostrarMonitorias(n) {
+    var i;
+    var conteudoIndex = n-1;
 
+    var buttons = document.querySelectorAll('.btn-monitoria');
+    var nomeMonitoria = document.querySelectorAll('.nomeMonitoria');
+  
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].className = buttons[i].className.replace(" active", "");
+    }
 
+    for(i=0;i<nomeMonitoria.length;i++){
+      nomeMonitoria[i].classList.remove('underline');
+    }
+  
+    if (conteudoIndex >= 0 && conteudoIndex<=buttons.length) {
+      buttons[conteudoIndex].className += " active";
+      nomeMonitoria[conteudoIndex].classList.add('underline');
+      document.querySelector(".conteudos-data").innerHTML = mostrarMonitoria(n).join("");
+    } else {
+      console.error("Índice de conteúdo inválido: " + n);
+    }
+    console.log(n);
+  }
+
+mostrarMonitorias(3)
