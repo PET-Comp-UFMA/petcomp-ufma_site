@@ -18,14 +18,27 @@
     $id = $_GET['id'];
     mysqli_select_db($mysqli, $bd) or die("Could not select database");	
     $query = "SELECT * FROM `noticias` WHERE `id` = " . $id;
+    $queryBotoes = "SELECT * FROM `noticias_botoes` WHERE `idNoticia` = " . $id;
     
     $result = mysqli_query($mysqli, $query);
     $row = mysqli_fetch_array($result);
+    $resultBotoes = mysqli_query($mysqli,$queryBotoes);
+    $botoes = mysqli_fetch_array($resultBotoes);
     
     $Titulo = $row['titulo'];
-    $Texto = $row['texto'];
+    $Texto = preg_split("/(\r\n){2,}/", $row['texto']);
+
     $Imagem = $row['foto'];
     $imagens = explode("|", $Imagem, 2);
+    if($botoes){
+      $botaoNome = $botoes['botaoNome'];
+      $botaoLink = $botoes['botaoLink'];
+      
+    }
+
+    print_r($botoes);
+
+    
 
     if($row){
 
@@ -67,14 +80,25 @@
             <img class="img-noticia" src="<?php print_r($image) ?>" alt="">
           <?php endforeach?>
         </div>
-        
-        <p class="texto-noticia-esp"><?php echo $Texto ?></p>
-        <div class="voltar">
-            <a href="./noticias.php">
-            <button class="button-back">
-              Voltar
-            </button></a>
-        </div>
+        <?php foreach($Texto as $paragrafo){ ?>
+          <p class="texto-noticia-esp">
+            <?php echo  $paragrafo;?>
+          </p>
+        <?php  } ?>
+      </div>
+      <div class="noticia-especifica-botoes">
+        <?php 
+          if($botoes && $botaoLink!="" && $botaoNome!=""){ ?>
+            <a class="botaoGenerico" target="_blank" href="<?php echo $botaoLink?>">
+              <?php echo $botaoNome; ?>
+            </a>
+          <?php }?>
+          <div class="voltar">
+              <a href="./noticias.php">
+              <button class="button-back">
+                Voltar
+              </button></a>
+          </div>
       </div>
 
     </section>

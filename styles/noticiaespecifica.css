@@ -26,6 +26,16 @@ main .container .noticia-especifica {
   max-width: 700px;
 }
 
+.noticia-especifica-botoes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+}
+
 
 main .container .noticia-especifica h1.titulo-noticia {
   font-size: 42px;
@@ -170,4 +180,24 @@ img.img-noticia{
     font-size: 16px;
   }
   
+}
+
+/* Botão de Download*/
+.botaoGenerico{
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-inline-end: auto;
+  background-color: #001447;
+  min-width: 100px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media (max-width: 600px){
+  .botaoGenerico{
+    margin: auto;
+  }
 }
