@@ -14,8 +14,25 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+-- Copiando estrutura do banco de dados para petcom59_petcomp_db
+CREATE DATABASE IF NOT EXISTS `petcom59_petcomp_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `petcom59_petcomp_db`;
+
+-- Copiando estrutura para tabela petcom59_petcomp_db.noticias
+CREATE TABLE IF NOT EXISTS `noticias` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(500) NOT NULL,
+  `texto` text NOT NULL,
+  `data` date NOT NULL,
+  `foto` varchar(100) NOT NULL,
+  `botaoNome` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `botaoLink` varchar(500) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3;
+
 -- Copiando dados para a tabela petcom59_petcomp_db.noticias: ~26 rows (aproximadamente)
-INSERT IGNORE INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`, `botaoNome`, `botaoLink`) VALUES
+INSERT INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`, `botaoNome`, `botaoLink`) VALUES
 	(1, 'Nova Publicação: Quando os Discentes se Expressam: Um Relato de Experiência da Criação de um Podcast para Aumentar o Engajamento e Troca de Conhecimento em Tempos de Pandemia', 'Melhorar o engajamento de discentes e facilitar o acesso à informação têm se tornado mais relevantes no contexto educacional. Em virtude do isolamento social gerado pela pandemia da COVID-19, recursos didáticos como podcasts e vídeos podem ser explorados para alcançar este objetivo. Com o intuito manter os discentes atualizados e engajados durante o ensino remoto, o grupo PETComp da Universidade Federal do Maranhão montou uma equipe para desenvolver um podcast sobre conteúdos relacionados à Tecnologia da Informação. Este artigo apresenta o processo de produção dos episódios do podcast. Após a preparação do material e lançamento do podcast em plataformas digitais, foi coletada a opinião dos discentes sobre o mesmo através de um questionário. Os resultados indicam que o podcast contribuiu para disponibilizar conteúdos construídos pelos discentes de forma descontraída, permitindo a atualização em temas relevantes e o engajamento dos ouvintes.', '2021-07-20', '', '', ''),
 	(2, 'Nova Publicação: O Impacto das Atividades do Grupo PET no Aprimoramento de Soft Skills Requeridos pelo Mercado de Computação do Maranhão: Uma Análise da Visão dos Discentes', 'O profissional de computação precisa adquirir as mais variadas habilidades para se manter competitivo no mercado de trabalho. Entre essas habilidades, as denominadas soft skills (ou habilidades não técnicas) são atributos pessoais que permitem ao indivíduo desempenhar uma boa interação com o mundo ao seu redor. Nesse contexto, o Programa de Educação Tutorial (PET) surge como uma alternativa para desenvolver tais habilidades durante o ensino superior. No entanto, existem poucas análises sobre como um discente pode desenvolver soft skills durante a realização de atividades no âmbito do PET. Neste artigo, através de um formulário, foi obtida a percepção dos discentes sobre o impacto das atividades realizadas no PET para o desenvolvimento de soft skills, considerando o contexto do estado do Maranhão. Os resultados apontam para o impacto positivo das atividades do programa para este fim, além de identificar oportunidades de melhoria.', '2021-07-20', '', '', ''),
 	(3, 'Nova Publicação: Quando a Aluna se Torna a Mestre: Um Relato da Experiência de Alunas de Graduação Aplicando Dinâmicas de Ensino de Computação para Alunas de Ensino Médio', 'O quantitativo de mulheres nas carreiras e cursos das áreas de Computação e Tecnologias é baixo se comparado ao quantitativo de homens. Para incentivá-las a entrar em cursos de exatas, vários projetos de extensão têm sido executados. Nesse contexto, o presente artigo relata os resultados da aplicação de uma gincana em que foram realizadas atividades de ensino envolvendo computação plugada e desplugada. As atividades e o material preparado foram escolhidos e adaptados por alunas do curso de ciência da computação da Universidade Federal do Maranhão com o intuito de encorajar alunas de ensino médio. Como resultado desta experiência, foi possível coletar opiniões sobre o processo de criação da gincana por parte das graduandas e a avaliação da mesma por parte de alunas de ensino médio.', '2020-06-30', '', '', ''),
@@ -43,8 +60,19 @@ INSERT IGNORE INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`, `botaoNo
 	(25, 'Novo Processo Seletivo para o PETComp: Inscreva-se já!', 'O PETComp vem convidar a todos a participar da seleção para novos petianos. As inscrições para o processo seletivo PETComp estarão abertas de 19 a 21 de julho, com a primeira e segunda etapas executadas de forma remota entre os dias 22 a 24 e 25 a 26 do mesmo mês, respectivamente. O resultado estará disponível a partir do dia 29 de julho, com as atividades do discente selecionado previstas para o mês de agosto.\r\n\r\nO Programa de Educação Tutorial em Computação (PETComp), criado em 2007, abrange as áreas de pesquisa, extensão e ensino. Dessa forma, é responsável pela organização de eventos, como a Acalourada, realizada no ínicio de cada semestre para o acolher os novos ingressantes do curso. Além disso, realiza monitorias de graduação para as seguintes cadeiras: Algoritmos I, Cálculo I, Linguagem de Programação I, Matemática Discreta e Lógica e  Estrutura de Dados I.\r\n\r\nO programa oferece 6 vagas, sendo uma para a posição de bolsista, reservada para o primeiro classificado. Os requisitos para ingresso no programa são: estar entre o segundo e o sexto semestre do curso de Ciência da Computação da Universidade Federal do Maranhão (UFMA), possuir um Coeficiente de Rendimento (CR) maior ou igual a 6,0 e ter disponibilidade de 20 horas semanais para a realização das atividades, que serão feitas no turno matutino. \r\nPara mais informações, consulte o edital.', '2024-07-17', './assets/images/noticias/seletivo2024-1.png', 'Download Edital', 'https://portalpadrao.ufma.br/proen/editais-proen/editais-2024/2024_07_Edital_PetComp_Verso_2.pdf'),
 	(26, 'Resultado do Processo Seletivo para o PETComp: Novos Integrantes Selecionados!', 'No dia  19 do mês de julho de 2024, deu-se início ao processo de seleção de novos petianos bolsistas e não bolsistas. Todo o processo ocorreu de forma remota, através da aplicação de um formulário a fim de analisar as motivações dos candidatos para a participação no grupo PETCOMP e dinâmica entre grupos para analisar as habilidades de trabalho em equipe.\r\n\r\nÉ com grande satisfação que divulgamos o resultado do Processo Seletivo para o Programa de Educação Tutorial em Computação (PETComp) da Universidade Federal do Maranhão. Após uma cuidadosa análise das inscrições e a realização das etapas seletivas, temos o prazer de anunciar os novos integrantes que se destacaram durante o processo.\r\n\r\nParabenizamos todos os participantes pela inscrição, empenho e dedicação durante o processo seletivo, que consistiu em duas etapas, sendo elas formulário e um desafio, respectivamente. No desafio, os candidatos puderam escolher entre monitoria, desenvolvimento e podcast . Para os novos integrantes, aguardamos ansiosamente para recebê-los em nossa equipe e iniciarmos juntos uma jornada de aprendizado, pesquisa e contribuição para a comunidade acadêmica.', '2024-08-07', './assets/images/noticias/ResultSeletivo2024.1.jpg', '', '');
 
+-- Copiando estrutura para tabela petcom59_petcomp_db.noticias_botoes
+CREATE TABLE IF NOT EXISTS `noticias_botoes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `idNoticia` int NOT NULL,
+  `botaoNome` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `botaoLink` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_idNoticia` (`idNoticia`),
+  CONSTRAINT `FK_idNoticia` FOREIGN KEY (`idNoticia`) REFERENCES `noticias` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 -- Copiando dados para a tabela petcom59_petcomp_db.noticias_botoes: ~7 rows (aproximadamente)
-INSERT IGNORE INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VALUES
+INSERT INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VALUES
 	(1, 25, 'Download Edital', 'https://portalpadrao.ufma.br/proen/editais-proen/editais-2024/2024_07_Edital_PetComp_Verso_2.pdf'),
 	(2, 23, 'Link do Episódio', 'https://open.spotify.com/episode/758i4WcF47ZhgldSavGuf0?si=1c9be37a865f47d3'),
 	(3, 19, 'Site de publicação do Artigo Completo', 'https://www.even3.com.br/anais/enepet2023/658460-o-impacto-das-monitorias-academicas-na-formacao-de-alunos-de-ciencia-da-computacao--um-relato-do-petcomp-ufma/'),
@@ -53,8 +81,23 @@ INSERT IGNORE INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink
 	(6, 15, 'Programação Completa', 'https://portalpadrao.ufma.br/site/noticias/feiradasprofissoes_folderprogramacaografica2023.pdf '),
 	(7, 15, 'Site da Feira das Profissões', 'https://portalpadrao.ufma.br/profissoes');
 
+-- Copiando estrutura para tabela petcom59_petcomp_db.petianos
+CREATE TABLE IF NOT EXISTS `petianos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome_completo` varchar(60) DEFAULT NULL,
+  `primeiro_nome` varchar(15) NOT NULL,
+  `ultimo_nome` varchar(15) NOT NULL,
+  `ano` int NOT NULL,
+  `periodo` int NOT NULL,
+  `ativo` tinyint NOT NULL,
+  `orientador` tinyint NOT NULL,
+  `voluntario` tinyint NOT NULL,
+  `imagem` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=162 DEFAULT CHARSET=utf8mb3;
+
 -- Copiando dados para a tabela petcom59_petcomp_db.petianos: ~160 rows (aproximadamente)
-INSERT IGNORE INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES
+INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES
 	(1, 'Luis Rivero', 'Luis ', ' Rivero', 2019, 1, 1, 1, 0, 'Luis Riveiro.jpg'),
 	(2, 'Geraldo Braz Junior', 'Geraldo', 'Braz', 2016, 1, 0, 1, 0, 'Geraldo Braz.jpg'),
 	(3, 'Alexandre Cesar Muniz de Oliveira', 'Alexandre', 'Oliveira', 2007, 2, 0, 1, 0, 'Alexandre Oliveira.jpg'),
@@ -216,10 +259,32 @@ INSERT IGNORE INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_n
 	(160, 'Nycole Maria', 'Nycole', 'Maria', 2024, 5, 1, 0, 0, 'nycole-maria.jpg'),
 	(161, 'Wemerson Miranda', 'Wemerson', 'Miranda', 2024, 2, 1, 0, 0, 'Wemerson_Miranda.jpg');
 
+-- Copiando estrutura para tabela petcom59_petcomp_db.sites
+CREATE TABLE IF NOT EXISTS `sites` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(60) NOT NULL,
+  `link` varchar(500) NOT NULL,
+  `descricao` text NOT NULL,
+  `evento` tinyint NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
 -- Copiando dados para a tabela petcom59_petcomp_db.sites: ~0 rows (aproximadamente)
 
+-- Copiando estrutura para tabela petcom59_petcomp_db.trabalhos_publicados
+CREATE TABLE IF NOT EXISTS `trabalhos_publicados` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(500) NOT NULL,
+  `autor` varchar(500) NOT NULL,
+  `ano` varchar(4) DEFAULT NULL,
+  `palavras_chaves` varchar(150) DEFAULT NULL,
+  `resumo` text,
+  `link` varchar(500) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb3;
+
 -- Copiando dados para a tabela petcom59_petcomp_db.trabalhos_publicados: ~46 rows (aproximadamente)
-INSERT IGNORE INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_chaves`, `resumo`, `link`) VALUES
+INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_chaves`, `resumo`, `link`) VALUES
 	(1, 'Artigo: De Veteranos para os Novatos: Avaliação das Atividades de Recepção aos Calouros Organizado pelo Grupo PETComp', 'Daniel Pinto, Eduarda Chagas, Gabriel Costa, Kennedy Nunes, Ricardo Anchieta, Simara Rocha, Anselmo Paiva, Luis Rivero', '2020', NULL, 'Alunos ingressantes em cursos de ensino superior sentem dificuldade em se adaptar à nova modalidade de ensino. Nesse contexto, o evento da Semana do Calouro é realizado pelos discentes do grupo PET de Ciência da Computação da Universidade Federal do Maranhão acompanhados por professores como uma atividade de integração aos novos discentes do curso de Ciência da Computação. Este artigo relata a experiência de aplicar diversas atividades com o intuito de esclarecer as dúvidas geradas pelo ingresso no novo ambiente, bem como aumentara visibilidade dos contextos do curso. Ao término das atividades, o feedback dos discentes apontou para a utilidade das mesmas para conhecer as oportunidades dentro da universidade em termos de projetos, pesquisas e áreas de atuação, assim como soluções para problemas que surgiram durante sua execução.', 'https://sol.sbc.org.br/index.php/wei/article/view/11130/11001'),
 	(2, 'Artigo: Identificando as Atividades dos Grupos do Programa de Educação Tutorial na Área de Computação no Apoio à Inclusão e Alfabetização Digital', 'Emily Costa, Antônio Pinto, José Ribamar Durand Rodrigues Junior, Alana Araújo, Ednara Pereira, Geraldo Braz Junior, Rodrigo Santos, Luis Rivero', '2019', NULL, 'O Programa de Educação Tutorial (PET) tem o objetivo de incentivar grupos de alunos de graduação a desenvolver atividades relacionadas com o Ensino, a Pesquisa e a Extensão. Existem 37 grupos PET listados no site da SBC que realizam atividades voltadas para a comunidade (público externo à universidade, idosos, crianças, entre outros). Este artigo apresenta uma análise de quais das atividades divulgadas por estes grupos são voltadas para o apoio à inclusão e alfabetização digital. As informações sobre casos de sucesso destas atividades podem servir como base para outros grupos e incentivar parcerias para realizar atividades afins.', 'https://br-ie.org/pub/index.php/wie/article/view/8594'),
 	(3, 'Artigo: Identificação das Expectativas e Dificuldades de Alunos de Graduação no Ensino de Engenharia de Software', 'Jéssica Mendes, Yandson Costa, Kastney Frazão, Rodrigo Santos, Davi Santos, Luis Rivero', '2019', NULL, 'A  Engenharia  de  Software  visa  apoiar  o  desenvolvimento  de  sistemas computacionais de qualidade, reduzindo os custos de produção e aumentando a produtividade dos profissionais. Buscar entender as necessidades dos alunos iniciantes  nessa  área  da  computação  é  vital  para  propor  metodologias adequadas  de  ensino.  Este  artigo  apresenta  o  resultado  da  aplicação  de  um questionário quanto à experiência dos alunos de uma disciplina introdutória de Engenharia de Software. Foi capturada a expectativa de alunos que ainda não cursaram  a  disciplina,  assim  como  a  visão  de  alunos  que  já  a  cursaram, reprovando  ou  não.  Os  resultados  desta  pesquisa  permitiram  identificar eventuais aspectos que possam ter influência positiva ou negativa no processo de aprendizado.', 'https://sol.sbc.org.br/index.php/wei/article/view/6640/6536'),
