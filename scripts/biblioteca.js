@@ -624,4 +624,4 @@ function mostrarMonitorias(n) {
     console.log(n);
   }
 
-mostrarMonitorias(3)
+mostrarMonitorias(3);
