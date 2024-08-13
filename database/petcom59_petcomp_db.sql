@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `noticias_botoes` (
   CONSTRAINT `FK_idNoticia` FOREIGN KEY (`idNoticia`) REFERENCES `noticias` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
 
--- Copiando dados para a tabela petcom59_petcomp_db.noticias_botoes: ~7 rows (aproximadamente)
+-- Copiando dados para a tabela petcom59_petcomp_db.noticias_botoes: ~17 rows (aproximadamente)
 REPLACE INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VALUES
 	(1, 25, 'Download Edital', 'https://portalpadrao.ufma.br/proen/editais-proen/editais-2024/2024_07_Edital_PetComp_Verso_2.pdf'),
 	(2, 23, 'Abrir Episódio', 'https://open.spotify.com/episode/758i4WcF47ZhgldSavGuf0?si=1c9be37a865f47d3'),
@@ -88,6 +88,21 @@ REPLACE INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VAL
 	(16, 20, 'Site de publicação do Artigo', 'https://www.even3.com.br/anais/enapet2023/667196-explorando-o-pensamento-computacional-atraves-de-jogos-educacionais-desplugados/'),
 	(17, 22, 'Abrir Episódio', 'https://open.spotify.com/episode/3qVO8s24JVKJ3xvRkw4NkK?si=e2c57ecbb3404694'),
 	(18, 22, 'Perfil do PETComp no Spotify', 'https://open.spotify.com/show/6fTiqItsIWohIacVtUv0Dn');
+
+-- Copiando estrutura para tabela petcom59_petcomp_db.noticias_imagens
+CREATE TABLE IF NOT EXISTS `noticias_imagens` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `idNoticias` int NOT NULL,
+  `imagem_link` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_noticias` (`idNoticias`) USING BTREE,
+  CONSTRAINT `FK_id_noticias` FOREIGN KEY (`idNoticias`) REFERENCES `noticias` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+
+-- Copiando dados para a tabela petcom59_petcomp_db.noticias_imagens: ~2 rows (aproximadamente)
+REPLACE INTO `noticias_imagens` (`id`, `idNoticias`, `imagem_link`) VALUES
+	(1, 11, './assets/images/noticias/acalourada1.jpeg'),
+	(2, 11, './assets/images/noticias/acalourada2.jpeg');
 
 -- Copiando estrutura para tabela petcom59_petcomp_db.petianos
 CREATE TABLE IF NOT EXISTS `petianos` (
