@@ -30,8 +30,7 @@ CREATE TABLE IF NOT EXISTS `noticias` (
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3;
 
 -- Copiando dados para a tabela petcom59_petcomp_db.noticias: ~26 rows (aproximadamente)
-DELETE FROM `noticias`;
-INSERT INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`) VALUES
+REPLACE INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`) VALUES
 	(1, 'Nova Publicação: Quando os Discentes se Expressam: Um Relato de Experiência da Criação de um Podcast para Aumentar o Engajamento e Troca de Conhecimento em Tempos de Pandemia', 'Melhorar o engajamento de discentes e facilitar o acesso à informação têm se tornado mais relevantes no contexto educacional. Em virtude do isolamento social gerado pela pandemia da COVID-19, recursos didáticos como podcasts e vídeos podem ser explorados para alcançar este objetivo. Com o intuito manter os discentes atualizados e engajados durante o ensino remoto, o grupo PETComp da Universidade Federal do Maranhão montou uma equipe para desenvolver um podcast sobre conteúdos relacionados à Tecnologia da Informação. Este artigo apresenta o processo de produção dos episódios do podcast. Após a preparação do material e lançamento do podcast em plataformas digitais, foi coletada a opinião dos discentes sobre o mesmo através de um questionário. Os resultados indicam que o podcast contribuiu para disponibilizar conteúdos construídos pelos discentes de forma descontraída, permitindo a atualização em temas relevantes e o engajamento dos ouvintes.', '2021-07-20', ''),
 	(2, 'Nova Publicação: O Impacto das Atividades do Grupo PET no Aprimoramento de Soft Skills Requeridos pelo Mercado de Computação do Maranhão: Uma Análise da Visão dos Discentes', 'O profissional de computação precisa adquirir as mais variadas habilidades para se manter competitivo no mercado de trabalho. Entre essas habilidades, as denominadas soft skills (ou habilidades não técnicas) são atributos pessoais que permitem ao indivíduo desempenhar uma boa interação com o mundo ao seu redor. Nesse contexto, o Programa de Educação Tutorial (PET) surge como uma alternativa para desenvolver tais habilidades durante o ensino superior. No entanto, existem poucas análises sobre como um discente pode desenvolver soft skills durante a realização de atividades no âmbito do PET. Neste artigo, através de um formulário, foi obtida a percepção dos discentes sobre o impacto das atividades realizadas no PET para o desenvolvimento de soft skills, considerando o contexto do estado do Maranhão. Os resultados apontam para o impacto positivo das atividades do programa para este fim, além de identificar oportunidades de melhoria.', '2021-07-20', ''),
 	(3, 'Nova Publicação: Quando a Aluna se Torna a Mestre: Um Relato da Experiência de Alunas de Graduação Aplicando Dinâmicas de Ensino de Computação para Alunas de Ensino Médio', 'O quantitativo de mulheres nas carreiras e cursos das áreas de Computação e Tecnologias é baixo se comparado ao quantitativo de homens. Para incentivá-las a entrar em cursos de exatas, vários projetos de extensão têm sido executados. Nesse contexto, o presente artigo relata os resultados da aplicação de uma gincana em que foram realizadas atividades de ensino envolvendo computação plugada e desplugada. As atividades e o material preparado foram escolhidos e adaptados por alunas do curso de ciência da computação da Universidade Federal do Maranhão com o intuito de encorajar alunas de ensino médio. Como resultado desta experiência, foi possível coletar opiniões sobre o processo de criação da gincana por parte das graduandas e a avaliação da mesma por parte de alunas de ensino médio.', '2020-06-30', ''),
@@ -63,16 +62,15 @@ INSERT INTO `noticias` (`id`, `titulo`, `texto`, `data`, `foto`) VALUES
 CREATE TABLE IF NOT EXISTS `noticias_botoes` (
   `id` int NOT NULL AUTO_INCREMENT,
   `idNoticia` int NOT NULL,
-  `botaoNome` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `botaoLink` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `botaoNome` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `botaoLink` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_idNoticia` (`idNoticia`),
   CONSTRAINT `FK_idNoticia` FOREIGN KEY (`idNoticia`) REFERENCES `noticias` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
 
--- Copiando dados para a tabela petcom59_petcomp_db.noticias_botoes: ~17 rows (aproximadamente)
-DELETE FROM `noticias_botoes`;
-INSERT INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VALUES
+-- Copiando dados para a tabela petcom59_petcomp_db.noticias_botoes: ~7 rows (aproximadamente)
+REPLACE INTO `noticias_botoes` (`id`, `idNoticia`, `botaoNome`, `botaoLink`) VALUES
 	(1, 25, 'Download Edital', 'https://portalpadrao.ufma.br/proen/editais-proen/editais-2024/2024_07_Edital_PetComp_Verso_2.pdf'),
 	(2, 23, 'Abrir Episódio', 'https://open.spotify.com/episode/758i4WcF47ZhgldSavGuf0?si=1c9be37a865f47d3'),
 	(3, 19, 'Site de publicação do Artigo', 'https://www.even3.com.br/anais/enepet2023/658460-o-impacto-das-monitorias-academicas-na-formacao-de-alunos-de-ciencia-da-computacao--um-relato-do-petcomp-ufma/'),
@@ -107,8 +105,7 @@ CREATE TABLE IF NOT EXISTS `petianos` (
 ) ENGINE=InnoDB AUTO_INCREMENT=162 DEFAULT CHARSET=utf8mb3;
 
 -- Copiando dados para a tabela petcom59_petcomp_db.petianos: ~160 rows (aproximadamente)
-DELETE FROM `petianos`;
-INSERT INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES
+REPLACE INTO `petianos` (`id`, `nome_completo`, `primeiro_nome`, `ultimo_nome`, `ano`, `periodo`, `ativo`, `orientador`, `voluntario`, `imagem`) VALUES
 	(1, 'Luis Rivero', 'Luis ', ' Rivero', 2019, 1, 1, 1, 0, 'Luis Riveiro.jpg'),
 	(2, 'Geraldo Braz Junior', 'Geraldo', 'Braz', 2016, 1, 0, 1, 0, 'Geraldo Braz.jpg'),
 	(3, 'Alexandre Cesar Muniz de Oliveira', 'Alexandre', 'Oliveira', 2007, 2, 0, 1, 0, 'Alexandre Oliveira.jpg'),
@@ -281,7 +278,6 @@ CREATE TABLE IF NOT EXISTS `sites` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- Copiando dados para a tabela petcom59_petcomp_db.sites: ~0 rows (aproximadamente)
-DELETE FROM `sites`;
 
 -- Copiando estrutura para tabela petcom59_petcomp_db.trabalhos_publicados
 CREATE TABLE IF NOT EXISTS `trabalhos_publicados` (
@@ -296,8 +292,7 @@ CREATE TABLE IF NOT EXISTS `trabalhos_publicados` (
 ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb3;
 
 -- Copiando dados para a tabela petcom59_petcomp_db.trabalhos_publicados: ~46 rows (aproximadamente)
-DELETE FROM `trabalhos_publicados`;
-INSERT INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_chaves`, `resumo`, `link`) VALUES
+REPLACE INTO `trabalhos_publicados` (`id`, `titulo`, `autor`, `ano`, `palavras_chaves`, `resumo`, `link`) VALUES
 	(1, 'Artigo: De Veteranos para os Novatos: Avaliação das Atividades de Recepção aos Calouros Organizado pelo Grupo PETComp', 'Daniel Pinto, Eduarda Chagas, Gabriel Costa, Kennedy Nunes, Ricardo Anchieta, Simara Rocha, Anselmo Paiva, Luis Rivero', '2020', NULL, 'Alunos ingressantes em cursos de ensino superior sentem dificuldade em se adaptar à nova modalidade de ensino. Nesse contexto, o evento da Semana do Calouro é realizado pelos discentes do grupo PET de Ciência da Computação da Universidade Federal do Maranhão acompanhados por professores como uma atividade de integração aos novos discentes do curso de Ciência da Computação. Este artigo relata a experiência de aplicar diversas atividades com o intuito de esclarecer as dúvidas geradas pelo ingresso no novo ambiente, bem como aumentara visibilidade dos contextos do curso. Ao término das atividades, o feedback dos discentes apontou para a utilidade das mesmas para conhecer as oportunidades dentro da universidade em termos de projetos, pesquisas e áreas de atuação, assim como soluções para problemas que surgiram durante sua execução.', 'https://sol.sbc.org.br/index.php/wei/article/view/11130/11001'),
 	(2, 'Artigo: Identificando as Atividades dos Grupos do Programa de Educação Tutorial na Área de Computação no Apoio à Inclusão e Alfabetização Digital', 'Emily Costa, Antônio Pinto, José Ribamar Durand Rodrigues Junior, Alana Araújo, Ednara Pereira, Geraldo Braz Junior, Rodrigo Santos, Luis Rivero', '2019', NULL, 'O Programa de Educação Tutorial (PET) tem o objetivo de incentivar grupos de alunos de graduação a desenvolver atividades relacionadas com o Ensino, a Pesquisa e a Extensão. Existem 37 grupos PET listados no site da SBC que realizam atividades voltadas para a comunidade (público externo à universidade, idosos, crianças, entre outros). Este artigo apresenta uma análise de quais das atividades divulgadas por estes grupos são voltadas para o apoio à inclusão e alfabetização digital. As informações sobre casos de sucesso destas atividades podem servir como base para outros grupos e incentivar parcerias para realizar atividades afins.', 'https://br-ie.org/pub/index.php/wie/article/view/8594'),
 	(3, 'Artigo: Identificação das Expectativas e Dificuldades de Alunos de Graduação no Ensino de Engenharia de Software', 'Jéssica Mendes, Yandson Costa, Kastney Frazão, Rodrigo Santos, Davi Santos, Luis Rivero', '2019', NULL, 'A  Engenharia  de  Software  visa  apoiar  o  desenvolvimento  de  sistemas computacionais de qualidade, reduzindo os custos de produção e aumentando a produtividade dos profissionais. Buscar entender as necessidades dos alunos iniciantes  nessa  área  da  computação  é  vital  para  propor  metodologias adequadas  de  ensino.  Este  artigo  apresenta  o  resultado  da  aplicação  de  um questionário quanto à experiência dos alunos de uma disciplina introdutória de Engenharia de Software. Foi capturada a expectativa de alunos que ainda não cursaram  a  disciplina,  assim  como  a  visão  de  alunos  que  já  a  cursaram, reprovando  ou  não.  Os  resultados  desta  pesquisa  permitiram  identificar eventuais aspectos que possam ter influência positiva ou negativa no processo de aprendizado.', 'https://sol.sbc.org.br/index.php/wei/article/view/6640/6536'),
