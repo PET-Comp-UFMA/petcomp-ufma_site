@@ -177,8 +177,8 @@ function closeMenu() {
 
 
 var time;
-
-var slideIndex = 0;
+var milisseconds = 4000;
+var slideIndex = document.getElementsByClassName("slider-item").length-1;
 
 showSlides();
 
@@ -200,29 +200,68 @@ function plusSlides() {
 
 }
 
-
-
+// carousel
+let next = document.getElementsByClassName("next")[0];
+let prev = document.getElementsByClassName("preview")[0];
 function showSlides() {
-
-  var i;
-
-  var slides = document.getElementsByClassName("slider-item");
-
-  for (i = 0; i < slides.length; i++) {
-
+  let slides = document.getElementsByClassName("slider-item");
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-
   }
-
   slideIndex++;
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-
-  slides[slideIndex-1].style.display = "block";
-
-  time = setTimeout(showSlides, 4000);
-
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  else if (slideIndex < 0) {
+    slideIndex = document.getElementsByClassName("slider-item").length;
+  }
+  slides[slideIndex].style.display = "block";
+  clearTimeout(time); // Clear the timer
+  time = setTimeout(showSlides, milisseconds); // Set the timer to automatically advance to the next slide after 4 seconds
 }
+// next botton
+function nextSlides() {
+  let slides = document.getElementsByClassName("slider-item");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  else if (slideIndex < 0) {
+    slideIndex = document.getElementsByClassName("slider-item").length;
+  }
+  slides[slideIndex].style.display = "block";
+  clearTimeout(time);
+  time = setTimeout(showSlides, milisseconds);
+}
+// prev botton
+function decSlides() {
+  let slides = document.getElementsByClassName("slider-item");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+  clearTimeout(time); 
+  time = setTimeout(showSlides, milisseconds);
+}
+// eventListener
+document.addEventListener("DOMContentLoaded", function() { 
+  prev.addEventListener("click", function() {
+    slideIndex--;
+    if (slideIndex < 0) {
+      slideIndex = document.getElementsByClassName("slider-item").length-1;
+    }
+    decSlides();
+  });
+  next.addEventListener("click", function() {
+    slideIndex++;
+    if (slideIndex > document.getElementsByClassName("slider-item").length) {
+      slideIndex = 0;
+    }
+    nextSlides();
+  });
+}); 
 
 
 

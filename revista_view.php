@@ -14,10 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  
-
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="stylesheet" href="/styles/revista.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/revista.css">
 
   
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>

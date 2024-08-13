@@ -59,10 +59,10 @@
           </div>
         </li>
         <button class="preview">
-          <img src="./assets/svg/navigate_before-24px.svg" onclick="plusSlides(-1)" alt="">
+          <img src="./assets/svg/navigate_before-24px.svg" onclick="decSlides()" alt="">
         </button>
         <button class="next">
-          <img src="./assets/svg/navigate_next-24px.svg" onclick="plusSlides(1)" alt="">
+          <img src="./assets/svg/navigate_next-24px.svg" onclick="nextSlides()" alt="">
         </button>
       </ul>
     </section>

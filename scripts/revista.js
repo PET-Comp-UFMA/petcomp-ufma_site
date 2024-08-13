@@ -49,9 +49,6 @@ mostrarRevista(0)
 function mostrarRevista(n) {
   var i;
   var conteudoIndex = n;
-  
-  //nomeMonitoria = document.getElementById(`nomeMonitoria${conteudoIndex}`);
-  //nomeMonitoria.style.textDecoration = 'underline';
 
   var conteudos = document.querySelectorAll('#revista-sobre');
   var buttons = document.querySelectorAll('#btn-revista');
