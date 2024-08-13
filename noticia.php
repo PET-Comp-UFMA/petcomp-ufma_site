@@ -22,23 +22,15 @@
     
     $result = mysqli_query($mysqli, $query);
     $row = mysqli_fetch_array($result);
-    $resultBotoes = mysqli_query($mysqli,$queryBotoes);
-    $botoes = mysqli_fetch_array($resultBotoes);
+
+    $resultBotoes = mysqli_query($mysqli, $queryBotoes);
+    $row_Botoes = mysqli_num_rows($resultBotoes);
     
     $Titulo = $row['titulo'];
     $Texto = preg_split("/(\r\n){2,}/", $row['texto']);
 
     $Imagem = $row['foto'];
     $imagens = explode("|", $Imagem, 2);
-    if($botoes){
-      $botaoNome = $botoes['botaoNome'];
-      $botaoLink = $botoes['botaoLink'];
-      
-    }
-
-    print_r($botoes);
-
-    
 
     if($row){
 
@@ -88,17 +80,25 @@
       </div>
       <div class="noticia-especifica-botoes">
         <?php 
-          if($botoes && $botaoLink!="" && $botaoNome!=""){ ?>
+          if($row_Botoes){
+      
+            for($i = 0;$i<$row_Botoes;$i++){
+              $botoes = mysqli_fetch_array($resultBotoes);
+              $botaoNome = $botoes['botaoNome'];
+              $botaoLink = $botoes['botaoLink']; 
+             ?>
             <a class="botaoGenerico" target="_blank" href="<?php echo $botaoLink?>">
               <?php echo $botaoNome; ?>
             </a>
-          <?php }?>
-          <div class="voltar">
-              <a href="./noticias.php">
-              <button class="button-back">
-                Voltar
-              </button></a>
-          </div>
+          <?php } 
+          }?>
+          
+      </div>
+      <div class="voltar" style="">
+        <a href="./noticias.php">
+        <button class="button-back">
+          Voltar
+        </button></a>
       </div>
 
     </section>
