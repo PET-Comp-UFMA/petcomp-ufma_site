@@ -95,6 +95,16 @@
             <a href="https://petcompufma.org/jim/" target="_blank">Saiba mais</a>
           </div>
         </div>
+        
+        <div class="evento">
+          <img src="./assets/images/logos/ENAPET.png">
+          <div class="textoMateria">
+            <h3>ENAPET</h3>
+            <p>Todos os anos, o Encontro Nacional do Programa de Educação Tutorial (ENAPET) reúne discentes, docentes e interlocutores vinculados ao programa com o objetivo de discutir, coletivamente, temas e questões relevantes para a manutenção e o desenvolvimento do PET nacionalmente.</p>
+            <a href="https://www.even3.com.br/xxix-enapet-2024/" target="_blank">Saiba mais</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
