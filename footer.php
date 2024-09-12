@@ -28,8 +28,6 @@
           <ul>
             <li><img src="./assets/svg/instagram icon.svg" alt=""><a href="https://www.instagram.com/petcompufma/"
                 target="_blank">@PetCompUfma</a></li>
-            <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="https://twitter.com/petcompufma"
-                target="_blank">@PetCompUfma</a></li>
             <div class="contatos">
               <a class="contato" href="./contato.php">
                 <img src="./assets/svg/comment icon.svg" alt="Ícone comentário" loading="lazy">Fale Conosco
