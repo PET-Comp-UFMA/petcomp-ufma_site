@@ -28,15 +28,34 @@
   <main>
 
     <div class="seletor">
-      <div>
-        <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(1)">
-          <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="1º Edicão">  
-        </button>
-        <div class="title">
-          <h1 id="btn-text">1º - Edição</h1>
+      <div style="display: flex; gap: 10px;">
+
+
+      
+        <div class="btn-container">
+          <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(1)">
+            <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="1º Edicão">  
+          </button>
+          <div class="title">
+            <h1 id="btn-text">1º - Edição</h1>
+          </div>
         </div>
+
+        <div class="btn-container">
+          <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(2)">
+            <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="2º Edicão">  
+          </button>
+          <div class="title">
+            <h1 id="btn-text">2º - Edição</h1>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <section class="sobre" id="sobre">
+      <div id="revista-sobre" style="display: grid"></div>
+    </section>
 
     <section class="sobre" id="sobre">
       <div id="revista-sobre" style="display: grid"></div>

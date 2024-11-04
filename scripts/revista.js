@@ -9,6 +9,17 @@ const data = [
       downloadName: "Revista PETComp 1ª Edição",
       download: "/assets/revistas/1a_edicao/revista_1a_Edicao.pdf"
   }
+  ,
+  {
+    id: 2,
+    edicao: "2A",
+    titulo: "2º Edição - Revista PET Computação",
+    capa: "./assets/revistas/1a_edicao/revista_1a_edicao_capa.png",
+    sobre: "sfdrwrwrw",
+    visualizar: "https://online.fliphtml5.com/hyccq/wkkw/",
+    downloadName: "Revista PETComp 2ª Edição",
+    download: "/assets/revistas/1a_edicao/revista_1a_Edicao.pdf"
+},
   
 ];
 
@@ -44,7 +55,7 @@ const revistaCriarDivs = function (item) {
   `;
 };
 
-mostrarRevista(0)
+mostrarRevista(2)
 
 function mostrarRevista(n) {
   var i;
@@ -73,7 +84,9 @@ function mostrarRevista(n) {
 
   buttons[conteudoIndex - 1].classList.add('active');
   btnTextos[conteudoIndex-1].classList.add('underline');
-  conteudos[0].innerHTML = revistaCriarDivs(data[conteudoIndex -1]);
+  
+  conteudos.forEach(conteudo => conteudo.innerHTML = '')
+  conteudos[conteudoIndex-1].innerHTML = revistaCriarDivs(data[conteudoIndex -1]);
 
 } 
   
