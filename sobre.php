@@ -40,9 +40,14 @@
         <p align="justify">
           Para participar do nosso grupo, sempre tem seletivos durante o ano, basta acompanhar as redes sociais Instagram e Twitter @petcompufma.
         </p>
-
         <div class="galery-about">
-          <div class="galery-about__container-image" id="img1">
+        <div class="galery-about__container-image" id="img1">
+            <img class="galery-about__img" src="../assets/images/galery-about/imagemdefundo.jpeg">
+            <div class="galery-about__legend"> 
+              <p>Petianos na recepção de calouros 2024.2</p>
+              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+            </div>
+          <div class="galery-about__container-image">
             <img class="galery-about__img" src="../assets/images/galery-about/photo1.jpg">
             <div class="galery-about__legend"> 
               <p>Petianos na recepção de calouros 2023.2</p>

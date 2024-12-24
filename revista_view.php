@@ -1,3 +1,21 @@
+<?php 
+require_once("conexao.php");
+
+$queryRevistas = "SELECT id, titulo, capa, sobre, visualizar, icone, download FROM revista ORDER BY id ASC";
+$resultRevistas = mysqli_query($mysqli, $queryRevistas);
+
+$arrayRevistas = [];
+if (mysqli_num_rows($resultRevistas) > 0) {
+    while($row = mysqli_fetch_assoc($resultRevistas)) {
+        $arrayRevistas[] = $row;  // cada row 
+        // echo "\n";
+        // echo "Id: " . $row['id'] . "titulo: " .$row['titulo'];
+    }
+} else {
+    $arrayRevistas = []; // Mantém como array vazio se nenhuma revista for encontrada
+} 
+// Ao final do loop $arrayRevistas se torna um array de arrays associativos
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,7 +35,6 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/revista.css">
 
-  
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
@@ -26,46 +43,64 @@
   <?php include('header.php') ?>
 
   <main>
-
-    <div class="seletor">
-      <div style="display: flex; gap: 10px;">
-
-
-      
-        <div class="btn-container">
-          <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(1)">
-            <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="1º Edicão">  
-          </button>
-          <div class="title">
-            <h1 id="btn-text">1º - Edição</h1>
+    <!--  Seletor das revistas -->
+  <div class="seletor">
+    <?php if (!empty($arrayRevistas)): ?>
+      <?php foreach ($arrayRevistas as $revista): ?>
+          <div id="<?php echo htmlspecialchars($revista['id']); ?>">
+            <button id="btn-revista<?php echo htmlspecialchars($revista['id']); ?>" class="btn-revista">
+              <img class="button-img" src="<?= htmlspecialchars($revista['icone'] ?? '')?>" alt="<?php echo htmlspecialchars($revista['id']) ?> Edição">  
+            </button>
+            <div class="title" style="display: flex; align-items: center;"> 
+            </div>
           </div>
-        </div>
-
-        <div class="btn-container">
-          <button id="btn-revista" class="btn-revista active" onclick="mostrarRevista(2)">
-            <img class="button-img" src="./assets/revistas/1a_edicao/revista_1a_Edicao_Icone.svg" alt="2º Edicão">  
-          </button>
-          <div class="title">
-            <h1 id="btn-text">2º - Edição</h1>
-          </div>
-        </div>
-
-      </div>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <p>Nenhuma revista encontrada.</p>
+    <?php endif; ?>
     </div>
 
-    <section class="sobre" id="sobre">
-      <div id="revista-sobre" style="display: grid"></div>
-    </section>
-
-    <section class="sobre" id="sobre">
-      <div id="revista-sobre" style="display: grid"></div>
-    </section>
+    <section class="sobre">
+  <div id="revista-sobre" style="display: grid">
+    <?php if (!empty($arrayRevistas)): ?>
+      <?php foreach ($arrayRevistas as $revista): ?>
+        <div id="revista<?php echo htmlspecialchars($revista['id']) ?>" class="revistas hide">
+          <div class="container">
+            <div class="section-header">
+              <h2><?php echo htmlspecialchars($revista['titulo'] ?? '') ?></h2> 
+            </div>
+            <div class="galery-about">
+              <div class="galery-about__container-image" id="img1">
+                <img class="galery-about__img" src="<?php echo htmlspecialchars($revista['capa'] ?? '') ?>" alt="<?php echo htmlspecialchars($revista['titulo'] ?? '') ?>">
+              </div>
+            </div>
+            <br>
+            <p align="justify">
+              <?php echo htmlspecialchars($revista['sobre'] ?? '') ?>
+            </p>
+            <br>
+            <div style="height: 100px;">
+              <a class="botao botao-abrir" target="_blank" href="<?php echo htmlspecialchars($revista['visualizar'] ?? '') ?>">
+                Visualizar
+              </a>
+              <a class="botao botao-download" target="_blank" download="<?php echo basename($revista['download'] ?? '') ?>" 
+                 href="<?php echo htmlspecialchars($revista['download'] ?? '') ?>">
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <p>Nenhuma revista encontrada.</p>
+    <?php endif; ?>
+  </div>
+</section>
   </main>
 
   <?php include('footer.php') ?>
-  <script src="./scripts/script.js"></script>
   <script src="./scripts/revista.js"></script>
-
+  <script src="./scripts/script.js"></script>
   <script src="/scripts/slader.js"></script>
   <script src="/scripts/scrollReveal.js"></script>
   

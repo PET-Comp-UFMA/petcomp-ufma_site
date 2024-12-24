@@ -1,0 +1,129 @@
+
+body {
+  background-color: var(--bg);
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+main .container span {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+main .container .noticia-especifica {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+main .container .noticia-especifica h1.titulo-noticia {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid var(--purple);
+}
+
+main .container .noticia-especifica .image {
+  display: flex;
+  margin: 0 auto;
+}
+
+main .container .noticia-especifica .image img{
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+main .container .noticia-especifica p.paragrafo-noticia {
+  color: var(--text-gray);
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: justify;
+  margin: auto;
+  padding: 2px;
+  width: 95%;
+}
+
+main .container .button-back {
+  align-items: center;
+  background: none;
+  border: 1px solid var(--purple);
+  border-radius: 25px;
+  color: var(--purple);
+  cursor: pointer;
+  display: flex;
+  float: right;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px;
+  transition: .1s ease-out;
+  width: fit-content;
+}
+
+main .container .button-back:hover,
+main .container .button-back:focus {
+  background: var(--purple);
+  color: var(--text-white);
+}
+
+main .voltar {
+  padding-top: 30px;
+}
+
+.img-noticia {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  max-height: 25rem;
+  margin-bottom: 2rem;
+}
+
+.texto-noticia-esp {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  main .container {
+    width: 90%;
+  }
+
+  .img-noticia {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 440px) {
+  main .container {
+    width: 80%;
+  }
+
+  .img-noticia {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  main .container .noticia-especifica h1.titulo-noticia {
+    font-size: 36px;
+  }
+
+  main .container .noticia-especifica p.paragrafo-noticia {
+    font-size: 16px;
+  }
+  
+}

@@ -95,7 +95,7 @@
             <a href="https://petcompufma.org/jim/" target="_blank">Saiba mais</a>
           </div>
         </div>
-        
+
         <div class="evento">
           <img src="./assets/images/logos/ENAPET.png">
           <div class="textoMateria">

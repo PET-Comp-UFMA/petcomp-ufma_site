@@ -29,6 +29,18 @@
 
       <div class="sites-cards">
         <div class="software-card">
+            <img src="./assets/images/logos/CientAlcantara.svg" alt="">
+            <div class="text">
+            <h2><a target="_blank" href="https://petcompufma.org/CientAlcantara/">Cientistas de Alcântara</a></h2>
+              <div class="wrapper-labels">
+                <div class="label php">PHP</div>
+                <div class="label html">HTML</div>
+                <div class="label css">CSS</div>
+                <div class="label javascript">JavaScript</div>
+              </div>
+            </div>
+          </div>
+        <div class="software-card">
           <img src="./assets/images/logos/observatorio.svg" alt="">
           <div class=" text">
             <h2><a target="_blank" href="http://observatoriodesaudemental.com.br/">Observatório Saúde Mental</a></h2>

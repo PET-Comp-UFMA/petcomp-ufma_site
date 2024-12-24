@@ -1,122 +1,122 @@
-main .container {
-  margin: 0 auto;
-  width: 70%;
-}
-
-main .container p {
-  font-family: "Montserrat", sans-serif;
-  line-height: 2em;
-  text-align: justify;
-  padding: 0 3em;
-}
-
-.noticias {
-  padding-top: 40px;
-  border: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  padding: 0 3em;
-  margin-bottom: 2em;
-}
-
-.noticias > p {
-  color: #888888;
-  text-align: justify;
-  padding: 10px;
-}
-
-.evento {
-  box-shadow: 5px 5px 20px 0px #cccccc;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px 0;
-}
-.evento img {
-  background: #fff;
-  border-radius: 0.4em 0 0 0.4em;
-  margin-left: 5%;
-  width: 200px;
-}
-.textoMateria {
-  background: #060b3f;
-  border-radius: 0 0.4em 0.4em 0;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin-left: 5%;
-  text-align: justify;
-}
-
-.textoMateria h3 {
-  font-size: 28px;
-}
-
-.evento .textoMateria p {
-  font-size: 16px;
-  margin: 1em 0;
-  padding: 0;
-  text-indent: 0;
-}
-
-.textoMateria a {
-  color: black;
-  text-decoration: none;
-  background: #fff;
-  font-size: 15px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  padding: 1em;
-  width: fit-content;
-}
-
-.textoMateria a:hover {
-  background: #33c3ff;
-  color: #fff;
-}
-
-@media (max-width: 800px) {
-  main .container {
-    width: 90%;
-  }
-
-  main .container p {
-    padding: 0;
-  }
-
-  .evento {
-    box-shadow: 5px 5px 20px 0px #cccccc;
-    border-radius: 0.4em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-  }
-  .evento img {
-    background: #fff;
-    border-radius: 0.4em 0.4em 0 0;
-    margin: 10px 0;
-    width: 200px;
-  }
-
-  .textoMateria {
-    background: #060b3f;
-    border-radius: 0 0 0.4em 0.4em;
-    margin-left: 0;
-  }
-
-  .noticias {
-    margin-bottom: 20px;
-    padding: 0;
-    width: 100%;
-  }
-
-  .materia {
-    flex-direction: column;
-    margin: 10px 0;
-  }
-}
+main .container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+main .container p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+  text-align: justify;
+  padding: 0 3em;
+}
+
+.noticias {
+  padding-top: 40px;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 0 3em;
+  margin-bottom: 2em;
+}
+
+.noticias > p {
+  color: #888888;
+  text-align: justify;
+  padding: 10px;
+}
+
+.evento {
+  box-shadow: 5px 5px 20px 0px #cccccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+.evento img {
+  background: #fff;
+  border-radius: 0.4em 0 0 0.4em;
+  margin-left: 5%;
+  width: 200px;
+}
+.textoMateria {
+  background: #060b3f;
+  border-radius: 0 0.4em 0.4em 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 5%;
+  text-align: justify;
+}
+
+.textoMateria h3 {
+  font-size: 28px;
+}
+
+.evento .textoMateria p {
+  font-size: 16px;
+  margin: 1em 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.textoMateria a {
+  color: black;
+  text-decoration: none;
+  background: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 1em;
+  width: fit-content;
+}
+
+.textoMateria a:hover {
+  background: #33c3ff;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  main .container {
+    width: 90%;
+  }
+
+  main .container p {
+    padding: 0;
+  }
+
+  .evento {
+    box-shadow: 5px 5px 20px 0px #cccccc;
+    border-radius: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .evento img {
+    background: #fff;
+    border-radius: 0.4em 0.4em 0 0;
+    margin: 10px 0;
+    width: 200px;
+  }
+
+  .textoMateria {
+    background: #060b3f;
+    border-radius: 0 0 0.4em 0.4em;
+    margin-left: 0;
+  }
+
+  .noticias {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .materia {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}

@@ -41,89 +41,87 @@
 /*========================
  ######## Cards ########
 =========================*/
-
-.card{
+.card {
     position: relative;
-    width: 240px;
-    height: 300px;
-    border-radius: 7px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 20px;
-    
-}
-
-
-.discentes .card{
-    width: 200px;
-    height: 260px;
-}
-
-.discentes .card .card-img{
-    height: 160px;
-    position: relative;
-    margin: 0;
-}
-.discentes .card .card-img .card-btn{
-    position: absolute;
-    bottom: 10px;
-    right: 8px;
-    background-color: #01B4ED;
-    padding: 5px;
-    width: 74px;
-    height: 30px;   
-    border: 1px solid #01B4ED;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    
-}
-.discentes .card .job-img{
-    position: absolute;
+    width: 350px;
+    height: 380px;
+    max-width: 350px;
+    min-height: 200px; /* Remover altura fixa */
+    width: 100%; /* Deixar a largura flexível */
+    padding: 2rem 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 44px;
-    height: 38px;
-    background: #FFFFFF;
-    border-radius: 6px;
-    bottom: 85px;
-    left: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    justify-content: space-between; /* Garantir que o conteúdo fique distribuído corretamente */
+}
+
+.sobre {
+    padding: 1rem;
+    flex-grow: 1; /* Permite que o conteúdo cresça conforme necessário */
+    overflow-y: auto; /* Rolagem vertical para o texto longo */
+    font-size: 14px;
+    word-wrap: break-word;
+    max-height: 100px; /* Defina uma altura máxima para evitar o transbordamento */
+}
+.sobre p {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sobre::-webkit-scrollbar {
+    width: 8px;
+}
+.sobre::-webkit-scrollbar-thumb {
+    background-color: #00B3FF;
+    border-radius: 4px;
+}
+.sobre::-webkit-scrollbar-thumb:hover {
+    background-color: #0086CC;
 }
 
 .card .job-img i{
     font-size: 15px;
+    
+}
+.sobre-text {
+    font-weight: light;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .card .job-img{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 54px;
-    height: 43px;
+    width: 50px;
+    height: 50px;
     background: #FFFFFF;
     border-radius: 6px;
-    bottom: 85px;
+    bottom: 80px;
     left: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card .job-img i{
     font-size: 25px;
 }
 .card .card-img{
-    height: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    min-height: 140px;
     position: relative;
     margin: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 .card .card-img figure{
     height: 100%;
     width: 100% ;
-    
     margin: 0;
 }
 .card .card-img figure img{
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -131,20 +129,32 @@
     background-size: cover;
     background-position: center;
 }
+.social-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social-logo a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-logo a:nth-child(n+1) {
+}
 
 .card .card-img .card-btn{
     position: absolute;
     bottom: 10px;
     right: 8px;
     background-color: #01B4ED;
-    padding: 5px;
+    /* padding: 2px; */
     width: 84px;
     height: 30px;   
     border: 1px solid #01B4ED;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    
 }
 
 .card .card-img .card-btn a{
@@ -154,13 +164,13 @@
 .card .card-img .card-btn a i{
     margin-right: 5px;
 }
-.card .card-name{
+.card .card-name {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 89px;
     text-align: center;
+    margin: auto auto;
 }
 
 .card .card-name h3{
@@ -174,7 +184,19 @@
     line-height: 15px;  
     color: #B1B1B1;
 }
-
+.sobre {
+    padding: 1rem;
+    max-height: 100px; /* Define uma altura fixa para o conteúdo rolável */
+    overflow-y: auto; /* Permite rolagem vertical */
+    text-overflow: ellipsis; /* Para cortar o texto que ultrapassa o limite */
+    word-wrap: break-word; /* Quebra o texto longo em palavras */
+    font-size: 14px; /* Ajuste do tamanho da fonte para caber melhor no card */
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
 .ex .card img{
     -webkit-filter: grayscale(100%);
 }
@@ -249,8 +271,7 @@
     background-color: #343564;
     border-radius: 5px;
     font-weight: bold;
-    color: #fff; 
-    
+    color: #fff;
 }
 .modal a button:hover{
     cursor: pointer;
@@ -258,6 +279,218 @@
     color: #343564;
     border: 2px solid #343564;
 }
+.pagination {
+    margin: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo para o contêiner de paginação */
+.pagination {
+    display: -webkit-box;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada item da paginação */
+.page-item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-top: 1rem;
+}
+
+/* Estilo para os links de cada item */
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #000000;
+    text-decoration: none;
+    background-color:   #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+}
+
+/* Quando o link da paginação está em foco */
+.page-link:focus {
+    z-index: 2;
+    color: #0056b3;
+    background-color: #fff;
+    border-color: #0056b3;
+    outline: 0;
+}
+
+/* Quando o item da paginação está desabilitado */
+.page-item.disabled .page-link {
+    color: #000000;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #ffffff, #c2c1c1);
+    border-color: #dee2e6;
+    border: solid 0.03rem;
+}
+
+/* Quando o item da paginação é o item ativo */
+.page-item.active .page-link {
+    z-index: 1;
+    color: #000000;
+    background: #b1b1b1;
+    border: 1px solid #000000;
+}
+.hide {
+    display: none;
+}
+
+.button-showmore {
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+}
+.button-showmore:hover {
+    color: #00B3FF;
+    cursor: pointer;
+}
+.expand {
+    margin: 0 auto;
+}
+.popup {
+    position: fixed; /* Sempre no centro da tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Inicia com escala menor */
+    width: 80%; /* Largura fixa */
+    max-width: 600px; /* Largura máxima */
+    height: 50%; /* Ajuste a altura conforme necessário */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: none; /* Esconde inicialmente */
+    z-index: 1000; /* Sempre acima do fundo */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse as bordas */
+    opacity: 0; /* Invisível inicialmente */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação suave */
+    background: rgba(255, 255, 255, 0.95);
+}
+
+
+
+/* Mostrar popup com transição */
+.popup.show {
+    display: block;
+    opacity: 1; /* Torna visível */
+    transform: translate(-50%, -50%) scale(1); /* Volta à escala normal */
+}
+
+
+.popup-content {
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 2rem;
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+    max-height: calc(100% - 40px); /* Impede que o conteúdo ultrapasse a altura do popup */
+}
+.popup-content::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: #00B3FF; /* Cor da barra de rolagem */
+}
+
+.popup-content::-webkit-scrollbar-thumb:hover {
+    background-color: #007F9E; /* Cor da barra quando clicada */
+}
+
+/* Personaliza a parte "track" da barra de rolagem */
+.sobre-text {
+    margin: 1rem 0;
+}
+.sobre-name {
+    margin-bottom: 1rem;
+}
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Esconde inicialmente */
+    z-index: 999; /* Fica abaixo do popup */
+}
+.popup-backdrop.show {
+    display: block;
+}
+/* Botão de fechar */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.social-logo i {
+    margin: 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-logo i:hover {
+    color: #000;
+}
+.popup {
+    transform: translate(-50%, -40%) scale(0.9); /* Começa mais abaixo */
+}
+
+.popup.show {
+    transform: translate(-50%, -50%) scale(1); /* Finaliza no centro */
+}
+
+/* Transição para o popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Estilo para o ícone anterior e próximo (arrows) */
+.page-link[aria-label="Previous"],
+.page-link[aria-label="Next"] {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/* Estilo para o texto "Previous" e "Next" */
+.sr-only {
+    display: none;
+}
+header {
+    position: relative;  /* ou fixed, dependendo da necessidade */
+    z-index: 10;  /* valor alto para garantir que o header fique sobre outros elementos */
+}
+.btn-ativo {
+    position: relative; 
+    z-index: 1;  
+}
+.page-item :hover {
+    background: linear-gradient(to right, #f3f3f3, #efeeee);
+    color: black;
+    
+}
+.lattes-icon img {
+    size: 1rem;
+}
+
 
 @media (max-width: 800px) {
   .modal > div {
@@ -268,9 +501,38 @@
     width: auto;
   }
 
-  .discentes .card{
-    width: 210px;
-    height: 260px;
-    margin: 20px auto;
+  .card{
+    width: 340px;
   }
+  .pagination {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.4rem 0.6rem;
+    color: #000000;
+    text-decoration: none;
+    background-color:   #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+}
+.page-link[aria-label="Previous"],
+.page-link[aria-label="Next"] {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.card .card-name h3 {
+    font-size: 20px;
+}
+.card .card-name h6 {
+    font-size: 10px;
+}
+.pagination {
+    margin: 0.5rem auto;
+}
 }

@@ -48,7 +48,7 @@
 
 .texto-banner {
   align-items: center;
-  background-image: url(../assets/svg/imagemdefundo.svg);
+  background-image: url(../assets/images/imagemdefundo.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -229,7 +229,7 @@
 /*section atividades*/
 
 #atividades {
-  background-image: url(../assets/svg/imagemdefundo.svg);
+  background-image: url(../assets/images/imagemdefundo.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -237,8 +237,6 @@
   color: #343564;
   display: flex;
   justify-content: center;
-  
-
 }
 
 .atividades {
@@ -465,7 +463,9 @@
 }
 
 @media (max-width: 800px) {
-
+  .texto-banner {
+    height: 40vh;
+  }
   /*section slider*/
   .slider-content {
     display: block;
@@ -484,7 +484,6 @@
     margin-top: 10px;
     width: 80%;
   }
-
 
   /*section sobre*/
 
@@ -612,6 +611,10 @@
 
   .atividades .images-atividades .card-atividade a {
     width: 15em;
+  }
+  #atividades {
+    background-image: none;
+    background-color:#060b3f;
   }
 }
 
