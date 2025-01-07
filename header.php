@@ -1,8 +1,6 @@
 <header>
   <div class="logos">
     <a href="./index.php"><img src="./assets/images/logos/PETComp.png" alt="Logo PETComp UFMA" class="pet-logo"></a>
-    <div class="divider"></div>
-    <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/logos/UFMA.png" alt="Logo UFMA" class="ufma-logo"></a>
   </div>
   <nav id="nav-bar" class="overlay">
     <img src="./assets/svg/close_black_24dp.svg" alt="" class="close-btn" onclick="closeMenu()">
