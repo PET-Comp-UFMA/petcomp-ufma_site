@@ -1,91 +1,58 @@
 <?php
    require_once("conexao.php");
-   
+      
    $limit = 20;
-   
-   // Sanitizar a entrada de 'page' para garantir que seja um número inteiro válido.
-   $page = isset($_GET['page']) ? filter_var($_GET['page'], FILTER_VALIDATE_INT) : null;
-   
-   // Garantir que o número da página seja positivo e maior que zero.
-   $page = ($page > 0) ? $page : 1;
-   
-   $start = max(($page - 2) * $limit, 0);  // O cálculo correto para a páginação
-   
+   // Sanitizar a entrada de 'page' na URL para garantir que seja um número inteiro válido.
+   if (isset($_GET["page"])){
+      $page = filter_var($_GET["page"], FILTER_VALIDATE_INT);
+      if (!$page || $page < 1){
+         $page = 1;
+      }
+   }
+   else $page = 1;
+  
+   $start = ($page - 2) * $limit;  // O cálculo correto para a páginação
+
    if ($start < 0) {
        $start = 0;
    }
-   
-   mysqli_select_db($mysqli, $bd) or die("Could not select database");
-   
-   // Consultas preparadas para obter orientadores e integrantes
+
+   // consulta para a quantidade de petianos
+   $quantidadePetianos = "SELECT count(id) AS id FROM petianos";
+
+   $resultQuantidadePetianos = mysqli_query($mysqli, $quantidadePetianos);
+   $quantidadePetianos = mysqli_fetch_assoc($resultQuantidadePetianos);
+   $total = $quantidadePetianos['id'];
+   $pages = ceil($total / $limit); // cálculo correto da quantidade de páginas de acordo com a quantidade de petianos
+      
+   // Consultas para obter orientadores e integrantes ativos
    if ($page == 1) {
-       $arrayOrientadoresAtivos = [];
-       $arrayIntegrantes = [];
-       $arrayVoluntarios = [];
-   
-       $queryOrientadoresAtivos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 1 AND orientador = 1 ORDER BY ano DESC, periodo DESC";
-       $queryIntegrantes = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 1 AND voluntario = 0 AND orientador = 0 ORDER BY ano DESC, periodo DESC";
-       $queryVoluntarios = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos  WHERE ativo = 1 AND voluntario = 1 AND orientador = 0 ORDER BY ano DESC, periodo DESC";
-       // Preparando e executando as consultas
-       $stmtOrientadoresAtivos = mysqli_prepare($mysqli, $queryOrientadoresAtivos);
-       mysqli_stmt_execute($stmtOrientadoresAtivos);
-       $resultOrientadoresAtivos = mysqli_stmt_get_result($stmtOrientadoresAtivos);
-       while ($row = mysqli_fetch_assoc($resultOrientadoresAtivos)) {
-           $arrayOrientadoresAtivos[] = $row;
-       }
-   
-       $stmtIntegrantes = mysqli_prepare($mysqli, $queryIntegrantes);
-       mysqli_stmt_execute($stmtIntegrantes);
-       $resultIntegrantes = mysqli_stmt_get_result($stmtIntegrantes);
-       while ($row = mysqli_fetch_assoc($resultIntegrantes)) {
-           $arrayIntegrantes[] = $row;
-       }
-   
-       $stmtVoluntarios = mysqli_prepare($mysqli, $queryVoluntarios);
-       mysqli_stmt_execute($stmtVoluntarios);
-       $resultVoluntarios = mysqli_stmt_get_result($stmtVoluntarios);
-       while ($row = mysqli_fetch_assoc($resultVoluntarios)) {
-           $arrayVoluntarios[] = $row;
-       }
+      $queryOrientadoresAtivos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 1 AND orientador = 1 ORDER BY ano DESC, periodo DESC";
+      $queryIntegrantes = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 1 AND voluntario = 0 AND orientador = 0 ORDER BY ano DESC, periodo DESC";
+      $queryVoluntarios = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos  WHERE ativo = 1 AND voluntario = 1 AND orientador = 0 ORDER BY ano DESC, periodo DESC";
+
+      // executando as consultas com os parâmetros de paginação
+      $resultOrientadoresAtivos = mysqli_query($mysqli, $queryOrientadoresAtivos);
+      $orientadoresAtivos = mysqli_fetch_all($resultOrientadoresAtivos, MYSQLI_ASSOC);
+
+      $resultIntegrantes = mysqli_query($mysqli, $queryIntegrantes);
+      $integrantes = mysqli_fetch_all($resultIntegrantes, MYSQLI_ASSOC);
+
+      $resultVoluntarios = mysqli_query($mysqli, $queryVoluntarios);
+      $voluntarios = mysqli_fetch_all($resultVoluntarios, MYSQLI_ASSOC);
    }
+   else { // Consultas para orientadores e integrantes inativos com paginação
+      $queryOrientadoresInativos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 0 AND orientador = 1 ORDER BY ano DESC, periodo DESC LIMIT $start, $limit";
+      $queryInativos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 0 AND orientador = 0 ORDER BY id DESC LIMIT $start, $limit";
    
-   // Consultas para orientadores e integrantes inativos com paginação
-   $queryOrientadoresInativos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 0 AND orientador = 1 ORDER BY ano DESC, periodo DESC LIMIT ?, ?";
-   $queryInativos = "SELECT id, primeiro_nome, ultimo_nome, imagem, sobre, social FROM petianos WHERE ativo = 0 AND orientador = 0 ORDER BY id DESC LIMIT ?, ?";
-   $quantidadepessoas = "SELECT count(id) AS id FROM petianos";
-   
-   // Preparando e executando a consulta para a quantidade total de pessoas
-   $stmtQuantidadePessoas = mysqli_prepare($mysqli, $quantidadepessoas);
-   mysqli_stmt_execute($stmtQuantidadePessoas);
-   $resultQuantidadePessoas = mysqli_stmt_get_result($stmtQuantidadePessoas);
-   $custquantidade = mysqli_fetch_assoc($resultQuantidadePessoas);
-   $total = $custquantidade['id'];
-   $pages = ceil($total / $limit);
-   $previous = $page - 1;
-   $next  = $page + 1;
-   
-   // Preparando as consultas para orientadores e integrantes inativos com os parâmetros de paginação
-   $stmtOrientadoresInativos = mysqli_prepare($mysqli, $queryOrientadoresInativos);
-   mysqli_stmt_bind_param($stmtOrientadoresInativos, 'ii', $start, $limit);
-   mysqli_stmt_execute($stmtOrientadoresInativos);
-   $resultOrientadoresInativos = mysqli_stmt_get_result($stmtOrientadoresInativos);
-   
-   $arrayOrientadoresInativos = [];
-   while ($row = mysqli_fetch_assoc($resultOrientadoresInativos)) {
-       $arrayOrientadoresInativos[] = $row;
+      // executando as consultas com os parâmetros de paginação
+      $resultOrientadoresInativos = mysqli_query($mysqli, $queryOrientadoresInativos);
+      $orientadoresInativos = mysqli_fetch_all($resultOrientadoresInativos, MYSQLI_ASSOC);
+      
+      $resultInativos = mysqli_query($mysqli, $queryInativos);
+      $inativos = mysqli_fetch_all($resultInativos, MYSQLI_ASSOC);
    }
-   
-   $stmtInativos = mysqli_prepare($mysqli, $queryInativos);
-   mysqli_stmt_bind_param($stmtInativos, 'ii', $start, $limit);
-   mysqli_stmt_execute($stmtInativos);
-   $resultInativos = mysqli_stmt_get_result($stmtInativos);
-   
-   $arrayInativos = [];
-   while ($row = mysqli_fetch_assoc($resultInativos)) {
-       $arrayInativos[] = $row;
-   }
-   
-   // Verificar se a página está fora dos limites
+
    if ($page < 1) {
        header("Location: integrantes.php?page=1");
        exit();
@@ -118,14 +85,14 @@
    <body>
       <?php include('header.php') ?>
       <?php if($page == 1): ?>
-      <?php if(count($arrayIntegrantes) > 0 && count($arrayOrientadoresAtivos) > 0): ?>
+      <?php if(count($integrantes) > 0 && count($orientadoresAtivos) > 0): ?>
       <div class="container">
       <div class="section-header">
          <h2>Integrantes</h2>
       </div>
       <div class="integrantes">
          <div class="tutores">
-            <?php foreach ($arrayOrientadoresAtivos as $orientadorAtivo): ?>
+            <?php foreach ($orientadoresAtivos as $orientadorAtivo): ?>
             <div class="card">
                <div class="card-img">
                   <figure>
@@ -176,7 +143,7 @@
          </div>
          <?php endforeach ?>
          <div class="discentes">
-            <?php foreach ($arrayIntegrantes as $integrante): ?>
+            <?php foreach ($integrantes as $integrante): ?>
             <div class="card">
                <div class="card-img">
                   <figure>
@@ -227,14 +194,14 @@
             <?php endforeach; ?>
          </div>
          <?php endif; ?>
-         <?php if(count($arrayVoluntarios) > 0): ?>       
+         <?php if(count($voluntarios) > 0): ?>       
          <div class="section-header">
             <h2>Voluntários</h2>
          </div>
          <!-- Voluntários-->
          <div class="integrantes voluntarios">
             <div class="discentes">
-               <?php foreach ($arrayVoluntarios as $voluntario): ?>
+               <?php foreach ($voluntarios as $voluntario): ?>
                <div class="card">
                   <div class="card-img">
                      <figure>
@@ -290,13 +257,13 @@
          <!-- Ex Integrantes-->
       </div>
       <?php else: ?>
-      <?php if(count($arrayInativos) > 0):?>
+      <?php if(count($inativos) > 0):?>
       <div class="section-header">
          <h2>Ex-Integrantes</h2>
       </div>
       <div class="integrantes ex">
          <div class="tutores">
-            <?php foreach ($arrayOrientadoresInativos as $orientadorInativo): ?>
+            <?php foreach ($orientadoresInativos as $orientadorInativo): ?>
             <div class="card">
                <div class="card-img">
                   <figure>
@@ -346,38 +313,38 @@
             <?php endif; ?>    
             <?php endforeach ?>
             <div class="discentes ex">
-               <?php foreach ($arrayInativos as $inativos): ?>
+               <?php foreach ($inativos as $inativo): ?>
                <div class="card">
                   <div class="card-img">
                      <figure>
-                        <img src="./assets/images/integrantes/<?= $inativos["imagem"]?>" alt="">
+                        <img src="./assets/images/integrantes/<?= $inativo["imagem"]?>" alt="">
                      </figure>
                   </div>
                   <div class="job-img"><i class="fas fa-user-graduate"></i></div>
                   <div class="card-name">
-                     <h3><?= $inativos["primeiro_nome"]?> <?= $inativos["ultimo_nome"]?></h3>
+                     <h3><?= $inativo["primeiro_nome"]?> <?= $inativo["ultimo_nome"]?></h3>
                      <h6>Orientando</h6>
                   </div>
-                  <?php if ($inativos['social'] || $inativos['sobre']): ?>
+                  <?php if ($inativo['social'] || $inativo['sobre']): ?>
                <div class="expand">
-                  <button class="button-showmore" data-id="<?= $inativos["id"] ?>">
+                  <button class="button-showmore" data-id="<?= $inativo["id"] ?>">
                   <i class="fa fa-chevron-down" style="font-size: 20px;"></i>
                   </button>
                </div>
                <?php endif; ?>
                </div>
-                  <?php if ($inativos['social'] || $inativos['sobre']): ?>
-                  <div class="popup hide" id="popup-<?= $inativos["id"] ?>">
+                  <?php if ($inativo['social'] || $inativo['sobre']): ?>
+                  <div class="popup hide" id="popup-<?= $inativo["id"] ?>">
                      <div class="popup-content">
                         <button class="popup-close">&times;</button>
-                        <?php if ($inativos["sobre"]): ?>
-                        <h2 class="sobre-name">Sobre <?php echo htmlspecialchars($inativos["primeiro_nome"]) ?> <?php echo htmlspecialchars($inativos["ultimo_nome"]) ?></h2>
-                        <p class="sobre-text" style="text-align: justify;"><?php echo htmlspecialchars($inativos["sobre"]) ?></p>
+                        <?php if ($inativo["sobre"]): ?>
+                        <h2 class="sobre-name">Sobre <?php echo htmlspecialchars($inativo["primeiro_nome"]) ?> <?php echo htmlspecialchars($inativo["ultimo_nome"]) ?></h2>
+                        <p class="sobre-text" style="text-align: justify;"><?php echo htmlspecialchars($inativo["sobre"]) ?></p>
                         <?php endif; ?>
-                        <?php if ($inativos['social']): ?>
-                        <h2>Você pode encontrar <?php echo htmlspecialchars($inativos["primeiro_nome"]) ?> <?php echo htmlspecialchars($inativos["ultimo_nome"]) ?> em</h2>
+                        <?php if ($inativo['social']): ?>
+                        <h2>Você pode encontrar <?php echo htmlspecialchars($inativo["primeiro_nome"]) ?> <?php echo htmlspecialchars($inativo["ultimo_nome"]) ?> em</h2>
                         <div class="social-logos">
-                           <?php $socialtext = $inativos["social"]; ?>
+                           <?php $socialtext = $inativo["social"]; ?>
                            <?php $socialpairs = explode(';', $socialtext); ?>
                            <?php foreach ($socialpairs as $pair): ?>
                            <?php if (strpos($pair, '=')): ?>
@@ -401,18 +368,21 @@
       <?php endif; ?>
       <?php endif; ?>
       <nav>
+         <?php 
+         $previous = $page - 1;
+         $next  = $page + 1; ?>
          <ul class="pagination">
             <li class="page-item" id="previous">
-               <a class="page-link" href="integrantes.php?page=<?= $previous; ?>" aria-label="Previous">
+               <a class="page-link" href="?page=<?= $previous; ?>" aria-label="Previous">
                <span aria-hidden="true">&laquo;</span>
                <span class="sr-only">Previous</span>
                </a>
             </li>
             <?php for ($i = 1; $i<=$pages; $i++): ?>
-            <li class="page-item"><a class="page-link" href="integrantes.php?page=<?= $i; ?>"><?= $i; ?></a></li>
+            <li class="page-item"><a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a></li>
             <?php endfor; ?>
             <li class="page-item" id="next">
-               <a class="page-link" href="integrantes.php?page=<?= $next; ?>" aria-label="Next">
+               <a class="page-link" href="?page=<?= $next; ?>" aria-label="Next">
                <span aria-hidden="true">&raquo;</span>
                <span class="sr-only">Next</span>
                </a>
