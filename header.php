@@ -53,6 +53,7 @@
             <div id="dropdown-publicacoes" class="dropdown-content-publicacoes">
               <a href="./publicacoes.php">Trabalhos Publicados</a>
               <a href="./revista.php" >Revista PETComp</a>
+              <a href="./banners.php">Banners PETComp</a>
             </div>
           </div>
         </li>
