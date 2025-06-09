@@ -61,6 +61,9 @@
           <button><a href="./noticias.php">Notícias</a></button>
         </li>
         <li>
+          <button><a href="./registros.php">Registros</a></button>
+        </li>
+        <li>
           <div class="dropdown">
             <button onclick="DropdownSection('produtos')" class="dropbtn">
               Produtos
