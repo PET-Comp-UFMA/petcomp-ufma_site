@@ -46,12 +46,12 @@ h1, h2, h3 {
 
 .horizontal {
   width: 325px;
-  height: 474px;
+  height: 203px;
 }
 
 .vertical {
   width: 325px;
-  height: 203px;
+  height: 474px;
 }
 
 /* Modal */
