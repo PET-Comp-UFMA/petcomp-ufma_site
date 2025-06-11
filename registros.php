@@ -36,33 +36,52 @@
       <div class="galeria">
         
         <div class="imagens-group">
-            <img src="assets/2025/exploracomp1.png" alt="">
-            <img src="assets/2025/exploracomp2.png" alt="">
+            <img src="assets/2025/ExploraComp2025/exploracomp1.png" class="vertical">
+            <img src="assets/2025/ExploraComp2025/exploracomp2.png" class="horizontal">
         </div>
 
         <div class="imagens-group">
-            <img src="assets/2025/exploracomp3.png" alt="">
-            <img src="assets/2025/exploracomp4.png" alt="">
+            <img src="assets/2025/ExploraComp2025/exploracomp3.png" class="horizontal">
+            <img src="assets/2025/ExploraComp2025/exploracomp4.png" class="vertical">
         </div>
         
         <div class="imagens-group">
-            <img src="assets/2025/exploracomp5.png" alt="">
-            <img src="assets/2025/exploracomp6.png" alt="">
+            <img src="assets/2025/ExploraComp2025/exploracomp5.png" class="vertical">
+            <img src="assets/2025/ExploraComp2025/exploracomp6.png" class="horizontal">
         </div>
         
         <div class="imagens-group">
-            <img src="assets/2025/exploracomp7.png" alt="">
-            <img src="assets/2025/exploracomp8.png" alt="">
+            <img src="assets/2025/ExploraComp2025/exploracomp7.png" class="horizontal">
+            <img src="assets/2025/ExploraComp2025/exploracomp8.png" class="vertical">
         </div>
         
       </div>
     </div>
 
     <div class="atividade">
-      <h3>Fábrica de Software</h3>
+      <h3>Acalourada 2025.1</h3>
       <div class="galeria">
-        <img src="assets/2025/robotica1.png" alt="">
-        <img src="assets/2025/robotica2.png" alt="">
+
+        <div class="imagens-group">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_2.jpg" class="horizontal">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_1.jpg" class="vertical">
+        </div>
+
+         <div class="imagens-group">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_3.jpg" class="vertical">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_7.jpg" class="horizontal">
+        </div>
+
+         <div class="imagens-group">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_4.jpg" class="horizontal">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_6.jpg" class="vertical">
+        </div>
+
+         <div class="imagens-group">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_5.jpg" class="vertical">
+            <img src="assets/2025/Acalourada2025/acalourada2025.1_8.jpg" class="horizontal">
+        </div>
+
       </div>
     </div>
   </div>

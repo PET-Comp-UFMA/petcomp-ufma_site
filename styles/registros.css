@@ -44,6 +44,16 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
+.horizontal {
+  width: 325px;
+  height: 474px;
+}
+
+.vertical {
+  width: 325px;
+  height: 203px;
+}
+
 /* Modal */
 .modal {
     display: none;
