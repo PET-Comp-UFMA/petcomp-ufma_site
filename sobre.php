@@ -42,44 +42,44 @@
         </p>
         <div class="galery-about">
         <div class="galery-about__container-image" id="img1">
-            <img class="galery-about__img" src="../assets/images/galery-about/imagemdefundo.jpeg">
+            <img class="galery-about__img" src="./assets/images/galery-about/imagemdefundo.jpeg">
             <div class="galery-about__legend"> 
               <p>Petianos na recepção de calouros 2024.2</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           <div class="galery-about__container-image">
-            <img class="galery-about__img" src="../assets/images/galery-about/photo1.jpg">
+            <img class="galery-about__img" src="./assets/images/galery-about/photo1.jpg">
             <div class="galery-about__legend"> 
               <p>Petianos na recepção de calouros 2023.2</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
           <div class="galery-about__container-image">
-            <img class="galery-about__img" src="../assets/images/galery-about/photo2.svg">
+            <img class="galery-about__img" src="./assets/images/galery-about/photo2.svg">
             <div class="galery-about__legend"> 
               <p>Confraternização PETComp 2023</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
           <div class="galery-about__container-image">
-            <img class="galery-about__img" src="../assets/images/galery-about/photo3.svg">
+            <img class="galery-about__img" src="./assets/images/galery-about/photo3.svg">
             <div class="galery-about__legend"> 
               <p>Apresentação do PETComp para L.A.B.I</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
           <div class="galery-about__container-image">
-            <img class="galery-about__img" src="../assets/images/galery-about/photo4.jpg">
+            <img class="galery-about__img" src="./assets/images/galery-about/photo4.jpg">
             <div class="galery-about__legend"> 
               <p>Palestra ministrada pelo tutor do PETComp na acalourada</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
           <div class="galery-about__container-image">
-            <img class="galery-about__img" src="../assets/images/galery-about/photo5.jpg">
+            <img class="galery-about__img" src="./assets/images/galery-about/photo5.jpg">
             <div class="galery-about__legend"> 
               <p>Stand do grupo PETComp na Feira de profissões 2023</p>
-              <img src="../assets/images/galery-about/fundo_legend.png" alt="">
+              <img src="./assets/images/galery-about/fundo_legend.png" alt="">
             </div>
           </div>
          
