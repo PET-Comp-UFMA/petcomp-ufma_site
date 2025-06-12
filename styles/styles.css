@@ -46,13 +46,14 @@
 
 header {
 
-  background: #001747;
+  background: #fafafa;
 
   box-shadow: 2px -1px 20px 0px #e1e1e1;
 
-  height: 50px;
+  height: 100px;
 
   width: 100%;
+
 }
 
 
@@ -175,7 +176,7 @@ header nav button:hover {
 
 header nav a {
 
-  color: #ffffff;
+  color: #000;
 
   text-decoration: none;
 
@@ -375,9 +376,6 @@ header .dropdown .dropdown-content-produtos a {
 
   padding: 10px;
 
-}
-header nav button {
-  color: white;
 }
 
 
