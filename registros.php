@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Banners | PETComp </title>
+  <title> Registros | PETComp </title>
 
   <link rel="icon" href="./assets/images/logos/PETComp.png">
 
@@ -86,25 +86,64 @@
     </div>
     <div class="atividade">
       <h3>Fábrica de Software</h3>
+      <div class="subtitulo">
+        <p>Congresso Nacional de Saúde e Tecnologia</p>
+      </div>
       <div class="galeria">
+        
          <div class="imagens-group">
             <img src="assets/2025/Fab.Software2025/Fab.Software1.png" class="horizontal">
             <img src="assets/2025/Fab.Software2025/Fab.Software2.png" class="vertical">
         </div>
 
          <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software4.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software3.png" class="horizontal">
+            <img src="assets/2025/Fab.Software2025/Fab.Software3.png" class="vertical">
+            <img src="assets/2025/Fab.Software2025/Fab.Software4.png" class="horizontal">
         </div>
+      </div>
 
+      <div class="subtitulo">
+        <p>Exploracomp</p>
+      </div>
+      <div class="galeria">
          <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software6.png" class="horizontal">
             <img src="assets/2025/Fab.Software2025/Fab.Software5.png" class="vertical">
+            <img src="assets/2025/Fab.Software2025/Fab.Software6.png" class="horizontal">
         </div>
 
          <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software8.png" class="vertical">
             <img src="assets/2025/Fab.Software2025/Fab.Software7.png" class="horizontal">
+            <img src="assets/2025/Fab.Software2025/Fab.Software8.png" class="vertical">
+        </div>
+
+        <div class="imagens-group">
+            <img src="assets/2025/Fab.Software2025/Fab.Software10.png" class="vertical">
+            <img src="assets/2025/Fab.Software2025/Fab.Software9.png" class="horizontal">
+        </div>
+
+        <div class="imagens-group">
+            <img src="assets/2025/Fab.Software2025/Fab.Software11.png" class="horizontal">
+            <img src="assets/2025/Fab.Software2025/Fab.Software12.png" class="vertical">
+        </div>
+      </div>
+    </div>
+
+     <div class="atividade">
+      <h3>Monitoria</h3>
+      <div class="galeria">
+
+        <div class="imagens-group">
+            <img src="assets/2025/Monitoria2025/Monitoria1.png" class="horizontal">
+            <img src="assets/2025/Monitoria2025/Monitoria2.png" class="horizontal">
+        </div>
+
+         <div class="imagens-group">
+            <img src="assets/2025/Monitoria2025/Monitoria3.png" class="vertical">
+        </div>
+
+         <div class="imagens-group">
+            <img src="assets/2025/Monitoria2025/Monitoria4.png" class="horizontal">
+            <img src="assets/2025/Monitoria2025/Monitoria5.png" class="horizontal">
         </div>
       </div>
     </div>
@@ -113,30 +152,7 @@
   <div class="ano-section">
     <h2>2024</h2>
 
-    <div class="atividade">
-      <h3>Fábrica de Software</h3>
-      <div class="galeria">
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software1.png" class="horizontal">
-            <img src="assets/2025/Fab.Software2025/Fab.Software2.png" class="vertical">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software4.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software3.png" class="horizontal">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software6.png" class="horizontal">
-            <img src="assets/2025/Fab.Software2025/Fab.Software5.png" class="vertical">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software8.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software7.png" class="horizontal">
-        </div>
-      </div>
-    </div>
+    <h1>EM BREVE...</h1>
   </div>
 
   <!-- Modal de imagem -->
