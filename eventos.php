@@ -105,6 +105,15 @@
           </div>
         </div>
 
+        <div class="evento">
+          <img src="./assets/images/logos/exploracomp.svg">
+          <div class="textoMateria">
+            <h3>ExploraComp</h3>
+            <p>O ExploraComp é uma ação promovida pelo PETComp - Programa de Educação Tutorial em Ciência da Computação da UFMA, voltada para estudantes do ensino médio, especialmente aqueles de baixa renda, que desejam conhecer de perto o universo da Computação. Durante a atividade, os participantes exploram o curso por meio de oficinas, bate-papos com universitários, demonstrações tecnológicas e visitas guiadas, vivenciando na prática como é estudar na UFMA. O objetivo é apresentar oportunidades de ingresso no ensino superior, inspirar trajetórias acadêmicas e aproximar jovens talentos da tecnologia e da inovação.</p>
+            <a href="https://petcompufma.org/exploracomp/index.php" target="_blank">Saiba mais</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>

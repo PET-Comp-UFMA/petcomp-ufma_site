@@ -20,11 +20,63 @@
 <body>
   <?php include('header.php') ?>
   <main>
-  
+    <section id="slider">
+      <ul class="slider-content">
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Seja bem-vindo ao novo site PETComp</h1>
+              <p>De cara nova e com muito mais informações!</p>
+              <a href="./integrantes.php">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Conheça nossa história</h1>
+              <p>O grupo existe desde 2007 e desenvolve atividades de Monitoria, Desenvolvimento e Pesquisas</p>
+              <a href="./sobre.php">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Seletivo</h1>
+              <p>Veja a lista de integrantes do grupo e conheça os novos participantes</p>
+              <a href="./integrantes.php">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>PodComp</h1>
+              <p>Acompanhe todos o episódios já lançados do nosso podcast</p>
+              <a href="./produtos-podcomp.php">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <button class="preview">
+          <img src="./assets/svg/navigate_before-24px.svg" onclick="decSlides()" alt="">
+        </button>
+        <button class="next">
+          <img src="./assets/svg/navigate_next-24px.svg" onclick="nextSlides()" alt="">
+        </button>
+      </ul>
+    </section>
     <section id="sobre">
     <div class="resumo-petcomp">
         <div class="imagensSobrePet">
         </div>
+        <div class="text-petcomp">
+          <h1>Conheça o PETComp</h1>
+          <p>O Programa de Educação Tutorial de Ciência da Computação da UFMA foi criado em 1 de Setembro de 2007, tendo como tutor o professor Alexandre César Muniz de Oliveira, em 19 de Janeiro de 2016 o professor Geraldo Braz Junior tornou-se o novo tutor do grupo. E após sua excelente gestão, em 2019 assume o professor Luis Rivero. O PET Computação já realizou diversas atividades de pesquisa, ensino e extensão. Dentre algumas das atividades podemos citar minicursos, Projetos de Extensão, como por exemplo, ensino de pensamento computacional, organiza o Encontro Acadêmico de Computação (EAComp), desenvolvimento de sistemas, entre outros.
+          </p>
+          <a href="./sobre.php">Conheça Mais</a>
+        </div>
+      </div>
     </section>
     <section id="petSignifica">
       <h1 class="tituloPet">O PETComp representa a Tríade Acadêmica:</h1>
