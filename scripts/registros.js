@@ -21,12 +21,25 @@ function expandirImagem(img) {
     const imagemExpandida = document.getElementById('imagemExpandida');
     imagemExpandida.src = img.src;
     modal.style.display = 'flex';
+
+    // Adiciona a tecla esc quando a imagem é expandida
+    document.addEventListener('keydown', escFecharModal);
 }
 
 // Fechar modal
 function fecharModal(event) {
     if(event) event.stopPropagation(); // evita fechar ao clicar no botão
     document.getElementById('imagemModal').style.display = 'none';
+
+    // Remove a tecla esc quando a imagem é fechada
+    document.removeEventListener('keydown', escFecharModal);
+}
+
+// Função para lidar com a tecla esc
+function escFecharModal(event) {
+    if(event.key == 'Escape') {
+      fecharModal();
+    }
 }
 
 // Vincula evento de clique a todas as imagens
@@ -41,24 +54,40 @@ document.addEventListener("DOMContentLoaded", () => {
 // Mapeamento dos eventos e suas imagens
 const imagensPorEvento = {
   exploracomp2025: [
-    "assets/2025/ExploraComp2025/exploracomp2.png",
     "assets/2025/ExploraComp2025/exploracomp1.png",
-    "assets/2025/ExploraComp2025/exploracomp4.png",
+    "assets/2025/ExploraComp2025/exploracomp2.png",
     "assets/2025/ExploraComp2025/exploracomp3.png",
-    "assets/2025/ExploraComp2025/exploracomp6.png",
+    "assets/2025/ExploraComp2025/exploracomp4.png",
     "assets/2025/ExploraComp2025/exploracomp5.png",
-    "assets/2025/ExploraComp2025/exploracomp8.png",
-    "assets/2025/ExploraComp2025/exploracomp7.png"
+    "assets/2025/ExploraComp2025/exploracomp6.png",
+    "assets/2025/ExploraComp2025/exploracomp7.png",
+    "assets/2025/ExploraComp2025/exploracomp8.png"
   ],
   acalourada2025: [
-    "assets/2025/Acalourada2025/acalourada2025.1_2.jpg",
     "assets/2025/Acalourada2025/acalourada2025.1_1.jpg",
-    "assets/2025/Acalourada2025/acalourada2025.1_3.jpg",
+    "assets/2025/Acalourada2025/acalourada2025.1_2.jpg",
     "assets/2025/Acalourada2025/acalourada2025.1_7.jpg",
-    "assets/2025/Acalourada2025/acalourada2025.1_4.jpg",
+    "assets/2025/Acalourada2025/acalourada2025.1_3.jpg",
     "assets/2025/Acalourada2025/acalourada2025.1_6.jpg",
-    "assets/2025/Acalourada2025/acalourada2025.1_5.jpg",
-    "assets/2025/Acalourada2025/acalourada2025.1_8.jpg"
+    "assets/2025/Acalourada2025/acalourada2025.1_4.jpg",
+    "assets/2025/Acalourada2025/acalourada2025.1_8.jpg",
+    "assets/2025/Acalourada2025/acalourada2025.1_5.jpg"
+  ],
+  cnst: [
+    "assets/2025/Fab.Software2025/Fab.Software1.png",
+    "assets/2025/Fab.Software2025/Fab.Software2.png",
+    "assets/2025/Fab.Software2025/Fab.Software3.png",
+    "assets/2025/Fab.Software2025/Fab.Software4.png"
+  ],
+  exploracompsite: [
+    "assets/2025/Fab.Software2025/Fab.Software6.png",
+    "assets/2025/Fab.Software2025/Fab.Software5.png",
+    "assets/2025/Fab.Software2025/Fab.Software8.png",
+    "assets/2025/Fab.Software2025/Fab.Software7.png",
+    "assets/2025/Fab.Software2025/Fab.Software9.png",
+    "assets/2025/Fab.Software2025/Fab.Software10.png",
+    "assets/2025/Fab.Software2025/Fab.Software12.png",
+    "assets/2025/Fab.Software2025/Fab.Software11.png"
   ],
 };
 
@@ -78,14 +107,14 @@ document.querySelectorAll('.galeria').forEach(galeria => {
     // Primeira imagem do grupo
     const img1 = document.createElement('img');
     img1.src = imagens[i];
-    img1.classList.add(par ? 'vertical' : 'horizontal');
+    img1.classList.add(par ? 'horizontal' : 'vertical');
     grupo.appendChild(img1);
 
     // Segunda imagem do grupo (se existir)
     if (imagens[i + 1]) {
       const img2 = document.createElement('img');
       img2.src = imagens[i + 1];
-      img2.classList.add(par ? 'horizontal' : 'vertical');
+      img2.classList.add(par ? 'vertical' : 'horizontal');
       grupo.appendChild(img2);
     } else {
       // Só tem uma imagem no grupo (ímpar), centraliza
