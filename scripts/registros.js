@@ -89,6 +89,16 @@ const imagensPorEvento = {
     "assets/2025/Fab.Software2025/Fab.Software12.png",
     "assets/2025/Fab.Software2025/Fab.Software11.png"
   ],
+  acalourada2024_2: [
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_1.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_2.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_3.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_4.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_5.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_6.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_7.jpg",
+    "assets/2024/Acalourada 2024.1/Acaloura2024.2_8.jpg"
+  ],
 };
 
 

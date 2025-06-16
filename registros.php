@@ -35,25 +35,6 @@
       
       <div class="galeria" data-evento="exploracomp2025">
         
-        <!-- <div class="imagens-group">
-            <img src="assets/2025/ExploraComp2025/exploracomp1.png" class="horizontal">
-            <img src="assets/2025/ExploraComp2025/exploracomp2.png" class="vertical">
-        </div>
-
-        <div class="imagens-group">
-            <img src="assets/2025/ExploraComp2025/exploracomp3.png" class="vertical">
-            <img src="assets/2025/ExploraComp2025/exploracomp4.png" class="horizontal">
-        </div>
-        
-        <div class="imagens-group">
-            <img src="assets/2025/ExploraComp2025/exploracomp5.png" class="horizontal">
-            <img src="assets/2025/ExploraComp2025/exploracomp6.png" class="vertical">
-        </div>
-        
-        <div class="imagens-group">
-            <img src="assets/2025/ExploraComp2025/exploracomp7.png" class="vertical">
-            <img src="assets/2025/ExploraComp2025/exploracomp8.png" class="horizontal">
-        </div> -->
         
       </div>
     </div>
@@ -62,25 +43,6 @@
       <h3>Acalourada 2025.1</h3>
       <div class="galeria" data-evento="acalourada2025">
 
-        <!-- <div class="imagens-group">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_2.jpg" class="vertical">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_1.jpg" class="horizontal">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_3.jpg" class="horizontal">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_7.jpg" class="vertical">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_4.jpg" class="vertical">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_6.jpg" class="horizontal">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_5.jpg" class="horizontal">
-            <img src="assets/2025/Acalourada2025/acalourada2025.1_8.jpg" class="vertical">
-        </div> -->
 
       </div>
     </div>
@@ -91,40 +53,13 @@
       </div>
       <div class="galeria" data-evento="cnst">
         
-         <!-- <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software1.png" class="horizontal">
-            <img src="assets/2025/Fab.Software2025/Fab.Software2.png" class="vertical">
-        </div>
-
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software3.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software4.png" class="horizontal">
-        </div> -->
       </div>
 
       <div class="subtitulo">
         <p>Exploracomp</p>
       </div>
       <div class="galeria" data-evento="exploracompsite">
-         <!-- <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software5.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software6.png" class="horizontal">
-        </div>
 
-         <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software7.png" class="horizontal">
-            <img src="assets/2025/Fab.Software2025/Fab.Software8.png" class="vertical">
-        </div>
-
-        <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software10.png" class="vertical">
-            <img src="assets/2025/Fab.Software2025/Fab.Software9.png" class="horizontal">
-        </div>
-
-        <div class="imagens-group">
-            <img src="assets/2025/Fab.Software2025/Fab.Software11.png" class="horizontal">
-            <img src="assets/2025/Fab.Software2025/Fab.Software12.png" class="vertical">
-        </div> -->
       </div>
     </div>
 
@@ -152,7 +87,14 @@
   <div class="ano-section">
     <h2>2024</h2>
 
-    <h1>EM BREVE...</h1>
+    <div class="atividade">
+      <h3>Acalourada 2024.2</h3>
+      
+      <div class="galeria" data-evento="acalourada2024_2">
+        
+        
+      </div>
+    </div>
   </div>
 
   <!-- Modal de imagem -->
